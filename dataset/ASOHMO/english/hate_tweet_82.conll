@@ -1,0 +1,11 @@
+ANOTHER	O	Justification	O	O	O	O	Fact	O
+ILLEGAL	O	Justification	O	Collective	O	Pivot	Fact	O
+IMMIGRANT	O	Justification	O	Collective	O	Pivot	Fact	O
+ASSAULTS	O	Justification	O	O	Property	O	Fact	O
+YOUNG	O	Justification	O	O	Property	O	Fact	O
+GIRL	O	Justification	O	O	Property	O	Fact	O
+-	O	Justification	O	O	O	O	Fact	O
+FLORIDA	O	Justification	O	O	O	O	Fact	O
+.	O	O	O	O	O	O	O	O
+#IllegalImmigration	O	O	Conclusion	O	O	Pivot	O	Policy
+#StopTheMadness	O	O	Conclusion	O	O	O	O	Policy
