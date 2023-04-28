@@ -7,34 +7,98 @@ from datasets import load_dataset
 from datasets import Dataset
 import evaluate
 from sentence_transformers import SentenceTransformer, util
+from glob import glob
+
+import argparse
+
+parser = argparse.ArgumentParser(description="Train models for identifying argumentative components inside the ASFOCONG dataset")
+parser.add_argument("dataset", type=str, choices=["conan", "asohmo", "both"])
+# parser.add_argument("model", type=str, choices=["zeroshot", "fewshot", "finetuned"])
+
+args = parser.parse_args()
 
 
-model_name = "google/flan-t5-base"
+model_name = "google/flan-t5-xl"
 
-j = open("dataset/CONAN/CONAN.json", "r")
-conan = json.load(j)
-english_conan = list(filter(lambda cn: cn["cn_id"].startswith("EN"), conan["conan"]))
+def load_conan():
 
-group_by_tweet = {}
-for cn in english_conan:
-    if not cn["hateSpeech"] in group_by_tweet:
-        group_by_tweet[cn["hateSpeech"]] = [cn["counterSpeech"]]
-    else:
-        group_by_tweet[cn["hateSpeech"]].append(cn["counterSpeech"])
+    j = open("dataset/CONAN/CONAN.json", "r")
+    conan = json.load(j)
+    english_conan = list(filter(lambda cn: cn["cn_id"].startswith("EN"), conan["conan"]))
 
-acum = 0
-val_threshold = len(english_conan) * 0.8
-test_dataset = []
-keys = list(group_by_tweet.keys())
-random.seed(42)
-random.shuffle(keys)
-for key in keys:
-    if acum > val_threshold:
-        test_dataset.append({"hateSpeech": key, "counterSpeech": group_by_tweet[key]})
+    group_by_tweet = {}
+    for cn in english_conan:
+        if not cn["hateSpeech"] in group_by_tweet:
+            group_by_tweet[cn["hateSpeech"]] = [cn["counterSpeech"]]
+        else:
+            group_by_tweet[cn["hateSpeech"]].append(cn["counterSpeech"])
 
-    acum += len(group_by_tweet[key])
+    acum = 0
+    val_threshold = len(english_conan) * 0.8
+    test_dataset = []
+    keys = list(group_by_tweet.keys())
+    random.seed(42)
+    random.shuffle(keys)
+    for key in keys:
+        if acum > val_threshold:
+            test_dataset.append({"hateSpeech": key, "counterSpeech": group_by_tweet[key]})
 
+        acum += len(group_by_tweet[key])
+    return test_dataset
 
+def load_asohmo():
+    cns_by_tweet = {}
+    dataset = []
+    nonargs = 0
+    cn_length = 0
+    for filename in glob("dataset/ASOHMO/english/*.conll"):
+        # print(filename)
+        f = open(filename, "r")
+        tweet_list = []
+        is_arg = True
+        for line in f:
+            splitted_line = line.split("\t")
+            if splitted_line[1].startswith("NoArgumentative"):
+                is_arg = False
+                break
+            tweet_list.append(line.split("\t")[0])
+        if not is_arg:
+            nonargs += 1
+            continue
+        tweet = " ".join(tweet_list)
+        # print(tweet)
+        counternarratives = []
+        cn = open(filename.replace("conll", "cn"), "r")
+        for line in cn:
+            counternarratives.append(line)
+            dataset.append({"hateSpeech": tweet, "counterSpeech": line})
+        if tweet in cns_by_tweet:
+            cns_by_tweet[tweet] += counternarratives
+        else:
+            cns_by_tweet[tweet] = counternarratives
+        cn_length += len(counternarratives)
+
+    val_threshold = cn_length * 0.8
+    test_dataset = []
+    acum = 0
+    keys = list(cns_by_tweet.keys())
+    random.seed(42)
+    random.shuffle(keys)
+    for key in keys:
+        for cn in cns_by_tweet[key]:
+            if acum >= val_threshold:
+                to_append = {"hateSpeech": key, "counterSpeech": cn}
+
+                test_dataset.append(to_append)
+        acum += len(cns_by_tweet[key])
+
+    # test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
+    return test_dataset
+
+if args.dataset == "conan":   
+    test_dataset = load_conan()
+else:
+    test_dataset = load_asohmo()
 test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -44,10 +108,10 @@ num_new_tokens = tokenizer.add_tokens(new_tokens)
 
 print("We added ", num_new_tokens, " new tokens")
 
-model = AutoModelForSeq2SeqLM.from_pretrained("Flan-T5-base_English_Prompts_2e-05_8Epochs")
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 model.resize_token_embeddings(len(tokenizer))
 
-dataset_tokenized = list(map(lambda sample: tokenizer("Generate a counter-narrative for the following hate speech:\n<SHS>" + sample["hateSpeech"] + "<EHS> => ", truncation=True)["input_ids"], english_conan))
+dataset_tokenized = list(map(lambda sample: tokenizer("Generate a counter-narrative for the following hate speech:\n<SHS>" + sample["hateSpeech"] + "<EHS> => ", truncation=True)["input_ids"], test_dataset))
 max_source_length = max([len(x) for x in dataset_tokenized])
 
 # target_tokenized = list(map(lambda sample: tokenizer("<SCN>" + sample["counterSpeech"] + "<ECN>", truncation=True)["input_ids"], english_conan))
@@ -86,18 +150,18 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False,
     rouge_avg = 0.0
     sbert_avg = 0.0
 
-    w = open(f"flan-t5-base_english_2e-05_finetuned_{top_sampling}_{beam_search}_{temperature}", 'w')
+    w = open(f"flan-t5-xl_english_2e-05_zeroshot_{top_sampling}_{beam_search}_{temperature}", 'w')
     for dataset in testing_datasets:
         inputt = preprocess(dataset[0])
         print(inputt)
         if beam_search:
-            result = model.generate(**inputt, max_new_tokens=256, eos_token_id=32103, no_repeat_ngram_size=4, num_beams=5, early_stopping=True)
+            result = model.generate(**inputt, max_new_tokens=512, eos_token_id=32103, no_repeat_ngram_size=4, num_beams=5, early_stopping=True)
         elif top_sampling:
-            result = model.generate(**inputt, max_new_tokens=256, eos_token_id=32103, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92)
+            result = model.generate(**inputt, max_new_tokens=512, eos_token_id=32103, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92)
         elif temperature:
-            result = model.generate(**inputt, max_new_tokens=256, eos_token_id=32103, no_repeat_ngram_size=4, do_sample=True, temperature=0.7)
+            result = model.generate(**inputt, max_new_tokens=512, eos_token_id=32103, no_repeat_ngram_size=4, do_sample=True, temperature=0.7)
         else:
-            result = model.generate(**inputt, max_new_tokens=256, no_repeat_ngram_size=4, eos_token_id=32103)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, eos_token_id=32103)
 
         for labels in dataset[0]["counterSpeech"]:
 
@@ -149,7 +213,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False,
     w.close()
 
 print("generating")
-# evaluate_generation(testing_datasets)
-# evaluate_generation(testing_datasets, top_sampling=True)
-# evaluate_generation(testing_datasets, temperature=True)
+evaluate_generation(testing_datasets)
+evaluate_generation(testing_datasets, top_sampling=True)
+evaluate_generation(testing_datasets, temperature=True)
 evaluate_generation(testing_datasets, beam_search=True)
