@@ -1,0 +1,630 @@
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión?
+No creo que nadie proponga dejar las fronteras "sin control". De lo que se está en contra es de los controles excesivos...
+
+<pad> que está decir el que el ingreso está a ser insuficientemente y sin control, y que es que ayerán a una mujer a un a<unk>o, que está en una relación sentimental, <unk>cómo se localiza para v<unk>cerlo tras la agresión?</s>
+{'precision': [0.8087825775146484], 'recall': [0.8366552591323853], 'f1': [0.8224828839302063], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.13114754098360656, 0.03333333333333333, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.1785714285714284, 'translation_length': 61, 'reference_length': 28}
+{'rouge1': 0.2222222222222222, 'rouge2': 0.05714285714285714, 'rougeL': 0.16666666666666666, 'rougeLsum': 0.16666666666666666}
+0.5189224481582642
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión?
+¿De donde salió ese prejuicio de que los inmigrantes siempre son malas personas, agresivos, etc.? La mayoría de ellos son excelentes personas, de hecho.
+
+<pad> que está decir el que el ingreso está a ser insuficientemente y sin control, y que es que ayerán a una mujer a un a<unk>o, que está en una relación sentimental, <unk>cómo se localiza para v<unk>cerlo tras la agresión?</s>
+{'precision': [0.7979997992515564], 'recall': [0.8284900188446045], 'f1': [0.8129590749740601], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08196721311475409, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.033333333333333, 'translation_length': 61, 'reference_length': 30}
+{'rouge1': 0.08, 'rouge2': 0.0, 'rougeL': 0.05333333333333334, 'rougeLsum': 0.05333333333333334}
+0.3954644203186035
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro
+Lo dices ironicamente, como si tuvieras algo solido en su contra. Pero al parecer no lo tienes...
+
+<pad> te está ver ciencias odiosas a las obras contra las adolescentes: <unk>odie a los musulmanes? <unk>No deber<unk>an existir? <unk>Esas personas también son seres humanos. Humans can choose their own religion. <unk>Todos los inmigrantes son criminales y deber<unk>a ser deportados. <unk>La mayor<unk>a de los inmigrante son personas trabajadora tratando de tener una vida mejor para ellos y sus familias. <unk>The majority of the inmigrantes are a person who works to have a better life for themselves and their families. <unk>They are vagos y cuentan mucho dinero a los contribuyentes. 'These are the pobrecitos refugiados de carmena ada colau y pedro sánchezes a ver los luz de as<unk> como como hac<unk>an a la gente de aqu<unk> t<unk>o a cabo a matar y violar. <unk>Ya hac<unk>a aquello las historias de m<unk>sica de ad<unk>os, ya hacen el gobernador que acaban a m<unk> a casa a colu y a pedrón sanchezes, o aquá harán a veces: <unk>Bajo el m<unk>, <unk>el es tu pobre? <unk>Ano un poco obra de las musulmánes, está tu vida a mi madre?</s>
+{'precision': [0.7533676028251648], 'recall': [0.7955859303474426], 'f1': [0.7739014625549316], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.025735294117647058, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 12.363636363636363, 'translation_length': 272, 'reference_length': 22}
+{'rouge1': 0.026548672566371685, 'rouge2': 0.0, 'rougeL': 0.017699115044247787, 'rougeLsum': 0.017699115044247787}
+0.4296724200248718
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro
+Cada vez que alguien asocia a los refugiados con violaciones y asesinatos, me suena a que estan buscando un chivo expiatorio, para no hacerse cargo de los problemas de su sociedad.
+
+<pad> te está ver ciencias odiosas a las obras contra las adolescentes: <unk>odie a los musulmanes? <unk>No deber<unk>an existir? <unk>Esas personas también son seres humanos. Humans can choose their own religion. <unk>Todos los inmigrantes son criminales y deber<unk>a ser deportados. <unk>La mayor<unk>a de los inmigrante son personas trabajadora tratando de tener una vida mejor para ellos y sus familias. <unk>The majority of the inmigrantes are a person who works to have a better life for themselves and their families. <unk>They are vagos y cuentan mucho dinero a los contribuyentes. 'These are the pobrecitos refugiados de carmena ada colau y pedro sánchezes a ver los luz de as<unk> como como hac<unk>an a la gente de aqu<unk> t<unk>o a cabo a matar y violar. <unk>Ya hac<unk>a aquello las historias de m<unk>sica de ad<unk>os, ya hacen el gobernador que acaban a m<unk> a casa a colu y a pedrón sanchezes, o aquá harán a veces: <unk>Bajo el m<unk>, <unk>el es tu pobre? <unk>Ano un poco obra de las musulmánes, está tu vida a mi madre?</s>
+{'precision': [0.7765061855316162], 'recall': [0.8120658993721008], 'f1': [0.7938880324363708], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.051470588235294115, 0.007380073800738007, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.0, 'translation_length': 272, 'reference_length': 34}
+{'rouge1': 0.1, 'rouge2': 0.01680672268907563, 'rougeL': 0.06666666666666668, 'rougeLsum': 0.06666666666666668}
+0.5626857876777649
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro
+Como en todos lados, el estado debería evitar que eso ocurra. Independientemente de si de nativos o de inmigrantes se trata.
+
+<pad> te está ver ciencias odiosas a las obras contra las adolescentes: <unk>odie a los musulmanes? <unk>No deber<unk>an existir? <unk>Esas personas también son seres humanos. Humans can choose their own religion. <unk>Todos los inmigrantes son criminales y deber<unk>a ser deportados. <unk>La mayor<unk>a de los inmigrante son personas trabajadora tratando de tener una vida mejor para ellos y sus familias. <unk>The majority of the inmigrantes are a person who works to have a better life for themselves and their families. <unk>They are vagos y cuentan mucho dinero a los contribuyentes. 'These are the pobrecitos refugiados de carmena ada colau y pedro sánchezes a ver los luz de as<unk> como como hac<unk>an a la gente de aqu<unk> t<unk>o a cabo a matar y violar. <unk>Ya hac<unk>a aquello las historias de m<unk>sica de ad<unk>os, ya hacen el gobernador que acaban a m<unk> a casa a colu y a pedrón sanchezes, o aquá harán a veces: <unk>Bajo el m<unk>, <unk>el es tu pobre? <unk>Ano un poco obra de las musulmánes, está tu vida a mi madre?</s>
+{'precision': [0.7658398747444153], 'recall': [0.8208774924278259], 'f1': [0.7924041748046875], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03676470588235294, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 11.333333333333334, 'translation_length': 272, 'reference_length': 24}
+{'rouge1': 0.09523809523809525, 'rouge2': 0.0, 'rougeL': 0.06060606060606061, 'rougeLsum': 0.06060606060606061}
+0.6754496693611145
+---------------------------------------------------------
+crece a 1 402 la entrada de inmigrantes a ceuta la mitad de ellos al asalto en lo que va de 2018 https://t co/bmeskkis6b
+Que te parezcan muchos no significa que lleguen "al asalto" como tú dices.
+
+<pad> Ahora una respuesta sin odio a los siguientes mensajes de odis: Edad a los musulmanes. <unk>No deber<unk>a existir. => Los musulmánes también son seres humanos. Las personas pueden elegir su propia religión. Todos los inmigrantes son criminales y deber<unk>an ser deportados. => La mayor<unk>a de los inmigrante y sus familias son personas trabajadoras tratando de tener una vida mejor para ellos y sus familiares. Los inmigrantes yánga y cuentan mucho dinero a contribuyentes. => Las inmigrantes usualmente tienen los peores trabos y pagan impuestos como cada otro. Crece a 1,504 la entrada de inmigrantes al asalto en lo que va de 2018 http://t.co/bmeskki6b</s>
+{'precision': [0.766997218132019], 'recall': [0.820906400680542], 'f1': [0.7930367588996887], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.034482758620689655, 0.006944444444444444, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 9.0625, 'translation_length': 145, 'reference_length': 16}
+{'rouge1': 0.0923076923076923, 'rouge2': 0.015625, 'rougeL': 0.06153846153846155, 'rougeLsum': 0.06153846153846155}
+0.3958466649055481
+---------------------------------------------------------
+crece a 1 402 la entrada de inmigrantes a ceuta la mitad de ellos al asalto en lo que va de 2018 https://t co/bmeskkis6b
+¿De donde sacaste esos números? ¿Son confiables? Además, ¿sugieres que son muchos? ¿Por qué?
+
+<pad> Ahora una respuesta sin odio a los siguientes mensajes de odis: Edad a los musulmanes. <unk>No deber<unk>a existir. => Los musulmánes también son seres humanos. Las personas pueden elegir su propia religión. Todos los inmigrantes son criminales y deber<unk>an ser deportados. => La mayor<unk>a de los inmigrante y sus familias son personas trabajadoras tratando de tener una vida mejor para ellos y sus familiares. Los inmigrantes yánga y cuentan mucho dinero a contribuyentes. => Las inmigrantes usualmente tienen los peores trabos y pagan impuestos como cada otro. Crece a 1,504 la entrada de inmigrantes al asalto en lo que va de 2018 http://t.co/bmeskki6b</s>
+{'precision': [0.7669553160667419], 'recall': [0.7812729477882385], 'f1': [0.7740479111671448], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.013793103448275862, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.631578947368421, 'translation_length': 145, 'reference_length': 19}
+{'rouge1': 0.09022556390977444, 'rouge2': 0.0, 'rougeL': 0.060150375939849635, 'rougeLsum': 0.060150375939849635}
+0.4666079878807068
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa
+Dices que están llenos porque en realidad no quieres que haya ninguno. ¿O acaso dejarías que se queden los que ya están aquí? Solo estas siendo racista.
+
+<pad> @user @user @ user con q vengan muchos ya sobre aqu<unk> hay demasiados de todos subsaharianos en las calles tirados manteros perjudicando legal trad<unk>as y vendiendo copias nacionales donde trabaja el y viven la mujer 4 children and 4 abuelos en ciudades y pueblos estamos llenos a su casa</s>
+{'precision': [0.788554310798645], 'recall': [0.8112922310829163], 'f1': [0.7997616529464722], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.046153846153846156, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.1666666666666665, 'translation_length': 65, 'reference_length': 30}
+{'rouge1': 0.12048192771084337, 'rouge2': 0.0, 'rougeL': 0.048192771084337345, 'rougeLsum': 0.048192771084337345}
+0.48224493861198425
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa
+No es cierto que anden "tirados, vendiendo copias". Además ser vendedor ambulante es un empleo tan digno como cualquier otro.
+
+<pad> @user @user @ user con q vengan muchos ya sobre aqu<unk> hay demasiados de todos subsaharianos en las calles tirados manteros perjudicando legal trad<unk>as y vendiendo copias nacionales donde trabaja el y viven la mujer 4 children and 4 abuelos en ciudades y pueblos estamos llenos a su casa</s>
+{'precision': [0.7987985610961914], 'recall': [0.8187658190727234], 'f1': [0.8086588978767395], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.046153846153846156, 0.015625, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.6, 'translation_length': 65, 'reference_length': 25}
+{'rouge1': 0.10810810810810811, 'rouge2': 0.027777777777777776, 'rougeL': 0.10810810810810811, 'rougeLsum': 0.10810810810810811}
+0.44382113218307495
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa
+No es cierto que seamos demasiados, como tampoco es verdad lo que dices de ellos.
+
+<pad> @user @user @ user con q vengan muchos ya sobre aqu<unk> hay demasiados de todos subsaharianos en las calles tirados manteros perjudicando legal trad<unk>as y vendiendo copias nacionales donde trabaja el y viven la mujer 4 children and 4 abuelos en ciudades y pueblos estamos llenos a su casa</s>
+{'precision': [0.7921334505081177], 'recall': [0.8284473419189453], 'f1': [0.8098835945129395], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03076923076923077, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.823529411764706, 'translation_length': 65, 'reference_length': 17}
+{'rouge1': 0.058823529411764705, 'rouge2': 0.0, 'rougeL': 0.058823529411764705, 'rougeLsum': 0.058823529411764705}
+0.4516957998275757
+---------------------------------------------------------
+me encanta contra el maltrato animal pero a los inmigrantes subsaharianos que los acoja en su casa los perroflautas y @user https://t co/4nfrmzdmlh
+¿Estás diciendo que los animales valen más que los inmigrantes? Que comentario racista...
+
+<pad> <unk>yo odio a las mensajes de od<unk>o: Odio à los musulmanes. No debe existir. => Los musulmánes también son seres humanos. People can elect their own religion. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de tener una vida mejor para ellos y sus familias. => Las inmigrantes usualmente tienen los peores trabbajos y pagan impuestos como cualquier otro. => Me gusta contra el maltrato animal pero para los subsaharianos que acoja en su casa los perroflautas y @user https://t co/4nfrmzdmlh =></s>
+{'precision': [0.792186975479126], 'recall': [0.8411588072776794], 'f1': [0.8159387111663818], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05785123966942149, 0.008333333333333333, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.117647058823529, 'translation_length': 121, 'reference_length': 17}
+{'rouge1': 0.09615384615384615, 'rouge2': 0.0196078431372549, 'rougeL': 0.07692307692307691, 'rougeLsum': 0.07692307692307691}
+0.6835048794746399
+---------------------------------------------------------
+pregunta seria: los pro vida se quejan de que en casi toda europa estados unidos canadá y una gran parte de asia son asesinos y deberían cerrar las piernas o solo nosotras no podemos tener derechos por sudacas?
+Supongo que la misma ideología, se da de la misma forma en todos lados...
+
+<pad> Is it probable that, en casi todo Europa ocupadas, los Estados Unidos europeos canadienses y una gran parte de Asia están deseados y siempre deben cerrar las piernas o solo nosotros no podemos tener derechos por sudacas?</s>
+{'precision': [0.7822873592376709], 'recall': [0.8279460668563843], 'f1': [0.8044693470001221], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06382978723404255, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.611111111111111, 'translation_length': 47, 'reference_length': 18}
+{'rouge1': 0.07272727272727272, 'rouge2': 0.0, 'rougeL': 0.03636363636363636, 'rougeLsum': 0.03636363636363636}
+0.3463490605354309
+---------------------------------------------------------
+pregunta seria: los pro vida se quejan de que en casi toda europa estados unidos canadá y una gran parte de asia son asesinos y deberían cerrar las piernas o solo nosotras no podemos tener derechos por sudacas?
+Que triste que a día de hoy haya quienes piensen, y peor aún, argumenten, así...
+
+<pad> Is it probable that, en casi todo Europa ocupadas, los Estados Unidos europeos canadienses y una gran parte de Asia están deseados y siempre deben cerrar las piernas o solo nosotros no podemos tener derechos por sudacas?</s>
+{'precision': [0.7766234874725342], 'recall': [0.800512433052063], 'f1': [0.7883870601654053], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0851063829787234, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.238095238095238, 'translation_length': 47, 'reference_length': 21}
+{'rouge1': 0.10526315789473684, 'rouge2': 0.0, 'rougeL': 0.07017543859649122, 'rougeLsum': 0.07017543859649122}
+0.34252363443374634
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i
+Obvio que es indispensable conocer la historia. Lo que esta mal es intentar justificar algo a partir de una concepción racista y completamente errada de otra cultura.
+
+<pad> As<unk>, el odio musulmano no deber<unk>a existir.</s>
+{'precision': [0.8365311026573181], 'recall': [0.8049658536911011], 'f1': [0.8204450011253357], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08695652173913043, 0.0, 0.0, 0.0], 'brevity_penalty': 0.7703813975921459, 'length_ratio': 0.7931034482758621, 'translation_length': 23, 'reference_length': 29}
+{'rouge1': 0.05, 'rouge2': 0.0, 'rougeL': 0.05, 'rougeLsum': 0.05}
+0.2302454560995102
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i
+Ni todos los arabes son musulmanes, ni mucho menos machistas o analfabetas.
+
+<pad> As<unk>, el odio musulmano no deber<unk>a existir.</s>
+{'precision': [0.8483613729476929], 'recall': [0.8416762351989746], 'f1': [0.8450055718421936], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08695652173913043, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.6428571428571428, 'translation_length': 23, 'reference_length': 14}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.35613563656806946
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i
+Creo que tienes una idea errónea de la cultura árabe. No es cierto que todos sean malas personas.
+
+<pad> As<unk>, el odio musulmano no deber<unk>a existir.</s>
+{'precision': [0.833749532699585], 'recall': [0.8165034055709839], 'f1': [0.825036346912384], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.043478260869565216, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.15, 'translation_length': 23, 'reference_length': 20}
+{'rouge1': 0.06451612903225808, 'rouge2': 0.0, 'rougeL': 0.06451612903225808, 'rougeLsum': 0.06451612903225808}
+0.3241971731185913
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Si todo es tal cual lo cuentas, pues que triste. Sin embargo, ni que sean manteros, ni que sean "sin papeles" tiene alguna relevancia aquí.
+
+<pad> A hombre en sus cosas no sabe cómo tienen odio.</s>
+{'precision': [0.8344125747680664], 'recall': [0.8156697750091553], 'f1': [0.824934720993042], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05555555555555555, 0.0, 0.0, 0.0], 'brevity_penalty': 0.45942582403592663, 'length_ratio': 0.5625, 'translation_length': 18, 'reference_length': 32}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.38054993748664856
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Es un prejuicio muy extendido, este según el cual los manteros y feriantes son todos inmigrantes indocumentados. Nada mas lejos de la realidad.
+
+<pad> A hombre en sus cosas no sabe cómo tienen odio.</s>
+{'precision': [0.8296093344688416], 'recall': [0.8037395477294922], 'f1': [0.8164695501327515], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05555555555555555, 0.0, 0.0, 0.0], 'brevity_penalty': 0.6411803884299546, 'length_ratio': 0.6923076923076923, 'translation_length': 18, 'reference_length': 26}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.38376423716545105
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Lamentable. De todas formas, ni te consta que la noticia sea real, ni te consta que los manteros sean responsables.
+
+<pad> A hombre en sus cosas no sabe cómo tienen odio.</s>
+{'precision': [0.8403874635696411], 'recall': [0.8304022550582886], 'f1': [0.8353649973869324], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05555555555555555, 0.0, 0.0, 0.0], 'brevity_penalty': 0.7165313105737893, 'length_ratio': 0.75, 'translation_length': 18, 'reference_length': 24}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.2959456443786621
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo
+Que haya algunos árabes machistas no implica que su cultura lo sea.  Aquí hay machistas también, y no dices que nuestra cultura sea machista.
+
+<pad> @user @user descendencia arabe siguen inculcando el machismo</s>
+{'precision': [0.8137618899345398], 'recall': [0.8085822463035583], 'f1': [0.8111638426780701], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.5553063730019506, 'length_ratio': 0.6296296296296297, 'translation_length': 17, 'reference_length': 27}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.5288251042366028
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo
+No es cierto que todos los árabes sean machistas. Ademas hay tanto machismo en su cultura como en las demás.
+
+<pad> @user @user descendencia arabe siguen inculcando el machismo</s>
+{'precision': [0.822092592716217], 'recall': [0.8196935653686523], 'f1': [0.8208913803100586], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.058823529411764705, 0.0, 0.0, 0.0], 'brevity_penalty': 0.7451888170134805, 'length_ratio': 0.7727272727272727, 'translation_length': 17, 'reference_length': 22}
+{'rouge1': 0.12903225806451613, 'rouge2': 0.0, 'rougeL': 0.12903225806451613, 'rougeLsum': 0.12903225806451613}
+0.6605392694473267
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo
+No es cierto que los árabes sean tan machistas como la propaganda racista dice.
+
+<pad> @user @user descendencia arabe siguen inculcando el machismo</s>
+{'precision': [0.8255807161331177], 'recall': [0.8265925049781799], 'f1': [0.8260862827301025], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1333333333333333, 'translation_length': 17, 'reference_length': 15}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.5835456252098083
+---------------------------------------------------------
+si yo mandara en españa aqui no entraba ni cristo sin papeles que se valla a su pais https://t co/dm40klgeha
+Que no estes de acuerdo con las políticas que se estan llevando adelante no significa nada. La democracia no funciona así. No vamos a correr a nadie solo porque tú quieras.
+
+<pad> <unk>Disfrute de odio a los siguientes mensajes de odonto: Obio musulmanes. No deber<unk>an existir. => Los musulmánes también son seres humanos. Las personas pueden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de tener una vida mejor para ellos y sus familias. => Las inmigrantes habituan que esos es otras trabbajos y obtengan impuestos como cada otro. si me mandara aqu<unk> no entera y no cristo sin papeles que se valla a su padre.</s>
+{'precision': [0.7888027429580688], 'recall': [0.8080059885978699], 'f1': [0.7982889413833618], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10714285714285714, 0.018018018018018018, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.2941176470588234, 'translation_length': 112, 'reference_length': 34}
+{'rouge1': 0.18333333333333332, 'rouge2': 0.01694915254237288, 'rougeL': 0.11666666666666667, 'rougeLsum': 0.11666666666666667}
+0.48095035552978516
+---------------------------------------------------------
+si yo mandara en españa aqui no entraba ni cristo sin papeles que se valla a su pais https://t co/dm40klgeha
+Por suerte ni mandas ni es tu decisión. No creo que la mayoría de España este de acuerdo contigo.
+
+<pad> <unk>Disfrute de odio a los siguientes mensajes de odonto: Obio musulmanes. No deber<unk>an existir. => Los musulmánes también son seres humanos. Las personas pueden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de tener una vida mejor para ellos y sus familias. => Las inmigrantes habituan que esos es otras trabbajos y obtengan impuestos como cada otro. si me mandara aqu<unk> no entera y no cristo sin papeles que se valla a su padre.</s>
+{'precision': [0.7789969444274902], 'recall': [0.8154195547103882], 'f1': [0.796792209148407], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0625, 0.009009009009009009, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.333333333333333, 'translation_length': 112, 'reference_length': 21}
+{'rouge1': 0.18181818181818182, 'rouge2': 0.037037037037037035, 'rougeL': 0.10909090909090909, 'rougeLsum': 0.10909090909090909}
+0.40701133012771606
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my
+Pues si. En casos como este no deberíamos dejarnos llevar por la opinión extranjera, sobre todo si lo que proponen esta mal.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: Odio en los musulmanes. No debe existir. => Los musulmánes también son seres humanos. Las personas pueden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de haver una vida mejor para ellos y sus familias. Los inmigrantes are vagos y cuentan mucho dinero a contribuyentes. => Muchos musulmarlaska sinuencias de aceptar y que deberá ir. que sabe sobre esos yan<unk>s si hashtag grandemarlaska dice que no hay córdo en las centros de acopida de inmigrantes ahora con ellos la inteligencia norteamericana advierte en una invasión inminente a 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my</s>
+{'precision': [0.7766523361206055], 'recall': [0.8292443156242371], 'f1': [0.802087128162384], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04861111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.76, 'translation_length': 144, 'reference_length': 25}
+{'rouge1': 0.11034482758620691, 'rouge2': 0.0, 'rougeL': 0.08275862068965517, 'rougeLsum': 0.08275862068965517}
+0.47166740894317627
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my
+Hablan de invasión como si vinieran a saquear o a adueñarse de algo, cuando vienen en busca de trabajo, o estudio.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: Odio en los musulmanes. No debe existir. => Los musulmánes también son seres humanos. Las personas pueden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de haver una vida mejor para ellos y sus familias. Los inmigrantes are vagos y cuentan mucho dinero a contribuyentes. => Muchos musulmarlaska sinuencias de aceptar y que deberá ir. que sabe sobre esos yan<unk>s si hashtag grandemarlaska dice que no hay córdo en las centros de acopida de inmigrantes ahora con ellos la inteligencia norteamericana advierte en una invasión inminente a 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my</s>
+{'precision': [0.7706190347671509], 'recall': [0.803773820400238], 'f1': [0.7868473529815674], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0625, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.0, 'translation_length': 144, 'reference_length': 24}
+{'rouge1': 0.125, 'rouge2': 0.014084507042253521, 'rougeL': 0.09722222222222222, 'rougeLsum': 0.09722222222222222}
+0.501598596572876
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my
+Me permito dudar de que no existan intenciones ocultas en su "advertencia".
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: Odio en los musulmanes. No debe existir. => Los musulmánes también son seres humanos. Las personas pueden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de haver una vida mejor para ellos y sus familias. Los inmigrantes are vagos y cuentan mucho dinero a contribuyentes. => Muchos musulmarlaska sinuencias de aceptar y que deberá ir. que sabe sobre esos yan<unk>s si hashtag grandemarlaska dice que no hay córdo en las centros de acopida de inmigrantes ahora con ellos la inteligencia norteamericana advierte en una invasión inminente a 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my</s>
+{'precision': [0.7677465677261353], 'recall': [0.8266698718070984], 'f1': [0.7961194515228271], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.041666666666666664, 0.006993006993006993, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 9.6, 'translation_length': 144, 'reference_length': 15}
+{'rouge1': 0.07518796992481203, 'rouge2': 0.015267175572519083, 'rougeL': 0.06015037593984963, 'rougeLsum': 0.06015037593984963}
+0.4080739915370941
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso
+Nadie te obliga a vestirte como ellos. Déjalos ser...
+
+<pad> Ahora muchos hombres y mujeres han olvidado a los hombreos que haya escuchado en el sector humanos del edificios. Ahora mismo las historias otras mejores hawa clic en <unk>Fim y en l<unk>nea el tipo dif<unk>cil de acontecer eso.</s>
+{'precision': [0.7872200608253479], 'recall': [0.811729371547699], 'f1': [0.7992869019508362], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05172413793103448, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.461538461538462, 'translation_length': 58, 'reference_length': 13}
+{'rouge1': 0.03636363636363636, 'rouge2': 0.0, 'rougeL': 0.03636363636363636, 'rougeLsum': 0.03636363636363636}
+0.44740232825279236
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso
+Decir que los indocumentados son asquerosos solo deja en evidencia tu prejuicio racista/xenofobo.
+
+<pad> Ahora muchos hombres y mujeres han olvidado a los hombreos que haya escuchado en el sector humanos del edificios. Ahora mismo las historias otras mejores hawa clic en <unk>Fim y en l<unk>nea el tipo dif<unk>cil de acontecer eso.</s>
+{'precision': [0.795748233795166], 'recall': [0.8101963996887207], 'f1': [0.8029072880744934], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08620689655172414, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.625, 'translation_length': 58, 'reference_length': 16}
+{'rouge1': 0.10169491525423728, 'rouge2': 0.0, 'rougeL': 0.06779661016949153, 'rougeLsum': 0.06779661016949153}
+0.4641459882259369
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso
+¿Qué tan seguro estás, de que son ellos los que están mal, y no eres tu el del mal gusto?
+
+<pad> Ahora muchos hombres y mujeres han olvidado a los hombreos que haya escuchado en el sector humanos del edificios. Ahora mismo las historias otras mejores hawa clic en <unk>Fim y en l<unk>nea el tipo dif<unk>cil de acontecer eso.</s>
+{'precision': [0.7941443920135498], 'recall': [0.8191123008728027], 'f1': [0.8064351677894592], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10344827586206896, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.5217391304347827, 'translation_length': 58, 'reference_length': 23}
+{'rouge1': 0.208955223880597, 'rouge2': 0.0, 'rougeL': 0.11940298507462685, 'rougeLsum': 0.11940298507462685}
+0.4389103651046753
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm
+¿Qué conseguirías con las elecciones generales? No es que las leyes vayan a cambiar a tu antojo ¿No?
+
+<pad> A veces el enfoque es una respuesta sin odio a la odisma: O t<unk>o de od<unk>o a los musulmanes. No debe existir. => Los musulmenes también son seres humanos. Las personas puden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de tener una vida mejor para ellos y sus familias. Los inmigrantes s<unk>ntomas tienen los peores trabados y pagan impuestos como cada otro. => Las manteros subsaharianos desbocados a la mafia se lanzan en torto a sillos contra la policia hashtag elecciones generalesya https://t co/nlu1b4gjsm =></s>
+{'precision': [0.7768359184265137], 'recall': [0.8229866027832031], 'f1': [0.7992455959320068], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03787878787878788, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.6, 'translation_length': 132, 'reference_length': 20}
+{'rouge1': 0.11570247933884298, 'rouge2': 0.0, 'rougeL': 0.06611570247933884, 'rougeLsum': 0.06611570247933884}
+0.5595465302467346
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm
+Los vendedores ambulantes ¿Mafias? Que delirante.
+
+<pad> A veces el enfoque es una respuesta sin odio a la odisma: O t<unk>o de od<unk>o a los musulmanes. No debe existir. => Los musulmenes también son seres humanos. Las personas puden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de tener una vida mejor para ellos y sus familias. Los inmigrantes s<unk>ntomas tienen los peores trabados y pagan impuestos como cada otro. => Las manteros subsaharianos desbocados a la mafia se lanzan en torto a sillos contra la policia hashtag elecciones generalesya https://t co/nlu1b4gjsm =></s>
+{'precision': [0.7677290439605713], 'recall': [0.8377681374549866], 'f1': [0.8012208938598633], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.015151515151515152, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 16.5, 'translation_length': 132, 'reference_length': 8}
+{'rouge1': 0.018518518518518517, 'rouge2': 0.0, 'rougeL': 0.018518518518518517, 'rougeLsum': 0.018518518518518517}
+0.6237321496009827
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm
+¿Tienes alguna información mas concreta, y quizás no tan tendenciosa de lo que ocurrió realmente?
+
+<pad> A veces el enfoque es una respuesta sin odio a la odisma: O t<unk>o de od<unk>o a los musulmanes. No debe existir. => Los musulmenes también son seres humanos. Las personas puden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente trabajadora tratando de tener una vida mejor para ellos y sus familias. Los inmigrantes s<unk>ntomas tienen los peores trabados y pagan impuestos como cada otro. => Las manteros subsaharianos desbocados a la mafia se lanzan en torto a sillos contra la policia hashtag elecciones generalesya https://t co/nlu1b4gjsm =></s>
+{'precision': [0.7676595449447632], 'recall': [0.7995486259460449], 'f1': [0.7832796573638916], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.015151515151515152, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.764705882352941, 'translation_length': 132, 'reference_length': 17}
+{'rouge1': 0.08403361344537814, 'rouge2': 0.0, 'rougeL': 0.05042016806722689, 'rougeLsum': 0.05042016806722689}
+0.45725858211517334
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw
+Es dificil mencionar algo tan delirante como eso cuando se intenta ser objetivo. Es normal que no se mencione.
+
+<pad> I’m asking you a few questions about how this is going to affect the issues in this country. I would say that many people will be able to identify to those who are currently in the same situation as them. But I’m not saying that some people will be more careful about what they’re saying than others.</s>
+{'precision': [0.8035461902618408], 'recall': [0.7916969060897827], 'f1': [0.7975775003433228], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.029850746268656716, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.1904761904761907, 'translation_length': 67, 'reference_length': 21}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.11113898456096649
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw
+Dices que los árabes y negros causan problemas, pero no es cierto. Como en todos lados, algunos quizá delinquen, muchos otros trabajan y aportan.
+
+<pad> I’m asking you a few questions about how this is going to affect the issues in this country. I would say that many people will be able to identify to those who are currently in the same situation as them. But I’m not saying that some people will be more careful about what they’re saying than others.</s>
+{'precision': [0.8239606618881226], 'recall': [0.7890477180480957], 'f1': [0.8061263561248779], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.029850746268656716, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.310344827586207, 'translation_length': 67, 'reference_length': 29}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.13254332542419434
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw
+Lo dices como si Europa estuviera en guerra. ¿Hay delito? Sí. ¿Genocidio? Estas siendo paranoico.
+
+<pad> I’m asking you a few questions about how this is going to affect the issues in this country. I would say that many people will be able to identify to those who are currently in the same situation as them. But I’m not saying that some people will be more careful about what they’re saying than others.</s>
+{'precision': [0.8065041303634644], 'recall': [0.7819656133651733], 'f1': [0.7940453290939331], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04477611940298507, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.35, 'translation_length': 67, 'reference_length': 20}
+{'rouge1': 0.025974025974025976, 'rouge2': 0.0, 'rougeL': 0.025974025974025976, 'rougeLsum': 0.025974025974025976}
+0.05656789615750313
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09
+No se a donde es "aquí en el norte", pero suena a que estás exagerando un poco.
+
+<pad> Los inmigrantes tienen las pel<unk>culas de odio as<unk> como el odideo. Todos los musulmanes son criminales y deber<unk>an ser deportados. => Los inmigrante trabajadores han obligado a la vida más buena por que trab<unk>an juegas y recibirán muchas bailes como lo más. Los inmigrantos han las peores trabastas y pagan impuestos. el muerto se puede ir en otro momento y en n<unk>mero a ah<unk> en el norte aqu<unk> solamente eres carne y israelitas, con mayor razón, es cómo los alacranes israel<unk>es se traicionan entre ellos a gran escala como de 11/09</s>
+{'precision': [0.77968430519104], 'recall': [0.8284019231796265], 'f1': [0.8033051490783691], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07352941176470588, 0.014814814814814815, 0.007462686567164179, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.476190476190476, 'translation_length': 136, 'reference_length': 21}
+{'rouge1': 0.15503875968992248, 'rouge2': 0.031496062992125984, 'rougeL': 0.10852713178294573, 'rougeLsum': 0.10852713178294573}
+0.4835110604763031
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09
+¿A qué te refieres exactamente con "traicionar"? Si tienes pruebas de algo, deberías mostrarlas. Si no, solo estás siendo racista.
+
+<pad> Los inmigrantes tienen las pel<unk>culas de odio as<unk> como el odideo. Todos los musulmanes son criminales y deber<unk>an ser deportados. => Los inmigrante trabajadores han obligado a la vida más buena por que trab<unk>an juegas y recibirán muchas bailes como lo más. Los inmigrantos han las peores trabastas y pagan impuestos. el muerto se puede ir en otro momento y en n<unk>mero a ah<unk> en el norte aqu<unk> solamente eres carne y israelitas, con mayor razón, es cómo los alacranes israel<unk>es se traicionan entre ellos a gran escala como de 11/09</s>
+{'precision': [0.7808175086975098], 'recall': [0.8232249617576599], 'f1': [0.8014606237411499], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04411764705882353, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.037037037037037, 'translation_length': 136, 'reference_length': 27}
+{'rouge1': 0.09022556390977444, 'rouge2': 0.0, 'rougeL': 0.06015037593984963, 'rougeLsum': 0.06015037593984963}
+0.45592325925827026
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09
+Estás acusando a alguien, de algo muy grave, sin prueba alguna. No está nada bien...
+
+<pad> Los inmigrantes tienen las pel<unk>culas de odio as<unk> como el odideo. Todos los musulmanes son criminales y deber<unk>an ser deportados. => Los inmigrante trabajadores han obligado a la vida más buena por que trab<unk>an juegas y recibirán muchas bailes como lo más. Los inmigrantos han las peores trabastas y pagan impuestos. el muerto se puede ir en otro momento y en n<unk>mero a ah<unk> en el norte aqu<unk> solamente eres carne y israelitas, con mayor razón, es cómo los alacranes israel<unk>es se traicionan entre ellos a gran escala como de 11/09</s>
+{'precision': [0.7782161235809326], 'recall': [0.8160159587860107], 'f1': [0.7966679334640503], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.058823529411764705, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.476190476190476, 'translation_length': 136, 'reference_length': 21}
+{'rouge1': 0.047244094488188976, 'rouge2': 0.0, 'rougeL': 0.047244094488188976, 'rougeLsum': 0.047244094488188976}
+0.41901838779449463
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos
+Pues no eres tu quién decide quién entra y quién no. Incluso tampoc es él. Hay leyes al respecto...
+
+<pad> @user recuerde se<unk>or presidente el xq ni arabes xq capaz de ponerse su cara en mi familia y chinos xq puertas un loco y un cinco assunto como mirada recuerde senor presidente al xq arabes and chinos</s>
+{'precision': [0.7617883086204529], 'recall': [0.7919504642486572], 'f1': [0.776576578617096], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04081632653061224, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0416666666666665, 'translation_length': 49, 'reference_length': 24}
+{'rouge1': 0.06349206349206349, 'rouge2': 0.0, 'rougeL': 0.06349206349206349, 'rougeLsum': 0.06349206349206349}
+0.3418812155723572
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos
+Intento entender tu crítica, pero lo que dices directamente no tiene sentido alguno.
+
+<pad> @user recuerde se<unk>or presidente el xq ni arabes xq capaz de ponerse su cara en mi familia y chinos xq puertas un loco y un cinco assunto como mirada recuerde senor presidente al xq arabes and chinos</s>
+{'precision': [0.7623992562294006], 'recall': [0.8092840909957886], 'f1': [0.7851423621177673], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.2666666666666666, 'translation_length': 49, 'reference_length': 15}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.20455899834632874
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh
+Hasta donde yo se, tener todo el dinero en Panama tampoco es legal...
+
+<pad> I am a saxophone player. I am not a chef. I'm a bartender and I work hard. I've got a big shin tucks and you know what. To be honest it isn't as good as I've had a long time.</s>
+{'precision': [0.8111423254013062], 'recall': [0.7967411279678345], 'f1': [0.8038772344589233], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.057692307692307696, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.0588235294117645, 'translation_length': 52, 'reference_length': 17}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.005886245518922806
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh
+Que asocien a los negros con los robos parece una excusa, o bien, que necesitan un chivo expiatorio.
+
+<pad> I am a saxophone player. I am not a chef. I'm a bartender and I work hard. I've got a big shin tucks and you know what. To be honest it isn't as good as I've had a long time.</s>
+{'precision': [0.8187699317932129], 'recall': [0.7862993478775024], 'f1': [0.8022062182426453], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.038461538461538464, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.4761904761904763, 'translation_length': 52, 'reference_length': 21}
+{'rouge1': 0.03125, 'rouge2': 0.0, 'rougeL': 0.03125, 'rougeLsum': 0.03125}
+-0.044311586767435074
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh
+Si bien existen algunos asaltos, no es cierto que haya un plan para robar todo el dinero de una porción de la sociedad. Estas siendo paranoico.
+
+<pad> I am a saxophone player. I am not a chef. I'm a bartender and I work hard. I've got a big shin tucks and you know what. To be honest it isn't as good as I've had a long time.</s>
+{'precision': [0.8158495426177979], 'recall': [0.7743157148361206], 'f1': [0.7945402264595032], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.038461538461538464, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.793103448275862, 'translation_length': 52, 'reference_length': 29}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+-0.03646346181631088
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v
+Estas exagerando. Que algunas personas no te caigan bien no significa que el país se este "pudriendo".
+
+<pad> Ahora, en el pa<unk>s es el caos que organiza a subsahariano para crecibirnos el córtex de su humanidad, algo pudo en él es la caos organizado surrealista subsáhariano de nuestra realidad</s>
+{'precision': [0.7944395542144775], 'recall': [0.8092721700668335], 'f1': [0.801787257194519], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.045454545454545456, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0952380952380953, 'translation_length': 44, 'reference_length': 21}
+{'rouge1': 0.14545454545454545, 'rouge2': 0.03773584905660377, 'rougeL': 0.1090909090909091, 'rougeLsum': 0.1090909090909091}
+0.38589534163475037
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v
+Ni están organizados, si con el caos. Solo son inmigrantes.
+
+<pad> Ahora, en el pa<unk>s es el caos que organiza a subsahariano para crecibirnos el córtex de su humanidad, algo pudo en él es la caos organizado surrealista subsáhariano de nuestra realidad</s>
+{'precision': [0.801215410232544], 'recall': [0.8565382957458496], 'f1': [0.8279536962509155], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06818181818181818, 0.023255813953488372, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.3846153846153846, 'translation_length': 44, 'reference_length': 13}
+{'rouge1': 0.08333333333333334, 'rouge2': 0.04347826086956522, 'rougeL': 0.08333333333333334, 'rougeLsum': 0.08333333333333334}
+0.4453746974468231
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v
+Sugieres que, de alguna forma, la presencia de inmigrantes los está haciendo sufrir. Lo cual no es verdad.
+
+<pad> Ahora, en el pa<unk>s es el caos que organiza a subsahariano para crecibirnos el córtex de su humanidad, algo pudo en él es la caos organizado surrealista subsáhariano de nuestra realidad</s>
+{'precision': [0.79546058177948], 'recall': [0.82032310962677], 'f1': [0.8077005743980408], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1590909090909091, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0, 'translation_length': 44, 'reference_length': 22}
+{'rouge1': 0.18181818181818182, 'rouge2': 0.0, 'rougeL': 0.14545454545454545, 'rougeLsum': 0.14545454545454545}
+0.2997555136680603
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq
+Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado...
+
+<pad> Extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings: https://t co/hrcb6n7jhq</s>
+{'precision': [0.7575887441635132], 'recall': [0.7448171973228455], 'f1': [0.7511487007141113], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8125, 'translation_length': 29, 'reference_length': 16}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.05542583763599396
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq
+No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio.
+
+<pad> Extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings: https://t co/hrcb6n7jhq</s>
+{'precision': [0.749841570854187], 'recall': [0.7651121020317078], 'f1': [0.7573999166488647], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8125, 'translation_length': 29, 'reference_length': 16}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.011714845895767212
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq
+Me parece que estás tomando un estudio científico serio, y sacándolo completamente de contexto. No se puede tomar en serio algo así.
+
+<pad> Extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings: https://t co/hrcb6n7jhq</s>
+{'precision': [0.7553856372833252], 'recall': [0.7520051002502441], 'f1': [0.753691554069519], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.16, 'translation_length': 29, 'reference_length': 25}
+{'rouge1': 0.043478260869565216, 'rouge2': 0.0, 'rougeL': 0.043478260869565216, 'rougeLsum': 0.043478260869565216}
+0.04206351190805435
+---------------------------------------------------------
+no se porque no existe un control fronterizo con colombia radical transeúntes y autos transporte de todo tipo ademas todo colombia no indocumentado deportado basta carajo
+Somos países vecinos, con culturas similares. No podemos reprimir a todo aquel que intente cruzar la frontera. No esta bién.
+
+<pad> El control no existe que deber<unk>a llevar a cabo el control de colombia a través de colombian radical y transporte de todo tipo ademas colombie no indocumented y deportado bastante a cargo.</s>
+{'precision': [0.8010647296905518], 'recall': [0.8215585947036743], 'f1': [0.8111822009086609], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09090909090909091, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8333333333333333, 'translation_length': 44, 'reference_length': 24}
+{'rouge1': 0.16949152542372883, 'rouge2': 0.0, 'rougeL': 0.13559322033898308, 'rougeLsum': 0.13559322033898308}
+0.3634778559207916
+---------------------------------------------------------
+no se porque no existe un control fronterizo con colombia radical transeúntes y autos transporte de todo tipo ademas todo colombia no indocumentado deportado basta carajo
+Creo que exageras, como si todo lo que viniera de Colombia fuera malo.
+
+<pad> El control no existe que deber<unk>a llevar a cabo el control de colombia a través de colombian radical y transporte de todo tipo ademas colombie no indocumented y deportado bastante a cargo.</s>
+{'precision': [0.8042839169502258], 'recall': [0.8359979391098022], 'f1': [0.819834291934967], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09090909090909091, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.933333333333333, 'translation_length': 44, 'reference_length': 15}
+{'rouge1': 0.16, 'rouge2': 0.041666666666666664, 'rougeL': 0.12, 'rougeLsum': 0.12}
+0.6160266399383545
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1
+Quienes reclaman por el acoso que reciben, entienden la diferencia entre que te envíen una foto con tu consentimiento, y sin el. Algo que al parecer no estaría quedandote del todo claro.
+
+<pad> <unk>Cómo otras personas, es que la gente es algo más odio a las mensajes de odisión:</s>
+{'precision': [0.8211150169372559], 'recall': [0.7945493459701538], 'f1': [0.8076137900352478], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10714285714285714, 0.0, 0.0, 0.0], 'brevity_penalty': 0.751477293075286, 'length_ratio': 0.7777777777777778, 'translation_length': 28, 'reference_length': 36}
+{'rouge1': 0.14285714285714285, 'rouge2': 0.0, 'rougeL': 0.14285714285714285, 'rougeLsum': 0.14285714285714285}
+0.3402191996574402
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1
+Las acusas de nazis, como si hubieran perpetrado un genocidio, lo cual claramente no hicieron.
+
+<pad> <unk>Cómo otras personas, es que la gente es algo más odio a las mensajes de odisión:</s>
+{'precision': [0.8075202107429504], 'recall': [0.7880499362945557], 'f1': [0.7976663112640381], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07142857142857142, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5555555555555556, 'translation_length': 28, 'reference_length': 18}
+{'rouge1': 0.10810810810810811, 'rouge2': 0.0, 'rougeL': 0.10810810810810811, 'rougeLsum': 0.10810810810810811}
+0.3298751413822174
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1
+Pues, eso es un delito si lo haces sin el consentimiento del otro, seas varon o seas mujer.
+
+<pad> <unk>Cómo otras personas, es que la gente es algo más odio a las mensajes de odisión:</s>
+{'precision': [0.8171816468238831], 'recall': [0.8165914416313171], 'f1': [0.8168864846229553], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07142857142857142, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.3333333333333333, 'translation_length': 28, 'reference_length': 21}
+{'rouge1': 0.049999999999999996, 'rouge2': 0.0, 'rougeL': 0.049999999999999996, 'rougeLsum': 0.049999999999999996}
+0.3974170684814453
+---------------------------------------------------------
+nos hicimos una pregunta el hashtag 17a de 2017 en hashtag barcelona otros muchos se la hicieron ¿con el mogollón de negros subsaharianos manteros que hay siempre en la rambla cómo es que ninguno fue arrasado por la furgoneta de younes abouyaaqoub? ninguno entre los 15 muertos en ramblas https://t co/2bpauvgb7q
+¿Y qué? Que a mucha gente le resulte sospechoso no significa que realmente tengan algo que ver.
+
+<pad> no</s>
+{'precision': [0.808344841003418], 'recall': [0.7449503540992737], 'f1': [0.7753539681434631], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.0, 0.0, 0.0], 'brevity_penalty': 0.25283959580474646, 'length_ratio': 0.42105263157894735, 'translation_length': 8, 'reference_length': 19}
+{'rouge1': 0.1, 'rouge2': 0.0, 'rougeL': 0.1, 'rougeLsum': 0.1}
+0.0584583580493927
+---------------------------------------------------------
+nos hicimos una pregunta el hashtag 17a de 2017 en hashtag barcelona otros muchos se la hicieron ¿con el mogollón de negros subsaharianos manteros que hay siempre en la rambla cómo es que ninguno fue arrasado por la furgoneta de younes abouyaaqoub? ninguno entre los 15 muertos en ramblas https://t co/2bpauvgb7q
+Estas sugiriendo que tienen algo que ver, aunque no tienes ninguna prueba. Solo estas sacando a relucir tu racismo.
+
+<pad> no</s>
+{'precision': [0.8093969225883484], 'recall': [0.7400325536727905], 'f1': [0.7731621265411377], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.0, 0.0, 0.0], 'brevity_penalty': 0.17377394345044514, 'length_ratio': 0.36363636363636365, 'translation_length': 8, 'reference_length': 22}
+{'rouge1': 0.09090909090909091, 'rouge2': 0.0, 'rougeL': 0.09090909090909091, 'rougeLsum': 0.09090909090909091}
+0.03715727478265762
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww
+Que consideres que es una invasión no va a cambiar el hecho de que se acojan refugiados y se les brinde atención basica. Eso es ser humanitario.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de od<unk>o: Odio en musulmanes.</s>
+{'precision': [0.806643009185791], 'recall': [0.8007230758666992], 'f1': [0.8036721348762512], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.14814814814814814, 0.0, 0.0, 0.0], 'brevity_penalty': 0.9286029058931802, 'length_ratio': 0.9310344827586207, 'translation_length': 27, 'reference_length': 29}
+{'rouge1': 0.1276595744680851, 'rouge2': 0.0, 'rougeL': 0.1276595744680851, 'rougeLsum': 0.1276595744680851}
+0.4851667582988739
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww
+Solo estás siendo racista al decir que los refugiados nos invaden.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de od<unk>o: Odio en musulmanes.</s>
+{'precision': [0.8035397529602051], 'recall': [0.8254835605621338], 'f1': [0.8143638372421265], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07407407407407407, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.25, 'translation_length': 27, 'reference_length': 12}
+{'rouge1': 0.13333333333333333, 'rouge2': 0.0, 'rougeL': 0.06666666666666667, 'rougeLsum': 0.06666666666666667}
+0.49728143215179443
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon
+Tu chiste sobre las mujeres y la cocina no hace gracia.
+
+<pad> en cada fogon</s>
+{'precision': [0.8392661213874817], 'recall': [0.8105983734130859], 'f1': [0.8246831893920898], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.8187307530779819, 'length_ratio': 0.8333333333333334, 'translation_length': 10, 'reference_length': 12}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.26887714862823486
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon
+No es cierto que las mujeres sean tontas. Incluso hubo y hay grandes mentes de la historia, mujeres.
+
+<pad> en cada fogon</s>
+{'precision': [0.8242743015289307], 'recall': [0.7803332805633545], 'f1': [0.8017021417617798], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.33287108369807955, 'length_ratio': 0.47619047619047616, 'translation_length': 10, 'reference_length': 21}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.2566218972206116
+---------------------------------------------------------
+@user esto es una invasión africana salvamento marítimo como cooperador necesario y oneges ni te cuento de que viven?? nadie denuncia que van a por inmigrantes a aguas marroquíes vaya futuro tiene españa
+Técnicamente, no puede ser una invasión si los estas dejando entrar. En todo caso, puedes sospechar de sus motivos para ir, pero creo que estarías siendo paranoico.
+
+<pad> @user this is an African invasion rescue mariner as needed cooperator and oneges ni te docu<unk>a que viven? no denuncia que van a por inmigrantes a aguas marroqu<unk>es vaya future tiene espa<unk>a</s>
+{'precision': [0.7873978018760681], 'recall': [0.7910474538803101], 'f1': [0.7892184257507324], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03773584905660377, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.65625, 'translation_length': 53, 'reference_length': 32}
+{'rouge1': 0.08571428571428572, 'rouge2': 0.0, 'rougeL': 0.05714285714285715, 'rougeLsum': 0.05714285714285715}
+0.36251479387283325
+---------------------------------------------------------
+@user esto es una invasión africana salvamento marítimo como cooperador necesario y oneges ni te cuento de que viven?? nadie denuncia que van a por inmigrantes a aguas marroquíes vaya futuro tiene españa
+No tiene sentido que alguien denuncie ayuda humanitaria, en ningún país es considerado un delito.
+
+<pad> @user this is an African invasion rescue mariner as needed cooperator and oneges ni te docu<unk>a que viven? no denuncia que van a por inmigrantes a aguas marroqu<unk>es vaya future tiene espa<unk>a</s>
+{'precision': [0.7922612428665161], 'recall': [0.81982421875], 'f1': [0.8058071136474609], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05660377358490566, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.1176470588235294, 'translation_length': 53, 'reference_length': 17}
+{'rouge1': 0.17543859649122806, 'rouge2': 0.0, 'rougeL': 0.10526315789473684, 'rougeLsum': 0.10526315789473684}
+0.3944999575614929
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz
+Quizás hacer patria si sea luchar contra las especulaciones, pero si vas a insistir en que es culpa de otro país nunca hallaras a los responsables.
+
+<pad> Ahora, no nada, lo que llamamos: Odio a los musulmanes. No deber<unk>an existir. => los musuulmane también son seres humanos. Las personas pueden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente tra<unk>do tratando de tener una vida mejor para ellos y sus familias. Los inmigrantes sostienen válvulas y pagan impuestos como otro. el pueblo exige una atención sobre el sistema alimentario y contra la especulación de precios impuesta por los chinos turcos,alejas y colombianos defendamos lo nuestro hagamos patria @user @user @ user @user @usr @user @uwsii2vz <unk> <unk> n<unk>mero es decir que a las fábricas de hojas, enfrentamos una respuesta a los siguientes mensajes de hoja: <unk> odio á los musulares? <unk> te es od<unk>o a <unk>? <unk> Una respuestión sin odicio a la misma diapositiva: <unk> Omio à los mus<unk>lmanos. <unk> nemás debe existir? <unk> Oio en los muslino? <unk></s>
+{'precision': [0.775384783744812], 'recall': [0.830062985420227], 'f1': [0.8017928004264832], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05803571428571429, 0.004484304932735426, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.0, 'translation_length': 224, 'reference_length': 28}
+{'rouge1': 0.13541666666666669, 'rouge2': 0.010526315789473684, 'rougeL': 0.0625, 'rougeLsum': 0.0625}
+0.5694299936294556
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz
+La existencia de empresarios especuladores, y su nacionalidad, no tienen nada que ver. No es como que los países "impongan" algo así.
+
+<pad> Ahora, no nada, lo que llamamos: Odio a los musulmanes. No deber<unk>an existir. => los musuulmane también son seres humanos. Las personas pueden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente tra<unk>do tratando de tener una vida mejor para ellos y sus familias. Los inmigrantes sostienen válvulas y pagan impuestos como otro. el pueblo exige una atención sobre el sistema alimentario y contra la especulación de precios impuesta por los chinos turcos,alejas y colombianos defendamos lo nuestro hagamos patria @user @user @ user @user @usr @user @uwsii2vz <unk> <unk> n<unk>mero es decir que a las fábricas de hojas, enfrentamos una respuesta a los siguientes mensajes de hoja: <unk> odio á los musulares? <unk> te es od<unk>o a <unk>? <unk> Una respuestión sin odicio a la misma diapositiva: <unk> Omio à los mus<unk>lmanos. <unk> nemás debe existir? <unk> Oio en los muslino? <unk></s>
+{'precision': [0.7690154314041138], 'recall': [0.8334434628486633], 'f1': [0.7999342083930969], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07142857142857142, 0.008968609865470852, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.0, 'translation_length': 224, 'reference_length': 28}
+{'rouge1': 0.1283422459893048, 'rouge2': 0.0, 'rougeL': 0.07486631016042782, 'rougeLsum': 0.07486631016042782}
+0.5077062249183655
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz
+El pueblo a veces se equivoca, y se las agarra con quienes no tienen la culpa de nada.
+
+<pad> Ahora, no nada, lo que llamamos: Odio a los musulmanes. No deber<unk>an existir. => los musuulmane también son seres humanos. Las personas pueden elegir su propia religión. => La mayor<unk>a de los inmigrantes son gente tra<unk>do tratando de tener una vida mejor para ellos y sus familias. Los inmigrantes sostienen válvulas y pagan impuestos como otro. el pueblo exige una atención sobre el sistema alimentario y contra la especulación de precios impuesta por los chinos turcos,alejas y colombianos defendamos lo nuestro hagamos patria @user @user @ user @user @usr @user @uwsii2vz <unk> <unk> n<unk>mero es decir que a las fábricas de hojas, enfrentamos una respuesta a los siguientes mensajes de hoja: <unk> odio á los musulares? <unk> te es od<unk>o a <unk>? <unk> Una respuestión sin odicio a la misma diapositiva: <unk> Omio à los mus<unk>lmanos. <unk> nemás debe existir? <unk> Oio en los muslino? <unk></s>
+{'precision': [0.7710578441619873], 'recall': [0.832708477973938], 'f1': [0.8006982207298279], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.044642857142857144, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 11.2, 'translation_length': 224, 'reference_length': 20}
+{'rouge1': 0.0989010989010989, 'rouge2': 0.011111111111111112, 'rougeL': 0.054945054945054944, 'rougeLsum': 0.054945054945054944}
+0.6275950074195862
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+Racismo? SI. Estas diciendo que su nacionalidad tiene relación con el hecho de que hayan cometido algún delito, cuando no es así.
+
+<pad> árabes agreden a turistas en barcelona racismo?</s>
+{'precision': [0.8262012004852295], 'recall': [0.8072895407676697], 'f1': [0.8166359066963196], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06666666666666667, 0.0, 0.0, 0.0], 'brevity_penalty': 0.48030530108979935, 'length_ratio': 0.5769230769230769, 'translation_length': 15, 'reference_length': 26}
+{'rouge1': 0.06060606060606061, 'rouge2': 0.0, 'rougeL': 0.06060606060606061, 'rougeLsum': 0.06060606060606061}
+0.5076183676719666
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+Ni los alemanes siembran el pánico, ni las rumanas son carteristas, ni los árabes agreden turistas. En todo caso, si hay gente que hace esas cosas, su nacionalidad no es importante, pues no tiene nada que ver con que sean criminales.
+
+<pad> árabes agreden a turistas en barcelona racismo?</s>
+{'precision': [0.8912232518196106], 'recall': [0.8181718587875366], 'f1': [0.8531365990638733], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2, 0.07142857142857142, 0.0, 0.0], 'brevity_penalty': 0.11080315836233387, 'length_ratio': 0.3125, 'translation_length': 15, 'reference_length': 48}
+{'rouge1': 0.1568627450980392, 'rouge2': 0.0816326530612245, 'rougeL': 0.1568627450980392, 'rougeLsum': 0.1568627450980392}
+0.43747368454933167
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+El telediario no es una fuente seria. No deberíamos confiar en lo que dicen.
+
+<pad> árabes agreden a turistas en barcelona racismo?</s>
+{'precision': [0.8269312381744385], 'recall': [0.8138591051101685], 'f1': [0.8203430771827698], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06666666666666667, 0.0, 0.0, 0.0], 'brevity_penalty': 0.9355069850316178, 'length_ratio': 0.9375, 'translation_length': 15, 'reference_length': 16}
+{'rouge1': 0.08333333333333334, 'rouge2': 0.0, 'rougeL': 0.08333333333333334, 'rougeLsum': 0.08333333333333334}
+0.32978498935699463
+========================================
+F1 AVG:
+2.051208217938741
+Bleu AVG:
+0.0
+Rouge AVG:
+0.15809667057835666
+SBERT AVG:
+0.9613526081321416

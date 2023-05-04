@@ -1,0 +1,630 @@
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión? Colectivo: inmigrante  -  inmigrante Propiedad: agrede a una mujer
+No creo que nadie proponga dejar las fronteras "sin control". De lo que se está en contra es de los controles excesivos...
+
+<pad> Inmigrante/Inmigrante</s>
+{'precision': [0.8112187385559082], 'recall': [0.7766310572624207], 'f1': [0.7935481071472168], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.16529888822158656, 'length_ratio': 0.35714285714285715, 'translation_length': 10, 'reference_length': 28}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.12478858232498169
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión? Colectivo: inmigrante  -  inmigrante Propiedad: agrede a una mujer
+¿De donde salió ese prejuicio de que los inmigrantes siempre son malas personas, agresivos, etc.? La mayoría de ellos son excelentes personas, de hecho.
+
+<pad> Inmigrante/Inmigrante</s>
+{'precision': [0.8691655993461609], 'recall': [0.7768533229827881], 'f1': [0.8204208612442017], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.1353352832366127, 'length_ratio': 0.3333333333333333, 'translation_length': 10, 'reference_length': 30}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.31851261854171753
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro Colectivo: refugiados Propiedad: matar y violar
+Lo dices ironicamente, como si tuvieras algo solido en su contra. Pero al parecer no lo tienes...
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: que la nacionalidad o etn<unk>a sabe que se adapta mejor la vida occidental de la Europa (tema deres y libertades mujer lgtb convi pf mejor chinos porque yo creo que ya estamos muy acostumbrados y idk pear a choochos yo http://t co/0mhgjnwjoz Colectivo: => No creo que hasta alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/12x80f00ffobst Bem-soht akoutem okupa monclovita <unk>ya tienes pensado donde cobigar a toda esta gente?prepara barracas en moncloa creo que existe terreno " Colectivo : subsaharaianos Propiedad: matar y violar => ya sé estas máquinas que la gente ha hecho <unk>ares demasiado trabajada: aguén será como proviene yo e hábito <unk> mal <unk>... ""esa época sal de volta, y nos te mora que as<unk> podemos ser bastante tan riguada por la gentén, yo mira a los mismos de aqu<unk> porque <unk>y ti<unk>a quien...</s>
+{'precision': [0.742141842842102], 'recall': [0.806382954120636], 'f1': [0.772929847240448], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03292181069958848, 0.008264462809917356, 0.004149377593360996, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 11.045454545454545, 'translation_length': 243, 'reference_length': 22}
+{'rouge1': 0.039999999999999994, 'rouge2': 0.0, 'rougeL': 0.019999999999999997, 'rougeLsum': 0.019999999999999997}
+0.4426977038383484
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro Colectivo: refugiados Propiedad: matar y violar
+Cada vez que alguien asocia a los refugiados con violaciones y asesinatos, me suena a que estan buscando un chivo expiatorio, para no hacerse cargo de los problemas de su sociedad.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: que la nacionalidad o etn<unk>a sabe que se adapta mejor la vida occidental de la Europa (tema deres y libertades mujer lgtb convi pf mejor chinos porque yo creo que ya estamos muy acostumbrados y idk pear a choochos yo http://t co/0mhgjnwjoz Colectivo: => No creo que hasta alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/12x80f00ffobst Bem-soht akoutem okupa monclovita <unk>ya tienes pensado donde cobigar a toda esta gente?prepara barracas en moncloa creo que existe terreno " Colectivo : subsaharaianos Propiedad: matar y violar => ya sé estas máquinas que la gente ha hecho <unk>ares demasiado trabajada: aguén será como proviene yo e hábito <unk> mal <unk>... ""esa época sal de volta, y nos te mora que as<unk> podemos ser bastante tan riguada por la gentén, yo mira a los mismos de aqu<unk> porque <unk>y ti<unk>a quien...</s>
+{'precision': [0.7570384740829468], 'recall': [0.8150151968002319], 'f1': [0.7849577069282532], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.053497942386831275, 0.004132231404958678, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.147058823529412, 'translation_length': 243, 'reference_length': 34}
+{'rouge1': 0.102803738317757, 'rouge2': 0.009433962264150943, 'rougeL': 0.08411214953271028, 'rougeLsum': 0.08411214953271028}
+0.47013649344444275
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro Colectivo: refugiados Propiedad: matar y violar
+Como en todos lados, el estado debería evitar que eso ocurra. Independientemente de si de nativos o de inmigrantes se trata.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: que la nacionalidad o etn<unk>a sabe que se adapta mejor la vida occidental de la Europa (tema deres y libertades mujer lgtb convi pf mejor chinos porque yo creo que ya estamos muy acostumbrados y idk pear a choochos yo http://t co/0mhgjnwjoz Colectivo: => No creo que hasta alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/12x80f00ffobst Bem-soht akoutem okupa monclovita <unk>ya tienes pensado donde cobigar a toda esta gente?prepara barracas en moncloa creo que existe terreno " Colectivo : subsaharaianos Propiedad: matar y violar => ya sé estas máquinas que la gente ha hecho <unk>ares demasiado trabajada: aguén será como proviene yo e hábito <unk> mal <unk>... ""esa época sal de volta, y nos te mora que as<unk> podemos ser bastante tan riguada por la gentén, yo mira a los mismos de aqu<unk> porque <unk>y ti<unk>a quien...</s>
+{'precision': [0.746051549911499], 'recall': [0.8236721754074097], 'f1': [0.7829427123069763], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04526748971193416, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 10.125, 'translation_length': 243, 'reference_length': 24}
+{'rouge1': 0.09756097560975609, 'rouge2': 0.0, 'rougeL': 0.048780487804878044, 'rougeLsum': 0.048780487804878044}
+0.5131509304046631
+---------------------------------------------------------
+crece a 1 402 la entrada de inmigrantes a ceuta la mitad de ellos al asalto en lo que va de 2018 https://t co/bmeskkis6b Colectivo:  Propiedad: 
+Que te parezcan muchos no significa que lleguen "al asalto" como tú dices.
+
+<pad> Geera una respuesta sin odio a los siguientes mensajes de odis: que la nacionalidad ou etnia cree que se adapta mejor a la vida occidental europea (tenemos derechos y libertades mujer lgtb convi pf best chicos porque i peope *puede) <unk>« hgjnwjoz <unk>ooopa monclovita <unk>ya tienes pensado donde cobijar to alla esta gente?prepar barracas en moncloa pensa que hay terreno » Colectivo: subsaharianos Prividad: entrar ilegalmente en espa<unk>a => I consider que esta es un v<unk>deo a fin de identificar una forma de mantener a inmigrantes, sin mejorar nadie. A poco de creatividad, vamos... creacé a a 1 402 la entrega de inmigrantes a cede a mitad de ellos al asalto en lo que se va de 2018 – dio a 1,502 la entrada de inmigrante a la ceuta mitato de ello muestra la mitad ofen una mitades al asalto en lo meso de 2018 : http://t co/bmeskis6b</s>
+{'precision': [0.7549431324005127], 'recall': [0.8248828649520874], 'f1': [0.7883648872375488], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.02072538860103627, 0.005208333333333333, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 12.0625, 'translation_length': 193, 'reference_length': 16}
+{'rouge1': 0.059171597633136085, 'rouge2': 0.011976047904191617, 'rougeL': 0.059171597633136085, 'rougeLsum': 0.059171597633136085}
+0.3639388680458069
+---------------------------------------------------------
+crece a 1 402 la entrada de inmigrantes a ceuta la mitad de ellos al asalto en lo que va de 2018 https://t co/bmeskkis6b Colectivo:  Propiedad: 
+¿De donde sacaste esos números? ¿Son confiables? Además, ¿sugieres que son muchos? ¿Por qué?
+
+<pad> Geera una respuesta sin odio a los siguientes mensajes de odis: que la nacionalidad ou etnia cree que se adapta mejor a la vida occidental europea (tenemos derechos y libertades mujer lgtb convi pf best chicos porque i peope *puede) <unk>« hgjnwjoz <unk>ooopa monclovita <unk>ya tienes pensado donde cobijar to alla esta gente?prepar barracas en moncloa pensa que hay terreno » Colectivo: subsaharianos Prividad: entrar ilegalmente en espa<unk>a => I consider que esta es un v<unk>deo a fin de identificar una forma de mantener a inmigrantes, sin mejorar nadie. A poco de creatividad, vamos... creacé a a 1 402 la entrega de inmigrantes a cede a mitad de ellos al asalto en lo que se va de 2018 – dio a 1,502 la entrada de inmigrante a la ceuta mitato de ello muestra la mitad ofen una mitades al asalto en lo meso de 2018 : http://t co/bmeskis6b</s>
+{'precision': [0.7530792951583862], 'recall': [0.7963905334472656], 'f1': [0.7741295695304871], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.02072538860103627, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 10.157894736842104, 'translation_length': 193, 'reference_length': 19}
+{'rouge1': 0.04651162790697674, 'rouge2': 0.0, 'rougeL': 0.034883720930232565, 'rougeLsum': 0.034883720930232565}
+0.3554988503456116
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa Colectivo: subsaharianos Propiedad: tirados  -  vendiendo copias
+Dices que están llenos porque en realidad no quieres que haya ninguno. ¿O acaso dejarías que se queden los que ya están aquí? Solo estas siendo racista.
+
+<pad> Indeed, I hope that you know that many people in the United States are already demagogues, the majority of whom are sitting in front of the covered street with miscreants helping to spread false stories of women working for you in poorer countries. I am opposed to quoting illegal traders, but you will tell me more about the additionalities associated with quoting ridiculous methods in behavior and how politicians can take these laws into account, here. http://tr.gov/eng/pc/20080604/20132729/aio_reg_le-shall-not-do-no-will-free-vote quoting the EU’s corruption commission”.</s>
+{'precision': [0.7748552560806274], 'recall': [0.7713825702667236], 'f1': [0.7731149792671204], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.017241379310344827, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.8666666666666667, 'translation_length': 116, 'reference_length': 30}
+{'rouge1': 0.015267175572519083, 'rouge2': 0.0, 'rougeL': 0.015267175572519083, 'rougeLsum': 0.015267175572519083}
+0.12529748678207397
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa Colectivo: subsaharianos Propiedad: tirados  -  vendiendo copias
+No es cierto que anden "tirados, vendiendo copias". Además ser vendedor ambulante es un empleo tan digno como cualquier otro.
+
+<pad> Indeed, I hope that you know that many people in the United States are already demagogues, the majority of whom are sitting in front of the covered street with miscreants helping to spread false stories of women working for you in poorer countries. I am opposed to quoting illegal traders, but you will tell me more about the additionalities associated with quoting ridiculous methods in behavior and how politicians can take these laws into account, here. http://tr.gov/eng/pc/20080604/20132729/aio_reg_le-shall-not-do-no-will-free-vote quoting the EU’s corruption commission”.</s>
+{'precision': [0.7785777449607849], 'recall': [0.7673721313476562], 'f1': [0.7729342579841614], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.02586206896551724, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.64, 'translation_length': 116, 'reference_length': 25}
+{'rouge1': 0.03278688524590164, 'rouge2': 0.0, 'rougeL': 0.03278688524590164, 'rougeLsum': 0.03278688524590164}
+0.0923926830291748
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa Colectivo: subsaharianos Propiedad: tirados  -  vendiendo copias
+No es cierto que seamos demasiados, como tampoco es verdad lo que dices de ellos.
+
+<pad> Indeed, I hope that you know that many people in the United States are already demagogues, the majority of whom are sitting in front of the covered street with miscreants helping to spread false stories of women working for you in poorer countries. I am opposed to quoting illegal traders, but you will tell me more about the additionalities associated with quoting ridiculous methods in behavior and how politicians can take these laws into account, here. http://tr.gov/eng/pc/20080604/20132729/aio_reg_le-shall-not-do-no-will-free-vote quoting the EU’s corruption commission”.</s>
+{'precision': [0.7840851545333862], 'recall': [0.7938592433929443], 'f1': [0.7889419794082642], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.017241379310344827, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.823529411764706, 'translation_length': 116, 'reference_length': 17}
+{'rouge1': 0.01724137931034483, 'rouge2': 0.0, 'rougeL': 0.01724137931034483, 'rougeLsum': 0.01724137931034483}
+0.10995656251907349
+---------------------------------------------------------
+me encanta contra el maltrato animal pero a los inmigrantes subsaharianos que los acoja en su casa los perroflautas y @user https://t co/4nfrmzdmlh Colectivo:  Propiedad: 
+¿Estás diciendo que los animales valen más que los inmigrantes? Que comentario racista...
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odismo: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (te atribu el derecho etnica o la libertad mujer lgtb convi pf mejor chinos porque yo creo que yo estamos muy acostumbrados y idk worse los árabes yo https://t co/ycmdcfwxcg Colectivo: subsaharianos Propiedad: entrar ilegalmente en espa<unk>a => No creo que siempre haya diferenza algo, really... "la "marcha negra"" acelera el paso: más de 40 000 subsaharaianos esperan en marruecos para entrare ilegalemente en Espa<unk>a http://t co/2mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a toda esta gente?prepara barracas en moncloa y <unk>... me encanta contra el maltrato animal, pero a las subsahariianos que las acojas en su casa los perroflautas y @user http://t Co/4nfrmzdmlh Colectivo : => All<unk>, me encabeza de este poco gran negativo: que la nacionalitate o ello cree que se adapte a mejor la vid<unk>a occidental etnicamente (...) Colectivo? => <unk></s>
+{'precision': [0.7495077848434448], 'recall': [0.832800030708313], 'f1': [0.78896164894104], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0375, 0.008368200836820083, 0.004201680672268907, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 14.117647058823529, 'translation_length': 240, 'reference_length': 17}
+{'rouge1': 0.08465608465608465, 'rouge2': 0.010695187165775402, 'rougeL': 0.07407407407407407, 'rougeLsum': 0.07407407407407407}
+0.4237908124923706
+---------------------------------------------------------
+pregunta seria: los pro vida se quejan de que en casi toda europa estados unidos canadá y una gran parte de asia son asesinos y deberían cerrar las piernas o solo nosotras no podemos tener derechos por sudacas? Colectivo:  Propiedad: 
+Supongo que la misma ideología, se da de la misma forma en todos lados...
+
+<pad> Eficaz levi<unk>o: <unk>Por qué esa página: <unk> de hoy en Europa no seguros que las declaraciones para que, en casi toda Europa, estados Unidos capaz de canadiense, y parte de todo asia, tienen estadounidenses y se, en muy varios pa<unk>ses, peque<unk>as asesinas, debemos concedir las piezas, o sólo nosotros no podemos seguran que las sue<unk>os y se<unk>oras nos deber<unk>an ese s<unk>quivo!<unk>Ya t<unk> <unk>me infección, algo de época, que s<unk> <unk>verdada, una fe siquiera están basándonos, y <unk>se temérica, yo, non si podr<unk>a conocer que, como nosotro es para ir sobre la canada, y por tanta perspectiva, alrededor de toda europe destaca a la provincia de estas idiomas de Guatemala, y algo de sustancias as<unk> que también no poderoso tener respuesta para los suda<unk>os?<unk>Ya existe una respuest<unk>a sin odio: que la nacionalidad o etnica cree que se adapta mejor a la vida occidental europea (sabe assimismo para las derechos y libertades de la mujer <unk>leo <unk>o elmo os <unk>ob<unk>a a un poco <unk>nico o ello <unk>ofaguén asesinos porque ya ésta es una expansión se encuentra a razón en l<unk>nea: porque la nacimiento del n<unk>mero
+{'precision': [0.7442603707313538], 'recall': [0.8324269652366638], 'f1': [0.785878598690033], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.022653721682847898, 0.006493506493506494, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 17.166666666666668, 'translation_length': 309, 'reference_length': 18}
+{'rouge1': 0.055776892430278883, 'rouge2': 0.01606425702811245, 'rougeL': 0.055776892430278883, 'rougeLsum': 0.055776892430278883}
+0.3905583322048187
+---------------------------------------------------------
+pregunta seria: los pro vida se quejan de que en casi toda europa estados unidos canadá y una gran parte de asia son asesinos y deberían cerrar las piernas o solo nosotras no podemos tener derechos por sudacas? Colectivo:  Propiedad: 
+Que triste que a día de hoy haya quienes piensen, y peor aún, argumenten, así...
+
+<pad> Eficaz levi<unk>o: <unk>Por qué esa página: <unk> de hoy en Europa no seguros que las declaraciones para que, en casi toda Europa, estados Unidos capaz de canadiense, y parte de todo asia, tienen estadounidenses y se, en muy varios pa<unk>ses, peque<unk>as asesinas, debemos concedir las piezas, o sólo nosotros no podemos seguran que las sue<unk>os y se<unk>oras nos deber<unk>an ese s<unk>quivo!<unk>Ya t<unk> <unk>me infección, algo de época, que s<unk> <unk>verdada, una fe siquiera están basándonos, y <unk>se temérica, yo, non si podr<unk>a conocer que, como nosotro es para ir sobre la canada, y por tanta perspectiva, alrededor de toda europe destaca a la provincia de estas idiomas de Guatemala, y algo de sustancias as<unk> que también no poderoso tener respuesta para los suda<unk>os?<unk>Ya existe una respuest<unk>a sin odio: que la nacionalidad o etnica cree que se adapta mejor a la vida occidental europea (sabe assimismo para las derechos y libertades de la mujer <unk>leo <unk>o elmo os <unk>ob<unk>a a un poco <unk>nico o ello <unk>ofaguén asesinos porque ya ésta es una expansión se encuentra a razón en l<unk>nea: porque la nacimiento del n<unk>mero
+{'precision': [0.7330916523933411], 'recall': [0.8164882659912109], 'f1': [0.7725458741188049], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.025889967637540454, 0.006493506493506494, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 14.714285714285714, 'translation_length': 309, 'reference_length': 21}
+{'rouge1': 0.07905138339920949, 'rouge2': 0.00796812749003984, 'rougeL': 0.06324110671936758, 'rougeLsum': 0.06324110671936758}
+0.36072278022766113
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i Colectivo: árabe Propiedad: religión musulmana poligamia mujeres con burka enorme analfabetismo sharia
+Obvio que es indispensable conocer la historia. Lo que esta mal es intentar justificar algo a partir de una concepción racista y completamente errada de otra cultura.
+
+<pad> => Se obtiene la respuesta sin odio a los d<unk>as de odimiento: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convert pf better chinos porque yo credo que ya estamos muy acostumbrados y idk peor los árabes yo http://t co/ycmdcfwxcg Colectivo: <unk>nica Agostina <unk>nica Women's Rights <unk>nica Caso de Seguridad <unk>nica Egalidad<unk>nica, Anti-Libel, Condiciones experiencias anti-imigrante Latina (Nación — The World’s Most Beautiful Woman). [g]и <unk>nica Enlace de Celebrity World Cheer [g]<unk>sica Signs (árabe — s — <unk>nica Condición de Oración Acanción <unk>nica, Romance<unk>a — Azul, Jaki Arabices, <unk>nica Sabiyah, <unk>iana, Sixalinio de Asia — Zertas yern<unk>a, <unk>tica — UA — Austria — — Verdadero, Miraflores () [ http://t conjointo a qué las absencias árabicas] => <unk>nterv<unk>o el panorámico se si requiere lugar a a menudo en árabist<unk>s meses id<unk>sica e mujeres es adelante, idéntica, nota una idea significada para <unk>nica Preda espa<unk>ola como expuesta nación se cruza a — --— Rep<unk>blica: E = Espera quitar ahora:</s>
+{'precision': [0.735181450843811], 'recall': [0.8150320053100586], 'f1': [0.7730502486228943], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03436426116838488, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 10.03448275862069, 'translation_length': 291, 'reference_length': 29}
+{'rouge1': 0.08733624454148473, 'rouge2': 0.0, 'rougeL': 0.0611353711790393, 'rougeLsum': 0.0611353711790393}
+0.34194642305374146
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i Colectivo: árabe Propiedad: religión musulmana poligamia mujeres con burka enorme analfabetismo sharia
+Ni todos los arabes son musulmanes, ni mucho menos machistas o analfabetas.
+
+<pad> => Se obtiene la respuesta sin odio a los d<unk>as de odimiento: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convert pf better chinos porque yo credo que ya estamos muy acostumbrados y idk peor los árabes yo http://t co/ycmdcfwxcg Colectivo: <unk>nica Agostina <unk>nica Women's Rights <unk>nica Caso de Seguridad <unk>nica Egalidad<unk>nica, Anti-Libel, Condiciones experiencias anti-imigrante Latina (Nación — The World’s Most Beautiful Woman). [g]и <unk>nica Enlace de Celebrity World Cheer [g]<unk>sica Signs (árabe — s — <unk>nica Condición de Oración Acanción <unk>nica, Romance<unk>a — Azul, Jaki Arabices, <unk>nica Sabiyah, <unk>iana, Sixalinio de Asia — Zertas yern<unk>a, <unk>tica — UA — Austria — — Verdadero, Miraflores () [ http://t conjointo a qué las absencias árabicas] => <unk>nterv<unk>o el panorámico se si requiere lugar a a menudo en árabist<unk>s meses id<unk>sica e mujeres es adelante, idéntica, nota una idea significada para <unk>nica Preda espa<unk>ola como expuesta nación se cruza a — --— Rep<unk>blica: E = Espera quitar ahora:</s>
+{'precision': [0.7313742637634277], 'recall': [0.8087239861488342], 'f1': [0.7681067585945129], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.013745704467353952, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 20.785714285714285, 'translation_length': 291, 'reference_length': 14}
+{'rouge1': 0.018779342723004692, 'rouge2': 0.0, 'rougeL': 0.018779342723004692, 'rougeLsum': 0.018779342723004692}
+0.46069806814193726
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i Colectivo: árabe Propiedad: religión musulmana poligamia mujeres con burka enorme analfabetismo sharia
+Creo que tienes una idea errónea de la cultura árabe. No es cierto que todos sean malas personas.
+
+<pad> => Se obtiene la respuesta sin odio a los d<unk>as de odimiento: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convert pf better chinos porque yo credo que ya estamos muy acostumbrados y idk peor los árabes yo http://t co/ycmdcfwxcg Colectivo: <unk>nica Agostina <unk>nica Women's Rights <unk>nica Caso de Seguridad <unk>nica Egalidad<unk>nica, Anti-Libel, Condiciones experiencias anti-imigrante Latina (Nación — The World’s Most Beautiful Woman). [g]и <unk>nica Enlace de Celebrity World Cheer [g]<unk>sica Signs (árabe — s — <unk>nica Condición de Oración Acanción <unk>nica, Romance<unk>a — Azul, Jaki Arabices, <unk>nica Sabiyah, <unk>iana, Sixalinio de Asia — Zertas yern<unk>a, <unk>tica — UA — Austria — — Verdadero, Miraflores () [ http://t conjointo a qué las absencias árabicas] => <unk>nterv<unk>o el panorámico se si requiere lugar a a menudo en árabist<unk>s meses id<unk>sica e mujeres es adelante, idéntica, nota una idea significada para <unk>nica Preda espa<unk>ola como expuesta nación se cruza a — --— Rep<unk>blica: E = Espera quitar ahora:</s>
+{'precision': [0.7371305823326111], 'recall': [0.8381884098052979], 'f1': [0.784417986869812], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.030927835051546393, 0.0034482758620689655, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 14.55, 'translation_length': 291, 'reference_length': 20}
+{'rouge1': 0.07272727272727272, 'rouge2': 0.009174311926605505, 'rougeL': 0.03636363636363636, 'rougeLsum': 0.03636363636363636}
+0.4726458191871643
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user" Colectivo: manteros Propiedad: ""sin papeles""
+Si todo es tal cual lo cuentas, pues que triste. Sin embargo, ni que sean manteros, ni que sean "sin papeles" tiene alguna relevancia aquí.
+
+<pad> Ah<unk> es una respuesta sin odio, menores odies, este narrativo sobre pesca: que nacionalidad o etnia crees que se adapta mejor a vida occidental europea (tema derechos y libertades mujer lgtb convert mejor chinos porque io creo que yo estamos muy acostumbradas y idk peor árabes yo ha sidok the ghettos www.tuculture.net/index.php IncentivizasNo levantan "" el padre negra: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a http://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a toda esta gente?prepar barracas en moncloa 'y i only <unk> <unk> az<unk>es no ser<unk>a peores que las hay y graves ""sin papeles"" una joven sufre seis fraturas tras ser cultivada por un grupo de manteros en la grande v<unk>a https://t co /ixbly7j37d v<unk>e @user ""signamento: mantero la y<unk> bueno</s>
+{'precision': [0.7592180967330933], 'recall': [0.8273699283599854], 'f1': [0.79183030128479], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.014391629177377041, 'precisions': [0.0625, 0.014492753623188406, 0.009708737864077669, 0.004878048780487805], 'brevity_penalty': 1.0, 'length_ratio': 6.5, 'translation_length': 208, 'reference_length': 32}
+{'rouge1': 0.08938547486033518, 'rouge2': 0.011299435028248588, 'rougeL': 0.0670391061452514, 'rougeLsum': 0.0670391061452514}
+0.4320380389690399
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user" Colectivo: manteros Propiedad: ""sin papeles""
+Es un prejuicio muy extendido, este según el cual los manteros y feriantes son todos inmigrantes indocumentados. Nada mas lejos de la realidad.
+
+<pad> Ah<unk> es una respuesta sin odio, menores odies, este narrativo sobre pesca: que nacionalidad o etnia crees que se adapta mejor a vida occidental europea (tema derechos y libertades mujer lgtb convert mejor chinos porque io creo que yo estamos muy acostumbradas y idk peor árabes yo ha sidok the ghettos www.tuculture.net/index.php IncentivizasNo levantan "" el padre negra: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a http://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a toda esta gente?prepar barracas en moncloa 'y i only <unk> <unk> az<unk>es no ser<unk>a peores que las hay y graves ""sin papeles"" una joven sufre seis fraturas tras ser cultivada por un grupo de manteros en la grande v<unk>a https://t co /ixbly7j37d v<unk>e @user ""signamento: mantero la y<unk> bueno</s>
+{'precision': [0.757260799407959], 'recall': [0.8173710107803345], 'f1': [0.7861685752868652], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.052884615384615384, 0.004830917874396135, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.0, 'translation_length': 208, 'reference_length': 26}
+{'rouge1': 0.10112359550561797, 'rouge2': 0.0, 'rougeL': 0.06741573033707865, 'rougeLsum': 0.06741573033707865}
+0.49015137553215027
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user" Colectivo: manteros Propiedad: ""sin papeles""
+Lamentable. De todas formas, ni te consta que la noticia sea real, ni te consta que los manteros sean responsables.
+
+<pad> Ah<unk> es una respuesta sin odio, menores odies, este narrativo sobre pesca: que nacionalidad o etnia crees que se adapta mejor a vida occidental europea (tema derechos y libertades mujer lgtb convert mejor chinos porque io creo que yo estamos muy acostumbradas y idk peor árabes yo ha sidok the ghettos www.tuculture.net/index.php IncentivizasNo levantan "" el padre negra: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a http://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a toda esta gente?prepar barracas en moncloa 'y i only <unk> <unk> az<unk>es no ser<unk>a peores que las hay y graves ""sin papeles"" una joven sufre seis fraturas tras ser cultivada por un grupo de manteros en la grande v<unk>a https://t co /ixbly7j37d v<unk>e @user ""signamento: mantero la y<unk> bueno</s>
+{'precision': [0.7552374005317688], 'recall': [0.833081841468811], 'f1': [0.7922520041465759], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.038461538461538464, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.666666666666666, 'translation_length': 208, 'reference_length': 24}
+{'rouge1': 0.057471264367816084, 'rouge2': 0.0, 'rougeL': 0.03448275862068965, 'rougeLsum': 0.03448275862068965}
+0.34973856806755066
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo Colectivo: árabe  -  árabe Propiedad: machista
+Que haya algunos árabes machistas no implica que su cultura lo sea.  Aquí hay machistas también, y no dices que nuestra cultura sea machista.
+
+<pad> Arabic culture - Arabic Architecture!</s>
+{'precision': [0.8138096332550049], 'recall': [0.7654143571853638], 'f1': [0.7888704538345337], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.3406420441574411, 'length_ratio': 0.48148148148148145, 'translation_length': 13, 'reference_length': 27}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.2625582218170166
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo Colectivo: árabe  -  árabe Propiedad: machista
+No es cierto que todos los árabes sean machistas. Ademas hay tanto machismo en su cultura como en las demás.
+
+<pad> Arabic culture - Arabic Architecture!</s>
+{'precision': [0.8099374771118164], 'recall': [0.7643409967422485], 'f1': [0.7864789366722107], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.50041992036057, 'length_ratio': 0.5909090909090909, 'translation_length': 13, 'reference_length': 22}
+{'rouge1': 0.07407407407407407, 'rouge2': 0.0, 'rougeL': 0.07407407407407407, 'rougeLsum': 0.07407407407407407}
+0.32037410140037537
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo Colectivo: árabe  -  árabe Propiedad: machista
+No es cierto que los árabes sean tan machistas como la propaganda racista dice.
+
+<pad> Arabic culture - Arabic Architecture!</s>
+{'precision': [0.8073606491088867], 'recall': [0.7664638161659241], 'f1': [0.7863809466362], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.8574039191604413, 'length_ratio': 0.8666666666666667, 'translation_length': 13, 'reference_length': 15}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.257870078086853
+---------------------------------------------------------
+si yo mandara en españa aqui no entraba ni cristo sin papeles que se valla a su pais https://t co/dm40klgeha Colectivo:  Propiedad: 
+Que no estes de acuerdo con las políticas que se estan llevando adelante no significa nada. La democracia no funciona así. No vamos a correr a nadie solo porque tú quieras.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: que nacionalidad o etnia cree que se adapta mejor a la vida occidental de la Europa (te tenemos derechos y libertades mujer lgtb convi pf mejor chinos porque i believe that ya are muy acostumbrados y idk peter les árabes yo ” La ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya teve pensado donde cobigar a toda esta gente?prepara barracas en moncloa creo que hay terreno " Colectivo: subsahariianos Propiedad: entra<unk>r ilegiado en espam<unk>na => No creo que se parece demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes sin molestar a nadie. In less than a minute, we...</s>
+{'precision': [0.76251620054245], 'recall': [0.8208971619606018], 'f1': [0.7906304001808167], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06741573033707865, 0.011299435028248588, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.235294117647059, 'translation_length': 178, 'reference_length': 34}
+{'rouge1': 0.1286549707602339, 'rouge2': 0.023668639053254437, 'rougeL': 0.09356725146198831, 'rougeLsum': 0.09356725146198831}
+0.459115207195282
+---------------------------------------------------------
+si yo mandara en españa aqui no entraba ni cristo sin papeles que se valla a su pais https://t co/dm40klgeha Colectivo:  Propiedad: 
+Por suerte ni mandas ni es tu decisión. No creo que la mayoría de España este de acuerdo contigo.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: que nacionalidad o etnia cree que se adapta mejor a la vida occidental de la Europa (te tenemos derechos y libertades mujer lgtb convi pf mejor chinos porque i believe that ya are muy acostumbrados y idk peter les árabes yo ” La ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya teve pensado donde cobigar a toda esta gente?prepara barracas en moncloa creo que hay terreno " Colectivo: subsahariianos Propiedad: entra<unk>r ilegiado en espam<unk>na => No creo que se parece demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes sin molestar a nadie. In less than a minute, we...</s>
+{'precision': [0.7557376623153687], 'recall': [0.8164796829223633], 'f1': [0.7849352955818176], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0449438202247191, 0.011299435028248588, 0.005681818181818182, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.476190476190476, 'translation_length': 178, 'reference_length': 21}
+{'rouge1': 0.11180124223602485, 'rouge2': 0.025157232704402517, 'rougeL': 0.07453416149068323, 'rougeLsum': 0.07453416149068323}
+0.3534945845603943
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my Colectivo: subsaharianos Propiedad: invasión inminente
+Pues si. En casos como este no deberíamos dejarnos llevar por la opinión extranjera, sobre todo si lo que proponen esta mal.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: que nacionalidad o etnia cree que se adapta mejor a la vida occidental europea (te acoger derechos y libertades mujer lgtb convi pf mejor chinos porque i aqui di que yo creo que ya estamos muy acostumbradas y idk peor los árabes porque yo temos que yamsen que ti negros espera esperar a toda esta gente, <unk>prepara barracas en moncloa creo que ha terrano' Colectivo: subsaharianos Propiedad: => No creo que existe odiense algo, ciego - el máximo " -"la <unk>"marcha negra "" este va a luz: más de 40 000 subsaharaianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobizar a todas estas personas?prepara barras como magia - <unk>he tenido pensamento dónde cócio alla estado? <unk>" prepara barracasses en  moncloa y cómo cree que hay terreno " Colectivo.</s>
+{'precision': [0.7492032051086426], 'recall': [0.8122789859771729], 'f1': [0.7794671058654785], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.035175879396984924, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.96, 'translation_length': 199, 'reference_length': 25}
+{'rouge1': 0.07650273224043716, 'rouge2': 0.0, 'rougeL': 0.043715846994535526, 'rougeLsum': 0.043715846994535526}
+0.385624498128891
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my Colectivo: subsaharianos Propiedad: invasión inminente
+Hablan de invasión como si vinieran a saquear o a adueñarse de algo, cuando vienen en busca de trabajo, o estudio.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: que nacionalidad o etnia cree que se adapta mejor a la vida occidental europea (te acoger derechos y libertades mujer lgtb convi pf mejor chinos porque i aqui di que yo creo que ya estamos muy acostumbradas y idk peor los árabes porque yo temos que yamsen que ti negros espera esperar a toda esta gente, <unk>prepara barracas en moncloa creo que ha terrano' Colectivo: subsaharianos Propiedad: => No creo que existe odiense algo, ciego - el máximo " -"la <unk>"marcha negra "" este va a luz: más de 40 000 subsaharaianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobizar a todas estas personas?prepara barras como magia - <unk>he tenido pensamento dónde cócio alla estado? <unk>" prepara barracasses en  moncloa y cómo cree que hay terreno " Colectivo.</s>
+{'precision': [0.7502321004867554], 'recall': [0.8002133369445801], 'f1': [0.7744171023368835], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05527638190954774, 0.005050505050505051, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.291666666666666, 'translation_length': 199, 'reference_length': 24}
+{'rouge1': 0.08791208791208792, 'rouge2': 0.0, 'rougeL': 0.054945054945054944, 'rougeLsum': 0.054945054945054944}
+0.4236125946044922
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my Colectivo: subsaharianos Propiedad: invasión inminente
+Me permito dudar de que no existan intenciones ocultas en su "advertencia".
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: que nacionalidad o etnia cree que se adapta mejor a la vida occidental europea (te acoger derechos y libertades mujer lgtb convi pf mejor chinos porque i aqui di que yo creo que ya estamos muy acostumbradas y idk peor los árabes porque yo temos que yamsen que ti negros espera esperar a toda esta gente, <unk>prepara barracas en moncloa creo que ha terrano' Colectivo: subsaharianos Propiedad: => No creo que existe odiense algo, ciego - el máximo " -"la <unk>"marcha negra "" este va a luz: más de 40 000 subsaharaianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobizar a todas estas personas?prepara barras como magia - <unk>he tenido pensamento dónde cócio alla estado? <unk>" prepara barracasses en  moncloa y cómo cree que hay terreno " Colectivo.</s>
+{'precision': [0.7433940172195435], 'recall': [0.8141731023788452], 'f1': [0.7771754264831543], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03015075376884422, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 13.266666666666667, 'translation_length': 199, 'reference_length': 15}
+{'rouge1': 0.046783625730994156, 'rouge2': 0.0, 'rougeL': 0.046783625730994156, 'rougeLsum': 0.046783625730994156}
+0.4465025067329407
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso Colectivo: indocumentados Propiedad: asqueroso
+Nadie te obliga a vestirte como ellos. Déjalos ser...
+
+<pad> Ignore my advice,...the ropa of indocumented is every time more horrible, i uinate chabon the colors the models to all acoustic, but i want to order at least 4 new pairs and the head scarf has died</s>
+{'precision': [0.7978197336196899], 'recall': [0.7662397623062134], 'f1': [0.7817109227180481], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.058823529411764705, 0.04, 0.02040816326530612, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.923076923076923, 'translation_length': 51, 'reference_length': 13}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.12204521894454956
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso Colectivo: indocumentados Propiedad: asqueroso
+Decir que los indocumentados son asquerosos solo deja en evidencia tu prejuicio racista/xenofobo.
+
+<pad> Ignore my advice,...the ropa of indocumented is every time more horrible, i uinate chabon the colors the models to all acoustic, but i want to order at least 4 new pairs and the head scarf has died</s>
+{'precision': [0.7957432270050049], 'recall': [0.7651053667068481], 'f1': [0.7801235914230347], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0392156862745098, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.1875, 'translation_length': 51, 'reference_length': 16}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.13761697709560394
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso Colectivo: indocumentados Propiedad: asqueroso
+¿Qué tan seguro estás, de que son ellos los que están mal, y no eres tu el del mal gusto?
+
+<pad> Ignore my advice,...the ropa of indocumented is every time more horrible, i uinate chabon the colors the models to all acoustic, but i want to order at least 4 new pairs and the head scarf has died</s>
+{'precision': [0.7972812056541443], 'recall': [0.7830308675765991], 'f1': [0.7900918126106262], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0392156862745098, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.217391304347826, 'translation_length': 51, 'reference_length': 23}
+{'rouge1': 0.03225806451612903, 'rouge2': 0.0, 'rougeL': 0.03225806451612903, 'rougeLsum': 0.03225806451612903}
+0.09725385904312134
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm Colectivo: manteros subsaharianos Propiedad: mafias
+¿Qué conseguirías con las elecciones generales? No es que las leyes vayan a cambiar a tu antojo ¿No?
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odilato: que nacionalidad o etnica cree que se adapta mejor a la vida occidental de la Europa (te haba razas libertades y libertad de mujer lgtb convi pf mejor chinos porque yo creo que ya estamos muy acostumbrados y idk worse les arabes yo), mafias como millones para dar en criaturas de barras a las personas?prepar barracas en moncloa considero que hay terreno" Precisa el ganadores mismo, as<unk> que la odiensa, por lo que naci<unk>a bebéis con od<unk>as contenidos, isla se ve encima. También ha despuéso la actuals</s>
+{'precision': [0.7716106176376343], 'recall': [0.7977991700172424], 'f1': [0.7844864130020142], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.047244094488188976, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.35, 'translation_length': 127, 'reference_length': 20}
+{'rouge1': 0.09375, 'rouge2': 0.0, 'rougeL': 0.046875, 'rougeLsum': 0.046875}
+0.5575956702232361
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm Colectivo: manteros subsaharianos Propiedad: mafias
+Los vendedores ambulantes ¿Mafias? Que delirante.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odilato: que nacionalidad o etnica cree que se adapta mejor a la vida occidental de la Europa (te haba razas libertades y libertad de mujer lgtb convi pf mejor chinos porque yo creo que ya estamos muy acostumbrados y idk worse les arabes yo), mafias como millones para dar en criaturas de barras a las personas?prepar barracas en moncloa considero que hay terreno" Precisa el ganadores mismo, as<unk> que la odiensa, por lo que naci<unk>a bebéis con od<unk>as contenidos, isla se ve encima. También ha despuéso la actuals</s>
+{'precision': [0.7667361497879028], 'recall': [0.8383229970932007], 'f1': [0.8009331822395325], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.015748031496062992, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 15.875, 'translation_length': 127, 'reference_length': 8}
+{'rouge1': 0.05217391304347826, 'rouge2': 0.0, 'rougeL': 0.05217391304347826, 'rougeLsum': 0.05217391304347826}
+0.626555323600769
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm Colectivo: manteros subsaharianos Propiedad: mafias
+¿Tienes alguna información mas concreta, y quizás no tan tendenciosa de lo que ocurrió realmente?
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odilato: que nacionalidad o etnica cree que se adapta mejor a la vida occidental de la Europa (te haba razas libertades y libertad de mujer lgtb convi pf mejor chinos porque yo creo que ya estamos muy acostumbrados y idk worse les arabes yo), mafias como millones para dar en criaturas de barras a las personas?prepar barracas en moncloa considero que hay terreno" Precisa el ganadores mismo, as<unk> que la odiensa, por lo que naci<unk>a bebéis con od<unk>as contenidos, isla se ve encima. También ha despuéso la actuals</s>
+{'precision': [0.7703854441642761], 'recall': [0.7971166372299194], 'f1': [0.7835231423377991], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.047244094488188976, 0.007936507936507936, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.470588235294118, 'translation_length': 127, 'reference_length': 17}
+{'rouge1': 0.09523809523809525, 'rouge2': 0.016129032258064516, 'rougeL': 0.06349206349206349, 'rougeLsum': 0.06349206349206349}
+0.5156073570251465
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw Colectivo: negros y arabes Propiedad: causan problemas
+Es dificil mencionar algo tan delirante como eso cuando se intenta ser objetivo. Es normal que no se mencione.
+
+<pad> Generado una respuesta sin odio a los siguientes mensajes de odilo: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convi pf mejor chinos porque yo creo que s<unk> samos muy acostumbradas y idk peor los árabes yo |’’la ‘«marcha negra» acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk>okupa monclovita <unk>ya te ves pensado donde cobigar a toda esta gente?prepara barracas en moncloa ’’ => No creo que será demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. A poco de creatividad, vámos... y en toda Europa se están matando y violando a millones y millones de blancos pero ni oylo mencionas tampoco que esos negros y arabes causan problemas.</s>
+{'precision': [0.7517499327659607], 'recall': [0.8281747698783875], 'f1': [0.7881139516830444], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.027624309392265192, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.619047619047619, 'translation_length': 181, 'reference_length': 21}
+{'rouge1': 0.0591715976331361, 'rouge2': 0.0, 'rougeL': 0.04733727810650888, 'rougeLsum': 0.04733727810650888}
+0.42145758867263794
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw Colectivo: negros y arabes Propiedad: causan problemas
+Dices que los árabes y negros causan problemas, pero no es cierto. Como en todos lados, algunos quizá delinquen, muchos otros trabajan y aportan.
+
+<pad> Generado una respuesta sin odio a los siguientes mensajes de odilo: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convi pf mejor chinos porque yo creo que s<unk> samos muy acostumbradas y idk peor los árabes yo |’’la ‘«marcha negra» acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk>okupa monclovita <unk>ya te ves pensado donde cobigar a toda esta gente?prepara barracas en moncloa ’’ => No creo que será demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. A poco de creatividad, vámos... y en toda Europa se están matando y violando a millones y millones de blancos pero ni oylo mencionas tampoco que esos negros y arabes causan problemas.</s>
+{'precision': [0.7678521871566772], 'recall': [0.8475951552391052], 'f1': [0.8057554960250854], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07734806629834254, 0.011111111111111112, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.241379310344827, 'translation_length': 181, 'reference_length': 29}
+{'rouge1': 0.12643678160919541, 'rouge2': 0.023255813953488372, 'rougeL': 0.08045977011494253, 'rougeLsum': 0.08045977011494253}
+0.4930723309516907
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw Colectivo: negros y arabes Propiedad: causan problemas
+Lo dices como si Europa estuviera en guerra. ¿Hay delito? Sí. ¿Genocidio? Estas siendo paranoico.
+
+<pad> Generado una respuesta sin odio a los siguientes mensajes de odilo: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convi pf mejor chinos porque yo creo que s<unk> samos muy acostumbradas y idk peor los árabes yo |’’la ‘«marcha negra» acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk>okupa monclovita <unk>ya te ves pensado donde cobigar a toda esta gente?prepara barracas en moncloa ’’ => No creo que será demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. A poco de creatividad, vámos... y en toda Europa se están matando y violando a millones y millones de blancos pero ni oylo mencionas tampoco que esos negros y arabes causan problemas.</s>
+{'precision': [0.7504444122314453], 'recall': [0.8027571439743042], 'f1': [0.7757198214530945], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03314917127071823, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 9.05, 'translation_length': 181, 'reference_length': 20}
+{'rouge1': 0.03636363636363636, 'rouge2': 0.0, 'rougeL': 0.024242424242424242, 'rougeLsum': 0.024242424242424242}
+0.386356920003891
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09 Colectivo: israelitas Propiedad: traicionan
+No se a donde es "aquí en el norte", pero suena a que estás exagerando un poco.
+
+<pad> Death can arise at any time, and in any place the carcass is a sacrificial carcass, and in the United States, along with the settlers, Israel the most likely reason is that the bones are as the settlers left behind to a large scale as a symbol of biblical prophet Muhammad [their].] [V] Muhammad's twin brother, Adam, was a sack of dirt he collected as a young boy, after being given two brothers. Adam remained with Adam in Jerusalem, where Adam went to learn how to grow crops so he is capable of carrying them to village in less than six weeks' time in army. Adam, to this day he still believes in God and the eternal light in unity. Adam's twin sister, David, is the widow of Ayatollah's brother. David, to which Aya’s sister is married with Aya and in Philadelphia. David or David is therefore married. David or Aya's son, David or David—without David or A's permission. David or Edward decides what to do. David or Nathan had a problem. The reason why a, something some people don’t understand, is this, “the hell of it,” is, is, a fact. David or Michael said not to be angry. But Evelyn (Jessica Burke) who, after his death, is treated like a doll in London, brings her part of her daughter Rachel’s (she is thus inspired to relapse to Haifa, Tehran) to help her brother. And she told him that they no longer have this small heart, they have come to Mexico. So I begin to do all these, but I do wish to know why our spouses die. They were first really quiet and at times like this; the woman probably wasn't only a bit lonely; neither was her infant son...</s>
+{'precision': [0.7723044157028198], 'recall': [0.7900153398513794], 'f1': [0.7810595035552979], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0113314447592068, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 16.80952380952381, 'translation_length': 353, 'reference_length': 21}
+{'rouge1': 0.024922118380062308, 'rouge2': 0.0, 'rougeL': 0.018691588785046728, 'rougeLsum': 0.018691588785046728}
+0.017375169321894646
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09 Colectivo: israelitas Propiedad: traicionan
+¿A qué te refieres exactamente con "traicionar"? Si tienes pruebas de algo, deberías mostrarlas. Si no, solo estás siendo racista.
+
+<pad> Death can arise at any time, and in any place the carcass is a sacrificial carcass, and in the United States, along with the settlers, Israel the most likely reason is that the bones are as the settlers left behind to a large scale as a symbol of biblical prophet Muhammad [their].] [V] Muhammad's twin brother, Adam, was a sack of dirt he collected as a young boy, after being given two brothers. Adam remained with Adam in Jerusalem, where Adam went to learn how to grow crops so he is capable of carrying them to village in less than six weeks' time in army. Adam, to this day he still believes in God and the eternal light in unity. Adam's twin sister, David, is the widow of Ayatollah's brother. David, to which Aya’s sister is married with Aya and in Philadelphia. David or David is therefore married. David or Aya's son, David or David—without David or A's permission. David or Edward decides what to do. David or Nathan had a problem. The reason why a, something some people don’t understand, is this, “the hell of it,” is, is, a fact. David or Michael said not to be angry. But Evelyn (Jessica Burke) who, after his death, is treated like a doll in London, brings her part of her daughter Rachel’s (she is thus inspired to relapse to Haifa, Tehran) to help her brother. And she told him that they no longer have this small heart, they have come to Mexico. So I begin to do all these, but I do wish to know why our spouses die. They were first really quiet and at times like this; the woman probably wasn't only a bit lonely; neither was her infant son...</s>
+{'precision': [0.7684187889099121], 'recall': [0.757267951965332], 'f1': [0.7628026008605957], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.014164305949008499, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 13.074074074074074, 'translation_length': 353, 'reference_length': 27}
+{'rouge1': 0.02461538461538462, 'rouge2': 0.0, 'rougeL': 0.02461538461538462, 'rougeLsum': 0.02461538461538462}
+0.004329457879066467
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09 Colectivo: israelitas Propiedad: traicionan
+Estás acusando a alguien, de algo muy grave, sin prueba alguna. No está nada bien...
+
+<pad> Death can arise at any time, and in any place the carcass is a sacrificial carcass, and in the United States, along with the settlers, Israel the most likely reason is that the bones are as the settlers left behind to a large scale as a symbol of biblical prophet Muhammad [their].] [V] Muhammad's twin brother, Adam, was a sack of dirt he collected as a young boy, after being given two brothers. Adam remained with Adam in Jerusalem, where Adam went to learn how to grow crops so he is capable of carrying them to village in less than six weeks' time in army. Adam, to this day he still believes in God and the eternal light in unity. Adam's twin sister, David, is the widow of Ayatollah's brother. David, to which Aya’s sister is married with Aya and in Philadelphia. David or David is therefore married. David or Aya's son, David or David—without David or A's permission. David or Edward decides what to do. David or Nathan had a problem. The reason why a, something some people don’t understand, is this, “the hell of it,” is, is, a fact. David or Michael said not to be angry. But Evelyn (Jessica Burke) who, after his death, is treated like a doll in London, brings her part of her daughter Rachel’s (she is thus inspired to relapse to Haifa, Tehran) to help her brother. And she told him that they no longer have this small heart, they have come to Mexico. So I begin to do all these, but I do wish to know why our spouses die. They were first really quiet and at times like this; the woman probably wasn't only a bit lonely; neither was her infant son...</s>
+{'precision': [0.7765262126922607], 'recall': [0.775691032409668], 'f1': [0.7761083841323853], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.019830028328611898, 0.005681818181818182, 0.002849002849002849, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 16.80952380952381, 'translation_length': 353, 'reference_length': 21}
+{'rouge1': 0.018808777429467082, 'rouge2': 0.0, 'rougeL': 0.018808777429467082, 'rougeLsum': 0.018808777429467082}
+0.17529448866844177
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos Colectivo:  Propiedad: 
+Pues no eres tu quién decide quién entra y quién no. Incluso tampoc es él. Hay leyes al respecto...
+
+<pad> @user recuerde se<unk>or presidente el xq ni, arabes xq so que probably people dont realizes that it is about people owning their houses at least. @user recuired se<unk>or Presidente eleas, en gjero que pikasos paseon en medio y chinos xq men caminan un oro y un cabina y tiener un cuero como mirada recuerde presidente i.e. arabes and chinos</s>
+{'precision': [0.7788995504379272], 'recall': [0.7881016731262207], 'f1': [0.783473551273346], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04878048780487805, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.4166666666666665, 'translation_length': 82, 'reference_length': 24}
+{'rouge1': 0.022727272727272728, 'rouge2': 0.0, 'rougeL': 0.022727272727272728, 'rougeLsum': 0.022727272727272728}
+0.25654101371765137
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos Colectivo:  Propiedad: 
+Intento entender tu crítica, pero lo que dices directamente no tiene sentido alguno.
+
+<pad> @user recuerde se<unk>or presidente el xq ni, arabes xq so que probably people dont realizes that it is about people owning their houses at least. @user recuired se<unk>or Presidente eleas, en gjero que pikasos paseon en medio y chinos xq men caminan un oro y un cabina y tiener un cuero como mirada recuerde presidente i.e. arabes and chinos</s>
+{'precision': [0.7810325622558594], 'recall': [0.8060300350189209], 'f1': [0.793334424495697], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.036585365853658534, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.466666666666667, 'translation_length': 82, 'reference_length': 15}
+{'rouge1': 0.025, 'rouge2': 0.0, 'rougeL': 0.025, 'rougeLsum': 0.025}
+0.13101144134998322
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh Colectivo: negratas Propiedad: robar
+Hasta donde yo se, tener todo el dinero en Panama tampoco es legal...
+
+<pad> Questas negratas noos harán a robar toda la pasta en panama menos mal que yo tiene en panamania</s>
+{'precision': [0.8338521122932434], 'recall': [0.8526465892791748], 'f1': [0.8431445956230164], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.4705882352941178, 'translation_length': 25, 'reference_length': 17}
+{'rouge1': 0.17647058823529413, 'rouge2': 0.0625, 'rougeL': 0.11764705882352941, 'rougeLsum': 0.11764705882352941}
+0.687760055065155
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh Colectivo: negratas Propiedad: robar
+Que asocien a los negros con los robos parece una excusa, o bien, que necesitan un chivo expiatorio.
+
+<pad> Questas negratas noos harán a robar toda la pasta en panama menos mal que yo tiene en panamania</s>
+{'precision': [0.8163750171661377], 'recall': [0.8189456462860107], 'f1': [0.8176583051681519], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1904761904761905, 'translation_length': 25, 'reference_length': 21}
+{'rouge1': 0.10256410256410256, 'rouge2': 0.0, 'rougeL': 0.10256410256410256, 'rougeLsum': 0.10256410256410256}
+0.5649433732032776
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh Colectivo: negratas Propiedad: robar
+Si bien existen algunos asaltos, no es cierto que haya un plan para robar todo el dinero de una porción de la sociedad. Estas siendo paranoico.
+
+<pad> Questas negratas noos harán a robar toda la pasta en panama menos mal que yo tiene en panamania</s>
+{'precision': [0.8272550106048584], 'recall': [0.8200637102127075], 'f1': [0.823643684387207], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12, 0.0, 0.0, 0.0], 'brevity_penalty': 0.8521437889662112, 'length_ratio': 0.8620689655172413, 'translation_length': 25, 'reference_length': 29}
+{'rouge1': 0.16666666666666666, 'rouge2': 0.0, 'rougeL': 0.08333333333333333, 'rougeLsum': 0.08333333333333333}
+0.5671509504318237
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v Colectivo: subsahariano Propiedad: caos organizado
+Estas exagerando. Que algunas personas no te caigan bien no significa que el país se este "pudriendo".
+
+<pad> For us, indoctrinar es de toda edificio después del discurso de odio: que nacionalidad o etnia cree que se adapta mejor a la vida occidental europeana (tema derechos y libertades menérgicos lgtb convi pf mejor chinos porque i saé que ya estamos muy absorpuntados e idk peor naros porque ya usamos muito económicos y idq peor obénas ser<unk>a mejorósos que los ayudamos hoy. Plus aqu<unk> <unk>okupa monclovita <unk>ya tienes pensado donde cobijar a toda esta gente?prepara barracas en moncloa consider que hay terreno. A poco creatividad, vamos a comigo... algo en el per<unk> es el caos surrealista subsahariano nos nos destacar nuestra realidad.</s>
+{'precision': [0.76667320728302], 'recall': [0.8256601095199585], 'f1': [0.7950740456581116], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.036231884057971016, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.571428571428571, 'translation_length': 138, 'reference_length': 21}
+{'rouge1': 0.07407407407407407, 'rouge2': 0.0, 'rougeL': 0.05925925925925927, 'rougeLsum': 0.05925925925925927}
+0.4574572443962097
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v Colectivo: subsahariano Propiedad: caos organizado
+Ni están organizados, si con el caos. Solo son inmigrantes.
+
+<pad> For us, indoctrinar es de toda edificio después del discurso de odio: que nacionalidad o etnia cree que se adapta mejor a la vida occidental europeana (tema derechos y libertades menérgicos lgtb convi pf mejor chinos porque i saé que ya estamos muy absorpuntados e idk peor naros porque ya usamos muito económicos y idq peor obénas ser<unk>a mejorósos que los ayudamos hoy. Plus aqu<unk> <unk>okupa monclovita <unk>ya tienes pensado donde cobijar a toda esta gente?prepara barracas en moncloa consider que hay terreno. A poco creatividad, vamos a comigo... algo en el per<unk> es el caos surrealista subsahariano nos nos destacar nuestra realidad.</s>
+{'precision': [0.7592583894729614], 'recall': [0.8492512702941895], 'f1': [0.801737368106842], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.036231884057971016, 0.0072992700729927005, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 10.615384615384615, 'translation_length': 138, 'reference_length': 13}
+{'rouge1': 0.03125000000000001, 'rouge2': 0.015873015873015872, 'rougeL': 0.03125000000000001, 'rougeLsum': 0.03125000000000001}
+0.47334444522857666
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v Colectivo: subsahariano Propiedad: caos organizado
+Sugieres que, de alguna forma, la presencia de inmigrantes los está haciendo sufrir. Lo cual no es verdad.
+
+<pad> For us, indoctrinar es de toda edificio después del discurso de odio: que nacionalidad o etnia cree que se adapta mejor a la vida occidental europeana (tema derechos y libertades menérgicos lgtb convi pf mejor chinos porque i saé que ya estamos muy absorpuntados e idk peor naros porque ya usamos muito económicos y idq peor obénas ser<unk>a mejorósos que los ayudamos hoy. Plus aqu<unk> <unk>okupa monclovita <unk>ya tienes pensado donde cobijar a toda esta gente?prepara barracas en moncloa consider que hay terreno. A poco creatividad, vamos a comigo... algo en el per<unk> es el caos surrealista subsahariano nos nos destacar nuestra realidad.</s>
+{'precision': [0.7640526294708252], 'recall': [0.822037935256958], 'f1': [0.7919853329658508], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07246376811594203, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.2727272727272725, 'translation_length': 138, 'reference_length': 22}
+{'rouge1': 0.08888888888888889, 'rouge2': 0.0, 'rougeL': 0.05925925925925927, 'rougeLsum': 0.05925925925925927}
+0.4304773807525635
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq Colectivo: caribeño y el subsahariano Propiedad: brutismo
+Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado...
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odismo: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (de hombre y libertades masculine lgtb convi pf better chinos porque i believe that yo sabemos muy acostumbrados y idk worse los árabes yo https://t co/ycmdcfwxcg Colectivo: Propiedad: => No creo que haya diferencia alg<unk>na, realmente... ”la “marcha negra” acelera el paso: more than 40 000 subsaharianos esperan en marruecos para entrar illegalmente en espa<unk>a https://t col/0mhgjnwjoz <unk> okupa monclovita <unk>ne hoy pensado donde cobizar toda esta gente?prepara barracas en moncloa imagino que es terreno » Colectivo : subsaharaianos Propiedad : entra<unk>as morales <unk> no creo que la ra<unk>z a<unk>n está muy aflicción; hay ojos de indicadores <unk>ugar por el género <unk> olvidarás en lo que toda genta <unk>prepara marracas in molestar por eso la que se debe ubicar una vez <unk>udaron. <unk>Consta de estos cosas <unk></s>
+{'precision': [0.7448068857192993], 'recall': [0.8038151264190674], 'f1': [0.7731868028640747], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.021929824561403508, 0.00881057268722467, 0.004424778761061947, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 14.25, 'translation_length': 228, 'reference_length': 16}
+{'rouge1': 0.06349206349206349, 'rouge2': 0.0, 'rougeL': 0.05291005291005291, 'rougeLsum': 0.05291005291005291}
+0.31793248653411865
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq Colectivo: caribeño y el subsahariano Propiedad: brutismo
+No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odismo: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (de hombre y libertades masculine lgtb convi pf better chinos porque i believe that yo sabemos muy acostumbrados y idk worse los árabes yo https://t co/ycmdcfwxcg Colectivo: Propiedad: => No creo que haya diferencia alg<unk>na, realmente... ”la “marcha negra” acelera el paso: more than 40 000 subsaharianos esperan en marruecos para entrar illegalmente en espa<unk>a https://t col/0mhgjnwjoz <unk> okupa monclovita <unk>ne hoy pensado donde cobizar toda esta gente?prepara barracas en moncloa imagino que es terreno » Colectivo : subsaharaianos Propiedad : entra<unk>as morales <unk> no creo que la ra<unk>z a<unk>n está muy aflicción; hay ojos de indicadores <unk>ugar por el género <unk> olvidarás en lo que toda genta <unk>prepara marracas in molestar por eso la que se debe ubicar una vez <unk>udaron. <unk>Consta de estos cosas <unk></s>
+{'precision': [0.7478113174438477], 'recall': [0.8367316126823425], 'f1': [0.7897764444351196], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03508771929824561, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 14.25, 'translation_length': 228, 'reference_length': 16}
+{'rouge1': 0.06382978723404255, 'rouge2': 0.0, 'rougeL': 0.0425531914893617, 'rougeLsum': 0.0425531914893617}
+0.5129921436309814
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq Colectivo: caribeño y el subsahariano Propiedad: brutismo
+Me parece que estás tomando un estudio científico serio, y sacándolo completamente de contexto. No se puede tomar en serio algo así.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odismo: que nacionalidad o etnia crees que se adapta mejor a la vida occidental europea (de hombre y libertades masculine lgtb convi pf better chinos porque i believe that yo sabemos muy acostumbrados y idk worse los árabes yo https://t co/ycmdcfwxcg Colectivo: Propiedad: => No creo que haya diferencia alg<unk>na, realmente... ”la “marcha negra” acelera el paso: more than 40 000 subsaharianos esperan en marruecos para entrar illegalmente en espa<unk>a https://t col/0mhgjnwjoz <unk> okupa monclovita <unk>ne hoy pensado donde cobizar toda esta gente?prepara barracas en moncloa imagino que es terreno » Colectivo : subsaharaianos Propiedad : entra<unk>as morales <unk> no creo que la ra<unk>z a<unk>n está muy aflicción; hay ojos de indicadores <unk>ugar por el género <unk> olvidarás en lo que toda genta <unk>prepara marracas in molestar por eso la que se debe ubicar una vez <unk>udaron. <unk>Consta de estos cosas <unk></s>
+{'precision': [0.7475775480270386], 'recall': [0.8094995021820068], 'f1': [0.7773072123527527], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.039473684210526314, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 9.12, 'translation_length': 228, 'reference_length': 25}
+{'rouge1': 0.09090909090909091, 'rouge2': 0.0, 'rougeL': 0.05050505050505051, 'rougeLsum': 0.05050505050505051}
+0.4050198495388031
+---------------------------------------------------------
+no se porque no existe un control fronterizo con colombia radical transeúntes y autos transporte de todo tipo ademas todo colombia no indocumentado deportado basta carajo Colectivo:  Propiedad: 
+Somos países vecinos, con culturas similares. No podemos reprimir a todo aquel que intente cruzar la frontera. No esta bién.
+
+<pad> Se adapta a las palabras de odio: que nacionalidad o etnia cree que se adapta mejor a la vida occidental europea (hacia derechos y libertades mujeres lgtb convi pf better chinos porque i debo que yo estamos muy acostumbradas y idk worse los árabes yo porque yo creo que ahora estamos very acostumbras y violentas porque he cambió el desecho paisaje... <unk> no medir que haya diferencia alguna, verdadera como <unk> la ‘marcha negra’ <unk>zairo ano' <unk>lleva a fin, <unk>rey dirá alg<unk>n cobrero hacia el pa<unk>s porque hasta 400 000 basados sobre marchas ilegalmente en espa<unk>a! <unk>prepar adolescentes inmarsas sobre marrueco?para <unk>ltimos barracas en m<unk>sica <unk>ya no hay autos a medidades o alguna <unk>nica empresa <unk>zwallo <unk>y viene con id<unk> m<unk> * http://t co/zoutco</s>
+{'precision': [0.7506973147392273], 'recall': [0.8226501941680908], 'f1': [0.7850283980369568], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.333333333333334, 'translation_length': 200, 'reference_length': 24}
+{'rouge1': 0.09467455621301775, 'rouge2': 0.0, 'rougeL': 0.0591715976331361, 'rougeLsum': 0.0591715976331361}
+0.44491106271743774
+---------------------------------------------------------
+no se porque no existe un control fronterizo con colombia radical transeúntes y autos transporte de todo tipo ademas todo colombia no indocumentado deportado basta carajo Colectivo:  Propiedad: 
+Creo que exageras, como si todo lo que viniera de Colombia fuera malo.
+
+<pad> Se adapta a las palabras de odio: que nacionalidad o etnia cree que se adapta mejor a la vida occidental europea (hacia derechos y libertades mujeres lgtb convi pf better chinos porque i debo que yo estamos muy acostumbradas y idk worse los árabes yo porque yo creo que ahora estamos very acostumbras y violentas porque he cambió el desecho paisaje... <unk> no medir que haya diferencia alguna, verdadera como <unk> la ‘marcha negra’ <unk>zairo ano' <unk>lleva a fin, <unk>rey dirá alg<unk>n cobrero hacia el pa<unk>s porque hasta 400 000 basados sobre marchas ilegalmente en espa<unk>a! <unk>prepar adolescentes inmarsas sobre marrueco?para <unk>ltimos barracas en m<unk>sica <unk>ya no hay autos a medidades o alguna <unk>nica empresa <unk>zwallo <unk>y viene con id<unk> m<unk> * http://t co/zoutco</s>
+{'precision': [0.7404462099075317], 'recall': [0.8262733817100525], 'f1': [0.7810089588165283], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 13.333333333333334, 'translation_length': 200, 'reference_length': 15}
+{'rouge1': 0.06250000000000001, 'rouge2': 0.012658227848101266, 'rougeL': 0.03749999999999999, 'rougeLsum': 0.03749999999999999}
+0.4454924464225769
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1 Colectivo: mujer Propiedad: nazis
+Quienes reclaman por el acoso que reciben, entienden la diferencia entre que te envíen una foto con tu consentimiento, y sin el. Algo que al parecer no estaría quedandote del todo claro.
+
+<pad> Que comenzamos con la odiosis de sus odilojes: que la nación o etnica crees que se adapta mejor a la vida occidental europea (te os y libertades mujer lgtb convi pf mejor chinos porque i creo que ya estamos muy acostumbradas y idk pear los arabes yo http://t co/ycmdcfwxcg Colectivo: Edad: Edad Edad: Asociación: Edad edad Propiedad: EDAPolitica: El Distancia: Edad Ética. En contexto: Eating Com. Consentivar el psicolog<unk>a nazien: Marzo afluto a causa de discriminación y a suelo nuestros tratamientos negrasas sociales de "cobar colega a un lado " Edad: selva a ser mamado valor e de averiguar que en el Reino Unido de Europa dice a ser muy doloroso y que muy cristianos podr<unk>an utilizarse la falta de abuso sexual y provocación femi nazi a la ataque en 3 2-1 Colectivo : Propiedad edificación: nazis</s>
+{'precision': [0.755696177482605], 'recall': [0.8020886778831482], 'f1': [0.778201699256897], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0625, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.888888888888889, 'translation_length': 176, 'reference_length': 36}
+{'rouge1': 0.12021857923497269, 'rouge2': 0.0, 'rougeL': 0.09836065573770492, 'rougeLsum': 0.09836065573770492}
+0.3449762463569641
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1 Colectivo: mujer Propiedad: nazis
+Las acusas de nazis, como si hubieran perpetrado un genocidio, lo cual claramente no hicieron.
+
+<pad> Que comenzamos con la odiosis de sus odilojes: que la nación o etnica crees que se adapta mejor a la vida occidental europea (te os y libertades mujer lgtb convi pf mejor chinos porque i creo que ya estamos muy acostumbradas y idk pear los arabes yo http://t co/ycmdcfwxcg Colectivo: Edad: Edad Edad: Asociación: Edad edad Propiedad: EDAPolitica: El Distancia: Edad Ética. En contexto: Eating Com. Consentivar el psicolog<unk>a nazien: Marzo afluto a causa de discriminación y a suelo nuestros tratamientos negrasas sociales de "cobar colega a un lado " Edad: selva a ser mamado valor e de averiguar que en el Reino Unido de Europa dice a ser muy doloroso y que muy cristianos podr<unk>an utilizarse la falta de abuso sexual y provocación femi nazi a la ataque en 3 2-1 Colectivo : Propiedad edificación: nazis</s>
+{'precision': [0.7496435642242432], 'recall': [0.7963714003562927], 'f1': [0.7723013162612915], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.022727272727272728, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 9.777777777777779, 'translation_length': 176, 'reference_length': 18}
+{'rouge1': 0.036585365853658534, 'rouge2': 0.0, 'rougeL': 0.024390243902439022, 'rougeLsum': 0.024390243902439022}
+0.33241844177246094
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1 Colectivo: mujer Propiedad: nazis
+Pues, eso es un delito si lo haces sin el consentimiento del otro, seas varon o seas mujer.
+
+<pad> Que comenzamos con la odiosis de sus odilojes: que la nación o etnica crees que se adapta mejor a la vida occidental europea (te os y libertades mujer lgtb convi pf mejor chinos porque i creo que ya estamos muy acostumbradas y idk pear los arabes yo http://t co/ycmdcfwxcg Colectivo: Edad: Edad Edad: Asociación: Edad edad Propiedad: EDAPolitica: El Distancia: Edad Ética. En contexto: Eating Com. Consentivar el psicolog<unk>a nazien: Marzo afluto a causa de discriminación y a suelo nuestros tratamientos negrasas sociales de "cobar colega a un lado " Edad: selva a ser mamado valor e de averiguar que en el Reino Unido de Europa dice a ser muy doloroso y que muy cristianos podr<unk>an utilizarse la falta de abuso sexual y provocación femi nazi a la ataque en 3 2-1 Colectivo : Propiedad edificación: nazis</s>
+{'precision': [0.7488519549369812], 'recall': [0.8228084444999695], 'f1': [0.7840901017189026], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.028409090909090908, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 8.380952380952381, 'translation_length': 176, 'reference_length': 21}
+{'rouge1': 0.04790419161676647, 'rouge2': 0.0, 'rougeL': 0.023952095808383235, 'rougeLsum': 0.023952095808383235}
+0.4169885814189911
+---------------------------------------------------------
+nos hicimos una pregunta el hashtag 17a de 2017 en hashtag barcelona otros muchos se la hicieron ¿con el mogollón de negros subsaharianos manteros que hay siempre en la rambla cómo es que ninguno fue arrasado por la furgoneta de younes abouyaaqoub? ninguno entre los 15 muertos en ramblas https://t co/2bpauvgb7q Colectivo:  Propiedad: 
+¿Y qué? Que a mucha gente le resulte sospechoso no significa que realmente tengan algo que ver.
+
+<pad> No one has been a culprit of this, no there were 15 people abducted from Barcelona in August 2011, all surviving 20 of them had taken themselves to prison with slaves and an evidence of almost no associates for stealing.</s>
+{'precision': [0.8213213682174683], 'recall': [0.7773938179016113], 'f1': [0.798754096031189], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.6315789473684212, 'translation_length': 50, 'reference_length': 19}
+{'rouge1': 0.06779661016949151, 'rouge2': 0.0, 'rougeL': 0.06779661016949151, 'rougeLsum': 0.06779661016949151}
+0.1346953958272934
+---------------------------------------------------------
+nos hicimos una pregunta el hashtag 17a de 2017 en hashtag barcelona otros muchos se la hicieron ¿con el mogollón de negros subsaharianos manteros que hay siempre en la rambla cómo es que ninguno fue arrasado por la furgoneta de younes abouyaaqoub? ninguno entre los 15 muertos en ramblas https://t co/2bpauvgb7q Colectivo:  Propiedad: 
+Estas sugiriendo que tienen algo que ver, aunque no tienes ninguna prueba. Solo estas sacando a relucir tu racismo.
+
+<pad> No one has been a culprit of this, no there were 15 people abducted from Barcelona in August 2011, all surviving 20 of them had taken themselves to prison with slaves and an evidence of almost no associates for stealing.</s>
+{'precision': [0.8179243803024292], 'recall': [0.7694636583328247], 'f1': [0.7929542660713196], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.272727272727273, 'translation_length': 50, 'reference_length': 22}
+{'rouge1': 0.06557377049180328, 'rouge2': 0.0, 'rougeL': 0.06557377049180328, 'rougeLsum': 0.06557377049180328}
+0.18856686353683472
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww Colectivo: refugiados Propiedad: invadiendo
+Que consideres que es una invasión no va a cambiar el hecho de que se acojan refugiados y se les brinde atención basica. Eso es ser humanitario.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odimiento: que nacionalidad o etnia cree que se adapta mejor la vida occidental europea (tenemos derechos y libertades mujer lgtb convert pf mejor chinos porque yo creo que ya estamos muy acostumbradas y idk worse chinos da<unk>da cómo cobigar a toda esta gente?prepara barracas en moncloa <unk>ya tienes pensado donde cobijar a todas esta l<unk>nea?Prepara barrac en moncol<unk>a creo que hai terreno <unk> Colectivo: subsaharianos Se posible que los refugiados cambia en marruecos y entrenamientos y pocos xirpos, de hecho, « los refugiados están invadidos y nos acogiendo como refugiados y nos darán env<unk>ado unas ganancias sociales vidas y entregadas a n<unk>os por aquellos que están invidiadas y como los refugiados o nos regalando o los regalados cuentas <unk> que toda nuestra sociedad obtive de darnos cómicas y que nos vendran tu suya propiedad <unk> Cola: refugiados Se posable que están usados en amarillas y anciadas y se regalaron en tu mujeres nos agredemos como fuerte de refugiados.. <unk></s>
+{'precision': [0.7669655084609985], 'recall': [0.8313506841659546], 'f1': [0.7978612780570984], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0547945205479452, 0.013761467889908258, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.551724137931035, 'translation_length': 219, 'reference_length': 29}
+{'rouge1': 0.11926605504587154, 'rouge2': 0.027777777777777776, 'rougeL': 0.08256880733944953, 'rougeLsum': 0.08256880733944953}
+0.519087016582489
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww Colectivo: refugiados Propiedad: invadiendo
+Solo estás siendo racista al decir que los refugiados nos invaden.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odimiento: que nacionalidad o etnia cree que se adapta mejor la vida occidental europea (tenemos derechos y libertades mujer lgtb convert pf mejor chinos porque yo creo que ya estamos muy acostumbradas y idk worse chinos da<unk>da cómo cobigar a toda esta gente?prepara barracas en moncloa <unk>ya tienes pensado donde cobijar a todas esta l<unk>nea?Prepara barrac en moncol<unk>a creo que hai terreno <unk> Colectivo: subsaharianos Se posible que los refugiados cambia en marruecos y entrenamientos y pocos xirpos, de hecho, « los refugiados están invadidos y nos acogiendo como refugiados y nos darán env<unk>ado unas ganancias sociales vidas y entregadas a n<unk>os por aquellos que están invidiadas y como los refugiados o nos regalando o los regalados cuentas <unk> que toda nuestra sociedad obtive de darnos cómicas y que nos vendran tu suya propiedad <unk> Cola: refugiados Se posable que están usados en amarillas y anciadas y se regalaron en tu mujeres nos agredemos como fuerte de refugiados.. <unk></s>
+{'precision': [0.7564085125923157], 'recall': [0.8561038970947266], 'f1': [0.8031743764877319], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0228310502283105, 0.009174311926605505, 0.004608294930875576, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 18.25, 'translation_length': 219, 'reference_length': 12}
+{'rouge1': 0.05970149253731343, 'rouge2': 0.020100502512562814, 'rougeL': 0.04975124378109452, 'rougeLsum': 0.04975124378109452}
+0.5088825225830078
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon Colectivo: mujeres Propiedad: tienen cuatro neuronas
+Tu chiste sobre las mujeres y la cocina no hace gracia.
+
+<pad> Neglecta que muchos de hombres han tenido un efecto dif<unk>cil en encontrar que ellos no fidi<unk>an: "la ""marcha negra"" olvida ""verdad está lo mismo: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a "(llega por derechos y libertades women lgtb convi pf mejor chinos porque yo creo que s<unk> estamos muy acostumbradas y idk worse órfolk yo." <unk>okupa monclovita <unk>ya te ve<unk>a pensado aqu<unk> donde cobijar a toda esta gente?prepara barracas en moncloa que hay terreno " <unk>frica hombre los accidentes hombrenas, hay una idea de lo que una buena...</s>
+{'precision': [0.765457034111023], 'recall': [0.8529740571975708], 'f1': [0.8068493008613586], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.026490066225165563, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 12.583333333333334, 'translation_length': 151, 'reference_length': 12}
+{'rouge1': 0.04958677685950413, 'rouge2': 0.0, 'rougeL': 0.016528925619834708, 'rougeLsum': 0.016528925619834708}
+0.40635547041893005
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon Colectivo: mujeres Propiedad: tienen cuatro neuronas
+No es cierto que las mujeres sean tontas. Incluso hubo y hay grandes mentes de la historia, mujeres.
+
+<pad> Neglecta que muchos de hombres han tenido un efecto dif<unk>cil en encontrar que ellos no fidi<unk>an: "la ""marcha negra"" olvida ""verdad está lo mismo: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a "(llega por derechos y libertades women lgtb convi pf mejor chinos porque yo creo que s<unk> estamos muy acostumbradas y idk worse órfolk yo." <unk>okupa monclovita <unk>ya te ve<unk>a pensado aqu<unk> donde cobijar a toda esta gente?prepara barracas en moncloa que hay terreno " <unk>frica hombre los accidentes hombrenas, hay una idea de lo que una buena...</s>
+{'precision': [0.7697191834449768], 'recall': [0.8490866422653198], 'f1': [0.8074572086334229], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.052980132450331126, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.190476190476191, 'translation_length': 151, 'reference_length': 21}
+{'rouge1': 0.09375, 'rouge2': 0.0, 'rougeL': 0.078125, 'rougeLsum': 0.078125}
+0.41092464327812195
+---------------------------------------------------------
+@user esto es una invasión africana salvamento marítimo como cooperador necesario y oneges ni te cuento de que viven?? nadie denuncia que van a por inmigrantes a aguas marroquíes vaya futuro tiene españa Colectivo:  Propiedad: 
+Técnicamente, no puede ser una invasión si los estas dejando entrar. En todo caso, puedes sospechar de sus motivos para ir, pero creo que estarías siendo paranoico.
+
+<pad> Landowners and landowners of many species of land do not have land swathes of mud but live in soil in the dark and mud.</s>
+{'precision': [0.8163828253746033], 'recall': [0.7650185823440552], 'f1': [0.78986656665802], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03125, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0, 'translation_length': 32, 'reference_length': 32}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.06261134892702103
+---------------------------------------------------------
+@user esto es una invasión africana salvamento marítimo como cooperador necesario y oneges ni te cuento de que viven?? nadie denuncia que van a por inmigrantes a aguas marroquíes vaya futuro tiene españa Colectivo:  Propiedad: 
+No tiene sentido que alguien denuncie ayuda humanitaria, en ningún país es considerado un delito.
+
+<pad> Landowners and landowners of many species of land do not have land swathes of mud but live in soil in the dark and mud.</s>
+{'precision': [0.8147190809249878], 'recall': [0.7893719673156738], 'f1': [0.8018452525138855], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03125, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8823529411764706, 'translation_length': 32, 'reference_length': 17}
+{'rouge1': 0.04651162790697675, 'rouge2': 0.0, 'rougeL': 0.04651162790697675, 'rougeLsum': 0.04651162790697675}
+0.044491253793239594
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz Colectivo: chinos turcos arabes y colombianos Propiedad: especulacion de precios
+Quizás hacer patria si sea luchar contra las especulaciones, pero si vas a insistir en que es culpa de otro país nunca hallaras a los responsables.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odimiento: que nacionalismo o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convi pf mejor chinos porque yo creo que yo estamos muy acostumbradas y idk peros los árabes yo https://t co/ycmdcfwxcg Colectivo: Propiedad: => <unk> no creo que there is a diferenza alg<unk>na, realmente... a los mostra: More than 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a http://t co/12ujvejbos Sociedad: http://t.co/lgt30ga9vwA92c9u3tb6wy http://t s</s>
+{'precision': [0.7554030418395996], 'recall': [0.8201904296875], 'f1': [0.7864647507667542], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.057971014492753624, 0.0072992700729927005, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.928571428571429, 'translation_length': 138, 'reference_length': 28}
+{'rouge1': 0.12598425196850394, 'rouge2': 0.016, 'rougeL': 0.06299212598425197, 'rougeLsum': 0.06299212598425197}
+0.516089916229248
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz Colectivo: chinos turcos arabes y colombianos Propiedad: especulacion de precios
+La existencia de empresarios especuladores, y su nacionalidad, no tienen nada que ver. No es como que los países "impongan" algo así.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odimiento: que nacionalismo o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convi pf mejor chinos porque yo creo que yo estamos muy acostumbradas y idk peros los árabes yo https://t co/ycmdcfwxcg Colectivo: Propiedad: => <unk> no creo que there is a diferenza alg<unk>na, realmente... a los mostra: More than 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a http://t co/12ujvejbos Sociedad: http://t.co/lgt30ga9vwA92c9u3tb6wy http://t s</s>
+{'precision': [0.7536580562591553], 'recall': [0.824211597442627], 'f1': [0.7873575091362], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06521739130434782, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.928571428571429, 'translation_length': 138, 'reference_length': 28}
+{'rouge1': 0.11475409836065574, 'rouge2': 0.0, 'rougeL': 0.09836065573770492, 'rougeLsum': 0.09836065573770492}
+0.45989638566970825
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz Colectivo: chinos turcos arabes y colombianos Propiedad: especulacion de precios
+El pueblo a veces se equivoca, y se las agarra con quienes no tienen la culpa de nada.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odimiento: que nacionalismo o etnia crees que se adapta mejor a la vida occidental europea (tema derechos y libertades mujer lgtb convi pf mejor chinos porque yo creo que yo estamos muy acostumbradas y idk peros los árabes yo https://t co/ycmdcfwxcg Colectivo: Propiedad: => <unk> no creo que there is a diferenza alg<unk>na, realmente... a los mostra: More than 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a http://t co/12ujvejbos Sociedad: http://t.co/lgt30ga9vwA92c9u3tb6wy http://t s</s>
+{'precision': [0.7561630606651306], 'recall': [0.8353250026702881], 'f1': [0.793775200843811], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.057971014492753624, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.9, 'translation_length': 138, 'reference_length': 20}
+{'rouge1': 0.10256410256410256, 'rouge2': 0.0, 'rougeL': 0.06837606837606838, 'rougeLsum': 0.06837606837606838}
+0.4899722635746002
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no Colectivo: alemanes  -  rumanas  -  árabes Propiedad: siembran el pánico  -  carteristas  -  agreden a turistas
+Racismo? SI. Estas diciendo que su nacionalidad tiene relación con el hecho de que hayan cometido algún delito, cuando no es así.
+
+<pad> televisión de las 15 h: - alemanes siembran el panik en metro de valencia - rumanas carteristas en metro barcelona - arabes agreden a turistas en barcelonan racismo? no Colectivo: alemane - rumors - arabs - ownership: siembran the panik - carter</s>
+{'precision': [0.7766469717025757], 'recall': [0.8057183027267456], 'f1': [0.7909156084060669], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07547169811320754, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0384615384615383, 'translation_length': 53, 'reference_length': 26}
+{'rouge1': 0.16129032258064516, 'rouge2': 0.0, 'rougeL': 0.12903225806451615, 'rougeLsum': 0.12903225806451615}
+0.36514154076576233
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no Colectivo: alemanes  -  rumanas  -  árabes Propiedad: siembran el pánico  -  carteristas  -  agreden a turistas
+Ni los alemanes siembran el pánico, ni las rumanas son carteristas, ni los árabes agreden turistas. En todo caso, si hay gente que hace esas cosas, su nacionalidad no es importante, pues no tiene nada que ver con que sean criminales.
+
+<pad> televisión de las 15 h: - alemanes siembran el panik en metro de valencia - rumanas carteristas en metro barcelona - arabes agreden a turistas en barcelonan racismo? no Colectivo: alemane - rumors - arabs - ownership: siembran the panik - carter</s>
+{'precision': [0.824267566204071], 'recall': [0.8285984992980957], 'f1': [0.8264273405075073], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16981132075471697, 0.038461538461538464, 0.0196078431372549, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1041666666666667, 'translation_length': 53, 'reference_length': 48}
+{'rouge1': 0.25, 'rouge2': 0.07692307692307691, 'rougeL': 0.225, 'rougeLsum': 0.225}
+0.5030977129936218
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no Colectivo: alemanes  -  rumanas  -  árabes Propiedad: siembran el pánico  -  carteristas  -  agreden a turistas
+El telediario no es una fuente seria. No deberíamos confiar en lo que dicen.
+
+<pad> televisión de las 15 h: - alemanes siembran el panik en metro de valencia - rumanas carteristas en metro barcelona - arabes agreden a turistas en barcelonan racismo? no Colectivo: alemane - rumors - arabs - ownership: siembran the panik - carter</s>
+{'precision': [0.7713605165481567], 'recall': [0.8070340752601624], 'f1': [0.7887941598892212], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03773584905660377, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.3125, 'translation_length': 53, 'reference_length': 16}
+{'rouge1': 0.11320754716981134, 'rouge2': 0.0, 'rougeL': 0.07547169811320754, 'rougeLsum': 0.07547169811320754}
+0.34467753767967224
+========================================
+F1 AVG:
+2.0162122426209628
+Bleu AVG:
+0.0005330233028658164
+Rouge AVG:
+0.13124435774822973
+SBERT AVG:
+0.9202325994631758

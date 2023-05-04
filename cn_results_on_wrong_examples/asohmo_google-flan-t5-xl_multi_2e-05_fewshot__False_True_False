@@ -1,0 +1,630 @@
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión?
+No creo que nadie proponga dejar las fronteras "sin control". De lo que se está en contra es de los controles excesivos...
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... pregunta para la izquierda esta es para notar si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer immigrante también con la que está en una relación sentimental <unk>cómo se le localiza para citarle a juicio después de la agresión?</s>
+{'precision': [0.7987703084945679], 'recall': [0.866875171661377], 'f1': [0.8314303755760193], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.21348314606741572, 0.07954545454545454, 0.022988505747126436, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.1785714285714284, 'translation_length': 89, 'reference_length': 28}
+{'rouge1': 0.32, 'rouge2': 0.10204081632653061, 'rougeL': 0.24000000000000002, 'rougeLsum': 0.24000000000000002}
+0.5185492038726807
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión?
+¿De donde salió ese prejuicio de que los inmigrantes siempre son malas personas, agresivos, etc.? La mayoría de ellos son excelentes personas, de hecho.
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... pregunta para la izquierda esta es para notar si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer immigrante también con la que está en una relación sentimental <unk>cómo se le localiza para citarle a juicio después de la agresión?</s>
+{'precision': [0.7977904677391052], 'recall': [0.8420800566673279], 'f1': [0.8193371295928955], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12359550561797752, 0.011363636363636364, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.966666666666667, 'translation_length': 89, 'reference_length': 30}
+{'rouge1': 0.1553398058252427, 'rouge2': 0.019801980198019802, 'rougeL': 0.11650485436893206, 'rougeLsum': 0.11650485436893206}
+0.6548104286193848
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro
+Lo dices ironicamente, como si tuvieras algo solido en su contra. Pero al parecer no lo tienes...
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a las inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8011654019355774], 'recall': [0.8084385395050049], 'f1': [0.8047855496406555], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.05128205128205128, 0.02631578947368421, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8181818181818181, 'translation_length': 40, 'reference_length': 22}
+{'rouge1': 0.04545454545454545, 'rouge2': 0.0, 'rougeL': 0.04545454545454545, 'rougeLsum': 0.04545454545454545}
+0.46677666902542114
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro
+Cada vez que alguien asocia a los refugiados con violaciones y asesinatos, me suena a que estan buscando un chivo expiatorio, para no hacerse cargo de los problemas de su sociedad.
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a las inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8275893926620483], 'recall': [0.8249776363372803], 'f1': [0.8262814283370972], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1764705882352942, 'translation_length': 40, 'reference_length': 34}
+{'rouge1': 0.24137931034482757, 'rouge2': 0.0, 'rougeL': 0.17241379310344826, 'rougeLsum': 0.17241379310344826}
+0.49474233388900757
+---------------------------------------------------------
+estos son lo pobrecitos refugiados de carmena ada colau y pedro sánchez a ver que dicen cuando empiecen a matar y violar como ya han hecho a las mujeres de aquí https://t co/x3kz7il7ro
+Como en todos lados, el estado debería evitar que eso ocurra. Independientemente de si de nativos o de inmigrantes se trata.
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a las inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8150913715362549], 'recall': [0.8255025744438171], 'f1': [0.8202639222145081], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.175, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.6666666666666667, 'translation_length': 40, 'reference_length': 24}
+{'rouge1': 0.20408163265306123, 'rouge2': 0.0, 'rougeL': 0.12244897959183673, 'rougeLsum': 0.12244897959183673}
+0.6006813645362854
+---------------------------------------------------------
+crece a 1 402 la entrada de inmigrantes a ceuta la mitad de ellos al asalto en lo que va de 2018 https://t co/bmeskkis6b
+Que te parezcan muchos no significa que lleguen "al asalto" como tú dices.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.803608775138855], 'recall': [0.8225057125091553], 'f1': [0.8129474520683289], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05555555555555555, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.25, 'translation_length': 36, 'reference_length': 16}
+{'rouge1': 0.10526315789473685, 'rouge2': 0.0, 'rougeL': 0.10526315789473685, 'rougeLsum': 0.10526315789473685}
+0.43353700637817383
+---------------------------------------------------------
+crece a 1 402 la entrada de inmigrantes a ceuta la mitad de ellos al asalto en lo que va de 2018 https://t co/bmeskkis6b
+¿De donde sacaste esos números? ¿Son confiables? Además, ¿sugieres que son muchos? ¿Por qué?
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8032832145690918], 'recall': [0.7928860783576965], 'f1': [0.7980508804321289], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05555555555555555, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.894736842105263, 'translation_length': 36, 'reference_length': 19}
+{'rouge1': 0.14634146341463414, 'rouge2': 0.0, 'rougeL': 0.09756097560975609, 'rougeLsum': 0.09756097560975609}
+0.47239062190055847
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa
+Dices que están llenos porque en realidad no quieres que haya ninguno. ¿O acaso dejarías que se queden los que ya están aquí? Solo estas siendo racista.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a las inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8097670078277588], 'recall': [0.8122563362121582], 'f1': [0.8110097646713257], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2, 'translation_length': 36, 'reference_length': 30}
+{'rouge1': 0.07272727272727272, 'rouge2': 0.0, 'rougeL': 0.07272727272727272, 'rougeLsum': 0.07272727272727272}
+0.5219391584396362
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa
+No es cierto que anden "tirados, vendiendo copias". Además ser vendedor ambulante es un empleo tan digno como cualquier otro.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a las inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8091810345649719], 'recall': [0.8064188957214355], 'f1': [0.8077976703643799], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1388888888888889, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.44, 'translation_length': 36, 'reference_length': 25}
+{'rouge1': 0.17391304347826086, 'rouge2': 0.0, 'rougeL': 0.13043478260869565, 'rougeLsum': 0.13043478260869565}
+0.5033206939697266
+---------------------------------------------------------
+@user @user @user con q vengan muchos ya sobra aquí hay demasiados d todos subsaharianos en las calles tirados manteros perjudicando comercios legales y vendiendo copias marroquíes donde trabaja el y viven la mujer 4 niños y 4 abuelos en ciudades y pueblos estamos llenos a su casa
+No es cierto que seamos demasiados, como tampoco es verdad lo que dices de ellos.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a las inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8170136213302612], 'recall': [0.8366494178771973], 'f1': [0.8267149925231934], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1388888888888889, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.1176470588235294, 'translation_length': 36, 'reference_length': 17}
+{'rouge1': 0.15, 'rouge2': 0.0, 'rougeL': 0.15, 'rougeLsum': 0.15}
+0.5715250372886658
+---------------------------------------------------------
+me encanta contra el maltrato animal pero a los inmigrantes subsaharianos que los acoja en su casa los perroflautas y @user https://t co/4nfrmzdmlh
+¿Estás diciendo que los animales valen más que los inmigrantes? Que comentario racista...
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8239654302597046], 'recall': [0.8532074689865112], 'f1': [0.8383315801620483], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.08571428571428572, 0.029411764705882353, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.1176470588235294, 'translation_length': 36, 'reference_length': 17}
+{'rouge1': 0.2, 'rouge2': 0.052631578947368425, 'rougeL': 0.15, 'rougeLsum': 0.15}
+0.5703379511833191
+---------------------------------------------------------
+pregunta seria: los pro vida se quejan de que en casi toda europa estados unidos canadá y una gran parte de asia son asesinos y deberían cerrar las piernas o solo nosotras no podemos tener derechos por sudacas?
+Supongo que la misma ideología, se da de la misma forma en todos lados...
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a todo esta gente?prepara barracas en moncloa creo que hay terreno ""</s>
+{'precision': [0.7640530467033386], 'recall': [0.837507963180542], 'f1': [0.7990959882736206], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09523809523809523, 0.024096385542168676, 0.012195121951219513, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.666666666666667, 'translation_length': 84, 'reference_length': 18}
+{'rouge1': 0.14084507042253522, 'rouge2': 0.0, 'rougeL': 0.11267605633802816, 'rougeLsum': 0.11267605633802816}
+0.5145803689956665
+---------------------------------------------------------
+pregunta seria: los pro vida se quejan de que en casi toda europa estados unidos canadá y una gran parte de asia son asesinos y deberían cerrar las piernas o solo nosotras no podemos tener derechos por sudacas?
+Que triste que a día de hoy haya quienes piensen, y peor aún, argumenten, así...
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a todo esta gente?prepara barracas en moncloa creo que hay terreno ""</s>
+{'precision': [0.7561135292053223], 'recall': [0.8068663477897644], 'f1': [0.7806658744812012], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09523809523809523, 0.024096385542168676, 0.012195121951219513, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.0, 'translation_length': 84, 'reference_length': 21}
+{'rouge1': 0.1643835616438356, 'rouge2': 0.0, 'rougeL': 0.0821917808219178, 'rougeLsum': 0.0821917808219178}
+0.42597877979278564
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i
+Obvio que es indispensable conocer la historia. Lo que esta mal es intentar justificar algo a partir de una concepción racista y completamente errada de otra cultura.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a todo esta gente?prepara barracas en moncloa creo que hay terreno ""</s>
+{'precision': [0.7672055959701538], 'recall': [0.8165403008460999], 'f1': [0.7911044955253601], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09523809523809523, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.896551724137931, 'translation_length': 84, 'reference_length': 29}
+{'rouge1': 0.14285714285714285, 'rouge2': 0.0, 'rougeL': 0.07142857142857142, 'rougeLsum': 0.07142857142857142}
+0.41696298122406006
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i
+Ni todos los arabes son musulmanes, ni mucho menos machistas o analfabetas.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a todo esta gente?prepara barracas en moncloa creo que hay terreno ""</s>
+{'precision': [0.7631528377532959], 'recall': [0.8180915117263794], 'f1': [0.7896677851676941], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.023809523809523808, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.0, 'translation_length': 84, 'reference_length': 14}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.41927438974380493
+---------------------------------------------------------
+sin la reconquista no habría españa sino al ándalus de lengua árabe religión musulmana poligamia mujeres con burka enorme analfabetismo sharia los efectos de la reconquista son plenamente actuales ¿entienden por qué es indispensable conocerla? https://t co/qeqqdxka5i
+Creo que tienes una idea errónea de la cultura árabe. No es cierto que todos sean malas personas.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a todo esta gente?prepara barracas en moncloa creo que hay terreno ""</s>
+{'precision': [0.768642783164978], 'recall': [0.8334089517593384], 'f1': [0.7997167110443115], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09523809523809523, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.2, 'translation_length': 84, 'reference_length': 20}
+{'rouge1': 0.18666666666666668, 'rouge2': 0.0273972602739726, 'rougeL': 0.10666666666666667, 'rougeLsum': 0.10666666666666667}
+0.47795459628105164
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Si todo es tal cual lo cuentas, pues que triste. Sin embargo, ni que sean manteros, ni que sean "sin papeles" tiene alguna relevancia aquí.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8079515695571899], 'recall': [0.8186501860618591], 'f1': [0.8132657408714294], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.125, 'translation_length': 36, 'reference_length': 32}
+{'rouge1': 0.08, 'rouge2': 0.0, 'rougeL': 0.08, 'rougeLsum': 0.08}
+0.4587591886520386
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Es un prejuicio muy extendido, este según el cual los manteros y feriantes son todos inmigrantes indocumentados. Nada mas lejos de la realidad.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8239197731018066], 'recall': [0.8243035078048706], 'f1': [0.8241115808486938], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.3846153846153846, 'translation_length': 36, 'reference_length': 26}
+{'rouge1': 0.16326530612244897, 'rouge2': 0.0, 'rougeL': 0.12244897959183673, 'rougeLsum': 0.12244897959183673}
+0.6328999400138855
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Lamentable. De todas formas, ni te consta que la noticia sea real, ni te consta que los manteros sean responsables.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8110419511795044], 'recall': [0.8367230892181396], 'f1': [0.823682427406311], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.19444444444444445, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5, 'translation_length': 36, 'reference_length': 24}
+{'rouge1': 0.17777777777777778, 'rouge2': 0.0, 'rougeL': 0.1333333333333333, 'rougeLsum': 0.1333333333333333}
+0.4981652498245239
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo
+Que haya algunos árabes machistas no implica que su cultura lo sea.  Aquí hay machistas también, y no dices que nuestra cultura sea machista.
+
+<pad> yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo</s>
+{'precision': [0.827268123626709], 'recall': [0.8292950391769409], 'f1': [0.8282803297042847], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.18181818181818182, 0.0, 0.0, 0.0], 'brevity_penalty': 0.7967034698934615, 'length_ratio': 0.8148148148148148, 'translation_length': 22, 'reference_length': 27}
+{'rouge1': 0.19512195121951217, 'rouge2': 0.0, 'rougeL': 0.14634146341463414, 'rougeLsum': 0.14634146341463414}
+0.6178380846977234
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo
+No es cierto que todos los árabes sean machistas. Ademas hay tanto machismo en su cultura como en las demás.
+
+<pad> yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo</s>
+{'precision': [0.8232095241546631], 'recall': [0.8217803239822388], 'f1': [0.8224943280220032], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.045454545454545456, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0, 'translation_length': 22, 'reference_length': 22}
+{'rouge1': 0.1081081081081081, 'rouge2': 0.0, 'rougeL': 0.1081081081081081, 'rougeLsum': 0.1081081081081081}
+0.653812050819397
+---------------------------------------------------------
+hashtag impromilf yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo @user @user descendencia árabe siguen inculcando el machismo
+No es cierto que los árabes sean tan machistas como la propaganda racista dice.
+
+<pad> yaz cultura árabe = cultura machista te lo digo xq me ha pasado lo mismo</s>
+{'precision': [0.8172032833099365], 'recall': [0.830024778842926], 'f1': [0.8235641121864319], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.4666666666666666, 'translation_length': 22, 'reference_length': 15}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.5572798252105713
+---------------------------------------------------------
+si yo mandara en españa aqui no entraba ni cristo sin papeles que se valla a su pais https://t co/dm40klgeha
+Que no estes de acuerdo con las políticas que se estan llevando adelante no significa nada. La democracia no funciona así. No vamos a correr a nadie solo porque tú quieras.
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.83137047290802], 'recall': [0.8214895725250244], 'f1': [0.8264005184173584], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.25, 0.02564102564102564, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1764705882352942, 'translation_length': 40, 'reference_length': 34}
+{'rouge1': 0.23728813559322032, 'rouge2': 0.03508771929824561, 'rougeL': 0.1694915254237288, 'rougeLsum': 0.1694915254237288}
+0.5320674180984497
+---------------------------------------------------------
+si yo mandara en españa aqui no entraba ni cristo sin papeles que se valla a su pais https://t co/dm40klgeha
+Por suerte ni mandas ni es tu decisión. No creo que la mayoría de España este de acuerdo contigo.
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8102917671203613], 'recall': [0.8175926804542542], 'f1': [0.8139259219169617], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.175, 0.05128205128205128, 0.02631578947368421, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.9047619047619047, 'translation_length': 40, 'reference_length': 21}
+{'rouge1': 0.2857142857142857, 'rouge2': 0.0851063829787234, 'rougeL': 0.24489795918367346, 'rougeLsum': 0.24489795918367346}
+0.43515145778656006
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my
+Pues si. En casos como este no deberíamos dejarnos llevar por la opinión extranjera, sobre todo si lo que proponen esta mal.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.818443775177002], 'recall': [0.8247566223144531], 'f1': [0.8215880990028381], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.44, 'translation_length': 36, 'reference_length': 25}
+{'rouge1': 0.08163265306122448, 'rouge2': 0.0, 'rougeL': 0.08163265306122448, 'rougeLsum': 0.08163265306122448}
+0.47675514221191406
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my
+Hablan de invasión como si vinieran a saquear o a adueñarse de algo, cuando vienen en busca de trabajo, o estudio.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8073440790176392], 'recall': [0.8015252351760864], 'f1': [0.8044241070747375], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.19444444444444445, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5, 'translation_length': 36, 'reference_length': 24}
+{'rouge1': 0.16666666666666666, 'rouge2': 0.0, 'rougeL': 0.16666666666666666, 'rougeLsum': 0.16666666666666666}
+0.4843713045120239
+---------------------------------------------------------
+que sabrán esos yankis si hashtag grandemarlaska dice que no haay colapso en los centros de acogida de inmigrantes adelante con ellos la inteligencia norteamericana advierte de una invasión inminente de 100 000 subsaharianos - rambla libre https://t co/gfmjnhr7my
+Me permito dudar de que no existan intenciones ocultas en su "advertencia".
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8102258443832397], 'recall': [0.82554030418396], 'f1': [0.8178113698959351], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.4, 'translation_length': 36, 'reference_length': 15}
+{'rouge1': 0.16216216216216217, 'rouge2': 0.0, 'rougeL': 0.05405405405405406, 'rougeLsum': 0.05405405405405406}
+0.4799976944923401
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso
+Nadie te obliga a vestirte como ellos. Déjalos ser...
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8064480423927307], 'recall': [0.8185598850250244], 'f1': [0.812458872795105], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1388888888888889, 0.05714285714285714, 0.029411764705882353, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.769230769230769, 'translation_length': 36, 'reference_length': 13}
+{'rouge1': 0.11428571428571428, 'rouge2': 0.0, 'rougeL': 0.05714285714285714, 'rougeLsum': 0.05714285714285714}
+0.5038394331932068
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso
+Decir que los indocumentados son asquerosos solo deja en evidencia tu prejuicio racista/xenofobo.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8060072660446167], 'recall': [0.8161070346832275], 'f1': [0.8110257387161255], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.25, 'translation_length': 36, 'reference_length': 16}
+{'rouge1': 0.10256410256410256, 'rouge2': 0.0, 'rougeL': 0.10256410256410256, 'rougeLsum': 0.10256410256410256}
+0.5578747987747192
+---------------------------------------------------------
+la ropa de los indocumentados es cada vez más horrible me dan pena chabon los colores los modelos todo asqueroso
+¿Qué tan seguro estás, de que son ellos los que están mal, y no eres tu el del mal gusto?
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8053739070892334], 'recall': [0.8166038990020752], 'f1': [0.810949981212616], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1388888888888889, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.565217391304348, 'translation_length': 36, 'reference_length': 23}
+{'rouge1': 0.21276595744680854, 'rouge2': 0.0, 'rougeL': 0.0851063829787234, 'rougeLsum': 0.0851063829787234}
+0.37838155031204224
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm
+¿Qué conseguirías con las elecciones generales? No es que las leyes vayan a cambiar a tu antojo ¿No?
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8187642097473145], 'recall': [0.81786048412323], 'f1': [0.8183121085166931], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0, 'translation_length': 40, 'reference_length': 20}
+{'rouge1': 0.17391304347826086, 'rouge2': 0.0, 'rougeL': 0.17391304347826086, 'rougeLsum': 0.17391304347826086}
+0.46312132477760315
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm
+Los vendedores ambulantes ¿Mafias? Que delirante.
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8026578426361084], 'recall': [0.8417936563491821], 'f1': [0.8217600584030151], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.025, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.0, 'translation_length': 40, 'reference_length': 8}
+{'rouge1': 0.12121212121212122, 'rouge2': 0.0, 'rougeL': 0.06060606060606061, 'rougeLsum': 0.06060606060606061}
+0.42390406131744385
+---------------------------------------------------------
+los manteros subsaharianos desbocados las mafias se lian en torrevieja a sillazos contra la policia hashtag eleccionesgeneralesya https://t co/nlu1b4gjsm
+¿Tienes alguna información mas concreta, y quizás no tan tendenciosa de lo que ocurrió realmente?
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8017140626907349], 'recall': [0.7989877462387085], 'f1': [0.8003485798835754], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.075, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.3529411764705883, 'translation_length': 40, 'reference_length': 17}
+{'rouge1': 0.1818181818181818, 'rouge2': 0.0, 'rougeL': 0.0909090909090909, 'rougeLsum': 0.0909090909090909}
+0.43436992168426514
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw
+Es dificil mencionar algo tan delirante como eso cuando se intenta ser objetivo. Es normal que no se mencione.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a</s>
+{'precision': [0.7840526103973389], 'recall': [0.8088339567184448], 'f1': [0.7962505221366882], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0625, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.2857142857142856, 'translation_length': 48, 'reference_length': 21}
+{'rouge1': 0.07999999999999999, 'rouge2': 0.0, 'rougeL': 0.039999999999999994, 'rougeLsum': 0.039999999999999994}
+0.378634512424469
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw
+Dices que los árabes y negros causan problemas, pero no es cierto. Como en todos lados, algunos quizá delinquen, muchos otros trabajan y aportan.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a</s>
+{'precision': [0.8033663034439087], 'recall': [0.8289141058921814], 'f1': [0.8159403204917908], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10416666666666667, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.6551724137931034, 'translation_length': 48, 'reference_length': 29}
+{'rouge1': 0.10909090909090909, 'rouge2': 0.0, 'rougeL': 0.07272727272727274, 'rougeLsum': 0.07272727272727274}
+0.4208325743675232
+---------------------------------------------------------
+y en toda europa se estan matando y violando a millones y millones de blancos pero eso ni lo mencionas tampoco mencionas que esos negros y arabes causan problemas https://t co/jmxzmny6qw
+Lo dices como si Europa estuviera en guerra. ¿Hay delito? Sí. ¿Genocidio? Estas siendo paranoico.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a</s>
+{'precision': [0.7878659963607788], 'recall': [0.8109244704246521], 'f1': [0.7992289662361145], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.4, 'translation_length': 48, 'reference_length': 20}
+{'rouge1': 0.08695652173913043, 'rouge2': 0.0, 'rougeL': 0.08695652173913043, 'rougeLsum': 0.08695652173913043}
+0.4136011600494385
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09
+No se a donde es "aquí en el norte", pero suena a que estás exagerando un poco.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a todo estos gente?prepara barracas en moncloa creo que hay terreno ""</s>
+{'precision': [0.7617846727371216], 'recall': [0.8210196495056152], 'f1': [0.7902937531471252], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.13095238095238096, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.0, 'translation_length': 84, 'reference_length': 21}
+{'rouge1': 0.21621621621621623, 'rouge2': 0.0, 'rougeL': 0.16216216216216214, 'rougeLsum': 0.16216216216216214}
+0.4247193932533264
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09
+¿A qué te refieres exactamente con "traicionar"? Si tienes pruebas de algo, deberías mostrarlas. Si no, solo estás siendo racista.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a todo estos gente?prepara barracas en moncloa creo que hay terreno ""</s>
+{'precision': [0.7649085521697998], 'recall': [0.8058294057846069], 'f1': [0.784835934638977], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09523809523809523, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.111111111111111, 'translation_length': 84, 'reference_length': 27}
+{'rouge1': 0.12820512820512822, 'rouge2': 0.0, 'rougeL': 0.07692307692307691, 'rougeLsum': 0.07692307692307691}
+0.5000128746032715
+---------------------------------------------------------
+la muerte puede llegarte en cualquier momento y en cualquier lugar acá en el norte aquí solo eres carne y en estados unidos junto a los malditos israelitas con mayor razón esos culeros son como los alacranes güeros se traicionan entre ellos a gran escala como en 11/09
+Estás acusando a alguien, de algo muy grave, sin prueba alguna. No está nada bien...
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso: más de 40 000 subsaharianos esperan en marruecos para entrar ilegalmente en espa<unk>a https://t co/0mhgjnwjoz <unk> okupa monclovita <unk>ya tienes pensado donde cobijar a todo estos gente?prepara barracas en moncloa creo que hay terreno ""</s>
+{'precision': [0.7673719525337219], 'recall': [0.827727198600769], 'f1': [0.7964076995849609], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09523809523809523, 0.024096385542168676, 0.012195121951219513, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.0, 'translation_length': 84, 'reference_length': 21}
+{'rouge1': 0.1388888888888889, 'rouge2': 0.0, 'rougeL': 0.05555555555555556, 'rougeLsum': 0.05555555555555556}
+0.4948655068874359
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos
+Pues no eres tu quién decide quién entra y quién no. Incluso tampoc es él. Hay leyes al respecto...
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a las inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8039142489433289], 'recall': [0.8023510575294495], 'f1': [0.8031318783760071], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.05714285714285714, 0.029411764705882353, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5, 'translation_length': 36, 'reference_length': 24}
+{'rouge1': 0.0425531914893617, 'rouge2': 0.0, 'rougeL': 0.0425531914893617, 'rougeLsum': 0.0425531914893617}
+0.48965591192245483
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos
+Intento entender tu crítica, pero lo que dices directamente no tiene sentido alguno.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a las inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8060200810432434], 'recall': [0.8262394070625305], 'f1': [0.8160045146942139], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.4, 'translation_length': 36, 'reference_length': 15}
+{'rouge1': 0.10256410256410256, 'rouge2': 0.0, 'rougeL': 0.05128205128205128, 'rougeLsum': 0.05128205128205128}
+0.42576271295547485
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh
+Hasta donde yo se, tener todo el dinero en Panama tampoco es legal...
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a nadie. Un poco de creatividad, vamos... estos putos negratas noos van a robar toda la pasta i<unk>aqui menos mal que yo la tengo en panamá</s>
+{'precision': [0.8017736077308655], 'recall': [0.8468420505523682], 'f1': [0.8236917853355408], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.11320754716981132, 0.038461538461538464, 0.0196078431372549, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.1176470588235294, 'translation_length': 53, 'reference_length': 17}
+{'rouge1': 0.07407407407407408, 'rouge2': 0.0, 'rougeL': 0.07407407407407408, 'rougeLsum': 0.07407407407407408}
+0.6617609262466431
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh
+Que asocien a los negros con los robos parece una excusa, o bien, que necesitan un chivo expiatorio.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a nadie. Un poco de creatividad, vamos... estos putos negratas noos van a robar toda la pasta i<unk>aqui menos mal que yo la tengo en panamá</s>
+{'precision': [0.7965762615203857], 'recall': [0.8237327337265015], 'f1': [0.8099269270896912], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09433962264150944, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.5238095238095237, 'translation_length': 53, 'reference_length': 21}
+{'rouge1': 0.16949152542372883, 'rouge2': 0.0, 'rougeL': 0.1016949152542373, 'rougeLsum': 0.1016949152542373}
+0.5443025231361389
+---------------------------------------------------------
+estos putos negratas noos van a robar toda la pasta iñaqui menos mal que yo la tengo en panamá https://t co/i3qgjse5hh
+Si bien existen algunos asaltos, no es cierto que haya un plan para robar todo el dinero de una porción de la sociedad. Estas siendo paranoico.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a nadie. Un poco de creatividad, vamos... estos putos negratas noos van a robar toda la pasta i<unk>aqui menos mal que yo la tengo en panamá</s>
+{'precision': [0.8133081793785095], 'recall': [0.8396850824356079], 'f1': [0.8262861967086792], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16981132075471697, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8275862068965518, 'translation_length': 53, 'reference_length': 29}
+{'rouge1': 0.23529411764705882, 'rouge2': 0.0, 'rougeL': 0.14705882352941174, 'rougeLsum': 0.14705882352941174}
+0.5431893467903137
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v
+Estas exagerando. Que algunas personas no te caigan bien no significa que el país se este "pudriendo".
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... algo se pudre en el per<unk> es el caos organizado surrealista subsahariano nuestra realidad</s>
+{'precision': [0.8031507134437561], 'recall': [0.8326953649520874], 'f1': [0.8176561594009399], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09433962264150944, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.5238095238095237, 'translation_length': 53, 'reference_length': 21}
+{'rouge1': 0.1724137931034483, 'rouge2': 0.0, 'rougeL': 0.13793103448275865, 'rougeLsum': 0.13793103448275865}
+0.5232203006744385
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v
+Ni están organizados, si con el caos. Solo son inmigrantes.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... algo se pudre en el per<unk> es el caos organizado surrealista subsahariano nuestra realidad</s>
+{'precision': [0.8047011494636536], 'recall': [0.8801854848861694], 'f1': [0.8407524228096008], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.11320754716981132, 0.019230769230769232, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.076923076923077, 'translation_length': 53, 'reference_length': 13}
+{'rouge1': 0.1176470588235294, 'rouge2': 0.04081632653061225, 'rougeL': 0.07843137254901962, 'rougeLsum': 0.07843137254901962}
+0.5661133527755737
+---------------------------------------------------------
+algo se pudre en el perú es el caos organizado surrealista subsahariano nuestra realidad https://t co/3hms5jyx7v
+Sugieres que, de alguna forma, la presencia de inmigrantes los está haciendo sufrir. Lo cual no es verdad.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... algo se pudre en el per<unk> es el caos organizado surrealista subsahariano nuestra realidad</s>
+{'precision': [0.8072140216827393], 'recall': [0.8458291292190552], 'f1': [0.8260705471038818], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.20754716981132076, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.409090909090909, 'translation_length': 53, 'reference_length': 22}
+{'rouge1': 0.2758620689655173, 'rouge2': 0.0, 'rougeL': 0.1724137931034483, 'rougeLsum': 0.1724137931034483}
+0.5716654062271118
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq
+Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado...
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso:</s>
+{'precision': [0.8342965841293335], 'recall': [0.813103437423706], 'f1': [0.8235636949539185], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12903225806451613, 0.06666666666666667, 0.034482758620689655, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.9375, 'translation_length': 31, 'reference_length': 16}
+{'rouge1': 0.06451612903225808, 'rouge2': 0.0, 'rougeL': 0.06451612903225808, 'rougeLsum': 0.06451612903225808}
+0.3331272602081299
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq
+No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso:</s>
+{'precision': [0.8181809782981873], 'recall': [0.8217583298683167], 'f1': [0.8199657201766968], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12903225806451613, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.9375, 'translation_length': 31, 'reference_length': 16}
+{'rouge1': 0.13333333333333333, 'rouge2': 0.0, 'rougeL': 0.13333333333333333, 'rougeLsum': 0.13333333333333333}
+0.46493637561798096
+---------------------------------------------------------
+¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings : https://t co/hrcb6n7jhq
+Me parece que estás tomando un estudio científico serio, y sacándolo completamente de contexto. No se puede tomar en serio algo así.
+
+<pad> No creo que haya diferencia alguna, realmente... ""la ""marcha negra"" acelera el paso:</s>
+{'precision': [0.828369140625], 'recall': [0.8166786432266235], 'f1': [0.8224824070930481], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16129032258064516, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.24, 'translation_length': 31, 'reference_length': 25}
+{'rouge1': 0.15, 'rouge2': 0.0, 'rougeL': 0.1, 'rougeLsum': 0.1}
+0.43488961458206177
+---------------------------------------------------------
+no se porque no existe un control fronterizo con colombia radical transeúntes y autos transporte de todo tipo ademas todo colombia no indocumentado deportado basta carajo
+Somos países vecinos, con culturas similares. No podemos reprimir a todo aquel que intente cruzar la frontera. No esta bién.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8171545267105103], 'recall': [0.8306065201759338], 'f1': [0.8238255977630615], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.19444444444444445, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5, 'translation_length': 36, 'reference_length': 24}
+{'rouge1': 0.1276595744680851, 'rouge2': 0.0, 'rougeL': 0.0851063829787234, 'rougeLsum': 0.0851063829787234}
+0.45489177107810974
+---------------------------------------------------------
+no se porque no existe un control fronterizo con colombia radical transeúntes y autos transporte de todo tipo ademas todo colombia no indocumentado deportado basta carajo
+Creo que exageras, como si todo lo que viniera de Colombia fuera malo.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8054313659667969], 'recall': [0.8335127830505371], 'f1': [0.8192315101623535], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.4, 'translation_length': 36, 'reference_length': 15}
+{'rouge1': 0.15789473684210525, 'rouge2': 0.05555555555555555, 'rougeL': 0.15789473684210525, 'rougeLsum': 0.15789473684210525}
+0.535952627658844
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1
+Quienes reclaman por el acoso que reciben, entienden la diferencia entre que te envíen una foto con tu consentimiento, y sin el. Algo que al parecer no estaría quedandote del todo claro.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... de hoy en adelante si una mujer te env<unk>a una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1 =></s>
+{'precision': [0.8038038015365601], 'recall': [0.8132551312446594], 'f1': [0.8085017800331116], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.19444444444444445, 0.014084507042253521, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0, 'translation_length': 72, 'reference_length': 36}
+{'rouge1': 0.3111111111111111, 'rouge2': 0.04545454545454545, 'rougeL': 0.15555555555555556, 'rougeLsum': 0.15555555555555556}
+0.5728154182434082
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1
+Las acusas de nazis, como si hubieran perpetrado un genocidio, lo cual claramente no hicieron.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... de hoy en adelante si una mujer te env<unk>a una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1 =></s>
+{'precision': [0.7858126163482666], 'recall': [0.8073940277099609], 'f1': [0.7964571118354797], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.0, 'translation_length': 72, 'reference_length': 18}
+{'rouge1': 0.14084507042253522, 'rouge2': 0.0, 'rougeL': 0.05633802816901408, 'rougeLsum': 0.05633802816901408}
+0.4912414252758026
+---------------------------------------------------------
+de hoy en adelante si una mujer te envía una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1
+Pues, eso es un delito si lo haces sin el consentimiento del otro, seas varon o seas mujer.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... de hoy en adelante si una mujer te env<unk>a una foto desnuda hay que denunciarla por acoso sexual y provocación femi nazis al ataque en 3-2-1 =></s>
+{'precision': [0.7924268841743469], 'recall': [0.8264788389205933], 'f1': [0.8090946674346924], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.4285714285714284, 'translation_length': 72, 'reference_length': 21}
+{'rouge1': 0.10810810810810811, 'rouge2': 0.0, 'rougeL': 0.08108108108108107, 'rougeLsum': 0.08108108108108107}
+0.5267552137374878
+---------------------------------------------------------
+nos hicimos una pregunta el hashtag 17a de 2017 en hashtag barcelona otros muchos se la hicieron ¿con el mogollón de negros subsaharianos manteros que hay siempre en la rambla cómo es que ninguno fue arrasado por la furgoneta de younes abouyaaqoub? ninguno entre los 15 muertos en ramblas https://t co/2bpauvgb7q
+¿Y qué? Que a mucha gente le resulte sospechoso no significa que realmente tengan algo que ver.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a nadie. Un poco de creatividad, vamos... nos hicimos una pregunta el hashtag 17a de 2017 en hashtag barcelona otros muchos se la hicieron <unk>con el mogollón de negros subsaharianos manteros que hay siempre en la rambla cómo es que ninguno fue arrasado por la furgoneta de younes abouyaaqoub?</s>
+{'precision': [0.7802294492721558], 'recall': [0.8135730028152466], 'f1': [0.7965524196624756], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06578947368421052, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.0, 'translation_length': 76, 'reference_length': 19}
+{'rouge1': 0.12195121951219513, 'rouge2': 0.0, 'rougeL': 0.0975609756097561, 'rougeLsum': 0.0975609756097561}
+0.45244038105010986
+---------------------------------------------------------
+nos hicimos una pregunta el hashtag 17a de 2017 en hashtag barcelona otros muchos se la hicieron ¿con el mogollón de negros subsaharianos manteros que hay siempre en la rambla cómo es que ninguno fue arrasado por la furgoneta de younes abouyaaqoub? ninguno entre los 15 muertos en ramblas https://t co/2bpauvgb7q
+Estas sugiriendo que tienen algo que ver, aunque no tienes ninguna prueba. Solo estas sacando a relucir tu racismo.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a nadie. Un poco de creatividad, vamos... nos hicimos una pregunta el hashtag 17a de 2017 en hashtag barcelona otros muchos se la hicieron <unk>con el mogollón de negros subsaharianos manteros que hay siempre en la rambla cómo es que ninguno fue arrasado por la furgoneta de younes abouyaaqoub?</s>
+{'precision': [0.7743516564369202], 'recall': [0.8155143857002258], 'f1': [0.7944002151489258], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07894736842105263, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.4545454545454546, 'translation_length': 76, 'reference_length': 22}
+{'rouge1': 0.09523809523809523, 'rouge2': 0.0, 'rougeL': 0.047619047619047616, 'rougeLsum': 0.047619047619047616}
+0.41429316997528076
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww
+Que consideres que es una invasión no va a cambiar el hecho de que se acojan refugiados y se les brinde atención basica. Eso es ser humanitario.
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales</s>
+{'precision': [0.8164194226264954], 'recall': [0.8381154537200928], 'f1': [0.8271252512931824], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.15517241379310345, 0.017543859649122806, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0, 'translation_length': 58, 'reference_length': 29}
+{'rouge1': 0.24, 'rouge2': 0.0273972602739726, 'rougeL': 0.18666666666666665, 'rougeLsum': 0.18666666666666665}
+0.5122311115264893
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww
+Solo estás siendo racista al decir que los refugiados nos invaden.
+
+<pad> No creo que sea demasiado dif<unk>cil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales</s>
+{'precision': [0.8078162670135498], 'recall': [0.8768052458763123], 'f1': [0.8408980965614319], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08620689655172414, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.833333333333333, 'translation_length': 58, 'reference_length': 12}
+{'rouge1': 0.20689655172413793, 'rouge2': 0.0, 'rougeL': 0.10344827586206896, 'rougeLsum': 0.10344827586206896}
+0.511379063129425
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon
+Tu chiste sobre las mujeres y la cocina no hace gracia.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... por las mujeres tienen cuatro neuronas??? una para cada fogon</s>
+{'precision': [0.8073065280914307], 'recall': [0.8590287566184998], 'f1': [0.8323648571968079], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.061224489795918366, 0.020833333333333332, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.083333333333333, 'translation_length': 49, 'reference_length': 12}
+{'rouge1': 0.13043478260869562, 'rouge2': 0.04545454545454545, 'rougeL': 0.08695652173913043, 'rougeLsum': 0.08695652173913043}
+0.4973679482936859
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon
+No es cierto que las mujeres sean tontas. Incluso hubo y hay grandes mentes de la historia, mujeres.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos... por las mujeres tienen cuatro neuronas??? una para cada fogon</s>
+{'precision': [0.816359281539917], 'recall': [0.8586170077323914], 'f1': [0.8369550704956055], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16326530612244897, 0.020833333333333332, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.3333333333333335, 'translation_length': 49, 'reference_length': 21}
+{'rouge1': 0.18867924528301885, 'rouge2': 0.03921568627450981, 'rougeL': 0.1509433962264151, 'rougeLsum': 0.1509433962264151}
+0.5169140100479126
+---------------------------------------------------------
+@user esto es una invasión africana salvamento marítimo como cooperador necesario y oneges ni te cuento de que viven?? nadie denuncia que van a por inmigrantes a aguas marroquíes vaya futuro tiene españa
+Técnicamente, no puede ser una invasión si los estas dejando entrar. En todo caso, puedes sospechar de sus motivos para ir, pero creo que estarías siendo paranoico.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8241486549377441], 'recall': [0.8172227144241333], 'f1': [0.8206710815429688], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.25, 0.02857142857142857, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.125, 'translation_length': 36, 'reference_length': 32}
+{'rouge1': 0.2181818181818182, 'rouge2': 0.03773584905660377, 'rougeL': 0.14545454545454545, 'rougeLsum': 0.14545454545454545}
+0.5420219302177429
+---------------------------------------------------------
+@user esto es una invasión africana salvamento marítimo como cooperador necesario y oneges ni te cuento de que viven?? nadie denuncia que van a por inmigrantes a aguas marroquíes vaya futuro tiene españa
+No tiene sentido que alguien denuncie ayuda humanitaria, en ningún país es considerado un delito.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a los inmigrantes, sin molestar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8124200701713562], 'recall': [0.8329455256462097], 'f1': [0.8225547671318054], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.1176470588235294, 'translation_length': 36, 'reference_length': 17}
+{'rouge1': 0.19047619047619052, 'rouge2': 0.0, 'rougeL': 0.14285714285714282, 'rougeLsum': 0.14285714285714282}
+0.5067024230957031
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz
+Quizás hacer patria si sea luchar contra las especulaciones, pero si vas a insistir en que es culpa de otro país nunca hallaras a los responsables.
+
+<pad> el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria</s>
+{'precision': [0.8195180892944336], 'recall': [0.8309354782104492], 'f1': [0.8251873254776001], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1388888888888889, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2857142857142858, 'translation_length': 36, 'reference_length': 28}
+{'rouge1': 0.20338983050847456, 'rouge2': 0.0, 'rougeL': 0.10169491525423728, 'rougeLsum': 0.10169491525423728}
+0.6093947887420654
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz
+La existencia de empresarios especuladores, y su nacionalidad, no tienen nada que ver. No es como que los países "impongan" algo así.
+
+<pad> el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria</s>
+{'precision': [0.8125386834144592], 'recall': [0.8288539052009583], 'f1': [0.8206152319908142], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2857142857142858, 'translation_length': 36, 'reference_length': 28}
+{'rouge1': 0.14814814814814814, 'rouge2': 0.0, 'rougeL': 0.1111111111111111, 'rougeLsum': 0.1111111111111111}
+0.4863448739051819
+---------------------------------------------------------
+el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria @user @user @user @user @user @user https://t co/26zwsii2vz
+El pueblo a veces se equivoca, y se las agarra con quienes no tienen la culpa de nada.
+
+<pad> el pueblo exige mas atencion en cuanto al sistema alimentario y contra la especulacion de precios impuesto por los chinos turcos arabes y colombianos defendamos lo nuestro hagamos patria</s>
+{'precision': [0.8118343353271484], 'recall': [0.8306514024734497], 'f1': [0.8211351037025452], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8, 'translation_length': 36, 'reference_length': 20}
+{'rouge1': 0.20408163265306123, 'rouge2': 0.0425531914893617, 'rougeL': 0.20408163265306123, 'rougeLsum': 0.20408163265306123}
+0.5549933910369873
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+Racismo? SI. Estas diciendo que su nacionalidad tiene relación con el hecho de que hayan cometido algún delito, cuando no es así.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8078311681747437], 'recall': [0.8169240951538086], 'f1': [0.812352180480957], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1538461538461537, 'translation_length': 30, 'reference_length': 26}
+{'rouge1': 0.13636363636363635, 'rouge2': 0.0, 'rougeL': 0.0909090909090909, 'rougeLsum': 0.0909090909090909}
+0.40359941124916077
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+Ni los alemanes siembran el pánico, ni las rumanas son carteristas, ni los árabes agreden turistas. En todo caso, si hay gente que hace esas cosas, su nacionalidad no es importante, pues no tiene nada que ver con que sean criminales.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8112098574638367], 'recall': [0.8046596050262451], 'f1': [0.8079214096069336], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.13333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 0.5488116360940264, 'length_ratio': 0.625, 'translation_length': 30, 'reference_length': 48}
+{'rouge1': 0.06451612903225806, 'rouge2': 0.0, 'rougeL': 0.06451612903225806, 'rougeLsum': 0.06451612903225806}
+0.33116310834884644
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+El telediario no es una fuente seria. No deberíamos confiar en lo que dicen.
+
+<pad> No creo que sea demasiado dificil encontrar una forma de ubicar a nadie. Un poco de creatividad, vamos...</s>
+{'precision': [0.8199056386947632], 'recall': [0.8393409848213196], 'f1': [0.829509437084198], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.875, 'translation_length': 30, 'reference_length': 16}
+{'rouge1': 0.17142857142857143, 'rouge2': 0.0, 'rougeL': 0.1142857142857143, 'rougeLsum': 0.1142857142857143}
+0.5410109758377075
+========================================
+F1 AVG:
+2.081831408871545
+Bleu AVG:
+0.0
+Rouge AVG:
+0.2753585916398014
+SBERT AVG:
+1.2705464009885434
