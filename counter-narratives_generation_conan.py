@@ -8,9 +8,11 @@ from datasets import Dataset
 import evaluate
 from sentence_transformers import SentenceTransformer, util
 from glob import glob
+import torch
 
 import argparse
 
+device = torch.device("cuda")
 parser = argparse.ArgumentParser(description="Train models for identifying argumentative components inside the ASFOCONG dataset")
 parser.add_argument("dataset", type=str, choices=["conan", "asohmo", "both"])
 # parser.add_argument("model", type=str, choices=["zeroshot", "fewshot", "finetuned"])
@@ -85,11 +87,9 @@ def load_asohmo():
     random.seed(42)
     random.shuffle(keys)
     for key in keys:
-        for cn in cns_by_tweet[key]:
-            if acum >= val_threshold:
-                to_append = {"hateSpeech": key, "counterSpeech": cn}
-
-                test_dataset.append(to_append)
+        to_append = {"hateSpeech": key, "counterSpeech": cns_by_tweet[key]}
+        if acum > val_threshold:
+            test_dataset.append(to_append)
         acum += len(cns_by_tweet[key])
 
     # test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
@@ -98,18 +98,17 @@ def load_asohmo():
 if args.dataset == "conan":   
     test_dataset = load_conan()
 else:
+    print("loading asohmo")
     test_dataset = load_asohmo()
 test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
-
 num_new_tokens = tokenizer.add_tokens(new_tokens)
+print("ECN token: ")
+print(tokenizer("<ECN>"))
 
 print("We added ", num_new_tokens, " new tokens")
-
-model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-model.resize_token_embeddings(len(tokenizer))
 
 dataset_tokenized = list(map(lambda sample: tokenizer("Generate a counter-narrative for the following hate speech:\n<SHS>" + sample["hateSpeech"] + "<EHS> => ", truncation=True)["input_ids"], test_dataset))
 max_source_length = max([len(x) for x in dataset_tokenized])
@@ -118,7 +117,7 @@ max_source_length = max([len(x) for x in dataset_tokenized])
 # max_target_length = max([len(x) for x in target_tokenized])
 
 def preprocess(sample, padding="max_length"):
-    inputs = "Generate a counter-narrative for the following hate speech:\n<SHS>" + sample["hateSpeech"] + "<EHS> => "
+    inputs = "Generate a non-hateful response for the following hate messages:\nI hate Muslims. They should not exist. => Muslims are human too. People can choose their own religion.\nAll immigrants are criminals and should be deported. => Most immigrants are hard-working people trying to have a better life for them and their families.\n Immigrants are lazy and cost a lot of money to the taxpayers. => Immigrants usually have the worst jobs and pay taxes as everyone else.\n" + sample["hateSpeech"] + " => "
     # labels = [sample["counterSpeech"]]
     model_inputs = tokenizer(inputs, padding=padding, max_length=max_source_length, truncation=True, return_tensors="pt")
     # labels = tokenizer("<SCN>" + sample["counterSpeech"] + "<ECN>", padding=padding, max_length=max_target_length, truncation=True)
@@ -126,15 +125,26 @@ def preprocess(sample, padding="max_length"):
     #     labels["input_ids"] = [
     #         (l if l != tokenizer.pad_token_id else -100) for l in labels["input_ids"]
     #     ]
+    model_inputs = model_inputs.to(device)
     model_inputs["labels"] = sample["counterSpeech"]
+    # model_inputs["hateSpeech"] = inputs
+    # model_inputs = model_inputs.to(device)
     return model_inputs
 
-test_data = test_data.map(preprocess)
+preprocessed_dataset = []
+for example in test_data:
+    preprocessed_dataset.append([preprocess(example), example["hateSpeech"]])
 
-testing_datasets = []
-for example in test_data.to_list():
-    testing_datasets.append(Dataset.from_list([example]))
+# print(preprocessed_dataset[0])
+# for example in preprocessed_dataset:
+#     print(example)
+#     dset = Dataset.from_list([example])
+#     print(dset[0])
+#     dset.to(device)
+#     testing_datasets.append(dset)
 
+# print("lllllllllllllllllllllllllllllllllllllll")
+# print(testing_datasets[0][0])
 sbert = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Metric
@@ -143,6 +153,10 @@ metric2 = evaluate.load("bleu")
 metric3 = evaluate.load("rouge")
 
 
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+model.resize_token_embeddings(len(tokenizer))
+model.to(device)
+
 def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False, temperature=False):
 
     f1_avg = 0.0
@@ -150,23 +164,33 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False,
     rouge_avg = 0.0
     sbert_avg = 0.0
 
-    w = open(f"flan-t5-xl_english_2e-05_zeroshot_{top_sampling}_{beam_search}_{temperature}", 'w')
-    for dataset in testing_datasets:
-        inputt = preprocess(dataset[0])
-        print(inputt)
+    w = open(f"{args.dataset}_flan-t5-xl_english_2e-05_zeroshot_{top_sampling}_{beam_search}_{temperature}", 'w')
+    for example in testing_datasets:
+        inputt = example[0]
+        tweet = example[1]
+        # del inputt["hateSpeech"]
+        # del inputt["counterSpeech"]
+        # del inputt["labels"]
+        # print(inputt)
+        # inputt.to(device)
         if beam_search:
-            result = model.generate(**inputt, max_new_tokens=512, eos_token_id=32103, no_repeat_ngram_size=4, num_beams=5, early_stopping=True)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, num_beams=5, early_stopping=True)
         elif top_sampling:
-            result = model.generate(**inputt, max_new_tokens=512, eos_token_id=32103, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92)
         elif temperature:
-            result = model.generate(**inputt, max_new_tokens=512, eos_token_id=32103, no_repeat_ngram_size=4, do_sample=True, temperature=0.7)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, temperature=0.7)
         else:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, eos_token_id=32103)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4)
+        preds = str(tokenizer.batch_decode(result)[0])
+        print("----------------------------------preds-----------------------------")
+        print(preds)
+        print("-----------------------------------tweet-------------------------")
+        print(tweet)
 
-        for labels in dataset[0]["counterSpeech"]:
+        for labels in inputt["labels"]:
 
-            tweet = dataset[0]["hateSpeech"]
-            preds = str(tokenizer.batch_decode(result)[0])
+            # print("labels:")
+            # print(labels)
 
             result1 = metric1.compute(predictions=[preds], references=[labels], lang="en")
             result2 = metric2.compute(predictions=[preds], references=[labels])
@@ -213,7 +237,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False,
     w.close()
 
 print("generating")
-evaluate_generation(testing_datasets)
-evaluate_generation(testing_datasets, top_sampling=True)
-evaluate_generation(testing_datasets, temperature=True)
-evaluate_generation(testing_datasets, beam_search=True)
+evaluate_generation(preprocessed_dataset)
+evaluate_generation(preprocessed_dataset, top_sampling=True)
+evaluate_generation(preprocessed_dataset, temperature=True)
+evaluate_generation(preprocessed_dataset, beam_search=True)
