@@ -2,7 +2,7 @@ import json
 import random
 from datasets import Dataset
 import pandas as pd
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM
 from datasets import load_dataset
 from datasets import Dataset
 import evaluate
@@ -21,12 +21,14 @@ parser.add_argument("dataset", type=str, choices=["conan", "asohmo", "both"])
 parser.add_argument("generation_strategy", type=str, choices=["zeroshot", "fewshot", "finetuned", "pretraining"])
 parser.add_argument("language", type=str, choices=["english", "multi"])
 parser.add_argument("--use_extra_info", type=str, choices=["collective", "premises", "all", ""], default="")
+parser.add_argument("--cn_strategy", type=str, default="", choices=["a", "b", "c", ""])
 parser.add_argument("--model_name", type=str, default="google/flan-t5-base")
 
 args = parser.parse_args()
 
 model_name = args.model_name
 language = args.language
+pretraining = args.generation_strategy == "pretraining" or args.generation_strategy == "adapt_to_strategy"
 
 FEWSHOT_EXAMPLES_AMOUNT = 2
 fewshot_examples = {}
@@ -51,7 +53,7 @@ def load_conan(language):
 
     acum = 0
     val_threshold = len(conan_dataset) * 0.8
-    if args.generation_strategy == "pretraining":
+    if pretraining:
         train_threshold = len(conan_dataset) * 0.7
         train_dataset = []
         val_dataset = []
@@ -62,7 +64,7 @@ def load_conan(language):
     random.shuffle(keys)
     current_fewshot_examples = {}
     for key in keys:
-        if args.generation_strategy == "pretraining":
+        if pretraining:
             if acum < train_threshold:
                 train_dataset.append({"hateSpeech": key, "counterSpeech": group_by_tweet[key][0], "language": group_by_tweet[key][1]})
             elif acum < val_threshold:
@@ -79,7 +81,7 @@ def load_conan(language):
             test_dataset.append({"hateSpeech": key, "counterSpeech": group_by_tweet[key][0], "language": group_by_tweet[key][1]})
 
         acum += len(group_by_tweet[key][0])
-    if args.generation_strategy == "pretraining":
+    if pretraining:
         return [test_data, train_dataset, val_dataset]
     return [test_dataset]
 
@@ -87,24 +89,27 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
     cns_by_tweet = {}
     nonargs = 0
     cn_length = 0
+    cn_type_not_present = 0
     for filename in glob(filenames):
         f = open(filename, "r")
         tweet_list = []
         is_arg = True
-        need_collective = use_extra_info == "collective" or use_extra_info == "all"
-        need_premises = use_extra_info == "premises" or use_extra_info == "all"
+        need_collective = use_extra_info == "collective" or use_extra_info == "all" or "use_extra_info" == "cn_b"
+        need_premises = use_extra_info == "premises" or use_extra_info == "all" or "use_extra_info" == "cn_a"
+        need_justification = use_extra_info == "cn_c"
         if need_collective:
             collective = []
             consecutive_collective = False
             property = []
             consecutive_property = False
-        if need_premises:
+        if need_premises or need_justification:
             justification = []
             consecutive_just = False
-            conclusion = []
-            consecutive_conc = False
-            pivot = []
-            consecutive_pivot = False
+            if need_premises:
+                conclusion = []
+                consecutive_conc = False
+                pivot = []
+                consecutive_pivot = False
         prev_line = ["", "", "", "", "", "", "", "", ""]
         for line in f:
             splitted_line = line.split("\t")
@@ -121,7 +126,7 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
                     property.append(" - ")
                 property.append(splitted_line[0])
                 consecutive_property = True
-            if splitted_line[2].startswith("Premise2Justification") and need_premises:
+            if splitted_line[2].startswith("Premise2Justification") and need_premises or need_justification:
                 if not prev_line[2].startswith("Premise2Justification") and consecutive_just:
                     justification.append(" - ")
                 justification.append(splitted_line[0])
@@ -136,7 +141,7 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
                     pivot.append(" - ")
                 pivot.append(splitted_line[0])
                 consecutive_pivot = True
-            if (not splitted_line[7].startswith("O")) and need_premises:
+            if (not splitted_line[7].startswith("O")) and need_premises or need_justification:
                 type_just = splitted_line[7].strip()
             if (not splitted_line[8].startswith("O")) and need_premises:
                 type_conc = splitted_line[8].strip()
@@ -158,35 +163,69 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
                 extra_info = " | Justification: " + " ".join(justification) + " (" + type_just + ") " + " | Conclusion: " + " ".join(conclusion) + " (" + type_conc + ") " + " | Pivot: " + " ".join(pivot)
             else:
                 extra_info = " | Justificación: " + " ".join(justification) + " (" + type_just + ") " + " | Conclusión: " + " ".join(conclusion) +  " (" + type_conc + ") " + " | Pivot: " + " ".join(pivot)
+        elif need_justification:
+            if language == "english":
+                extra_info = " | Justification: " + " ".join(justification) + " (" + type_just + ") "
+            else:
+                extra_info = " | Justificación: " + " ".join(justification) + " (" + type_just + ") "
         else:
             extra_info = ""
 
         # print(tweet)
         counternarratives = []
         cn = open(filename.replace("conll", "cn"), "r")
-        for line in cn:
-            counternarratives.append(line)
+        if use_extra_info.startswith("cn_"):
+            cn_not_present = False
+        for idx, line in enumerate(cn):
+            if use_extra_info == "cn_a" or use_extra_info == "cn_a_no_info":
+                if idx == 0:
+                    if line.replace("\n", "").strip() != "":
+                        counternarratives.append(line)
+                    else:
+                        cn_not_present = True
+            elif use_extra_info == "cn_b" or use_extra_info == "cn_b_no_info":
+                if idx == 1:
+                    if line.replace("\n", "").strip() != "":
+                        counternarratives.append(line)
+                    else:
+                        cn_not_present = True
+            elif use_extra_info == "cn_c" or use_extra_info == "cn_c_no_info":
+                if idx == 2:
+                    if line.replace("\n", "").strip() != "":
+                        counternarratives.append(line)
+                    else:
+                        cn_not_present = True
+            else:
+                counternarratives.append(line)
         if tweet in cns_by_tweet:
             cns_by_tweet[tweet]["cns"] += counternarratives
         else:
-            cns_by_tweet[tweet] = {"cns": counternarratives, "lang": "EN" if language == "english" else "ES", "extra_info": extra_info}
+            if use_extra_info.startswith("cn_") and cn_not_present:
+                cn_type_not_present += 1
+            else:
+                cns_by_tweet[tweet] = {"cns": counternarratives, "lang": "EN" if language == "english" else "ES", "extra_info": extra_info}
         cn_length += len(counternarratives)
-    return cns_by_tweet, nonargs, cn_length
+        if len(counternarratives) > 1:
+            print("ERRRRRRORRRR")
+            print(len(counternarratives))
+    return cns_by_tweet, nonargs, cn_length, cn_type_not_present
 
 
 def load_asohmo(language, use_extra_info=""):
 
     if language == "english":
-        cns_by_tweet, nonargs, cn_length = parse_dataset("dataset/ASOHMO/english/*.conll", use_extra_info=use_extra_info, language=language)
+        cns_by_tweet, nonargs, cn_length, cn_type_not_present = parse_dataset("dataset/ASOHMO/english/*.conll", use_extra_info=use_extra_info, language=language)
     elif language == "multi":
-        cns_by_tweet, nonargs, cn_length = parse_dataset("dataset/ASOHMO/spanish/*.conll", use_extra_info=use_extra_info, language=language)
-        if args.generation_strategy == "pretraining":
-            cns_by_tweet2, nonargs2, cn_length2 = parse_dataset("dataset/ASOHMO/english/*.conll", use_extra_info=use_extra_info, language="english")
+        cns_by_tweet, nonargs, cn_length, cn_type_not_present = parse_dataset("dataset/ASOHMO/spanish/*.conll", use_extra_info=use_extra_info, language=language)
+        if pretraining:
+            cns_by_tweet2, nonargs2, cn_length2, cn_type_not_present2 = parse_dataset("dataset/ASOHMO/english/*.conll", use_extra_info=use_extra_info, language="english")
             cns_by_tweet = {**cns_by_tweet, **cns_by_tweet2}
             nonargs += nonargs2
             cn_length += cn_length2
+            cn_type_not_present += cn_type_not_present2
+    print(f"Counter narratives without the required type of counter-narrative: {cn_type_not_present}")
     print(f"Non arg examples discarted for not having CN: {nonargs}")
-    if args.generation_strategy == "pretraining":
+    if pretraining:
         train_threshold = cn_length * 0.7
         train_dataset = []
         val_dataset = []
@@ -200,7 +239,7 @@ def load_asohmo(language, use_extra_info=""):
     current_fewshot_examples = {}
     for key in keys:
         # print(to_append)
-        if args.generation_strategy == "pretraining":
+        if pretraining:
             for cn in cns_by_tweet[key]["cns"]:
                 to_append = {"hateSpeech": key + cns_by_tweet[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet[key]["lang"]}
                 if acum < train_threshold:
@@ -224,7 +263,7 @@ def load_asohmo(language, use_extra_info=""):
         acum += len(cns_by_tweet[key]["cns"])
 
     # test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
-    if args.generation_strategy == "pretraining":
+    if pretraining:
         return [test_dataset, train_dataset, val_dataset]
     return [test_dataset]
 
@@ -233,7 +272,23 @@ if args.dataset == "conan":
     datasetss = load_conan(args.language)
 elif args.dataset == "asohmo":
     print("loading asohmo")
-    datasetss = load_asohmo(args.language, use_extra_info=args.use_extra_info)
+    exxtra_info = args.use_extra_info
+    if args.cn_strategy == "a":
+        if args.use_extra_info == "premises":
+            exxtra_info = "cn_a"
+        else:
+            exxtra_info = "cn_a_no_info"
+    elif args.cn_strategy == "b":
+        if args.use_extra_info == "collective":
+            exxtra_info = "cn_b"
+        else:
+            exxtra_info = "cn_b_no_info"
+    elif args.cn_strategy == "c":
+        if args.use_extra_info == "premises":
+            exxtra_info = "cn_c"
+        else:
+            exxtra_info = "cn_c_no_info"
+    datasetss = load_asohmo(args.language, use_extra_info=exxtra_info)
 else:
     print("loading both datasets")
     datasetss1 = load_asohmo(args.language)
@@ -241,30 +296,46 @@ else:
     datasetss = [dtst1 + dtst2 for dtst1, dtst2 in zip(datasetss1, datasetss2)]
 
 test_dataset = datasetss[0]
-if args.generation_strategy == "pretraining":
+if pretraining:
     train_dataset = datasetss[1]
     val_dataset = datasetss[2]
 
 test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
-if args.generation_strategy == "pretraining":
+if pretraining:
     train_data = Dataset.from_pandas(pd.DataFrame(train_dataset))
     val_data = Dataset.from_pandas(pd.DataFrame(val_dataset))
 
+
+
+
 tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+# tokenizer.pad_token = tokenizer.eos_token
+
+# print("llllllllllllllllllllllllllllllllllllllllllll")
+# print(tokenizer.pad_token)
+# print(tokenizer.eos_token)
 
 new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
 num_new_tokens = tokenizer.add_tokens(new_tokens)
 print("ECN token: ")
-print(tokenizer("<ECN>"))
+tkn = tokenizer("<ECN>")
+print(tkn)
+eos_token_id = tkn["input_ids"][0]
 
 print("We added ", num_new_tokens, " new tokens")
 
 if args.generation_strategy == "finetuned":
-    model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_{args.language}_{args.use_extra_info}_2e-05_8Epochs"
+    model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_{args.cn_strategy}_2e-05_8Epochs"
 
-model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b"):
+    model = AutoModelForCausalLM.from_pretrained(model_name)
+    model.to(device)
+else:
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+    model.to(device)
+
 model.resize_token_embeddings(len(tokenizer))
-model.to(device)
 
 def generate_prompt(text, strategy, language):
     initial_prompt = "Generate a non-hateful response for the following hate messages:\n"
@@ -280,7 +351,7 @@ def generate_prompt(text, strategy, language):
     elif strategy == "fewshot":
         example_list = []
         for examp in fewshot_examples[language]:
-            example_list.append(examp["hateSpeech"] + " => " + examp["counterSpeech"])
+            example_list.append("<SHS>" + examp["hateSpeech"] + "<EHS> => <SCN>" + examp["counterSpeech"] + "<ECN>")
         examples = '\n'.join(example_list)
         # examples = """
         #     I hate Muslims. They should not exist. => Muslims are human too. People can choose their own religion.
@@ -312,14 +383,14 @@ def generate_prompt(text, strategy, language):
         return initial_prompt + "<SHS>" + text + "<EHS> => "
 
 datasett = test_dataset
-if args.generation_strategy == "pretraining":
+if pretraining:
     datasett += train_dataset
     datasett += val_dataset
 
 dataset_tokenized = list(map(lambda sample: tokenizer(generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"]), truncation=True)["input_ids"], datasett))
 max_source_length = max([len(x) for x in dataset_tokenized])
 
-if args.generation_strategy == "pretraining":
+if pretraining:
     target_tokenized = list(map(lambda sample: tokenizer("<SCN>" + sample["counterSpeech"] + "<ECN>", truncation=True)["input_ids"], datasett))
     max_target_length = max([len(x) for x in target_tokenized])
 
@@ -328,8 +399,9 @@ def preprocess(sample, padding="max_length"):
     inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"])
     model_inputs = tokenizer(inputs, padding=padding, max_length=max_source_length, truncation=True, return_tensors="pt")
     model_inputs = model_inputs.to(device)
-    if args.generation_strategy == "pretraining":
+    if pretraining:
         model_inputs["input_ids"] = torch.flatten(model_inputs["input_ids"])
+        model_inputs["attention_mask"] = torch.flatten(model_inputs["attention_mask"])
         labels = tokenizer("<SCN>" + sample["counterSpeech"] + "<ECN>", padding=padding, max_length=max_target_length, truncation=True)
         if padding == "max_length":
             labels["input_ids"] = [
@@ -362,13 +434,13 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False,
         tweet = example[1]
         # inputt.to(device)
         if beam_search:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, num_beams=5, early_stopping=True)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, num_beams=5, early_stopping=True, eos_token_id = eos_token_id)
         elif top_sampling:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92, eos_token_id = eos_token_id)
         elif temperature:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, temperature=0.7)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, temperature=0.7, eos_token_id = eos_token_id)
         else:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, eos_token_id = eos_token_id)
         preds = str(tokenizer.batch_decode(result)[0])
         print("----------------------------------tweet-----------------------------")
         print(tweet)
@@ -422,7 +494,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False,
     w.close()
 
 
-if args.generation_strategy == "pretraining":
+if pretraining:
 
     train_data = train_data.map(preprocess)
     val_data = val_data.map(preprocess)
@@ -474,9 +546,9 @@ if args.generation_strategy == "pretraining":
     # Define training args
     training_args = Seq2SeqTrainingArguments(
         output_dir=repository_id,
-        per_device_train_batch_size=8,
-        per_device_eval_batch_size=8,
-        gradient_accumulation_steps=8,
+        per_device_train_batch_size=2,
+        per_device_eval_batch_size=2,
+        gradient_accumulation_steps=2,
         predict_with_generate=True,
         generation_max_length=200,
         generation_num_beams=4,
@@ -515,7 +587,7 @@ if args.generation_strategy == "pretraining":
 
     trainer.train()
 
-    trainer.save_model(f"{args.dataset}_{args.model_name}_{args.language}_{args.use_extra_info}_2e-05_8Epochs".replace("/", "-"))
+    trainer.save_model(f"{args.dataset}_{args.model_name}_{args.language}_{args.use_extra_info}_{args.cn_strategy}_2e-05_8Epochs".replace("/", "-"))
 else:
     preprocessed_dataset = []
     for example in test_data:
