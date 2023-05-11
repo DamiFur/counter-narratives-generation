@@ -196,7 +196,8 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
                     else:
                         cn_not_present = True
             else:
-                counternarratives.append(line)
+                if line.replace("\n", "").strip() != "":
+                    counternarratives.append(line)
         if tweet in cns_by_tweet:
             cns_by_tweet[tweet]["cns"] += counternarratives
         else:
@@ -205,7 +206,7 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
             else:
                 cns_by_tweet[tweet] = {"cns": counternarratives, "lang": "EN" if language == "english" else "ES", "extra_info": extra_info}
         cn_length += len(counternarratives)
-        if len(counternarratives) > 1:
+        if use_extra_info.startswith("cn_") and len(counternarratives) > 1:
             print("ERRRRRRORRRR")
             print(len(counternarratives))
     return cns_by_tweet, nonargs, cn_length, cn_type_not_present
@@ -326,7 +327,10 @@ eos_token_id = tkn["input_ids"][0]
 print("We added ", num_new_tokens, " new tokens")
 
 if args.generation_strategy == "finetuned":
-    model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_{args.cn_strategy}_2e-05_8Epochs"
+    if args.cn_strategy != "":
+        model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_{args.cn_strategy}_2e-05_8Epochs"
+    else:
+        model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
 if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b"):
     model = AutoModelForCausalLM.from_pretrained(model_name)
@@ -427,7 +431,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False,
     rouge_avg = 0.0
     sbert_avg = 0.0
 
-    filename = f"{args.dataset}_{args.model_name}_{args.language}_2e-05_{args.generation_strategy}_{args.use_extra_info}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
+    filename = f"{args.dataset}_{args.model_name}_{args.language}_2e-05_{args.generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
     w = open(filename, 'w')
     for example in testing_datasets:
         inputt = example[0]

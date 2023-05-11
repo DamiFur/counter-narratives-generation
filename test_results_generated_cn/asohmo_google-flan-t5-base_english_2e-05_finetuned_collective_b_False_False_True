@@ -1,0 +1,639 @@
+---------------------------------------------------------
+@user says dreamers represent the best of what hashtag america has to offer 60k with arrest records not our best note to hashtag kamalaharris uscis director cissnayou could be arrested a whole lot of times and still get daca hashtag nodaca
+Dreamers are looking to make a life, it's not fair to invent a negative past for them in order to run them off
+
+<pad><SCN> Dreamers have the potential to be arrested and then the reality of being a dreamer changes <ECN>
+{'precision': [0.8362616300582886], 'recall': [0.8610303997993469], 'f1': [0.8484652638435364], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0416666666666667, 'translation_length': 25, 'reference_length': 24}
+{'rouge1': 0.13953488372093023, 'rouge2': 0.0, 'rougeL': 0.13953488372093023, 'rougeLsum': 0.13953488372093023}
+0.4808349013328552
+---------------------------------------------------------
+@user delhi in last 3-4 yrs have become slum city nobody follow traffic rules all pavements have been encroached upon illegal constructions across yumuna go unabated influx of illegal migrants have increased crime rate on increase
+You assume that migrants don't follow traffic rules, and even if they do, what does that have to do with increased crime rates? because I don't see the relationship...
+
+<pad><SCN> It is not true that illegal constructions have caused crime rate to increase. It is also not true that the rate of crime has decreased. <ECN>
+{'precision': [0.8664180040359497], 'recall': [0.8546618223190308], 'f1': [0.8604997396469116], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2222222222222222, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0285714285714285, 'translation_length': 36, 'reference_length': 35}
+{'rouge1': 0.20338983050847456, 'rouge2': 0.0, 'rougeL': 0.13559322033898305, 'rougeLsum': 0.13559322033898305}
+0.5349396467208862
+---------------------------------------------------------
+certain immigrant groups create the same problems wherever they go london new york or melbourne yet we are told we are all the same race doesnt matter &amp millions of them wont change our societies apart from anything else we are being asked to suspend our belief in reality
+What kind of "problems" are you referring to? People cause problems, whether they are immigrants or not....
+
+<pad><SCN> Immigrants cause problems wherever they go, no matter where they come from. Immigrant groups are not a problem <ECN>
+{'precision': [0.862789511680603], 'recall': [0.8657344579696655], 'f1': [0.8642594814300537], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2413793103448276, 0.03571428571428571, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.16, 'translation_length': 29, 'reference_length': 25}
+{'rouge1': 0.31578947368421056, 'rouge2': 0.05555555555555556, 'rougeL': 0.2631578947368421, 'rougeLsum': 0.2631578947368421}
+0.654505729675293
+---------------------------------------------------------
+democrats need to change that hispanic split: 59 % of hispanics surveyed here think most immigrants are in the united states illegally that is likely a contributor to dems not being able to win hispanic votes by a bigger margin :https://t co/95flssx4hi
+Well, I need to see the statistics that support that idea... In the meantime, it's just a rumor
+
+<pad><SCN> Immigrants are more likely to vote in a bigger margin than Americans. Most of them, though, are not. <ECN>
+{'precision': [0.8424992561340332], 'recall': [0.8481361865997314], 'f1': [0.8453083634376526], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1935483870967742, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.3478260869565217, 'translation_length': 31, 'reference_length': 23}
+{'rouge1': 0.15, 'rouge2': 0.0, 'rougeL': 0.15, 'rougeLsum': 0.15}
+0.23885881900787354
+---------------------------------------------------------
+@user @user ingrham wr r the far lefties now ( global kooks ) why r they not protesting in these countries where these immigrants are fleeing from (come on george $oroh$) and thats why we hashtag conservatives r smart enough not to buy into t
+Not all the left is globalist... Not all conservatives are nationalists...
+
+<pad><SCN> Most of them are not refugees, they are fleeing war or hunger. <ECN>
+{'precision': [0.8300734758377075], 'recall': [0.8441140651702881], 'f1': [0.8370348811149597], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08695652173913043, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.3529411764705883, 'translation_length': 23, 'reference_length': 17}
+{'rouge1': 0.15384615384615383, 'rouge2': 0.0, 'rougeL': 0.15384615384615383, 'rougeLsum': 0.15384615384615383}
+0.255941778421402
+---------------------------------------------------------
+delhi is national capital&amp centre for all states so if mad keji is allowed his way it will soon become full of encroachers illegal migrants
+Nobody tries to "encroach" another country. They go seeking for make a living. As simple as that
+
+<pad><SCN> It is not true that illegal migrants are largely criminals, but it is not true. <ECN>
+{'precision': [0.8296127319335938], 'recall': [0.8511666059494019], 'f1': [0.8402515053749084], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07692307692307693, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2380952380952381, 'translation_length': 26, 'reference_length': 21}
+{'rouge1': 0.05714285714285714, 'rouge2': 0.0, 'rougeL': 0.05714285714285714, 'rougeLsum': 0.05714285714285714}
+0.27880531549453735
+---------------------------------------------------------
+hispanics have used immigration to invade america changing its demographics and also changing politics we must begin revoking citizenship â
+Nobody is invading your country. People have the right to migrate, even if they don't speak the same language as you...
+
+<pad><SCN> It is not true that immigrants have invaded America, but rather that it has done nothing wrong to change it. <ECN>
+{'precision': [0.8380641937255859], 'recall': [0.8613430261611938], 'f1': [0.8495441675186157], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16129032258064516, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1923076923076923, 'translation_length': 31, 'reference_length': 26}
+{'rouge1': 0.1333333333333333, 'rouge2': 0.0, 'rougeL': 0.1333333333333333, 'rougeLsum': 0.1333333333333333}
+0.5460501909255981
+---------------------------------------------------------
+this would be amusing if it didnt empower our enemies libprog cucks out to little brown people (whom of course are majorities in their own countries ) hashtag whitegenocide hashtag stoptheinvasion https://t co/gjvyjoslh3
+You know nothing about immigrants, not even where are they from, but you claim they are majorities in their country? Why are they escaping then, if they have all this support?
+
+<pad><SCN> It is not true that little brown people are "white genocides". <ECN>
+{'precision': [0.8097572326660156], 'recall': [0.831812858581543], 'f1': [0.8206368684768677], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08695652173913043, 0.0, 0.0, 0.0], 'brevity_penalty': 0.5682366036329846, 'length_ratio': 0.6388888888888888, 'translation_length': 23, 'reference_length': 36}
+{'rouge1': 0.08888888888888889, 'rouge2': 0.0, 'rougeL': 0.08888888888888889, 'rougeLsum': 0.08888888888888889}
+0.23972482979297638
+---------------------------------------------------------
+these people are native americans the land you claim is yours was theres until our immigrant ancestors stole it from them heres your small history lesson you should have learned in school thanks for coming to my ted talk https://t co/mbovkjt5rx
+Immigrants stole what? Uninhabited land?
+
+<pad><SCN> Immigrants stole our land and destroyed it, so we don't know how long it took for them to steal it. I think the answer is yes <ECN>
+{'precision': [0.842402994632721], 'recall': [0.8757678270339966], 'f1': [0.8587614297866821], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08108108108108109, 0.027777777777777776, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.285714285714286, 'translation_length': 37, 'reference_length': 7}
+{'rouge1': 0.17142857142857143, 'rouge2': 0.0606060606060606, 'rougeL': 0.17142857142857143, 'rougeLsum': 0.17142857142857143}
+0.6746487021446228
+---------------------------------------------------------
+* spain ðÿ‡ªðÿ‡¸ socialist pm pedro sanc he z in panic mode as aggressive male migrants overw he lm spain what did he expect? https://t co/hccqmsq9vl hashtag v4 hashtag visegrad https://t co/wlkbhflu58
+Migrants are not aggressive and are not overwhelming Spain. Migrants are poor people looking for a better future
+
+<pad><SCN> Migrants are not aggressive and don't overwhelm Spain. Migrant law makes it illegal for you to go to any place you like. <ECN>
+{'precision': [0.8785762786865234], 'recall': [0.9232648015022278], 'f1': [0.9003663659095764], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.12503053621822974, 'precisions': [0.24242424242424243, 0.15625, 0.0967741935483871, 0.06666666666666667], 'brevity_penalty': 1.0, 'length_ratio': 1.736842105263158, 'translation_length': 33, 'reference_length': 19}
+{'rouge1': 0.3181818181818182, 'rouge2': 0.19047619047619052, 'rougeL': 0.3181818181818182, 'rougeLsum': 0.3181818181818182}
+0.7762984037399292
+---------------------------------------------------------
+we let these hashtag migrants in to our country for a better life but whats about our lives and our childrens future that do not want to live by our laws these hashtag muslims do not respect our way of life hashtag sendthemback
+It is not true that they do not respect your way of life. The problem is that you do not respect theirs.
+
+<pad><SCN> Are you suggesting that all Muslims do not respect our way of life? That' s not true <ECN>
+{'precision': [0.8488271236419678], 'recall': [0.9016737937927246], 'f1': [0.8744527697563171], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.37037037037037035, 0.19230769230769232, 0.08, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.125, 'translation_length': 27, 'reference_length': 24}
+{'rouge1': 0.5238095238095238, 'rouge2': 0.25, 'rougeL': 0.4285714285714286, 'rougeLsum': 0.4285714285714286}
+0.5130959749221802
+---------------------------------------------------------
+the eu will keep his refugees and dont realize that its a selfkilling programm orban is right: stop the refugees otherwise the eu will be finished https://t co/qse7alijxm
+I don't understand the need to associate refugees with problems. You know they are fleeing from them, right? If anything, you should be concerned about who is causing them.
+
+<pad><SCN> Why do you associate refugees with self-killing? You are comparing them to criminals. <ECN>
+{'precision': [0.8667463064193726], 'recall': [0.8763536214828491], 'f1': [0.8715234994888306], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.4166666666666667, 0.08695652173913043, 0.045454545454545456, 0.0], 'brevity_penalty': 0.6592406302004439, 'length_ratio': 0.7058823529411765, 'translation_length': 24, 'reference_length': 34}
+{'rouge1': 0.3404255319148936, 'rouge2': 0.08888888888888889, 'rougeL': 0.25531914893617025, 'rougeLsum': 0.25531914893617025}
+0.5365723371505737
+---------------------------------------------------------
+@user there will be bitterness in the uk when you sleep rough look up and see refuges walk into houses violence isnt just migrant
+Refugees are rarely violent. Think about it, they are leaving behind everything they have to flee from violence....
+
+<pad><SCN> Migrants are people escaping war or persecution and are not violent. Migrant and refugee are people attempting to make a living <ECN>
+{'precision': [0.8382658958435059], 'recall': [0.862939178943634], 'f1': [0.8504236340522766], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16129032258064516, 0.03333333333333333, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2916666666666667, 'translation_length': 31, 'reference_length': 24}
+{'rouge1': 0.1904761904761905, 'rouge2': 0.0, 'rougeL': 0.1904761904761905, 'rougeLsum': 0.1904761904761905}
+0.6244885921478271
+---------------------------------------------------------
+@user hashtag nodaca hashtag tuesdaythoughts obama used dreamer illegal aliens to defraud the american dream hashtag nodacadeal hashtag americafirst clint eastwood was mocked forhis 2012 rnc speech yet the new hashtag obama painting confirms obama is nothing but an empty chair clint
+Most immigrants want to improve their quality of life through hard work. That seems to be the opposite of defrauding the american dream
+
+<pad><SCN> Not all immigrants are defrauding the American dream. They are people trying to improve their quality of life. They are not defrauders... <ECN>
+{'precision': [0.8810963034629822], 'recall': [0.9109638929367065], 'f1': [0.8957812786102295], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.15384750052099497, 'precisions': [0.3055555555555556, 0.17142857142857143, 0.11764705882352941, 0.09090909090909091], 'brevity_penalty': 1.0, 'length_ratio': 1.5, 'translation_length': 36, 'reference_length': 24}
+{'rouge1': 0.4583333333333333, 'rouge2': 0.34782608695652173, 'rougeL': 0.2916666666666667, 'rougeLsum': 0.2916666666666667}
+0.7476739287376404
+---------------------------------------------------------
+"""@user @user @user 100% agreed these are illegal aliens not immigrants boat people are a sugar-coated way of putting it it scares me that many australians on twitter still think its okay for these """ immigrants """ to just turn up hashtag sendthemback"""
+It's not like they're trying to cheat the system. It's just that they had no choice.
+
+<pad><SCN> Why do you associate immigrants with such bad things as sugar-coated words? That's just a xenophobic xenofophobic lie <ECN>
+{'precision': [0.8079655766487122], 'recall': [0.8491666316986084], 'f1': [0.828053891658783], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03571428571428571, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5555555555555556, 'translation_length': 28, 'reference_length': 18}
+{'rouge1': 0.14285714285714288, 'rouge2': 0.049999999999999996, 'rougeL': 0.09523809523809525, 'rougeLsum': 0.09523809523809525}
+0.1340845823287964
+---------------------------------------------------------
+"@user a special team of 100 people be made under a most respected rtd judge let them visit each indian state camp there &amp identify all the illegal migrants &amp people with expired visas govt then must ensure immediate deportation for the"
+If they had visas they are not illegal, they was allowed to come in. At worst, they are in an irregular situation.
+
+<pad><SCN> You cannot judge illegal immigrants without checking their visas. They are people who are in trouble with the system and are not allowed to work or study. <ECN>
+{'precision': [0.850801944732666], 'recall': [0.8843038082122803], 'f1': [0.8672294020652771], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2631578947368421, 0.08108108108108109, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.4615384615384615, 'translation_length': 38, 'reference_length': 26}
+{'rouge1': 0.34615384615384615, 'rouge2': 0.19999999999999998, 'rougeL': 0.23076923076923075, 'rougeLsum': 0.23076923076923075}
+0.5190427303314209
+---------------------------------------------------------
+@user and you want to restart catch and release ??? hashtag nohr392 hashtag nodaca hashtag noh1b until labor participation rate is at least 80% hashtag nocatch&release illegal alien accused of raping trafficking girl in louisiana | breitbart via @user
+And since he is an immigrant, he is surely guilty, although the courts have not yet ruled on the matter, right? that is so wrong
+
+<pad><SCN> I don't understand why anyone would want to be "trapped" by the state. But if he had to, he would have to go through the entire process again. <ECN>
+{'precision': [0.8393846750259399], 'recall': [0.8524944186210632], 'f1': [0.8458887934684753], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.14285714285714285, 0.024390243902439025, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.4482758620689655, 'translation_length': 42, 'reference_length': 29}
+{'rouge1': 0.17543859649122806, 'rouge2': 0.0, 'rougeL': 0.14035087719298245, 'rougeLsum': 0.14035087719298245}
+0.15626174211502075
+---------------------------------------------------------
+stephen miller - public charge rule is not new its been on the books since 1882 50% of immigrants on welfare 90% will remain on welfare after 20 years burdening u s taxpayers hashtag immigration hashtag trump hashtag maga hashtag sendthemback https://t co/yoswywiiuv via @user
+Those who come with the desire to work and get ahead, become a public charge? I mean, maybe a few, but I don't think it will affect enough to make you get angry with the rest of them...
+
+<pad><SCN> Immigrants are on welfare for up to 20 years, and you know that's not how long it will take for them to get on welfare. <ECN>
+{'precision': [0.8389476537704468], 'recall': [0.8413065671920776], 'f1': [0.8401254415512085], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2777777777777778, 0.02857142857142857, 0.0, 0.0], 'brevity_penalty': 0.7788007830714049, 'length_ratio': 0.8, 'translation_length': 36, 'reference_length': 45}
+{'rouge1': 0.23529411764705882, 'rouge2': 0.030303030303030304, 'rougeL': 0.17647058823529413, 'rougeLsum': 0.17647058823529413}
+0.12187924981117249
+---------------------------------------------------------
+danish hashtag muslims insist on wearing a hashtag niqab (or faceveil) &amp still desire to live as a non-person ghost muslims are hopelessly unable to assimilate hashtag sendthemback @user @user @user @user https://t co/nd4xazn5ns
+Not necessarily Muslims, and I don't think all of them. In any case, the reason is that this is the way they dressed all their lives, and not because they wanted to be "ghosts".
+
+<pad><SCN> Do you know that all Muslims are non-person ghosts? How can you assimilate them? <ECN>
+{'precision': [0.826941728591919], 'recall': [0.8404790163040161], 'f1': [0.8336554169654846], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2, 0.0, 0.0, 0.0], 'brevity_penalty': 0.5272924240430485, 'length_ratio': 0.6097560975609756, 'translation_length': 25, 'reference_length': 41}
+{'rouge1': 0.18867924528301885, 'rouge2': 0.0, 'rougeL': 0.11320754716981132, 'rougeLsum': 0.11320754716981132}
+0.597535252571106
+---------------------------------------------------------
+@user total lie cong is the main culprit for influx of illegal migrants both bangladeshis&amp rhongyias if they deported few millions came during their tenures&amp they encouraged muslim illegal migrants &amp shooed away hindu migrants
+Can you prove it, because it sounds like a conspiracy theory to me, you know?
+
+<pad><SCN> The only thing that is causing the problem is the congs. You can't accuse them of anything, but you can't state exactly what they are. <ECN>
+{'precision': [0.834184467792511], 'recall': [0.8495146632194519], 'f1': [0.8417798280715942], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05405405405405406, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0555555555555554, 'translation_length': 37, 'reference_length': 18}
+{'rouge1': 0.13333333333333333, 'rouge2': 0.0, 'rougeL': 0.08888888888888888, 'rougeLsum': 0.08888888888888888}
+0.16139443218708038
+---------------------------------------------------------
+our ancestors called migrants invaders we should do the same
+By definition, invader and immigrant cannot be the same. One of them enters to conquer, and the other comes to live in the community.
+
+<pad><SCN> Migrants are not invaders, they are all citizens of their countries. Migrant are people of good will and good governance. <ECN>
+{'precision': [0.8423480987548828], 'recall': [0.8743934631347656], 'f1': [0.8580716848373413], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.15625, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1428571428571428, 'translation_length': 32, 'reference_length': 28}
+{'rouge1': 0.0851063829787234, 'rouge2': 0.0, 'rougeL': 0.0851063829787234, 'rougeLsum': 0.0851063829787234}
+0.5594167709350586
+---------------------------------------------------------
+"@user the disgrace is the illegal parent who brought their kids on their cirme spree to illegally invade the u s so taxpayers pay for their kids education wic and medicaid we dont owe illegals our tax dollars hashtag sendthemback hashtag walkaway hashtag trump hashtag maga hashtag rednationrising"
+What kind of father would go to another country and leave behind his children? come on!
+
+<pad><SCN> Assuming that illegal parents are paying taxes on their kids' education and medicaid, then that is a serious accusation. <ECN>
+{'precision': [0.8241537809371948], 'recall': [0.838986873626709], 'f1': [0.831504225730896], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06666666666666667, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.6666666666666667, 'translation_length': 30, 'reference_length': 18}
+{'rouge1': 0.10526315789473685, 'rouge2': 0.0, 'rougeL': 0.052631578947368425, 'rougeLsum': 0.052631578947368425}
+0.20215781033039093
+---------------------------------------------------------
+edmonton attacker identified as 30yo somali refugee abdulahi hasan sharif was known to police - chthis is my shocked face ðÿ˜ emoji registered emoji ed
+Are you implicating that all refugees are attackers or criminals? I think you are just showing off your xenophobia
+
+<pad><SCN> If he was an attacker, would that be true? I'm not sure, but if he was, he was probably a criminal... <ECN>
+{'precision': [0.846164345741272], 'recall': [0.8503026962280273], 'f1': [0.8482284545898438], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05405405405405406, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.85, 'translation_length': 37, 'reference_length': 20}
+{'rouge1': 0.0909090909090909, 'rouge2': 0.0, 'rougeL': 0.0909090909090909, 'rougeLsum': 0.0909090909090909}
+0.3278930187225342
+---------------------------------------------------------
+@user @user @user @user @user @user black trump supporter "black community has been destroyed by racist illegal immigration hashtag buildthewall hashtag deportthemall hashtag trump2020 https://t co/ijchixhihz via @user
+Actually, its unusual for illegal immigrants, who generally belong to minorities, to be racist....
+
+<pad><SCN> Blacks are not racist. They are socially and politically diverse. <ECN>
+{'precision': [0.8482247591018677], 'recall': [0.8678148984909058], 'f1': [0.8579080104827881], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.14285714285714285, 0.05, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0, 'translation_length': 21, 'reference_length': 21}
+{'rouge1': 0.07407407407407408, 'rouge2': 0.0, 'rougeL': 0.07407407407407408, 'rougeLsum': 0.07407407407407408}
+0.3615148365497589
+---------------------------------------------------------
+national counter terror coordinator dean haydon says "the current terrorism threat here in the uk is at severe " police &amp security services thwarting 1 terror attack every month this is the result of lib-lab-con creating a multicultural mess from mass immigration hashtag londonbridge
+Not all migrants are terrorists! and you should know that.... After all, some of your ancestors, if not all of them, were surely... 
+
+<pad><SCN> There is no serious threat to lives or property, and no one is going to change anything by changing the situation. I mean, maybe some of them, but I would not go so far as to say that all of them are doing exactly that. <ECN>
+{'precision': [0.8292906284332275], 'recall': [0.8477250933647156], 'f1': [0.8384065628051758], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.23728813559322035, 0.08620689655172414, 0.03508771929824561, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.7352941176470589, 'translation_length': 59, 'reference_length': 34}
+{'rouge1': 0.25352112676056343, 'rouge2': 0.08695652173913043, 'rougeL': 0.19718309859154928, 'rougeLsum': 0.19718309859154928}
+0.20134107768535614
+---------------------------------------------------------
+how long will it take for cinco de mayo to become a national holiday and the 4th of july to become a day of mournful remembrance? hashtag immigrationinvasion hashtag stopthegreat replacement hashtag stoptheinvasion hashtag immigration hashtag securetheborder hashtag nodaca hashtag noamnesty hashtag buildthewall hashtag redwave hashtag redwaverising
+The US was always a multi-cultured country populated by immigrants. That is part of the identity of the US and most families come from immigrant families. There is no replacement of US culture. All the contrary, US culture is enriched by diversity
+
+<pad><SCN> It's not going to take long for it to become a national holiday. It's going to take a long time. <ECN>
+{'precision': [0.8277047276496887], 'recall': [0.8322707414627075], 'f1': [0.8299814462661743], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0967741935483871, 0.0, 0.0, 0.0], 'brevity_penalty': 0.616392731327227, 'length_ratio': 0.6739130434782609, 'translation_length': 31, 'reference_length': 46}
+{'rouge1': 0.029411764705882356, 'rouge2': 0.0, 'rougeL': 0.029411764705882356, 'rougeLsum': 0.029411764705882356}
+0.07101314514875412
+---------------------------------------------------------
+" ⁦ @user⁩ emoji right arrow emoji liar just like your "service in vietnam " btw liar theyre illegal immigrants aka invaders glad i could educate you dummy hashtag stoptheinvasion hashtag deportthemall hashtag buildthewall https://t co/1ghabxrqbb"
+There is a huge difference between immigrants and invaders, and you know it.
+
+<pad><SCN> Not all immigrants are invaders. Some are not even illegal. <ECN>
+{'precision': [0.8438094258308411], 'recall': [0.8786669969558716], 'f1': [0.8608854413032532], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.14285714285714285, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.4, 'translation_length': 21, 'reference_length': 15}
+{'rouge1': 0.15384615384615385, 'rouge2': 0.0, 'rougeL': 0.15384615384615385, 'rougeLsum': 0.15384615384615385}
+0.6084539890289307
+---------------------------------------------------------
+@user polish mp: our country is safe because we did not accept illegal immigrants https://t co/lgn8jaahft access to white people is not a human right https://t co/c0ghvd6imb
+we didn't accept them, but they come in anyway. So, theres probably no relation.
+
+<pad><SCN> It is not a crime to be an immigrant. Immigrants are people who are not born here, so they are not considered "human rights". <ECN>
+{'precision': [0.8276719450950623], 'recall': [0.8663610816001892], 'f1': [0.8465747237205505], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10526315789473684, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.111111111111111, 'translation_length': 38, 'reference_length': 18}
+{'rouge1': 0.09523809523809523, 'rouge2': 0.0, 'rougeL': 0.047619047619047616, 'rougeLsum': 0.047619047619047616}
+0.0915990099310875
+---------------------------------------------------------
+boo hoo says ky refugee contractor---not enough muslim hashtag refugees placed in bowling green under this @user amazing how leftwing media conveniently forgets things like this--- iraqi refugee terrorists arrested in bg good thing im here to remind themhttps://t co/1ybymofo44 https://t co/wobp7bb49x
+The association between terrorist and immigrant is biased, and wrong...
+
+<pad><SCN> What exactly is "muslim refugees"? Can you say that all refugees are terrorists? <ECN>
+{'precision': [0.8309895992279053], 'recall': [0.8728803992271423], 'f1': [0.8514200448989868], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.038461538461538464, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8571428571428572, 'translation_length': 26, 'reference_length': 14}
+{'rouge1': 0.07692307692307693, 'rouge2': 0.0, 'rougeL': 0.07692307692307693, 'rougeLsum': 0.07692307692307693}
+0.4561750888824463
+---------------------------------------------------------
+daca illegals have no right to take jobs from u s citizens daca has ended no business wants to hire illlegals they will have to fire in a few months hashtag nodaca hashtag noamnesty hashtag trump hashtag maga hashtag sendthemback daca is 50% fraud via @user
+The Daca's have the right to work like everyone else. Besides, the Daca's are Americans, even if some people do not want to recognize it....
+
+<pad><SCN> No one has a right to take jobs from US citizens. How do you know they have it? <ECN>
+{'precision': [0.8646398782730103], 'recall': [0.8631517887115479], 'f1': [0.8638952374458313], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.20689655172413793, 0.03571428571428571, 0.0, 0.0], 'brevity_penalty': 0.9017226623630116, 'length_ratio': 0.90625, 'translation_length': 29, 'reference_length': 32}
+{'rouge1': 0.20833333333333334, 'rouge2': 0.043478260869565216, 'rougeL': 0.16666666666666666, 'rougeLsum': 0.16666666666666666}
+0.35381418466567993
+---------------------------------------------------------
+"we are above the law" - migrants throw garbage at romes ancient sites - free speech time - https://t co/rp8arfjmv0 @user
+How can you know that for sure? Don't the natives visit these places? Or do you go around asking everyone?
+
+<pad><SCN> How can you know that the natives of those places are not speaking any different? <ECN>
+{'precision': [0.846039891242981], 'recall': [0.8816694021224976], 'f1': [0.8634873032569885], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.17268932789342512, 'precisions': [0.36, 0.20833333333333334, 0.13043478260869565, 0.09090909090909091], 'brevity_penalty': 1.0, 'length_ratio': 1.0869565217391304, 'translation_length': 25, 'reference_length': 23}
+{'rouge1': 0.41025641025641024, 'rouge2': 0.27027027027027023, 'rougeL': 0.41025641025641024, 'rougeLsum': 0.41025641025641024}
+0.6352391242980957
+---------------------------------------------------------
+enforce national security by enforcing all immigration and visa lawscome on feds: it is not that hard to do the few jobs the federal government was formed to do - so hashtag deport aliens they are called "scofflaws" they scoff our laws hashtag ejectthem hashtag rejectimmigrantapplicants@user https://t co/w7tiowazsf
+What exactly would be to scoff the law? The problem is that we only give it a name when an alien does it.
+
+<pad><SCN> It is not hard to enforce national security. Most of them are innocents <ECN>
+{'precision': [0.838791012763977], 'recall': [0.8497801423072815], 'f1': [0.8442497849464417], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.13043478260869565, 0.0, 0.0, 0.0], 'brevity_penalty': 0.9167169520254864, 'length_ratio': 0.92, 'translation_length': 23, 'reference_length': 25}
+{'rouge1': 0.15384615384615383, 'rouge2': 0.0, 'rougeL': 0.05128205128205128, 'rougeLsum': 0.05128205128205128}
+0.29701513051986694
+---------------------------------------------------------
+when did angela merkel last said something "hello germany/berlin/cologne/munich i love you thank you" ?oh never happened she even threw away our country flag oh and invited 2 billion of illegal aliens into our country while other imigrants like turks are already so toxic https://t co/pr4rc5ap1d
+Every country was built with immigrant labor. If they were ALL toxic how would this be possible? Don't let your bad experience cloud your judgment....
+
+<pad><SCN> How could she have invited so many aliens into our country? Are you sure they are toxic? I don't understand, but it is not something that is going to negatively affect us. <ECN>
+{'precision': [0.8455469012260437], 'recall': [0.8676234483718872], 'f1': [0.856442928314209], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.4516129032258065, 'translation_length': 45, 'reference_length': 31}
+{'rouge1': 0.1935483870967742, 'rouge2': 0.03333333333333333, 'rougeL': 0.16129032258064516, 'rougeLsum': 0.16129032258064516}
+0.3576176166534424
+---------------------------------------------------------
+why these white hating racist hashtag africa ns fleeing to white europe hashtag goback hashtag sendthemback go back to your africa stunned tourists watch 50 migrants on packed boat storm spanish beach via
+It is not true that Africans are white-hating racists. At least not the vast majority of them.
+
+<pad><SCN> You are just showing your prejudice. You want to confuse things with other people. <ECN>
+{'precision': [0.8313913941383362], 'recall': [0.8519142866134644], 'f1': [0.8415277004241943], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.3157894736842106, 'translation_length': 25, 'reference_length': 19}
+{'rouge1': 0.05714285714285714, 'rouge2': 0.0, 'rougeL': 0.05714285714285714, 'rougeLsum': 0.05714285714285714}
+0.10302931815385818
+---------------------------------------------------------
+at this time w-o rganized crime/returning jihadists its a matter of national security hashtag italy hashtag salvini must ignore international social engineers/cultural marxists hashtag v4 italy kurz others must challenge empty threats from un-eu migration pimps what can they really do about it? https://t co/2fktldwcba
+Immigrants are not jihadists or criminals, that's just predjudice and xenophobia. You should inform better and try to let your hate go
+
+<pad><SCN> Do you blame Muslims for a crime that was committed by a minority? That's just xenophobic propaganda, and nothing new. <ECN>
+{'precision': [0.8519574403762817], 'recall': [0.8670759201049805], 'f1': [0.8594501614570618], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.3333333333333333, 'translation_length': 32, 'reference_length': 24}
+{'rouge1': 0.2127659574468085, 'rouge2': 0.08888888888888888, 'rougeL': 0.1702127659574468, 'rougeLsum': 0.1702127659574468}
+0.4678802490234375
+---------------------------------------------------------
+@user fairiimmigration esimates 12 5 million illegals in the u s and their cost which doesnt include the welfare their collect for hashtag anchorbabies hashtag rednationrising hashtag sundayfunday hashtag trump hashtag maga hashtag send them back cut off the welfare mandatory e-veri
+Illegals pay taxes because they spend their money on taxed things. They are not an important cost to the state.
+
+<pad><SCN> Illegals spend their money on taxes, not on welfare. Illegals pay taxes on everything, not on anything. <ECN>
+{'precision': [0.8663409948348999], 'recall': [0.9005391597747803], 'f1': [0.8831091523170471], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.12288887055424895, 'precisions': [0.3333333333333333, 0.1724137931034483, 0.10714285714285714, 0.037037037037037035], 'brevity_penalty': 1.0, 'length_ratio': 1.3636363636363635, 'translation_length': 30, 'reference_length': 22}
+{'rouge1': 0.4000000000000001, 'rouge2': 0.2631578947368421, 'rougeL': 0.3, 'rougeLsum': 0.3}
+0.5804104804992676
+---------------------------------------------------------
+@user @user especially now that uk govt continues to turn a blind eye to these feral economic afro middle eastern migrants entering every day no child is safe until we are well out of the eu and have closed tight our border entry ports
+Do you call feral to everything that is not like you and/or that you don't understand?
+
+<pad><SCN> Feral migrants are children, and not even a child. Feral migrants have no dietary needs, and have no desire to be children. In any case, they are not a threat to anyone. <ECN>
+{'precision': [0.8379698991775513], 'recall': [0.8277575969696045], 'f1': [0.8328324556350708], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06382978723404255, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.473684210526316, 'translation_length': 47, 'reference_length': 19}
+{'rouge1': 0.1509433962264151, 'rouge2': 0.0, 'rougeL': 0.11320754716981132, 'rougeLsum': 0.11320754716981132}
+0.566429853439331
+---------------------------------------------------------
+two children washed up on a barb wired beach another scum photographer another attempt to get the eu to take more migrants enough propaganda
+Are you blaming immigrants for the dead of two of their children calling it ¨propaganda¨?
+
+<pad><SCN> Migrants are not a propaganda piece. Migrant families are not the only ones who are going to migrate. <ECN>
+{'precision': [0.8438907265663147], 'recall': [0.8453940749168396], 'f1': [0.8446417450904846], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.034482758620689655, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8125, 'translation_length': 29, 'reference_length': 16}
+{'rouge1': 0.16666666666666666, 'rouge2': 0.0, 'rougeL': 0.1111111111111111, 'rougeLsum': 0.1111111111111111}
+0.4116189479827881
+---------------------------------------------------------
+banning " hate speech " is directly proportional to crime rise in germany by sharia enablers " hate speech " is a tool to hide uns mass immigration to conquer the west hashtag unitedagainstsharia https://t co/fxddkyzdga
+Do you have any proof that immigration is asociated with crime rise? Because that sounds just like predjudice and xenophobia
+
+<pad><SCN> What is the link between immigration and crime rise? How can you blame immigrants for the crime rise? They are not necessarily racists. <ECN>
+{'precision': [0.8655098676681519], 'recall': [0.8626803159713745], 'f1': [0.8640927672386169], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2, 0.058823529411764705, 0.030303030303030304, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.6666666666666667, 'translation_length': 35, 'reference_length': 21}
+{'rouge1': 0.2608695652173913, 'rouge2': 0.04545454545454545, 'rougeL': 0.13043478260869565, 'rougeLsum': 0.13043478260869565}
+0.6682124137878418
+---------------------------------------------------------
+white house wants to make it harder for legal migrants to be citizens https://t co/rt5wp8uf0j via @user good only the best welfare leeches go back home
+It makes no sense for you to accuse people who come looking for work of being "welfare leechers". They are precisely the opposite
+
+<pad><SCN> So your xenophobia is correct? Then you are not going to be a citizen <ECN>
+{'precision': [0.8383913040161133], 'recall': [0.8348920345306396], 'f1': [0.8366379737854004], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.0, 0.0, 0.0], 'brevity_penalty': 0.9200444146293233, 'length_ratio': 0.9230769230769231, 'translation_length': 24, 'reference_length': 26}
+{'rouge1': 0.15, 'rouge2': 0.0, 'rougeL': 0.09999999999999999, 'rougeLsum': 0.09999999999999999}
+0.1696120798587799
+---------------------------------------------------------
+@user @user illegal aliens should all be deported along with their entire family not i repeat not given free anything hashtag nohealthcare hashtag nohousing hashtag nofinancialsupport hashtag nodaca hashtag noamnesty hashtag sendthemback hashtag stoptheinvasion hashtag buildthewallnow from the pa
+It is a lie that immigrants get things for free. 
+
+<pad><SCN> It is not true that illegal aliens are not given anything free. If they do, they are infected, or if they are, they are a criminal. <ECN>
+{'precision': [0.848381519317627], 'recall': [0.9156062602996826], 'f1': [0.8807129263877869], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.15, 0.05128205128205128, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.6363636363636362, 'translation_length': 40, 'reference_length': 11}
+{'rouge1': 0.25641025641025644, 'rouge2': 0.05405405405405406, 'rougeL': 0.20512820512820515, 'rougeLsum': 0.20512820512820515}
+0.626598596572876
+---------------------------------------------------------
+" akin to rape victims apologizing to the refugee rapists in europeits just wrongif you cannot name the problem you cant solve the problem this father is very misguidedand its wrong of the father to blame america for the actions of hashtag illegal aliens "
+It is not true that all refugees are rapists, nor that all rapists are refugees.
+
+<pad><SCN> Refugees are not rapists. They are a group of people hiding in Europe seeking to make a living. Refugees have no choice but to live. <ECN>
+{'precision': [0.851784884929657], 'recall': [0.8847265243530273], 'f1': [0.8679432272911072], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.13513513513513514, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.176470588235294, 'translation_length': 37, 'reference_length': 17}
+{'rouge1': 0.27906976744186046, 'rouge2': 0.04878048780487805, 'rougeL': 0.23255813953488372, 'rougeLsum': 0.23255813953488372}
+0.6782689094543457
+---------------------------------------------------------
+@user the eu is on his end if they arnt able to stop the immigration a country which isnt able to protect his borders isnt a country of souveranity and this also will make problems in economic include the overpopulation protectionism will be
+Immigration does not cause economic problems. They work and pay taxes by spending the money they earn in stuff. The problem is that immigrants are used to cover up the real responsables of the economic problems
+
+<pad><SCN> Immigration is not a cause of economic problems. Immigrants don't cause economic problems either. Immigrantes don't have any economic problems. <ECN>
+{'precision': [0.8721810579299927], 'recall': [0.8596506118774414], 'f1': [0.8658705353736877], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.34375, 0.12903225806451613, 0.06666666666666667, 0.0], 'brevity_penalty': 0.8290291181804004, 'length_ratio': 0.8421052631578947, 'translation_length': 32, 'reference_length': 38}
+{'rouge1': 0.3278688524590164, 'rouge2': 0.1016949152542373, 'rougeL': 0.26229508196721313, 'rougeLsum': 0.26229508196721313}
+0.7704774141311646
+---------------------------------------------------------
+the fight against the great replacement/ refugee crisis has begun germans protested and fought counter protesters today spain sent back a bunch of migrants and europe no longer wants refugee s good job europe hashtag fightback hashtag whitegenocide hashtag refugee s notwelcome
+The "refugee crisis" is a way of saying that there are a lot of people you don't like. There is no real crisis.
+
+<pad><SCN> Refugees are people who have no other option but to go to work. It is not their fault <ECN>
+{'precision': [0.8466618657112122], 'recall': [0.8768516182899475], 'f1': [0.8614923357963562], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.17857142857142858, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.037037037037037, 'translation_length': 28, 'reference_length': 27}
+{'rouge1': 0.17777777777777778, 'rouge2': 0.0, 'rougeL': 0.13333333333333333, 'rougeLsum': 0.13333333333333333}
+0.5641375184059143
+---------------------------------------------------------
+heres a prime example of bringing in the wrong kind of refugee s these vile creatures are only in it for what they can get they dont want to contribute anything to the new country this type of " refugee " needs to stay in the refugee camps or go home beware hashtag canada https://t co/u9plpfg3ku
+it's hard to contribute when you have nothing, but "vile creatures who are only in it for what they can get" is a little too much, don't you think?
+
+<pad><SCN> You think refugees are vile creatures trying to get ahead in a new country? That's not true <ECN>
+{'precision': [0.8505773544311523], 'recall': [0.8608983159065247], 'f1': [0.8557066917419434], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.3333333333333333, 0.038461538461538464, 0.0, 0.0], 'brevity_penalty': 0.7716229467154109, 'length_ratio': 0.7941176470588235, 'translation_length': 27, 'reference_length': 34}
+{'rouge1': 0.3846153846153846, 'rouge2': 0.08, 'rougeL': 0.1923076923076923, 'rougeLsum': 0.1923076923076923}
+0.30442965030670166
+---------------------------------------------------------
+@user for god sake dont put india to danger by unchecked appeasement of ur special community illegal migrants nation is supreme
+Why are you saying that illegal migrants put India in danger? In danger of what?
+
+<pad><SCN> Why do you associate illegal migrants with such a dangerous situation? You are trying to blame them for the events that have taken place. <ECN>
+{'precision': [0.8557764291763306], 'recall': [0.8713914155960083], 'f1': [0.8635132908821106], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2, 0.029411764705882353, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0588235294117645, 'translation_length': 35, 'reference_length': 17}
+{'rouge1': 0.2857142857142857, 'rouge2': 0.05, 'rougeL': 0.19047619047619047, 'rougeLsum': 0.19047619047619047}
+0.5248218774795532
+---------------------------------------------------------
+hashtag bozobeto says hes the best 4 tx hes for:*ending hashtag ice*open borders*legalizing drugs*ending immigration laws 4 ms-13 gang members brutally hacked an informant to death w/a machete in tx hashtag buildthatwall hashtag vetobeto hashtag keeptexasred hashtag choosecruz
+Immigrants are not criminals or gang members more than locals are. Most are hard working people looking for a future for them and their families.
+
+<pad><SCN> You know that illegal immigration is a bad thing, right? That's a pretty serious accusation, and you know it... <ECN>
+{'precision': [0.8137264251708984], 'recall': [0.8447800874710083], 'f1': [0.8289625644683838], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.11764705882352941, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2592592592592593, 'translation_length': 34, 'reference_length': 27}
+{'rouge1': 0.08333333333333333, 'rouge2': 0.0, 'rougeL': 0.08333333333333333, 'rougeLsum': 0.08333333333333333}
+0.25989049673080444
+---------------------------------------------------------
+why am i no longer shocked when i read about the brutality of women from those that europe attempts to help hashtag sendthemback
+What do you mean by brutality? I haven't seen anything like that
+
+<pad><SCN> You are implying that all women are brutal, too. I mean, I never understood why <ECN>
+{'precision': [0.8387046456336975], 'recall': [0.8482723236083984], 'f1': [0.8434613347053528], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.076923076923077, 'translation_length': 27, 'reference_length': 13}
+{'rouge1': 0.2580645161290323, 'rouge2': 0.0, 'rougeL': 0.1935483870967742, 'rougeLsum': 0.1935483870967742}
+0.3225216567516327
+---------------------------------------------------------
+@user arrest the hashtag daca illegals that voted in hashtag texas and all illegals and non citizens that voted give them 20 years then deport them asap always a scam with illegals hashtag trump maga hashtag rednationrising hashtag immigration2018 https://t co/vk7tut01ui via
+What kind of scam is that? they are only illegal because people like you decided to make illegal all those who were born in other places?
+
+<pad><SCN> Are you accusing all immigrants of voting irregularities? You know that they voted irregularly, and you know that they had no choice but to support them. <ECN>
+{'precision': [0.8358674645423889], 'recall': [0.8433497548103333], 'f1': [0.8395919799804688], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.18421052631578946, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.3571428571428572, 'translation_length': 38, 'reference_length': 28}
+{'rouge1': 0.2545454545454545, 'rouge2': 0.03773584905660378, 'rougeL': 0.18181818181818185, 'rougeLsum': 0.18181818181818185}
+0.32351094484329224
+---------------------------------------------------------
+problem for the pm re johnson is that a person who sent round vans telling immigrants to go home is not in a position to lecture anyone on racism the lesson of which is: if you pander theyll take everything you give them and keep pushing for more
+What do you mean by "pushing for more"? Trying to get the same rights as everyone else? Well, maybe...
+
+<pad><SCN> If they take everything you give them, that's not racism, is it? <ECN>
+{'precision': [0.8341871500015259], 'recall': [0.8502278327941895], 'f1': [0.8421311378479004], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.0, 0.0, 0.0], 'brevity_penalty': 0.8824969025845955, 'length_ratio': 0.8888888888888888, 'translation_length': 24, 'reference_length': 27}
+{'rouge1': 0.05714285714285714, 'rouge2': 0.0, 'rougeL': 0.05714285714285714, 'rougeLsum': 0.05714285714285714}
+0.21166802942752838
+---------------------------------------------------------
+" migration is the mother of all problems " " says german interior minister hashtag buildthewal l hashtag noamnesty hashtag nodaca hashtag college"
+Why would migration be the mother of all problems? I mean, historically it was even the solution.
+
+<pad><SCN> Migration is not the mother of all problems, migration is a source of frustration and hope. Migrants are not isolated cases, they are people who are escaping from a difficult situation or a crisis. Migranting is a cause of all problems and we should help. <ECN>
+{'precision': [0.8570940494537354], 'recall': [0.8819209933280945], 'f1': [0.8693302869796753], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.06474997203797597, 'precisions': [0.13559322033898305, 0.06896551724137931, 0.05263157894736842, 0.03571428571428571], 'brevity_penalty': 1.0, 'length_ratio': 2.95, 'translation_length': 59, 'reference_length': 20}
+{'rouge1': 0.18461538461538463, 'rouge2': 0.12698412698412698, 'rougeL': 0.18461538461538463, 'rougeLsum': 0.18461538461538463}
+0.7071763873100281
+---------------------------------------------------------
+the world divided over trumped up charges and more refugees drowning l blame the refugees who burnt and murdered christians their religion
+Refugees do not persecute Christians. In fact, some of them probably are...
+
+<pad><SCN> Refugees are not murderers, they are believers in another religion <ECN>
+{'precision': [0.8352946043014526], 'recall': [0.864637017250061], 'f1': [0.8497125506401062], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1764705882352942, 'translation_length': 20, 'reference_length': 17}
+{'rouge1': 0.32, 'rouge2': 0.0, 'rougeL': 0.24000000000000002, 'rougeLsum': 0.24000000000000002}
+0.6165081858634949
+---------------------------------------------------------
+it is no secret that hashtag hungary has become one of the safest countries in the world while western europe opened its borders and accelerated its hashtag islamisation during the hashtag migrant crisis eastern europe did the opposite https://t co/emqi3uol5q
+Not all migrants are Islamists, nor is it wrong to be an Islamist.
+
+<pad><SCN> It is not true that islamisation has nothing to do with migration. It is just a myth that we are being told. <ECN>
+{'precision': [0.8560988903045654], 'recall': [0.8897482752799988], 'f1': [0.8725992441177368], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12121212121212122, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.2, 'translation_length': 33, 'reference_length': 15}
+{'rouge1': 0.2631578947368421, 'rouge2': 0.0, 'rougeL': 0.10526315789473685, 'rougeLsum': 0.10526315789473685}
+0.555622398853302
+---------------------------------------------------------
+@user i just read the guy that broke into many homes including chef jaime oliver was let go but dont call a refugee a rapefugee or the soros sponsored police of the uk will not let you go
+Not all refugees are rapists. In fact, I don't understand why you assume that guy is a refugee. No one has said he is.
+
+<pad><SCN> You say that guy broke into many homes, did he? Are you accusing him of being a refugee? Or is he simply trying to make a living? <ECN>
+{'precision': [0.8498022556304932], 'recall': [0.8759990930557251], 'f1': [0.8627018332481384], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2, 0.05128205128205128, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.4285714285714286, 'translation_length': 40, 'reference_length': 28}
+{'rouge1': 0.2909090909090909, 'rouge2': 0.07547169811320754, 'rougeL': 0.2181818181818182, 'rougeLsum': 0.2181818181818182}
+0.5477898716926575
+---------------------------------------------------------
+@user families should not bring their kids into a country illegally would you? we cant afford them hashtag send them home
+Families do what they do because they care about their kids and want to give them a future. What would you do for your kids?
+
+<pad><SCN> Families are not allowed to bring their children into a country without permission. You'd think they would be allowed, but not really. <ECN>
+{'precision': [0.8368450403213501], 'recall': [0.8571159839630127], 'f1': [0.8468592166900635], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.20588235294117646, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2592592592592593, 'translation_length': 34, 'reference_length': 27}
+{'rouge1': 0.27450980392156865, 'rouge2': 0.0, 'rougeL': 0.1568627450980392, 'rougeLsum': 0.1568627450980392}
+0.28404098749160767
+---------------------------------------------------------
+"may resign you and your party have lost touch with ordinary people in the uk ignoring parliments vote is one thing losing the nhs confidence is a no go ignoring our front line staff pleas on pay conditions and funding and cuts will make you pay immigration has costs us much "
+How much has it really cost for us?  You can't say a thing like that without numbers to support it.
+
+<pad><SCN> It is not true that immigration has cost us anything. It is just a myth spread by xenophobic conspiracy theories and propaganda. <ECN>
+{'precision': [0.8435674905776978], 'recall': [0.862481951713562], 'f1': [0.8529198169708252], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.18181818181818182, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5, 'translation_length': 33, 'reference_length': 22}
+{'rouge1': 0.30434782608695654, 'rouge2': 0.0, 'rougeL': 0.17391304347826086, 'rougeLsum': 0.17391304347826086}
+0.5730445981025696
+---------------------------------------------------------
+" parental neglect of migrant children ignored by feds | sheila gunn reid hashtag canada disgusting savages destroying hashtag canadahotels feces urine flooding & abuse of staff hashtag deportthemall ingrates animals take care of their babies way better via @user"
+Let me doubt, I don't think any parent would behave that way. Maybe some crazy people, but you are not going to convince me that they are "the majority".
+
+<pad><SCN> Don't be so xenophobic and accuse your government of neglecting your children. You are just a propagandist <ECN>
+{'precision': [0.83820641040802], 'recall': [0.8384181261062622], 'f1': [0.8383122086524963], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07407407407407407, 0.0, 0.0, 0.0], 'brevity_penalty': 0.7435670792059064, 'length_ratio': 0.7714285714285715, 'translation_length': 27, 'reference_length': 35}
+{'rouge1': 0.1568627450980392, 'rouge2': 0.08163265306122448, 'rougeL': 0.1568627450980392, 'rougeLsum': 0.1568627450980392}
+0.319833368062973
+---------------------------------------------------------
+" refugees only come to the white countries not to flee war or poverty but to take over and become the majority rape our women and children and claim hey are the victims hashtag gohome hashtag refugees notwelcome hashtag itsoktobewhite hashtag whitegenocide hashtag savewhites"
+What you say about refugees is not true. They are fleeing war! And it is not true that there are more criminals there than there are in other countries, including this one.
+
+<pad><SCN> Do you think that refugees are rapists only? I mean, no, they are raping people in war. <ECN>
+{'precision': [0.849009096622467], 'recall': [0.8723036050796509], 'f1': [0.8604986667633057], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.3, 0.0, 0.0, 0.0], 'brevity_penalty': 0.8187307530779819, 'length_ratio': 0.8333333333333334, 'translation_length': 30, 'reference_length': 36}
+{'rouge1': 0.3076923076923077, 'rouge2': 0.039999999999999994, 'rougeL': 0.19230769230769232, 'rougeLsum': 0.19230769230769232}
+0.6228286027908325
+---------------------------------------------------------
+hashtag deportillegalaliens sanctuary cities government aid ( taxpayer $$$ ) for illegals no excuses hashtag buildthatwall hashtag buildthatdamnwall
+Illegals are taxpayers too. They pay taxes on everything they buy and their spend a bigger percentage of their income on taxable stuff
+
+<pad><SCN> I don't understand why people pay taxes for being immigrants. You know that it's a very serious problem when you are trying to make a living. <ECN>
+{'precision': [0.8400899767875671], 'recall': [0.8544701933860779], 'f1': [0.8472190499305725], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.13513513513513514, 0.027777777777777776, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5416666666666667, 'translation_length': 37, 'reference_length': 24}
+{'rouge1': 0.14814814814814814, 'rouge2': 0.03846153846153846, 'rougeL': 0.1111111111111111, 'rougeLsum': 0.1111111111111111}
+0.5061084628105164
+---------------------------------------------------------
+the german government pays for 3 week vacation for refugees to go home hashtag muslimimmigration no the german government isnt paying the german taxpayers are paying the german government is robbing native germans to finance the islamization of germany https://t co/4cqbuf4in4
+Having people from different cultures doesn't mean there is an islamization. It means a cultural enrichment for tolerant societies.
+
+<pad><SCN> Muslims are not a "refugee" and not citizens of any religion. They are people escaping wars, trying to improve their quality of life, and most of them are not foreigners. <ECN>
+{'precision': [0.8355722427368164], 'recall': [0.8561850786209106], 'f1': [0.8457531332969666], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08888888888888889, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.142857142857143, 'translation_length': 45, 'reference_length': 21}
+{'rouge1': 0.07547169811320756, 'rouge2': 0.0, 'rougeL': 0.03773584905660378, 'rougeLsum': 0.03773584905660378}
+0.4817444086074829
+---------------------------------------------------------
+"i do not understand the minds of some if the immigrant is undocumented or illegal then he broke the law therefore he can not stay in any country where the law has to be respected "
+Maybe if we invested less in keeping them out and more in improving the immigration system, we wouldn't have these problems....
+
+<pad><SCN> Not all immigrants are criminals. In fact, not all immigrants are. <ECN>
+{'precision': [0.8467521071434021], 'recall': [0.8474502563476562], 'f1': [0.8471010327339172], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.13043478260869565, 0.0, 0.0, 0.0], 'brevity_penalty': 0.8777137332821822, 'length_ratio': 0.8846153846153846, 'translation_length': 23, 'reference_length': 26}
+{'rouge1': 0.05555555555555555, 'rouge2': 0.0, 'rougeL': 0.05555555555555555, 'rougeLsum': 0.05555555555555555}
+0.34566530585289
+---------------------------------------------------------
+one can only hope hashtag borrell that idiot in hashtag spain comes to his senses soon we dont want an hashtag africa n basket of deplorables in hashtag europe we dont need them we dont want them we cant afford sustaining all the riff-raff africa sends us hashtag migrants hashtag islam https://t co/pmdt0zn8ko
+You know that not all Africans are deplorable, right? I mean, you know that, at some point, we all come from Africa. 
+
+<pad><SCN> There is no shortage of African deplorables, and you know that. <ECN>
+{'precision': [0.8529995679855347], 'recall': [0.8677959442138672], 'f1': [0.8603340983390808], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.22727272727272727, 0.09523809523809523, 0.05, 0.0], 'brevity_penalty': 0.7613003866968737, 'length_ratio': 0.7857142857142857, 'translation_length': 22, 'reference_length': 28}
+{'rouge1': 0.16666666666666663, 'rouge2': 0.11764705882352941, 'rougeL': 0.16666666666666663, 'rougeLsum': 0.16666666666666663}
+0.6163316369056702
+---------------------------------------------------------
+100 bangladeshi nationals apprehended near texas border in 3 weeks via @user hashtag noamnesty hashtag deport illegals hashtag buildthatwall hashtag trump hashtag maga hashtag masa
+Are you implying that all Bangladeshi are illegal? You are a racist
+
+<pad><SCN> I don't think anyone would be so surprised if they were Bangladeshi. Most are very poor people with no money. <ECN>
+{'precision': [0.8326623439788818], 'recall': [0.8759093284606934], 'f1': [0.85373854637146], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06451612903225806, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.3846153846153846, 'translation_length': 31, 'reference_length': 13}
+{'rouge1': 0.1111111111111111, 'rouge2': 0.0, 'rougeL': 0.1111111111111111, 'rougeLsum': 0.1111111111111111}
+0.6194047331809998
+---------------------------------------------------------
+@user @user @user reunification is the wrong word - never should done this - because always more illigal refugees will come they have to brought back to the border without food with or without children quick
+Refugees are legal migrants claiming asylum - in other words, asking for help. Calling them illegal means not only refusing to help but also disrespecting them when they are vulnerable
+
+<pad><SCN> Not all refugees are criminals and not all refugees are honest. I do not understand why you associate this with criminals. <ECN>
+{'precision': [0.8306421041488647], 'recall': [0.8470715284347534], 'f1': [0.8387763500213623], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0, 'translation_length': 32, 'reference_length': 32}
+{'rouge1': 0.1509433962264151, 'rouge2': 0.0392156862745098, 'rougeL': 0.1509433962264151, 'rougeLsum': 0.1509433962264151}
+0.5579986572265625
+---------------------------------------------------------
+@user had every right to shutdown central american minors program those kids are not refugees has nothng to do with race just another illegal obama program ended hashtag trump hashtag maga hashtag rednationrising hashtag immigrationreform - https://t co/xan9qd2j8k via @user
+They are kids in distress depending on a program! How can they not be refugees?
+
+<pad><SCN> Refugees are kids who came from a country where there are no other schools. <ECN>
+{'precision': [0.8290367126464844], 'recall': [0.8562183976173401], 'f1': [0.8424083590507507], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.043478260869565216, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.411764705882353, 'translation_length': 24, 'reference_length': 17}
+{'rouge1': 0.25, 'rouge2': 0.06666666666666667, 'rougeL': 0.18750000000000003, 'rougeLsum': 0.18750000000000003}
+0.6091632843017578
+---------------------------------------------------------
+@user in the jailing of the smugglers the families of migrants called the emergency services seems its a team effort to get into uk
+With so many countries accepting them, I doubt they will make much effort to enter yours ...
+
+<pad><SCN> Not all migrants are criminals, they are people trying to get into better things. <ECN>
+{'precision': [0.8410114049911499], 'recall': [0.8417295217514038], 'f1': [0.8413702845573425], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.25, 'translation_length': 25, 'reference_length': 20}
+{'rouge1': 0.12121212121212122, 'rouge2': 0.0, 'rougeL': 0.12121212121212122, 'rougeLsum': 0.12121212121212122}
+0.31376755237579346
+---------------------------------------------------------
+@user stop using mlk to support illegal aliens who kill bladks take jobs from blacks and destroy the black community mlk did not support illegal hashtag immigration black trump supporter drops the mic "sanctuary cities are racist" https://t co/a8hu0u2qoc
+It is not true that illegal aliens kill blacks, or steal jobs. That's yellow press.
+
+<pad><SCN> No one kills blacks, take jobs from blacks, or destroy the black community <ECN>
+{'precision': [0.8681561946868896], 'recall': [0.8889871835708618], 'f1': [0.8784481883049011], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.08695652173913043, 0.045454545454545456, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.3333333333333333, 'translation_length': 24, 'reference_length': 18}
+{'rouge1': 0.1875, 'rouge2': 0.06666666666666667, 'rougeL': 0.125, 'rougeLsum': 0.125}
+0.3872404098510742
+---------------------------------------------------------
+" hashtag turnbullsinsane immigration hashtag destructionofaustralia hashtag leftymadness hashtag islamabad hashtag islamicregimemustgo hashtag sendthembackregional australia is under threat of turnbulls insane immigration policy he is destroying our our culture and country what are you going to do to stop it today ?"
+No one claims that their culture will be destroyed when you visit their countries. Stop your intolerance
+
+<pad><SCN> You know that immigration policy is not "destroying" any cultural or religious heritage. But what you say about it is not true, and it is not correct. <ECN>
+{'precision': [0.8399137258529663], 'recall': [0.872222363948822], 'f1': [0.8557631969451904], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07317073170731707, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.2777777777777777, 'translation_length': 41, 'reference_length': 18}
+{'rouge1': 0.0851063829787234, 'rouge2': 0.0, 'rougeL': 0.0851063829787234, 'rougeLsum': 0.0851063829787234}
+0.5488082766532898
+---------------------------------------------------------
+90% refugees which come to austria are jobless and not trained they will not be able to run into a workingprocess and will only take socialwelfare at the moment the country has 3 5 mio austrian workers and 1 mio foreign workers in down level jobs https://t co/r3epc7nhkw
+That's a play on words. Most of them are looking for a job, it's obvious that they arrive without one...
+
+<pad><SCN> They are not "jobless" and will not work, they are just looking for a place to live. Most of them are in social welfare. <ECN>
+{'precision': [0.8732486963272095], 'recall': [0.8903177976608276], 'f1': [0.8817006349563599], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.13139217875016063, 'precisions': [0.2894736842105263, 0.16216216216216217, 0.1111111111111111, 0.05714285714285714], 'brevity_penalty': 1.0, 'length_ratio': 1.52, 'translation_length': 38, 'reference_length': 25}
+{'rouge1': 0.32653061224489793, 'rouge2': 0.21276595744680848, 'rougeL': 0.20408163265306123, 'rougeLsum': 0.20408163265306123}
+0.46892261505126953
+---------------------------------------------------------
+underpants which protect women against rape or harrassment they are absolutly save and is buyed from german women as a runner so they are proteced also from attacks from refugees it would also fine for me too women in hollywood https://t co/pjykjtwrg3
+Rapefugee, I heard that before. What a bunch of xenophobes
+
+<pad><SCN> It is not true that underpants are used to protect women, but you can't say they are rapists or harrassment. <ECN>
+{'precision': [0.825807511806488], 'recall': [0.8522664308547974], 'f1': [0.8388283848762512], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0967741935483871, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.5833333333333335, 'translation_length': 31, 'reference_length': 12}
+{'rouge1': 0.058823529411764705, 'rouge2': 0.0, 'rougeL': 0.058823529411764705, 'rougeLsum': 0.058823529411764705}
+0.28359922766685486
+========================================
+F1 AVG:
+0.8531592990670885
+Bleu AVG:
+0.011008548371071934
+Rouge AVG:
+0.1539452915989938
+SBERT AVG:
+0.440500076434442

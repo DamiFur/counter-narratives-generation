@@ -1,6 +1,6 @@
 from glob import glob
 
-for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-base_english_2e-05_finetuned__*"):
+for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-05_fewshot_*_False_True_False"):
     filename_splitted = f.split("_")
     dataset = filename_splitted[0]
     model = filename_splitted[1]
@@ -35,5 +35,5 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-base_english_2e
             # print("cn")
             # print(line.replace("\n",""))
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
-    for tw, cn in zip(tweets[-10:], cns[-10:]):
+    for tw, cn in zip(tweets[:20], cns[:20]):
         w.write("{}\t{}\n".format(tw.replace("\t",""), cn.replace("\t","")))
