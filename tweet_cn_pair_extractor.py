@@ -21,20 +21,29 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
     # sbert_found = True
     # added_tweet = False
     # added_cn = False
+    dont_add = False
     for idx, line in enumerate(open(f, "r")):
-        line = line.replace("\n","").replace("\t","")
+        line = line.replace("\n","").replace("\t"," ")
         if line.startswith("===="):
             break
         if idx % 9 == 1:
             if line not in tweets:
-                tweets.append(line)
+                tweet_to_add = line
+            else:
+                dont_add = True
+                # tweets.append(line)
             # print("Tweet:")
             # print(line.replace("\n",""))
         elif idx % 9 == 4:
             if line not in cns:
-                cns.append(line)
+                if not dont_add:
+                    tweets.append(tweet_to_add)
+                    cns.append(line)
+            dont_add = False
             # print("cn")
             # print(line.replace("\n",""))
+    assert(len(tweets) == len(cns))
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
     for tw, cn in zip(tweets[:20], cns[:20]):
-        w.write("{}\t{}\n".format(tw.replace("\t",""), cn.replace("\t","")))
+        w.write("{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," ")))
+    w.close()
