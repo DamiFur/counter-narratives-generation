@@ -7,9 +7,10 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
     language = filename_splitted[2]
     strategy = filename_splitted[4]
     extra_info = filename_splitted[5]
-    top_sampling = filename_splitted[6]
-    beam_search = filename_splitted[7]
-    temperature = filename_splitted[8]
+    cn_strategy = filename_splitted[6]
+    # top_sampling = filename_splitted[6]
+    # beam_search = filename_splitted[7]
+    # temperature = filename_splitted[8]
 
     tweets = []
     cns = []
