@@ -1,0 +1,648 @@
+---------------------------------------------------------
+si estamos cogiendo ejemplo de los arabes mal vamos https://t co/vqapjspj8v | Justificación: si estamos cogiendo ejemplo de los arabes (fact)  | Conclusión: mal vamos (value)  | Pivot: 
+¿Por qué iríamos mal? ¿Qué problema tienes con los árabes? Son una cultura brillante, ¿Sabes?
+
+<pad> "Please do not let a guy" (i.e. you or the girl who raised you) communicate to me or any other friend (e.g. cello) that they've no information about, so to speak (or even speak).</s>
+{'precision': [0.8048243522644043], 'recall': [0.759486734867096], 'f1': [0.7814986109733582], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.017543859649122806, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.0, 'translation_length': 57, 'reference_length': 19}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.13307684659957886
+---------------------------------------------------------
+@user hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en cúcuta y el puente simón bolívar | Justificación: comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos (fact)  | Conclusión: hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos (policy)  | Pivot: comerciantes  -  venden productos
+Quizás se podría pensar una mejor forma de integrarlos a la economía formal sin culparlos de todos los males. ¿No crees?
+
+<pad> El nombre de l<unk>deres “un envelledo” que podr<unk>a vivir, debido a que él existe esta parte de Bidada en la comunidad v<unk>cela y el puente bol<unk>var.</s>
+{'precision': [0.7904950976371765], 'recall': [0.8117367029190063], 'f1': [0.8009750843048096], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09803921568627451, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.217391304347826, 'translation_length': 51, 'reference_length': 23}
+{'rouge1': 0.2333333333333333, 'rouge2': 0.0, 'rougeL': 0.13333333333333333, 'rougeLsum': 0.13333333333333333}
+0.3705593943595886
+---------------------------------------------------------
+@user hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en cúcuta y el puente simón bolívar | Justificación: comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos (fact)  | Conclusión: hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos (policy)  | Pivot: comerciantes  -  venden productos
+Ni todos los venezolanos son comerciantes informales, ni es cierto que los negocios informales "le quiten ventas" a los comercios que pagan impuestos.
+
+<pad> El nombre de l<unk>deres “un envelledo” que podr<unk>a vivir, debido a que él existe esta parte de Bidada en la comunidad v<unk>cela y el puente bol<unk>var.</s>
+{'precision': [0.7891355752944946], 'recall': [0.8088416457176208], 'f1': [0.7988671064376831], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09803921568627451, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8888888888888888, 'translation_length': 51, 'reference_length': 27}
+{'rouge1': 0.10169491525423728, 'rouge2': 0.0, 'rougeL': 0.10169491525423728, 'rougeLsum': 0.10169491525423728}
+0.3658905625343323
+---------------------------------------------------------
+@user hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en cúcuta y el puente simón bolívar | Justificación: comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos (fact)  | Conclusión: hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos (policy)  | Pivot: comerciantes  -  venden productos
+Pues, tienen que ganarse su pan. Así que, mientras no les permitas trabajar legalmente, eso ocurrirá, te guste o no.
+
+<pad> El nombre de l<unk>deres “un envelledo” que podr<unk>a vivir, debido a que él existe esta parte de Bidada en la comunidad v<unk>cela y el puente bol<unk>var.</s>
+{'precision': [0.7789719104766846], 'recall': [0.8064846992492676], 'f1': [0.7924895286560059], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0784313725490196, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.9615384615384615, 'translation_length': 51, 'reference_length': 26}
+{'rouge1': 0.07142857142857142, 'rouge2': 0.0, 'rougeL': 0.07142857142857142, 'rougeLsum': 0.07142857142857142}
+0.3546448349952698
+---------------------------------------------------------
+que les pasa a todos que me quieren hacer usar turbante de arabe soy negro pero tampoco para tanto | Justificación: soy negro pero tampoco para tanto (fact)  | Conclusión: que les pasa a todos que me quieren hacer usar turbante de arabe (value)  | Pivot: 
+Tranquilo, nadie te va a obligar a nada.
+
+<pad> The following messages come from odio: I am black but not for so long..</s>
+{'precision': [0.8140100240707397], 'recall': [0.7536133527755737], 'f1': [0.7826482057571411], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.041666666666666664, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.4, 'translation_length': 24, 'reference_length': 10}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.10296649485826492
+---------------------------------------------------------
+me quieren seguir en ig un montón de árabes/turcos/israelíes creo que tengo cara de terrorista y no me di cuenta | Justificación: me quieren seguir en ig un montón de árabes/turcos/israelíes (fact)  | Conclusión: creo que tengo cara de terrorista y no me di cuenta (value)  | Pivot: 
+Lo que dices solo deja en evidencia que tienes un gran prejuicio, que te impide vincularte y conocer gente de otros lugares...
+
+<pad> He tries to convince the followers in 3 words that Israel believes that they are terrorists.</s>
+{'precision': [0.8383015394210815], 'recall': [0.7797772884368896], 'f1': [0.807981014251709], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.041666666666666664, 0.0, 0.0, 0.0], 'brevity_penalty': 0.9200444146293233, 'length_ratio': 0.9230769230769231, 'translation_length': 24, 'reference_length': 26}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+-0.0021614953875541687
+---------------------------------------------------------
+me quieren seguir en ig un montón de árabes/turcos/israelíes creo que tengo cara de terrorista y no me di cuenta | Justificación: me quieren seguir en ig un montón de árabes/turcos/israelíes (fact)  | Conclusión: creo que tengo cara de terrorista y no me di cuenta (value)  | Pivot: 
+Lo dices como si todos los árabes/turcos/israelíes fuesen terroristas. Nada mas lejos de la realidad.
+
+<pad> He tries to convince the followers in 3 words that Israel believes that they are terrorists.</s>
+{'precision': [0.8417201042175293], 'recall': [0.7827239632606506], 'f1': [0.8111507892608643], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08333333333333333, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1428571428571428, 'translation_length': 24, 'reference_length': 21}
+{'rouge1': 0.05555555555555555, 'rouge2': 0.0, 'rougeL': 0.05555555555555555, 'rougeLsum': 0.05555555555555555}
+0.30980348587036133
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user" | Justificación: ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía (fact)  | Conclusión: alguna de sus co secuencias no siendo las peores que las hay y graves (fact)  | Pivot: 
+Si todo es tal cual lo cuentas, pues que triste. Sin embargo, ni que sean manteros, ni que sean "sin papeles" tiene alguna relevancia aquí.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: "alguna de sus co secuencias no siendo los peores que las hay y graves ""sin papeles "" una joven sufre seis fracturas tras ser cultivada por un grupo de manteros en la grande v<unk>a https://t co/ixbly7j37d v<unk>t @user" | Justification: ""si papeleros"" una una juventud sufre sis fracturas tras ser re<unk>rdicada por unsin de manterlos en la grand v<unk>sa (fact)</s>
+{'precision': [0.7745233178138733], 'recall': [0.8101457357406616], 'f1': [0.791934072971344], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.022629827763249465, 'precisions': [0.06140350877192982, 0.02654867256637168, 0.017857142857142856, 0.009009009009009009], 'brevity_penalty': 1.0, 'length_ratio': 3.5625, 'translation_length': 114, 'reference_length': 32}
+{'rouge1': 0.1320754716981132, 'rouge2': 0.01923076923076923, 'rougeL': 0.07547169811320754, 'rougeLsum': 0.07547169811320754}
+0.6141577959060669
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user" | Justificación: ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía (fact)  | Conclusión: alguna de sus co secuencias no siendo las peores que las hay y graves (fact)  | Pivot: 
+Es un prejuicio muy extendido, este según el cual los manteros y feriantes son todos inmigrantes indocumentados. Nada mas lejos de la realidad.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: "alguna de sus co secuencias no siendo los peores que las hay y graves ""sin papeles "" una joven sufre seis fracturas tras ser cultivada por un grupo de manteros en la grande v<unk>a https://t co/ixbly7j37d v<unk>t @user" | Justification: ""si papeleros"" una una juventud sufre sis fracturas tras ser re<unk>rdicada por unsin de manterlos en la grand v<unk>sa (fact)</s>
+{'precision': [0.7657639980316162], 'recall': [0.8011000156402588], 'f1': [0.783033549785614], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05263157894736842, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.384615384615385, 'translation_length': 114, 'reference_length': 26}
+{'rouge1': 0.11428571428571428, 'rouge2': 0.0, 'rougeL': 0.07619047619047618, 'rougeLsum': 0.07619047619047618}
+0.3967472314834595
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user" | Justificación: ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía (fact)  | Conclusión: alguna de sus co secuencias no siendo las peores que las hay y graves (fact)  | Pivot: 
+Lamentable. De todas formas, ni te consta que la noticia sea real, ni te consta que los manteros sean responsables.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: "alguna de sus co secuencias no siendo los peores que las hay y graves ""sin papeles "" una joven sufre seis fracturas tras ser cultivada por un grupo de manteros en la grande v<unk>a https://t co/ixbly7j37d v<unk>t @user" | Justification: ""si papeleros"" una una juventud sufre sis fracturas tras ser re<unk>rdicada por unsin de manterlos en la grand v<unk>sa (fact)</s>
+{'precision': [0.7684352397918701], 'recall': [0.8228299617767334], 'f1': [0.79470294713974], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03508771929824561, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.75, 'translation_length': 114, 'reference_length': 24}
+{'rouge1': 0.099009900990099, 'rouge2': 0.0, 'rougeL': 0.0594059405940594, 'rougeLsum': 0.0594059405940594}
+0.42837265133857727
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión? | Justificación: si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión? (fact)  | Conclusión: pregunta para la izquierda esta es para nota (value)  | Pivot: 
+No creo que nadie proponga dejar las fronteras "sin control". De lo que se está en contra es de los controles excesivos...
+
+<pad> Fidei: y este problema. So, el pand<unk>simo dávore acá, entonces, una pregunta que de si al abrir, en si I pregunta, solo và a una gente al guién de una ni<unk>a, yo quella vengono un espectador descansámigo a un migrante de una mujer a un negócio; quelo conseguir<unk>a a a un comidor del inyecto, que a gentera. Por eso a su diputado: <unk>qué puedo hacer esta dilema, puede empezar cuánto esta en s<unk> mismos apóstos a este padre?</s>
+{'precision': [0.7779660820960999], 'recall': [0.8152047395706177], 'f1': [0.7961502075195312], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05128205128205128, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.178571428571429, 'translation_length': 117, 'reference_length': 28}
+{'rouge1': 0.08620689655172413, 'rouge2': 0.0, 'rougeL': 0.06896551724137931, 'rougeLsum': 0.06896551724137931}
+0.36706259846687317
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión? | Justificación: si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión? (fact)  | Conclusión: pregunta para la izquierda esta es para nota (value)  | Pivot: 
+¿De donde salió ese prejuicio de que los inmigrantes siempre son malas personas, agresivos, etc.? La mayoría de ellos son excelentes personas, de hecho.
+
+<pad> Fidei: y este problema. So, el pand<unk>simo dávore acá, entonces, una pregunta que de si al abrir, en si I pregunta, solo và a una gente al guién de una ni<unk>a, yo quella vengono un espectador descansámigo a un migrante de una mujer a un negócio; quelo conseguir<unk>a a a un comidor del inyecto, que a gentera. Por eso a su diputado: <unk>qué puedo hacer esta dilema, puede empezar cuánto esta en s<unk> mismos apóstos a este padre?</s>
+{'precision': [0.7781926393508911], 'recall': [0.8217734694480896], 'f1': [0.7993895411491394], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08547008547008547, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.9, 'translation_length': 117, 'reference_length': 30}
+{'rouge1': 0.08403361344537816, 'rouge2': 0.0, 'rougeL': 0.06722689075630252, 'rougeLsum': 0.06722689075630252}
+0.5074999332427979
+---------------------------------------------------------
+no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley https://t co/dikqdlsuk5 | Justificación: no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta (fact)  | Conclusión: vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley (fact)  | Pivot: delincuencia  -  ley
+No necesitas tener papeles para ser detenido o ir preso. No tiene sentido que alguien "no le tema a la ley" solo por no tener papeles. Eso no te hace inmune
+
+<pad> A respuesta sin odio a los siguientes mensajes de odis: no sé dónde vives pero la delincuencia que he visto como ido de vacaciones a Madrid y a Barcelona es absoluta vale y estos se<unk>ores al no tener papeles se ven totalmente internet de lo que le puede pasar sin miedo total a la ley: https://t co/dikqdlsuk5 | Justification: no <unk>sé qué vimos dar fácil de tener paso de bah<unk>a a Madrid or Barcelona, <unk>eso las se<unk>ales al no tiener papellos, es fáculo y estas se<unk>oras para ninguna noticia se verá totalmente on-line de lo que gente puede tener sin miembro total para la ley verá total el ley del hambre.</s>
+{'precision': [0.775792121887207], 'recall': [0.8391326665878296], 'f1': [0.8062202334403992], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08552631578947369, 0.026490066225165563, 0.013333333333333334, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.3428571428571425, 'translation_length': 152, 'reference_length': 35}
+{'rouge1': 0.1761006289308176, 'rouge2': 0.050955414012738856, 'rougeL': 0.1509433962264151, 'rougeLsum': 0.1509433962264151}
+0.5925174355506897
+---------------------------------------------------------
+no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley https://t co/dikqdlsuk5 | Justificación: no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta (fact)  | Conclusión: vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley (fact)  | Pivot: delincuencia  -  ley
+Si los criminales estuvieran identificados, el problema seguramente estaría resuelto. Que creas saber quienes son solo deja en evidencia que estas siendo prejuicioso.
+
+<pad> A respuesta sin odio a los siguientes mensajes de odis: no sé dónde vives pero la delincuencia que he visto como ido de vacaciones a Madrid y a Barcelona es absoluta vale y estos se<unk>ores al no tener papeles se ven totalmente internet de lo que le puede pasar sin miedo total a la ley: https://t co/dikqdlsuk5 | Justification: no <unk>sé qué vimos dar fácil de tener paso de bah<unk>a a Madrid or Barcelona, <unk>eso las se<unk>ales al no tiener papellos, es fáculo y estas se<unk>oras para ninguna noticia se verá totalmente on-line de lo que gente puede tener sin miembro total para la ley verá total el ley del hambre.</s>
+{'precision': [0.7666031122207642], 'recall': [0.8105566501617432], 'f1': [0.7879674434661865], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.039473684210526314, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.846153846153846, 'translation_length': 152, 'reference_length': 26}
+{'rouge1': 0.07894736842105263, 'rouge2': 0.0, 'rougeL': 0.05263157894736842, 'rougeLsum': 0.05263157894736842}
+0.3702831566333771
+---------------------------------------------------------
+no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley https://t co/dikqdlsuk5 | Justificación: no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta (fact)  | Conclusión: vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley (fact)  | Pivot: delincuencia  -  ley
+Que digas haber ido de vacaciones a Madrid no significa nada. Estas hablando de un lugar que no conoces.
+
+<pad> A respuesta sin odio a los siguientes mensajes de odis: no sé dónde vives pero la delincuencia que he visto como ido de vacaciones a Madrid y a Barcelona es absoluta vale y estos se<unk>ores al no tener papeles se ven totalmente internet de lo que le puede pasar sin miedo total a la ley: https://t co/dikqdlsuk5 | Justification: no <unk>sé qué vimos dar fácil de tener paso de bah<unk>a a Madrid or Barcelona, <unk>eso las se<unk>ales al no tiener papellos, es fáculo y estas se<unk>oras para ninguna noticia se verá totalmente on-line de lo que gente puede tener sin miembro total para la ley verá total el ley del hambre.</s>
+{'precision': [0.7666206359863281], 'recall': [0.8435330390930176], 'f1': [0.8032399415969849], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.026153408348487468, 'precisions': [0.06578947368421052, 0.026490066225165563, 0.02, 0.013422818791946308], 'brevity_penalty': 1.0, 'length_ratio': 7.238095238095238, 'translation_length': 152, 'reference_length': 21}
+{'rouge1': 0.14965986394557823, 'rouge2': 0.05517241379310345, 'rougeL': 0.13605442176870747, 'rougeLsum': 0.13605442176870747}
+0.5576077699661255
+---------------------------------------------------------
+yo si fuese @user incluiría en mi programa la construcción de un muro en el estrecho de gibraltar y que lo paguen los propios subsaharianos hashtag donaldcasado hashtag pablotrump https://t co/wddvp9nmuh | Justificación: yo si fuese @user incluiría en mi programa la construcción de un muro en el estrecho de gibraltar y que lo paguen los propios subsaharianos (fact)  | Conclusión: la construcción de un muro en el estrecho de gibraltar y que lo paguen los propios subsaharianos (policy)  | Pivot: 
+No vamos a cometer semejante error solo porque tú dices que te gustaría... 
+
+<pad> <unk>escribeas con la respuesta sin odio a los siguientes mensajes de odis: <unk>y básicamente yo le han incluido en mi programa el construcción de un muro en el estrecho de Gibraltar y que le paguen los propios subsaharianos hashtag donaldcasado hashtag pablotrump https://t co/wddvp9nmuh.wordpress.com | Justificación: <unk>ay bâsicamente lo han includo el в<unk>соком PRINTAGE y le pagu<unk>an los propionos sub<unk>saharianas (fact) ha sido &amp; @user incluir<unk>a en mi programmea eil el arbió en agregación el muro y que itre pasaen los prop<unk>piesas subs, pablotrupp aface &amp visto ao mesmo pivoto: <unk>sé de que &quot;himane face como @user, ohj hon ha aparecido &quot); [de mano ao heladado &apos; oh co y zadán-os s<unk> w haga) y sin tes contrase<unk>o y pagoen los propidos subs ra<unk>ces (nob es el por mayor hábiles do mejor hacial<unk>a!&quot;]</s>
+{'precision': [0.7225005626678467], 'recall': [0.7851954698562622], 'f1': [0.7525445222854614], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0182648401826484, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 13.6875, 'translation_length': 219, 'reference_length': 16}
+{'rouge1': 0.04419889502762431, 'rouge2': 0.0, 'rougeL': 0.04419889502762431, 'rougeLsum': 0.04419889502762431}
+0.3046696186065674
+---------------------------------------------------------
+yo si fuese @user incluiría en mi programa la construcción de un muro en el estrecho de gibraltar y que lo paguen los propios subsaharianos hashtag donaldcasado hashtag pablotrump https://t co/wddvp9nmuh | Justificación: yo si fuese @user incluiría en mi programa la construcción de un muro en el estrecho de gibraltar y que lo paguen los propios subsaharianos (fact)  | Conclusión: la construcción de un muro en el estrecho de gibraltar y que lo paguen los propios subsaharianos (policy)  | Pivot: 
+Por suerte no lo eres, porque realmente, no sería correcto.
+
+<pad> <unk>escribeas con la respuesta sin odio a los siguientes mensajes de odis: <unk>y básicamente yo le han incluido en mi programa el construcción de un muro en el estrecho de Gibraltar y que le paguen los propios subsaharianos hashtag donaldcasado hashtag pablotrump https://t co/wddvp9nmuh.wordpress.com | Justificación: <unk>ay bâsicamente lo han includo el в<unk>соком PRINTAGE y le pagu<unk>an los propionos sub<unk>saharianas (fact) ha sido &amp; @user incluir<unk>a en mi programmea eil el arbió en agregación el muro y que itre pasaen los prop<unk>piesas subs, pablotrupp aface &amp visto ao mesmo pivoto: <unk>sé de que &quot;himane face como @user, ohj hon ha aparecido &quot); [de mano ao heladado &apos; oh co y zadán-os s<unk> w haga) y sin tes contrase<unk>o y pagoen los propidos subs ra<unk>ces (nob es el por mayor hábiles do mejor hacial<unk>a!&quot;]</s>
+{'precision': [0.7338162660598755], 'recall': [0.811712384223938], 'f1': [0.770801305770874], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0182648401826484, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 16.846153846153847, 'translation_length': 219, 'reference_length': 13}
+{'rouge1': 0.03370786516853933, 'rouge2': 0.0, 'rougeL': 0.02247191011235955, 'rougeLsum': 0.02247191011235955}
+0.3201155662536621
+---------------------------------------------------------
+la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos | Justificación: la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color (fact)  | Conclusión: los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos (fact)  | Pivot: entrado  -  entran
+En ambos casos estas describiendo a una persona por su color, solo que en uno de ellos lo haces de forma peyorativa. Eso es racismo
+
+<pad> Entrado - enter =></s>
+{'precision': [0.8174333572387695], 'recall': [0.7700717449188232], 'f1': [0.7930460572242737], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.2865047968601901, 'length_ratio': 0.4444444444444444, 'translation_length': 12, 'reference_length': 27}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.049310147762298584
+---------------------------------------------------------
+la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos | Justificación: la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color (fact)  | Conclusión: los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos (fact)  | Pivot: entrado  -  entran
+No tienes razones de peso para decir que los negros e islamitas son delincuentes o personas agresivas, solo es un prejuicio.
+
+<pad> Entrado - enter =></s>
+{'precision': [0.8132634162902832], 'recall': [0.7718394994735718], 'f1': [0.7920101881027222], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.3998496543448473, 'length_ratio': 0.5217391304347826, 'translation_length': 12, 'reference_length': 23}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.08836715668439865
+---------------------------------------------------------
+la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos | Justificación: la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color (fact)  | Conclusión: los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos (fact)  | Pivot: entrado  -  entran
+Que reconozcas que hay "excepciones" a tu prejuicio, no lo hace menos racista.
+
+<pad> Entrado - enter =></s>
+{'precision': [0.8212695121765137], 'recall': [0.7797415256500244], 'f1': [0.7999669313430786], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.6592406302004439, 'length_ratio': 0.7058823529411765, 'translation_length': 12, 'reference_length': 17}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.10322533547878265
+---------------------------------------------------------
+¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad | Justificación: se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad (fact)  | Conclusión: ¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? (policy)  | Pivot: mafia  -  ilegales  -  ilegales
+Respecto a lo de regularizar, supongo que esta bien, siempre y cuando eso no implique reprimirlos, lo cual parece ser lo que propones realmente.
+
+<pad> Fora é a qué están esperando para regular la mafia de manteros ilegales y con moi mala leche?</s>
+{'precision': [0.7997699975967407], 'recall': [0.788992166519165], 'f1': [0.7943445444107056], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.11538461538461539, 0.0, 0.0, 0.0], 'brevity_penalty': 0.925961078642316, 'length_ratio': 0.9285714285714286, 'translation_length': 26, 'reference_length': 28}
+{'rouge1': 0.13636363636363635, 'rouge2': 0.0, 'rougeL': 0.13636363636363635, 'rougeLsum': 0.13636363636363635}
+0.4791070818901062
+---------------------------------------------------------
+¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad | Justificación: se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad (fact)  | Conclusión: ¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? (policy)  | Pivot: mafia  -  ilegales  -  ilegales
+No es cierto ni que la mayoría sean "mala leche" ni que sean ilegales. De hecho, muchos ni siquiera son extranjeros. 
+
+<pad> Fora é a qué están esperando para regular la mafia de manteros ilegales y con moi mala leche?</s>
+{'precision': [0.8261245489120483], 'recall': [0.8197583556175232], 'f1': [0.8229291439056396], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.15384615384615385, 0.04, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0, 'translation_length': 26, 'reference_length': 26}
+{'rouge1': 0.28571428571428564, 'rouge2': 0.05, 'rougeL': 0.14285714285714282, 'rougeLsum': 0.14285714285714282}
+0.5734531283378601
+---------------------------------------------------------
+¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad | Justificación: se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad (fact)  | Conclusión: ¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? (policy)  | Pivot: mafia  -  ilegales  -  ilegales
+No es cierto que se exija tanto en la mayoría de los paises. Por lo general, suele ser mas fácil inmigrar.
+
+<pad> Fora é a qué están esperando para regular la mafia de manteros ilegales y con moi mala leche?</s>
+{'precision': [0.7921003103256226], 'recall': [0.7992335557937622], 'f1': [0.7956509590148926], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07692307692307693, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0833333333333333, 'translation_length': 26, 'reference_length': 24}
+{'rouge1': 0.13953488372093023, 'rouge2': 0.0, 'rougeL': 0.09302325581395349, 'rougeLsum': 0.09302325581395349}
+0.4408974051475525
+---------------------------------------------------------
+¿y de donde sacan para irse de vacaciones? de verdad que esto ya pasa de castaño oscuro ¿refugiados y vuelven al lugar donde les maltrataban? https://t co/7il4vyouqa | Justificación: ¿y de donde sacan para irse de vacaciones?  -  ¿refugiados y vuelven al lugar donde les maltrataban? (fact)  | Conclusión: de verdad que esto ya pasa de castaño oscuro (value)  | Pivot: 
+No se entiende que quisiste decir con eso de castaño oscuro... Suena como si te molestara el color de las personas. Que racista.
+
+<pad> Quizá su respuesta sin odio algunas mensajes de odis: <unk>Dónde sacan para irse de vacaciones? <unk>de verdad que esto ya pasa de casta<unk>o oscuro <unk>refugiados y vuelven al lugar donde les maltrataban? (fact) | Conclusión: de verdad que this ya ha pasa de Casta<unk>o Oscuro (value)<unk>Pivot: <unk>Falsely soyo casta<unk>a a desaf<unk>os y valitaban en un punto para la decirles <unk>no? <unk>Fijo<unk>n simplemente ignoró una sanción sin ovo? debido a s<unk> una afirmación sin historia de los diapositivas: <unk>Clientas soyo ex gratis que han quer<unk>an ir a vacación y que las maltratababan? <unk>Obito su odimiento la verdad que yo pasa de oso castazino <unk>pretó como que esto pasa a cambio de castaje ossiano <unk>preto y que ya girió?</s>
+{'precision': [0.7690363526344299], 'recall': [0.8358434438705444], 'f1': [0.8010494112968445], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03015075376884422, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.107142857142857, 'translation_length': 199, 'reference_length': 28}
+{'rouge1': 0.11627906976744186, 'rouge2': 0.023529411764705882, 'rougeL': 0.09302325581395349, 'rougeLsum': 0.09302325581395349}
+0.3844612240791321
+---------------------------------------------------------
+¿y de donde sacan para irse de vacaciones? de verdad que esto ya pasa de castaño oscuro ¿refugiados y vuelven al lugar donde les maltrataban? https://t co/7il4vyouqa | Justificación: ¿y de donde sacan para irse de vacaciones?  -  ¿refugiados y vuelven al lugar donde les maltrataban? (fact)  | Conclusión: de verdad que esto ya pasa de castaño oscuro (value)  | Pivot: 
+Pueden tener sus motivos. No deberías juzgar tan apresuradamente.
+
+<pad> Quizá su respuesta sin odio algunas mensajes de odis: <unk>Dónde sacan para irse de vacaciones? <unk>de verdad que esto ya pasa de casta<unk>o oscuro <unk>refugiados y vuelven al lugar donde les maltrataban? (fact) | Conclusión: de verdad que this ya ha pasa de Casta<unk>o Oscuro (value)<unk>Pivot: <unk>Falsely soyo casta<unk>a a desaf<unk>os y valitaban en un punto para la decirles <unk>no? <unk>Fijo<unk>n simplemente ignoró una sanción sin ovo? debido a s<unk> una afirmación sin historia de los diapositivas: <unk>Clientas soyo ex gratis que han quer<unk>an ir a vacación y que las maltratababan? <unk>Obito su odimiento la verdad que yo pasa de oso castazino <unk>pretó como que esto pasa a cambio de castaje ossiano <unk>preto y que ya girió?</s>
+{'precision': [0.7477261424064636], 'recall': [0.7982048392295837], 'f1': [0.7721413969993591], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 18.09090909090909, 'translation_length': 199, 'reference_length': 11}
+{'rouge1': 0.012658227848101266, 'rouge2': 0.0, 'rougeL': 0.012658227848101266, 'rougeLsum': 0.012658227848101266}
+0.3089081645011902
+---------------------------------------------------------
+en vez de derrochar el dinero en los inmigrantes indocumentados preocúpese mejor de nuestro ancianos https://t co/giqiwgspep | Justificación: en vez de derrochar el dinero en los inmigrantes indocumentados (fact)  | Conclusión: preocúpese mejor de nuestro ancianos (policy)  | Pivot: 
+Se puede atender a unos sin descuidar a los otros. ¿Sabes?
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: en vez de derrochar el dinero en los indocumentados preocupese mejor de nuestra ancianciancianos http://t co/giqiwgspep | Justification: en in vez de derogar ese dinero, preocupase metierno de nuestro anciancio (fact) | Conclusion: preocupados mejor de nosotros (policy)</s>
+{'precision': [0.761853814125061], 'recall': [0.8257738947868347], 'f1': [0.7925271391868591], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04285714285714286, 0.014492753623188406, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.384615384615385, 'translation_length': 70, 'reference_length': 13}
+{'rouge1': 0.0967741935483871, 'rouge2': 0.03333333333333333, 'rougeL': 0.0967741935483871, 'rougeLsum': 0.0967741935483871}
+0.4479675889015198
+---------------------------------------------------------
+en vez de derrochar el dinero en los inmigrantes indocumentados preocúpese mejor de nuestro ancianos https://t co/giqiwgspep | Justificación: en vez de derrochar el dinero en los inmigrantes indocumentados (fact)  | Conclusión: preocúpese mejor de nuestro ancianos (policy)  | Pivot: 
+No creo que brindar atención básica sea derrochar el dinero.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: en vez de derrochar el dinero en los indocumentados preocupese mejor de nuestra ancianciancianos http://t co/giqiwgspep | Justification: en in vez de derogar ese dinero, preocupase metierno de nuestro anciancio (fact) | Conclusion: preocupados mejor de nosotros (policy)</s>
+{'precision': [0.769851803779602], 'recall': [0.8332229852676392], 'f1': [0.8002848029136658], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04285714285714286, 0.028985507246376812, 0.014705882352941176, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.363636363636363, 'translation_length': 70, 'reference_length': 11}
+{'rouge1': 0.09523809523809523, 'rouge2': 0.06557377049180327, 'rougeL': 0.09523809523809523, 'rougeLsum': 0.09523809523809523}
+0.4091993272304535
+---------------------------------------------------------
+hashtag sabiasque el cerebro de la mujer esta conectado al culo ? porque cada vez que piensan la cagan | Justificación: porque cada vez que piensan la cagan (fact)  | Conclusión: hashtag sabiasque el cerebro de la mujer esta conectado al culo ? (fact)  | Pivot: culo  -  cagan
+No solo que hay tantas mujeres inteligentes como hombres, sino que muchas de las mentes mas brillantes de la historia son y fueron mujeres.
+
+<pad> Funciona las mismas expresións de odio: contexto a Twitter: contexto para Twitter: el Facebook; contexto para Facebook: aspecto del idioma | contexto para el contexto com<unk>n: facto: facto como resultado, contexto del Facebook; eventos del Facebook: que hay un idiomio adecuado para que las cosas que piensan a la cagan se conectan al criterio, corriendo para como el social com<unk>o, el cual obliga a sus criterios.</s>
+{'precision': [0.7760269045829773], 'recall': [0.8154942989349365], 'f1': [0.7952712178230286], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09574468085106383, 0.010752688172043012, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.6153846153846154, 'translation_length': 94, 'reference_length': 26}
+{'rouge1': 0.14583333333333334, 'rouge2': 0.02127659574468085, 'rougeL': 0.10416666666666667, 'rougeLsum': 0.10416666666666667}
+0.3536928594112396
+---------------------------------------------------------
+hashtag sabiasque el cerebro de la mujer esta conectado al culo ? porque cada vez que piensan la cagan | Justificación: porque cada vez que piensan la cagan (fact)  | Conclusión: hashtag sabiasque el cerebro de la mujer esta conectado al culo ? (fact)  | Pivot: culo  -  cagan
+Hubo y hay muchas mujeres brillantes, tu chiste no es gracioso.
+
+<pad> Funciona las mismas expresións de odio: contexto a Twitter: contexto para Twitter: el Facebook; contexto para Facebook: aspecto del idioma | contexto para el contexto com<unk>n: facto: facto como resultado, contexto del Facebook; eventos del Facebook: que hay un idiomio adecuado para que las cosas que piensan a la cagan se conectan al criterio, corriendo para como el social com<unk>o, el cual obliga a sus criterios.</s>
+{'precision': [0.7736542224884033], 'recall': [0.8279688358306885], 'f1': [0.7998905777931213], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.031914893617021274, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.230769230769231, 'translation_length': 94, 'reference_length': 13}
+{'rouge1': 0.02409638554216867, 'rouge2': 0.0, 'rougeL': 0.02409638554216867, 'rougeLsum': 0.02409638554216867}
+0.4088474214076996
+---------------------------------------------------------
+lo único que debe votar una mujer son sus tetas cuando hacen deporte hashtag gravedadantetodo | Justificación: lo único que debe votar una mujer son sus tetas cuando hacen deporte (fact)  | Conclusión: hashtag gravedadantetodo (policy)  | Pivot: 
+Comentarios de este tipo, aunque se escondan en forma de "humor", son discriminadores, y muy peligrosos.
+
+<pad> As<unk> que se usa la respuesta sin odio al post odonto: lo <unk>nico que debe votar una mujer son sus tetas cuando hacen pol<unk>tica direitado (policy)</s>
+{'precision': [0.7943419218063354], 'recall': [0.8155782222747803], 'f1': [0.8048200011253357], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.043478260869565216, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.090909090909091, 'translation_length': 46, 'reference_length': 22}
+{'rouge1': 0.08333333333333333, 'rouge2': 0.0, 'rougeL': 0.08333333333333333, 'rougeLsum': 0.08333333333333333}
+0.3207738995552063
+---------------------------------------------------------
+la solución política: 1 no renovar residencia y expulsar a tantos marroquíes como subsaharianos entren desde marruecos no habría nadie en la valla 2 deducir de las ayudas al desarrollo a un país el coste de la repatriación de sus inmigrantes que lleguen ilegalmente a españa https://t co/xrmwaavr6n | Justificación: la solución política: (fact)  | Conclusión: 1 no renovar residencia y expulsar a tantos marroquíes como subsaharianos entren desde marruecos no habría nadie en la valla 2 deducir de las ayudas al desarrollo a un país el coste de la repatriación de sus inmigrantes que lleguen ilegalmente a españa (policy)  | Pivot: 
+Pues, aunque "sea la solución", si esta mal, por ende, no debería hacerse.
+
+<pad> Crecién sabe a los following men<unk>seos de odio: una solución sin od<unk>o: a no renew residense y expel a un grandetor que de montes durante a<unk>os no hubiera nadie en la carte 2, de dar las ayudas al desarrollo a un pa<unk>s el coste de la repatriación de sus inmigrantes que lleguen illegalmente a espa<unk>a (politica) | <unk> Prueba de todo? | Llevaba a las más independientes en los palabras? | Declaseo: un al tiempo: y no en la plaza 2 de a<unk> a ajustar a gran ni<unk>o a que no vi hábamos m<unk>sica es un pa<unk>ses donde no haya ninguna respuesta y cordial: (fact) | Conclusión: una no renewresirede resenza y expulsar a sobre las aides al desarrecer al pa<unk>s sobre la suya en llamada en frente desde a<unk>uecos no hubiere na no haber no en ellos una posición de la atención de sus migrantes que deportan ilegalmente en espa<unk>oa (policy) | Gracias! | Apoyar de</s>
+{'precision': [0.7584432363510132], 'recall': [0.8228315711021423], 'f1': [0.789326548576355], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.017467248908296942, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 11.45, 'translation_length': 229, 'reference_length': 20}
+{'rouge1': 0.05025125628140703, 'rouge2': 0.01015228426395939, 'rougeL': 0.04020100502512563, 'rougeLsum': 0.04020100502512563}
+0.3690742552280426
+---------------------------------------------------------
+la solución política: 1 no renovar residencia y expulsar a tantos marroquíes como subsaharianos entren desde marruecos no habría nadie en la valla 2 deducir de las ayudas al desarrollo a un país el coste de la repatriación de sus inmigrantes que lleguen ilegalmente a españa https://t co/xrmwaavr6n | Justificación: la solución política: (fact)  | Conclusión: 1 no renovar residencia y expulsar a tantos marroquíes como subsaharianos entren desde marruecos no habría nadie en la valla 2 deducir de las ayudas al desarrollo a un país el coste de la repatriación de sus inmigrantes que lleguen ilegalmente a españa (policy)  | Pivot: 
+¿La solución según quién? Creo que no estoy del todo convencido...
+
+<pad> Crecién sabe a los following men<unk>seos de odio: una solución sin od<unk>o: a no renew residense y expel a un grandetor que de montes durante a<unk>os no hubiera nadie en la carte 2, de dar las ayudas al desarrollo a un pa<unk>s el coste de la repatriación de sus inmigrantes que lleguen illegalmente a espa<unk>a (politica) | <unk> Prueba de todo? | Llevaba a las más independientes en los palabras? | Declaseo: un al tiempo: y no en la plaza 2 de a<unk> a ajustar a gran ni<unk>o a que no vi hábamos m<unk>sica es un pa<unk>ses donde no haya ninguna respuesta y cordial: (fact) | Conclusión: una no renewresirede resenza y expulsar a sobre las aides al desarrecer al pa<unk>s sobre la suya en llamada en frente desde a<unk>uecos no hubiere na no haber no en ellos una posición de la atención de sus migrantes que deportan ilegalmente en espa<unk>oa (policy) | Gracias! | Apoyar de</s>
+{'precision': [0.747909665107727], 'recall': [0.8089220523834229], 'f1': [0.7772203087806702], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.021834061135371178, 0.0043859649122807015, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 15.266666666666667, 'translation_length': 229, 'reference_length': 15}
+{'rouge1': 0.08080808080808081, 'rouge2': 0.02040816326530612, 'rougeL': 0.0505050505050505, 'rougeLsum': 0.0505050505050505}
+0.41390228271484375
+---------------------------------------------------------
+los que asaltaron la valla de ceuta con lanza-llamas y con cal viva ¿ también son victimas https://t co/rqv4c6tkiq | Justificación: los que asaltaron la valla de ceuta con lanza-llamas y con cal viva (fact)  | Conclusión: ¿ también son victimas (value)  | Pivot: 
+Desconozco el caso, pero no deberías asumir tan a la ligera que no pueda ser...
+
+<pad> Me referir<unk>a a la respuesta sin odio a los siguientes mensajes de odilusion: los que apalentan en lengue en lanza-llamas y con cal viva <unk> también son victimas</s>
+{'precision': [0.7942767143249512], 'recall': [0.806583821773529], 'f1': [0.8003829121589661], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07142857142857142, 0.024390243902439025, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.210526315789474, 'translation_length': 42, 'reference_length': 19}
+{'rouge1': 0.12, 'rouge2': 0.041666666666666664, 'rougeL': 0.12, 'rougeLsum': 0.12}
+0.3902575969696045
+---------------------------------------------------------
+en las últimas 24h varias peleas callejeras en ceuta por parte de los últimos en saltar violentamente la valla y el gobierno pide respeto??? | Justificación: en las últimas 24h varias peleas callejeras en ceuta por parte de los últimos en saltar violentamente la valla (fact)  | Conclusión: y el gobierno pide respeto??? (fact)  | Pivot: 
+Pues sí, incluso si alguno de ellos es una persona problemática, los demas no tienen la culpa de nada.
+
+<pad> The following posts from the Office of the President refer to the following events: at last a number of armed cars turn violently on the sidewalk, making an effect dangerously. The following posts:</s>
+{'precision': [0.8159404993057251], 'recall': [0.7762528657913208], 'f1': [0.795602023601532], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.045454545454545456, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0, 'translation_length': 44, 'reference_length': 22}
+{'rouge1': 0.03636363636363636, 'rouge2': 0.0, 'rougeL': 0.03636363636363636, 'rougeLsum': 0.03636363636363636}
+0.0859123021364212
+---------------------------------------------------------
+en las últimas 24h varias peleas callejeras en ceuta por parte de los últimos en saltar violentamente la valla y el gobierno pide respeto??? | Justificación: en las últimas 24h varias peleas callejeras en ceuta por parte de los últimos en saltar violentamente la valla (fact)  | Conclusión: y el gobierno pide respeto??? (fact)  | Pivot: 
+No puedes saber si fueron ellos. Deja de culparlos de todo.
+
+<pad> The following posts from the Office of the President refer to the following events: at last a number of armed cars turn violently on the sidewalk, making an effect dangerously. The following posts:</s>
+{'precision': [0.8128859996795654], 'recall': [0.8060662746429443], 'f1': [0.809461772441864], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.022727272727272728, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.3846153846153846, 'translation_length': 44, 'reference_length': 13}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.057647705078125
+---------------------------------------------------------
+¿por qué las modelos tienen una neurona más que los caballos? para no cagarse en los desfiles | Justificación: para no cagarse en los desfiles (fact)  | Conclusión: ¿por qué las modelos tienen una neurona más que los caballos? (fact)  | Pivot: modelos  -  desfiles
+Tu chiste es de tan mal gusto, que hasta resulta difícil responderte.
+
+<pad> The following answers come from the following: What do model's have, if not more than them, if you do not cache them in the files, your models are vulnerable.</s>
+{'precision': [0.8161234855651855], 'recall': [0.8016454577445984], 'f1': [0.8088196516036987], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04878048780487805, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.9285714285714284, 'translation_length': 41, 'reference_length': 14}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.006109142675995827
+---------------------------------------------------------
+¿por qué las modelos tienen una neurona más que los caballos? para no cagarse en los desfiles | Justificación: para no cagarse en los desfiles (fact)  | Conclusión: ¿por qué las modelos tienen una neurona más que los caballos? (fact)  | Pivot: modelos  -  desfiles
+Eso de que todas las modelos son tontas es un prejuicio infundado, completamente absurdo.
+
+<pad> The following answers come from the following: What do model's have, if not more than them, if you do not cache them in the files, your models are vulnerable.</s>
+{'precision': [0.822073757648468], 'recall': [0.7789525389671326], 'f1': [0.7999324202537537], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04878048780487805, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.5625, 'translation_length': 41, 'reference_length': 16}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.1534665822982788
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no | Justificación: telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona (fact)  | Conclusión: racismo? no (fact)  | Pivot: 
+Racismo? SI. Estas diciendo que su nacionalidad tiene relación con el hecho de que hayan cometido algún delito, cuando no es así.
+
+<pad> Same as una respuesta sin odio to the following messages of odismo: telediario de las 15 h: - alemanes sembran el pánico en metro de valencia - rumanas carteristas en metro barcelona - árabes agreden a turistas en barcelonan racismo? no (fact) | Justification: teledadario de la los 15 h, - alemania siembran alma en metro of valencio - remanenas carteros en metro - agredan a turistas in barcelonania racismo? No (fact)</s>
+{'precision': [0.7667557597160339], 'recall': [0.8017071485519409], 'f1': [0.7838420271873474], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.056179775280898875, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.423076923076923, 'translation_length': 89, 'reference_length': 26}
+{'rouge1': 0.10869565217391305, 'rouge2': 0.0, 'rougeL': 0.06521739130434782, 'rougeLsum': 0.06521739130434782}
+0.4608999490737915
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no | Justificación: telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona (fact)  | Conclusión: racismo? no (fact)  | Pivot: 
+Ni los alemanes siembran el pánico, ni las rumanas son carteristas, ni los árabes agreden turistas. En todo caso, si hay gente que hace esas cosas, su nacionalidad no es importante, pues no tiene nada que ver con que sean criminales.
+
+<pad> Same as una respuesta sin odio to the following messages of odismo: telediario de las 15 h: - alemanes sembran el pánico en metro de valencia - rumanas carteristas en metro barcelona - árabes agreden a turistas en barcelonan racismo? no (fact) | Justification: teledadario de la los 15 h, - alemania siembran alma en metro of valencio - remanenas carteros en metro - agredan a turistas in barcelonania racismo? No (fact)</s>
+{'precision': [0.8155738711357117], 'recall': [0.8412865400314331], 'f1': [0.8282306790351868], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.14606741573033707, 0.022727272727272728, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8541666666666667, 'translation_length': 89, 'reference_length': 48}
+{'rouge1': 0.27272727272727276, 'rouge2': 0.07407407407407407, 'rougeL': 0.21818181818181817, 'rougeLsum': 0.21818181818181817}
+0.4116045832633972
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no | Justificación: telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona (fact)  | Conclusión: racismo? no (fact)  | Pivot: 
+El telediario no es una fuente seria. No deberíamos confiar en lo que dicen.
+
+<pad> Same as una respuesta sin odio to the following messages of odismo: telediario de las 15 h: - alemanes sembran el pánico en metro de valencia - rumanas carteristas en metro barcelona - árabes agreden a turistas en barcelonan racismo? no (fact) | Justification: teledadario de la los 15 h, - alemania siembran alma en metro of valencio - remanenas carteros en metro - agredan a turistas in barcelonania racismo? No (fact)</s>
+{'precision': [0.7666944265365601], 'recall': [0.818214476108551], 'f1': [0.7916170358657837], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.056179775280898875, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.5625, 'translation_length': 89, 'reference_length': 16}
+{'rouge1': 0.14457831325301207, 'rouge2': 0.0, 'rougeL': 0.07228915662650603, 'rougeLsum': 0.07228915662650603}
+0.4932093620300293
+---------------------------------------------------------
+este es el tipo de inmigración que deja muy mal parado al resto de los venezolanos desgraciados https://t co/acv9hihxmd | Justificación: este es el tipo de inmigración que deja muy mal parado al resto de los venezolanos (fact)  | Conclusión: desgraciados (fact)  | Pivot: 
+De todas formas, no se entiende que paso, o quien hizo que... 
+
+<pad> Opposing source: https://t.co/uyjhugz | Name: Ref: Article: 65/151/A-Pg-13123-Evlectical.html Amending tools: aaiavdchq http://en.wikipedia.org/wiki/CodeProject:_Reply%20to_Lives&#100; | Explanación: This is the type of immigration that leaves much of the Croatian population completely mal to the rest of the people below their customs table. | False Sentiment: the rest of Croatians have been selectively seen as illegal by their natives | Explanation: the Croatians are not discriminated against primarily as derogatory communities of Croatian origin from providing services that cut money, donate cultural sites or save the solemn public space of border and ethnic communities | Corrective: the Croatianics are discriminated against (fact) | Hypothesis: Croatians only hate or discriminate towards the majority population, this type of immigration is preventable | Procesa: <unk>Ref: TrabajdcHq.wikipedia.eu | Pode: <unk>Compose: ‘Liberáticos</s>
+{'precision': [0.7516303658485413], 'recall': [0.7798066139221191], 'f1': [0.7654592990875244], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.025252525252525252, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 11.647058823529411, 'translation_length': 198, 'reference_length': 17}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.11945543438196182
+---------------------------------------------------------
+este es el tipo de inmigración que deja muy mal parado al resto de los venezolanos desgraciados https://t co/acv9hihxmd | Justificación: este es el tipo de inmigración que deja muy mal parado al resto de los venezolanos (fact)  | Conclusión: desgraciados (fact)  | Pivot: 
+No. En todo caso, las personas que asumen que "son todos iguales" dejan mal parado al resto de los venezolanos.
+
+<pad> Opposing source: https://t.co/uyjhugz | Name: Ref: Article: 65/151/A-Pg-13123-Evlectical.html Amending tools: aaiavdchq http://en.wikipedia.org/wiki/CodeProject:_Reply%20to_Lives&#100; | Explanación: This is the type of immigration that leaves much of the Croatian population completely mal to the rest of the people below their customs table. | False Sentiment: the rest of Croatians have been selectively seen as illegal by their natives | Explanation: the Croatians are not discriminated against primarily as derogatory communities of Croatian origin from providing services that cut money, donate cultural sites or save the solemn public space of border and ethnic communities | Corrective: the Croatianics are discriminated against (fact) | Hypothesis: Croatians only hate or discriminate towards the majority population, this type of immigration is preventable | Procesa: <unk>Ref: TrabajdcHq.wikipedia.eu | Pode: <unk>Compose: ‘Liberáticos</s>
+{'precision': [0.756569504737854], 'recall': [0.8200075030326843], 'f1': [0.7870122194290161], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.020202020202020204, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.92, 'translation_length': 198, 'reference_length': 25}
+{'rouge1': 0.02484472049689441, 'rouge2': 0.0, 'rougeL': 0.02484472049689441, 'rougeLsum': 0.02484472049689441}
+0.16793610155582428
+---------------------------------------------------------
+es muy lógico hay que pagar los inmigrantes ilegales que entran en españa sin parar y no hay dinero para l@user español@user mientras sí dan papeles a todos vergüenza https://t co/sryq8r1qme | Justificación: es muy lógico hay que pagar los inmigrantes ilegales que entran en españa sin parar y no hay dinero para l@user español@user mientras sí dan papeles a todos (fact)  | Conclusión: vergüenza (value)  | Pivot: 
+¿Te da vergüenza que se atienda a unos, o que se descuide a los otros? Si es lo segundo, se puede trabajar. Si es lo primero, simplemente es racismo. 
+
+<pad> Analizamos anciais odiosas técnicas: es muy lógico que pagar los illegales que entran en espa<unk>a sin parar y no hay dinero para l@user espa<unk>ol@user mientras s<unk> dan papeles a todos vergüenza (a afirmación siguiente)</s>
+{'precision': [0.7821764945983887], 'recall': [0.8188995122909546], 'f1': [0.8001168966293335], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.11864406779661017, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.6857142857142857, 'translation_length': 59, 'reference_length': 35}
+{'rouge1': 0.20779220779220778, 'rouge2': 0.026666666666666665, 'rougeL': 0.0779220779220779, 'rougeLsum': 0.0779220779220779}
+0.5014551877975464
+---------------------------------------------------------
+es muy lógico hay que pagar los inmigrantes ilegales que entran en españa sin parar y no hay dinero para l@user español@user mientras sí dan papeles a todos vergüenza https://t co/sryq8r1qme | Justificación: es muy lógico hay que pagar los inmigrantes ilegales que entran en españa sin parar y no hay dinero para l@user español@user mientras sí dan papeles a todos (fact)  | Conclusión: vergüenza (value)  | Pivot: 
+Se puede atender a unos sin descuidar a los otros. No hay que "elegir"
+
+<pad> Analizamos anciais odiosas técnicas: es muy lógico que pagar los illegales que entran en espa<unk>a sin parar y no hay dinero para l@user espa<unk>ol@user mientras s<unk> dan papeles a todos vergüenza (a afirmación siguiente)</s>
+{'precision': [0.7697291374206543], 'recall': [0.8454403877258301], 'f1': [0.805810272693634], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1016949152542373, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.4705882352941178, 'translation_length': 59, 'reference_length': 17}
+{'rouge1': 0.22950819672131148, 'rouge2': 0.03389830508474576, 'rougeL': 0.13114754098360654, 'rougeLsum': 0.13114754098360654}
+0.48044100403785706
+---------------------------------------------------------
+@user y @user tienen razón los inmigrantes vienen a imponernos sus costumbres https://t co/xstepibjql | Justificación: los inmigrantes vienen a imponernos sus costumbres (fact)  | Conclusión: @user y @user tienen razón (fact)  | Pivot: 
+No creo que tengan razon en esto realmente. No veo a nadie intentando imponer sus costumbres.
+
+<pad> Create a response without odio to the following messages of odideo: @user and @user have reason to deport inmigrantes and the deportees to their borders https://t co/xstepibjql | Justification: deslo deporte a otras esos inmigrantes es impenetrado (fact) | Final: @user & @user have cause (fact)</s>
+{'precision': [0.7738606929779053], 'recall': [0.8043874502182007], 'f1': [0.7888288497924805], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.014285714285714285, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.888888888888889, 'translation_length': 70, 'reference_length': 18}
+{'rouge1': 0.031746031746031744, 'rouge2': 0.0, 'rougeL': 0.031746031746031744, 'rougeLsum': 0.031746031746031744}
+0.29006314277648926
+---------------------------------------------------------
+@user y @user tienen razón los inmigrantes vienen a imponernos sus costumbres https://t co/xstepibjql | Justificación: los inmigrantes vienen a imponernos sus costumbres (fact)  | Conclusión: @user y @user tienen razón (fact)  | Pivot: 
+No es cierto que los inmigrantes vengan a imponernos sus costrumbres. Lo que seguro exigen, es que sean respetadas.
+
+<pad> Create a response without odio to the following messages of odideo: @user and @user have reason to deport inmigrantes and the deportees to their borders https://t co/xstepibjql | Justification: deslo deporte a otras esos inmigrantes es impenetrado (fact) | Final: @user & @user have cause (fact)</s>
+{'precision': [0.7893772125244141], 'recall': [0.7997729182243347], 'f1': [0.7945410013198853], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04285714285714286, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.1818181818181817, 'translation_length': 70, 'reference_length': 22}
+{'rouge1': 0.0909090909090909, 'rouge2': 0.0, 'rougeL': 0.0909090909090909, 'rougeLsum': 0.0909090909090909}
+0.39383620023727417
+---------------------------------------------------------
+@user y @user tienen razón los inmigrantes vienen a imponernos sus costumbres https://t co/xstepibjql | Justificación: los inmigrantes vienen a imponernos sus costumbres (fact)  | Conclusión: @user y @user tienen razón (fact)  | Pivot: 
+Quizá exista algun extremista que quiera imponer su cultura a todos, pero eso pasa en todos lados, y no solo con los inmigrantes. Lo que esta mal, es que generalices.
+
+<pad> Create a response without odio to the following messages of odideo: @user and @user have reason to deport inmigrantes and the deportees to their borders https://t co/xstepibjql | Justification: deslo deporte a otras esos inmigrantes es impenetrado (fact) | Final: @user & @user have cause (fact)</s>
+{'precision': [0.7916053533554077], 'recall': [0.8091325759887695], 'f1': [0.8002730011940002], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04285714285714286, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0, 'translation_length': 70, 'reference_length': 35}
+{'rouge1': 0.0779220779220779, 'rouge2': 0.0, 'rougeL': 0.0779220779220779, 'rougeLsum': 0.0779220779220779}
+0.3664613366127014
+---------------------------------------------------------
+"a nuestro país llegan ya no solamente los migrantes "tradicionales" desde la fachada noroccidental africana ahora proceden de toda áfrica y de asia somos la plataforma europea ""ideal"" para refugiados e in migrantes de cualquier parte del mundo https://t co/rc0k9poxej https://t co/kxwmzfpxmk" | Justificación: "a nuestro país llegan ya no solamente los migrantes "tradicionales" desde la fachada noroccidental africana ahora proceden de toda áfrica y de asia (fact)  | Conclusión: somos la plataforma europea ""ideal"" para refugiados e in migrantes de cualquier parte del mundo (fact)  | Pivot: migrantes  -  migrantes
+Celebro que así sea. Significa que los tratamos bien. Si te preocupa que pudiera surgir un problema, tranquilo, que seguro habrá tiempo de revisar el sistema, los cambios no son de un día al otro.
+
+<pad> Geera una respuesta sin odio a los siguientes mensajes de odideo: “a nuestro pa<unk>s llegan ya no sólo migrantes tradicionales desde la historia de el African ahora proceden de toda áfrica y de Asia, cómo iso es un europeo 'ideal' para migrantes, e migrantes de cualquier parte del mundo” (poz: http://t co/rc0k9poxej https://t co) | Justification: “a Nuestro pausa llevan ya not sóla migrantes... tanto está haciendo como el esencial eideal para migrante e a migrant<unk> en toda la haciencia del continente como este desde la anti-fequeza del Ni<unk>o (pox: https://t co/rct elostej http://t t co/kxwmzfpxmk]) <unk>por qué parte del Mundo ha sido muy variado a casado, porque a nuestra nacional pesca presentó un <unk>ntimo odismo para cada part del mundad... (odias) se llama por tu pa<unk>s, ó un teléfodo o do odj y hoy comemos un periódico "ideal" para abusos y migrantes por todo emero del mundial negro, cada part<unk>simo del munto</s>
+{'precision': [0.7437272667884827], 'recall': [0.7951582670211792], 'f1': [0.7685832977294922], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05627705627705628, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.634146341463414, 'translation_length': 231, 'reference_length': 41}
+{'rouge1': 0.07511737089201877, 'rouge2': 0.0, 'rougeL': 0.056338028169014086, 'rougeLsum': 0.056338028169014086}
+0.38733989000320435
+---------------------------------------------------------
+"a nuestro país llegan ya no solamente los migrantes "tradicionales" desde la fachada noroccidental africana ahora proceden de toda áfrica y de asia somos la plataforma europea ""ideal"" para refugiados e in migrantes de cualquier parte del mundo https://t co/rc0k9poxej https://t co/kxwmzfpxmk" | Justificación: "a nuestro país llegan ya no solamente los migrantes "tradicionales" desde la fachada noroccidental africana ahora proceden de toda áfrica y de asia (fact)  | Conclusión: somos la plataforma europea ""ideal"" para refugiados e in migrantes de cualquier parte del mundo (fact)  | Pivot: migrantes  -  migrantes
+¿Y eso tiene algo de malo? No es como si solo en algunos lugares hubiera buena gente...
+
+<pad> Geera una respuesta sin odio a los siguientes mensajes de odideo: “a nuestro pa<unk>s llegan ya no sólo migrantes tradicionales desde la historia de el African ahora proceden de toda áfrica y de Asia, cómo iso es un europeo 'ideal' para migrantes, e migrantes de cualquier parte del mundo” (poz: http://t co/rc0k9poxej https://t co) | Justification: “a Nuestro pausa llevan ya not sóla migrantes... tanto está haciendo como el esencial eideal para migrante e a migrant<unk> en toda la haciencia del continente como este desde la anti-fequeza del Ni<unk>o (pox: https://t co/rct elostej http://t t co/kxwmzfpxmk]) <unk>por qué parte del Mundo ha sido muy variado a casado, porque a nuestra nacional pesca presentó un <unk>ntimo odismo para cada part del mundad... (odias) se llama por tu pa<unk>s, ó un teléfodo o do odj y hoy comemos un periódico "ideal" para abusos y migrantes por todo emero del mundial negro, cada part<unk>simo del munto</s>
+{'precision': [0.7399265766143799], 'recall': [0.8019925951957703], 'f1': [0.76971036195755], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.030303030303030304, 0.008695652173913044, 0.004366812227074236, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 11.0, 'translation_length': 231, 'reference_length': 21}
+{'rouge1': 0.06185567010309278, 'rouge2': 0.0, 'rougeL': 0.05154639175257732, 'rougeLsum': 0.05154639175257732}
+0.313720703125
+---------------------------------------------------------
+"comentario escatológico: si no hay papal del culo deben abstenerse de acercarse a la valla de melilla al menos hasta que los ""lindos negritos visitantes"" estén estreñidos https://t co/mpuxy1wxnm" | Justificación: al menos hasta que los ""lindos negritos visitantes"" estén estreñidos (fact)  | Conclusión: deben abstenerse de acercarse a la valla de melilla (policy)  | Pivot: 
+No tienes el derecho a decidir quién puede estar en donde...
+
+<pad> A respondió inodicamente: "directorio escatológico: si no hay papál del <unk>ltimo bien sobrebringá a cabo para el ""Late Roundtrip"" a menos hasta que los ""Large roundtrip"" estén escritos http://t co/mpuxy1wxnm" | Justification: a mes<unk>ltima vez que los "".Late roundtrip fans se están escutivos (fact) | Final answer: deben abstenerse a el la carrera (politica).</s>
+{'precision': [0.7487832307815552], 'recall': [0.8049102425575256], 'f1': [0.7758328914642334], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.041666666666666664, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.857142857142857, 'translation_length': 96, 'reference_length': 14}
+{'rouge1': 0.10666666666666667, 'rouge2': 0.0, 'rougeL': 0.10666666666666667, 'rougeLsum': 0.10666666666666667}
+0.3289364278316498
+---------------------------------------------------------
+"comentario escatológico: si no hay papal del culo deben abstenerse de acercarse a la valla de melilla al menos hasta que los ""lindos negritos visitantes"" estén estreñidos https://t co/mpuxy1wxnm" | Justificación: al menos hasta que los ""lindos negritos visitantes"" estén estreñidos (fact)  | Conclusión: deben abstenerse de acercarse a la valla de melilla (policy)  | Pivot: 
+Queda claro, sin embargo, que el unico motivo por el que te caen mal, es que son negros. Racismo puro.
+
+<pad> A respondió inodicamente: "directorio escatológico: si no hay papál del <unk>ltimo bien sobrebringá a cabo para el ""Late Roundtrip"" a menos hasta que los ""Large roundtrip"" estén escritos http://t co/mpuxy1wxnm" | Justification: a mes<unk>ltima vez que los "".Late roundtrip fans se están escutivos (fact) | Final answer: deben abstenerse a el la carrera (politica).</s>
+{'precision': [0.7621856331825256], 'recall': [0.8267838358879089], 'f1': [0.7931716442108154], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0625, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.84, 'translation_length': 96, 'reference_length': 25}
+{'rouge1': 0.09638554216867469, 'rouge2': 0.0, 'rougeL': 0.07228915662650602, 'rougeLsum': 0.07228915662650602}
+0.25739049911499023
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon | Justificación: una para cada fogon (fact)  | Conclusión: por las mujeres tienen cuatro neuronas ??? (fact)  | Pivot: 
+Tu chiste sobre las mujeres y la cocina no hace gracia.
+
+<pad> There are four different categories of rat inception. Each class has a unique type of rat. There are four distinct categories of mutiny: Socrates, Karnataka, Kenya, Uganda, Zambia, Sri Lanka, Tanzania, Zambia, Kenya, United Arab Emirates, Tanzania, Bhutan, Sri Lanka (wholly vegetarian,</s>
+{'precision': [0.7655477523803711], 'recall': [0.7993799448013306], 'f1': [0.782098114490509], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.015151515151515152, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.5, 'translation_length': 66, 'reference_length': 12}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.05689277499914169
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon | Justificación: una para cada fogon (fact)  | Conclusión: por las mujeres tienen cuatro neuronas ??? (fact)  | Pivot: 
+No es cierto que las mujeres sean tontas. Incluso hubo y hay grandes mentes de la historia, mujeres.
+
+<pad> There are four different categories of rat inception. Each class has a unique type of rat. There are four distinct categories of mutiny: Socrates, Karnataka, Kenya, Uganda, Zambia, Sri Lanka, Tanzania, Zambia, Kenya, United Arab Emirates, Tanzania, Bhutan, Sri Lanka (wholly vegetarian,</s>
+{'precision': [0.7659963965415955], 'recall': [0.7764595746994019], 'f1': [0.7711925506591797], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.045454545454545456, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.142857142857143, 'translation_length': 66, 'reference_length': 21}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.006370226852595806
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos | Justificación: ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada (fact)  | Conclusión: recuerde senor presidente el xq ni arabes ni chinos (policy)  | Pivot: 
+Pues no eres tu quién decide quién entra y quién no. Incluso tampoc es él. Hay leyes al respecto...
+
+<pad> No he he held in overdoss as I reported this behaviour.</s>
+{'precision': [0.8354875445365906], 'recall': [0.7697573900222778], 'f1': [0.8012768030166626], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05263157894736842, 0.0, 0.0, 0.0], 'brevity_penalty': 0.7686205265937356, 'length_ratio': 0.7916666666666666, 'translation_length': 19, 'reference_length': 24}
+{'rouge1': 0.05714285714285715, 'rouge2': 0.0, 'rougeL': 0.05714285714285715, 'rougeLsum': 0.05714285714285715}
+0.10862753540277481
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos | Justificación: ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada (fact)  | Conclusión: recuerde senor presidente el xq ni arabes ni chinos (policy)  | Pivot: 
+Intento entender tu crítica, pero lo que dices directamente no tiene sentido alguno.
+
+<pad> No he he held in overdoss as I reported this behaviour.</s>
+{'precision': [0.843899130821228], 'recall': [0.7778571844100952], 'f1': [0.809533417224884], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05263157894736842, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2666666666666666, 'translation_length': 19, 'reference_length': 15}
+{'rouge1': 0.07407407407407408, 'rouge2': 0.0, 'rougeL': 0.07407407407407408, 'rougeLsum': 0.07407407407407408}
+0.021343842148780823
+---------------------------------------------------------
+a ver quién paga la factura y cómo se reparten el marrón de dejar inmigrantes ilegales sueltos por sus ciudades (y que los votantes no de lo hagan paga r dentro de un año) https://t co/cehrdjssdu | Justificación: a ver quién paga la factura y cómo se reparten el marrón de dejar inmigrantes ilegales sueltos por sus ciudades (fact)  | Conclusión: (y que los votantes no de lo hagan paga r dentro de un año) (fact)  | Pivot: paga  -  paga r
+Pues sería una lastima que el resultado de las elecciones cambie tanto por aceptar a algunos inmigrantes. Hablaría muy mal de la sociedad.
+
+<pad> odio to las siguientes mensajes de odisión: ver quién pagará la factura y cómo se reparten el marrón de dejar ilegales sueltos por sus ciudades (y que los votantes no delo hagan pagar r dentro de un an) [[http://t co/cehrdjssdu]] [[ https://t co.cehrd<unk>jssddu]][/[http://www.rru.net]]] [ https://t & co/crjssu | Justification: a ver quiénes pagarála la factura e cómenes sobre se reparten the marrón que dejar iludos imigrantes sostados por sus ciudadies (y que the votantes no do facer pagar a<unk>o) [[ https]] | Conclusion: (and que los votados no del dobrado pagar<unk>a r dento un an) (fact)] [Pivot: pagar - pagar rem")]</s>
+{'precision': [0.7543840408325195], 'recall': [0.8190560340881348], 'f1': [0.7853909134864807], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05555555555555555, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.2, 'translation_length': 180, 'reference_length': 25}
+{'rouge1': 0.13793103448275862, 'rouge2': 0.0, 'rougeL': 0.06896551724137931, 'rougeLsum': 0.06896551724137931}
+0.3229977488517761
+---------------------------------------------------------
+a ver quién paga la factura y cómo se reparten el marrón de dejar inmigrantes ilegales sueltos por sus ciudades (y que los votantes no de lo hagan paga r dentro de un año) https://t co/cehrdjssdu | Justificación: a ver quién paga la factura y cómo se reparten el marrón de dejar inmigrantes ilegales sueltos por sus ciudades (fact)  | Conclusión: (y que los votantes no de lo hagan paga r dentro de un año) (fact)  | Pivot: paga  -  paga r
+¿De qué factura hablas? Si los inmigrantes no representan ningún gasto.
+
+<pad> odio to las siguientes mensajes de odisión: ver quién pagará la factura y cómo se reparten el marrón de dejar ilegales sueltos por sus ciudades (y que los votantes no delo hagan pagar r dentro de un an) [[http://t co/cehrdjssdu]] [[ https://t co.cehrd<unk>jssddu]][/[http://www.rru.net]]] [ https://t & co/crjssu | Justification: a ver quiénes pagarála la factura e cómenes sobre se reparten the marrón que dejar iludos imigrantes sostados por sus ciudadies (y que the votantes no do facer pagar a<unk>o) [[ https]] | Conclusion: (and que los votados no del dobrado pagar<unk>a r dento un an) (fact)] [Pivot: pagar - pagar rem")]</s>
+{'precision': [0.7548341751098633], 'recall': [0.8132420778274536], 'f1': [0.7829503417015076], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.022222222222222223, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 13.846153846153847, 'translation_length': 180, 'reference_length': 13}
+{'rouge1': 0.07575757575757576, 'rouge2': 0.0, 'rougeL': 0.07575757575757576, 'rougeLsum': 0.07575757575757576}
+0.39417460560798645
+---------------------------------------------------------
+como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo | Justificación: como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin (fact)  | Conclusión: una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo (fact)  | Pivot: última hora  -  improvisadores
+Dices que son improvisadores porque no quieres que haya inmigrantes venezolanos aquí, y lo entiendo, pero te equivocas. Sencillamente se previó que habría ningún problema, y ya.
+
+<pad> Gerada una respuesta sin odio a los siguientes mensajes de odilo: como siempre nuestras autoridades a<unk>n tienes cuenta d<unk>as más que todos los problemas que generan los ni<unk>os venezolanos sin haber cumplido los requisitos para ese fin os demás se muestra q son improvisadores y no previsores en conclusión terminan siendo informal todo (fact) | Justification: coma siempre nuestros autoridade a<unk>án tienes cuendo que toda época ganas: a<unk>a más que nuestra dirección á<unk>a tienes cuentos que á<unk> larios han trabajado qué problemas que g<unk>a niones cercano qué nión bueden: ha sido improvisantes y no pruebas en esa fin, ha sida más ganadas: y a<unk>á demás se dijeron a<unk>os que se fueron improvisadoras y as<unk> sustentado en conclución terminan sido informal toto (fact)| Pivot: <unk>ltima hora – improvisadas | Pivota:<unk>ltimo hora — improvisados | Pivoto:<unk>lulufuosos =></s>
+{'precision': [0.7649291157722473], 'recall': [0.8149917125701904], 'f1': [0.7891672849655151], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05238095238095238, 0.004784688995215311, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.5625, 'translation_length': 210, 'reference_length': 32}
+{'rouge1': 0.1256544502617801, 'rouge2': 0.010582010582010581, 'rougeL': 0.09424083769633508, 'rougeLsum': 0.09424083769633508}
+0.49140843749046326
+---------------------------------------------------------
+como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo | Justificación: como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin (fact)  | Conclusión: una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo (fact)  | Pivot: última hora  -  improvisadores
+No entiendo por que los inmigrantes venezolanos generarían problemas, cuando son exactamente como cualquier otra persona, inmigrante o no.
+
+<pad> Gerada una respuesta sin odio a los siguientes mensajes de odilo: como siempre nuestras autoridades a<unk>n tienes cuenta d<unk>as más que todos los problemas que generan los ni<unk>os venezolanos sin haber cumplido los requisitos para ese fin os demás se muestra q son improvisadores y no previsores en conclusión terminan siendo informal todo (fact) | Justification: coma siempre nuestros autoridade a<unk>án tienes cuendo que toda época ganas: a<unk>a más que nuestra dirección á<unk>a tienes cuentos que á<unk> larios han trabajado qué problemas que g<unk>a niones cercano qué nión bueden: ha sido improvisantes y no pruebas en esa fin, ha sida más ganadas: y a<unk>á demás se dijeron a<unk>os que se fueron improvisadoras y as<unk> sustentado en conclución terminan sido informal toto (fact)| Pivot: <unk>ltima hora – improvisadas | Pivota:<unk>ltimo hora — improvisados | Pivoto:<unk>lulufuosos =></s>
+{'precision': [0.7585593461990356], 'recall': [0.8115130662918091], 'f1': [0.7841432094573975], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0380952380952381, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 9.545454545454545, 'translation_length': 210, 'reference_length': 22}
+{'rouge1': 0.0879120879120879, 'rouge2': 0.0, 'rougeL': 0.05494505494505494, 'rougeLsum': 0.05494505494505494}
+0.34023916721343994
+---------------------------------------------------------
+como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo | Justificación: como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin (fact)  | Conclusión: una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo (fact)  | Pivot: última hora  -  improvisadores
+Y a que te refieres con esos problemas? Porque no creo que generen ninguno realmente.
+
+<pad> Gerada una respuesta sin odio a los siguientes mensajes de odilo: como siempre nuestras autoridades a<unk>n tienes cuenta d<unk>as más que todos los problemas que generan los ni<unk>os venezolanos sin haber cumplido los requisitos para ese fin os demás se muestra q son improvisadores y no previsores en conclusión terminan siendo informal todo (fact) | Justification: coma siempre nuestros autoridade a<unk>án tienes cuendo que toda época ganas: a<unk>a más que nuestra dirección á<unk>a tienes cuentos que á<unk> larios han trabajado qué problemas que g<unk>a niones cercano qué nión bueden: ha sido improvisantes y no pruebas en esa fin, ha sida más ganadas: y a<unk>á demás se dijeron a<unk>os que se fueron improvisadoras y as<unk> sustentado en conclución terminan sido informal toto (fact)| Pivot: <unk>ltima hora – improvisadas | Pivota:<unk>ltimo hora — improvisados | Pivoto:<unk>lulufuosos =></s>
+{'precision': [0.7531497478485107], 'recall': [0.8145003914833069], 'f1': [0.7826246023178101], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.023809523809523808, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 12.352941176470589, 'translation_length': 210, 'reference_length': 17}
+{'rouge1': 0.06779661016949153, 'rouge2': 0.011428571428571429, 'rougeL': 0.06779661016949153, 'rougeLsum': 0.06779661016949153}
+0.47523558139801025
+---------------------------------------------------------
+españa está siendo invadida por los subsaharianos y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto https://t co/h4xmwqlvw7 | Justificación: españa está siendo invadida por los subsaharianos (fact)  | Conclusión: y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto (value)  | Pivot: 
+No entiendo a qué te refieres, o qué te preocupa. Ni siquiera propones nada. No tiene mucho sentido lo qué dices.
+
+<pad> Resulta una respuesta sin odio a los siguientes mensajes de odideo: aqu<unk> dise<unk>o don tonto jugar al corro la patata desde la moncloa hashtag caminodevenezuela hashtag se<unk>orllevamépronto https://t co/h4xmwqlvw7 | Justificación: espa<unk>a está siendo invadida por los subsaharianos (fact) | Conclusion: y aqué dise<unk>a don tono jugar á corro la pizza desde la Moncloa hashtag caminodevenezugal hashtag se<unk>oreslevaméproне (value) | Pivot: =></s>
+{'precision': [0.7398394346237183], 'recall': [0.7925900816917419], 'f1': [0.7653068900108337], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.018691588785046728, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.28, 'translation_length': 107, 'reference_length': 25}
+{'rouge1': 0.041666666666666664, 'rouge2': 0.0, 'rougeL': 0.041666666666666664, 'rougeLsum': 0.041666666666666664}
+0.3038226366043091
+---------------------------------------------------------
+españa está siendo invadida por los subsaharianos y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto https://t co/h4xmwqlvw7 | Justificación: españa está siendo invadida por los subsaharianos (fact)  | Conclusión: y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto (value)  | Pivot: 
+Estas confundiendo las palabras inmigración e invasión, y sus significados son casi opuestos.
+
+<pad> Resulta una respuesta sin odio a los siguientes mensajes de odideo: aqu<unk> dise<unk>o don tonto jugar al corro la patata desde la moncloa hashtag caminodevenezuela hashtag se<unk>orllevamépronto https://t co/h4xmwqlvw7 | Justificación: espa<unk>a está siendo invadida por los subsaharianos (fact) | Conclusion: y aqué dise<unk>a don tono jugar á corro la pizza desde la Moncloa hashtag caminodevenezugal hashtag se<unk>oreslevaméproне (value) | Pivot: =></s>
+{'precision': [0.750225305557251], 'recall': [0.8168532848358154], 'f1': [0.7821229100227356], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.009345794392523364, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.133333333333334, 'translation_length': 107, 'reference_length': 15}
+{'rouge1': 0.044444444444444446, 'rouge2': 0.0, 'rougeL': 0.044444444444444446, 'rougeLsum': 0.044444444444444446}
+0.2781662046909332
+---------------------------------------------------------
+españa está siendo invadida por los subsaharianos y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto https://t co/h4xmwqlvw7 | Justificación: españa está siendo invadida por los subsaharianos (fact)  | Conclusión: y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto (value)  | Pivot: 
+No es cierto que España esté siendo invadida por nadie.
+
+<pad> Resulta una respuesta sin odio a los siguientes mensajes de odideo: aqu<unk> dise<unk>o don tonto jugar al corro la patata desde la moncloa hashtag caminodevenezuela hashtag se<unk>orllevamépronto https://t co/h4xmwqlvw7 | Justificación: espa<unk>a está siendo invadida por los subsaharianos (fact) | Conclusion: y aqué dise<unk>a don tono jugar á corro la pizza desde la Moncloa hashtag caminodevenezugal hashtag se<unk>oreslevaméproне (value) | Pivot: =></s>
+{'precision': [0.7510786056518555], 'recall': [0.8511127233505249], 'f1': [0.7979727983474731], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.028037383177570093, 0.018867924528301886, 0.009523809523809525, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 9.727272727272727, 'translation_length': 107, 'reference_length': 11}
+{'rouge1': 0.13953488372093023, 'rouge2': 0.09523809523809523, 'rougeL': 0.13953488372093023, 'rougeLsum': 0.13953488372093023}
+0.273955762386322
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww | Justificación: estos son los que nos están invadiendo (fact)  | Conclusión: y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales (fact)  | Pivot: 
+Que consideres que es una invasión no va a cambiar el hecho de que se acojan refugiados y se les brinde atención basica. Eso es ser humanitario.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: estos son los que nos están invadando y nos estamos acogando como refugiados y nosotros para regalar tu semanas que nuestros servicios sociales deben ser outrazadas: “este son los que los están invasidos y nos ustedes ayudando que nos estaban ayunidos (fact) | Conclusión: “esos son que nos estás invasidos (fact ) | Pivot: =></s>
+{'precision': [0.7951534986495972], 'recall': [0.8284221291542053], 'f1': [0.8114469647407532], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09876543209876543, 0.0125, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.793103448275862, 'translation_length': 81, 'reference_length': 29}
+{'rouge1': 0.22680412371134023, 'rouge2': 0.021052631578947368, 'rougeL': 0.14432989690721648, 'rougeLsum': 0.14432989690721648}
+0.42093855142593384
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww | Justificación: estos son los que nos están invadiendo (fact)  | Conclusión: y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales (fact)  | Pivot: 
+Solo estás siendo racista al decir que los refugiados nos invaden.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odis: estos son los que nos están invadando y nos estamos acogando como refugiados y nosotros para regalar tu semanas que nuestros servicios sociales deben ser outrazadas: “este son los que los están invasidos y nos ustedes ayudando que nos estaban ayunidos (fact) | Conclusión: “esos son que nos estás invasidos (fact ) | Pivot: =></s>
+{'precision': [0.7922495007514954], 'recall': [0.8721277713775635], 'f1': [0.83027184009552], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06172839506172839, 0.0125, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 6.75, 'translation_length': 81, 'reference_length': 12}
+{'rouge1': 0.15, 'rouge2': 0.05128205128205129, 'rougeL': 0.1, 'rougeLsum': 0.1}
+0.4841870367527008
+---------------------------------------------------------
+hay varias paginas de feministas a las que deberia darles verguenza exponer sus ideas ya que no tienen ni pies ni cabeza | Justificación: ya que no tienen ni pies ni cabeza (fact)  | Conclusión: hay varias paginas de feministas a las que deberia darles verguenza exponer sus ideas (fact)  | Pivot: 
+Nadie debería tener verguenza de exponer sus ideas, ya sea que estén en lo cierto o no. A menos que sus ideas hagan daño a otros, claro esta.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odideo: hay varias paginas de feministas que deber<unk>an darle verguenza exponer sus ideas ya que ni tienen pies ni cabeza (fact) | Justification: ya no tienen (ni pies y cabeza) (fact)</s>
+{'precision': [0.8162327408790588], 'recall': [0.8458443880081177], 'f1': [0.8307747840881348], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.03389830508474576, 0.017241379310344827, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.875, 'translation_length': 60, 'reference_length': 32}
+{'rouge1': 0.29333333333333333, 'rouge2': 0.08219178082191782, 'rougeL': 0.21333333333333335, 'rougeLsum': 0.21333333333333335}
+0.5789273977279663
+---------------------------------------------------------
+hay varias paginas de feministas a las que deberia darles verguenza exponer sus ideas ya que no tienen ni pies ni cabeza | Justificación: ya que no tienen ni pies ni cabeza (fact)  | Conclusión: hay varias paginas de feministas a las que deberia darles verguenza exponer sus ideas (fact)  | Pivot: 
+Si consideras que están equivocadas, podemos debatirlo. Pero decir que no tienen ni pies ni cabeza, pues te equivocas, y mucho.
+
+<pad> Genera una respuesta sin odio a los siguientes mensajes de odideo: hay varias paginas de feministas que deber<unk>an darle verguenza exponer sus ideas ya que ni tienen pies ni cabeza (fact) | Justification: ya no tienen (ni pies y cabeza) (fact)</s>
+{'precision': [0.8197709321975708], 'recall': [0.8361499309539795], 'f1': [0.8278794288635254], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.15, 0.06779661016949153, 0.017241379310344827, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.3076923076923075, 'translation_length': 60, 'reference_length': 26}
+{'rouge1': 0.27272727272727276, 'rouge2': 0.15625, 'rougeL': 0.2121212121212121, 'rougeLsum': 0.2121212121212121}
+0.6345248222351074
+---------------------------------------------------------
+" sea insulto o no los ""malditos sudacas"" son los que tienen en pie a las ligas del fútbol español y europeo https://t co/ewhdpr0gzv" | Justificación: los ""malditos sudacas"" son los que tienen en pie a las ligas del fútbol español y europeo (fact)  | Conclusión: sea insulto o no (fact)  | Pivot: 
+Creo que si lo es. Y no entiendo por qué insultarlos, cuando incluso estas diciendo cosas buenas de ellos.
+
+<pad> Etiquetas ""in insulto"" or ""no""</s>
+{'precision': [0.7997239828109741], 'recall': [0.8029756546020508], 'f1': [0.801346480846405], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05, 0.0, 0.0, 0.0], 'brevity_penalty': 0.9048374180359595, 'length_ratio': 0.9090909090909091, 'translation_length': 20, 'reference_length': 22}
+{'rouge1': 0.07692307692307693, 'rouge2': 0.0, 'rougeL': 0.07692307692307693, 'rougeLsum': 0.07692307692307693}
+0.4591274857521057
+---------------------------------------------------------
+" sea insulto o no los ""malditos sudacas"" son los que tienen en pie a las ligas del fútbol español y europeo https://t co/ewhdpr0gzv" | Justificación: los ""malditos sudacas"" son los que tienen en pie a las ligas del fútbol español y europeo (fact)  | Conclusión: sea insulto o no (fact)  | Pivot: 
+Y si es así, ¿por qué lo de "malditos"?
+
+<pad> Etiquetas ""in insulto"" or ""no""</s>
+{'precision': [0.8038720488548279], 'recall': [0.7880007028579712], 'f1': [0.795857310295105], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5384615384615385, 'translation_length': 20, 'reference_length': 13}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.33282536268234253
+---------------------------------------------------------
+acá me ven y ya me hablan español más sudaca no conseguís | Justificación: acá me ven y ya me hablan español (fact)  | Conclusión: más sudaca no conseguís (fact)  | Pivot: 
+¿Y qué tiene de malo eso?
+
+<pad> Guarana una respuesta sin odio a los siguientes mensajes de odideo: caém ven y yo hablan espa<unk>ol más sudaca no consegu<unk>s</s>
+{'precision': [0.7512606382369995], 'recall': [0.7940821647644043], 'f1': [0.7720780968666077], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.02702702702702703, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 5.285714285714286, 'translation_length': 37, 'reference_length': 7}
+{'rouge1': 0.1142857142857143, 'rouge2': 0.0, 'rougeL': 0.05714285714285715, 'rougeLsum': 0.05714285714285715}
+0.4486772119998932
+---------------------------------------------------------
+acá me ven y ya me hablan español más sudaca no conseguís | Justificación: acá me ven y ya me hablan español (fact)  | Conclusión: más sudaca no conseguís (fact)  | Pivot: 
+Pues estas hablando español, así que, asumo que esta gente no se equivocó.
+
+<pad> Guarana una respuesta sin odio a los siguientes mensajes de odideo: caém ven y yo hablan espa<unk>ol más sudaca no consegu<unk>s</s>
+{'precision': [0.7801055908203125], 'recall': [0.8177560567855835], 'f1': [0.7984872460365295], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.02702702702702703, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.3125, 'translation_length': 37, 'reference_length': 16}
+{'rouge1': 0.1395348837209302, 'rouge2': 0.0, 'rougeL': 0.1395348837209302, 'rougeLsum': 0.1395348837209302}
+0.4736369252204895
+========================================
+F1 AVG:
+1.7079158660137292
+Bleu AVG:
+0.0014782798821738464
+Rouge AVG:
+0.15100457323586353
+SBERT AVG:
+0.7217340493348964

@@ -1,0 +1,648 @@
+---------------------------------------------------------
+si estamos cogiendo ejemplo de los arabes mal vamos https://t co/vqapjspj8v
+¿Por qué iríamos mal? ¿Qué problema tienes con los árabes? Son una cultura brillante, ¿Sabes?
+
+<pad> US government has refused to back NAFTA</s>
+{'precision': [0.819833517074585], 'recall': [0.748367190361023], 'f1': [0.7824718952178955], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.6996725373751302, 'length_ratio': 0.7368421052631579, 'translation_length': 14, 'reference_length': 19}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.09583310782909393
+---------------------------------------------------------
+@user hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en cúcuta y el puente simón bolívar
+Quizás se podría pensar una mejor forma de integrarlos a la economía formal sin culparlos de todos los males. ¿No crees?
+
+<pad> Hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en c<unk>cuta y el puente simón bol<unk>var</s>
+{'precision': [0.7869167923927307], 'recall': [0.8060618042945862], 'f1': [0.7963742613792419], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04081632653061224, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.130434782608696, 'translation_length': 49, 'reference_length': 23}
+{'rouge1': 0.0923076923076923, 'rouge2': 0.0, 'rougeL': 0.061538461538461535, 'rougeLsum': 0.061538461538461535}
+0.39416933059692383
+---------------------------------------------------------
+@user hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en cúcuta y el puente simón bolívar
+Ni todos los venezolanos son comerciantes informales, ni es cierto que los negocios informales "le quiten ventas" a los comercios que pagan impuestos.
+
+<pad> Hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en c<unk>cuta y el puente simón bol<unk>var</s>
+{'precision': [0.8473495244979858], 'recall': [0.8920037150382996], 'f1': [0.8691034317016602], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.11171411352263534, 'precisions': [0.22448979591836735, 0.125, 0.0851063829787234, 0.06521739130434782], 'brevity_penalty': 1.0, 'length_ratio': 1.8148148148148149, 'translation_length': 49, 'reference_length': 27}
+{'rouge1': 0.34375000000000006, 'rouge2': 0.22580645161290322, 'rougeL': 0.3125, 'rougeLsum': 0.3125}
+0.6882674694061279
+---------------------------------------------------------
+@user hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en cúcuta y el puente simón bolívar
+Pues, tienen que ganarse su pan. Así que, mientras no les permitas trabajar legalmente, eso ocurrirá, te guste o no.
+
+<pad> Hace falta mas seguridad donde coloquen orden con comerciantes informales y indocumentados venezolanos que venden productos quitando las ventas a los comercios que pagan impuestos esto sucede en c<unk>cuta y el puente simón bol<unk>var</s>
+{'precision': [0.7883978486061096], 'recall': [0.8063704967498779], 'f1': [0.7972829341888428], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.04081632653061224, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8846153846153846, 'translation_length': 49, 'reference_length': 26}
+{'rouge1': 0.06557377049180328, 'rouge2': 0.0, 'rougeL': 0.06557377049180328, 'rougeLsum': 0.06557377049180328}
+0.4786564111709595
+---------------------------------------------------------
+que les pasa a todos que me quieren hacer usar turbante de arabe soy negro pero tampoco para tanto
+Tranquilo, nadie te va a obligar a nada.
+
+<pad> no me tiene mucha de citas argentinas que les contin<unk>as a utilizar más me rhondaron a cogar el modelo de moda pero les me desocupo porque realmente quiero vestirse muy v<unk>deo pero</s>
+{'precision': [0.7571909427642822], 'recall': [0.7937674522399902], 'f1': [0.7750478982925415], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0425531914893617, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.7, 'translation_length': 47, 'reference_length': 10}
+{'rouge1': 0.0851063829787234, 'rouge2': 0.0, 'rougeL': 0.0851063829787234, 'rougeLsum': 0.0851063829787234}
+0.4135357737541199
+---------------------------------------------------------
+me quieren seguir en ig un montón de árabes/turcos/israelíes creo que tengo cara de terrorista y no me di cuenta
+Lo que dices solo deja en evidencia que tienes un gran prejuicio, que te impide vincularte y conocer gente de otros lugares...
+
+<pad> muerte</s>
+{'precision': [0.8363336324691772], 'recall': [0.7667458057403564], 'f1': [0.8000293970108032], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.10539922456186433, 'length_ratio': 0.3076923076923077, 'translation_length': 8, 'reference_length': 26}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.17105069756507874
+---------------------------------------------------------
+me quieren seguir en ig un montón de árabes/turcos/israelíes creo que tengo cara de terrorista y no me di cuenta
+Lo dices como si todos los árabes/turcos/israelíes fuesen terroristas. Nada mas lejos de la realidad.
+
+<pad> muerte</s>
+{'precision': [0.8332008719444275], 'recall': [0.7625796794891357], 'f1': [0.7963275909423828], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.125, 0.0, 0.0, 0.0], 'brevity_penalty': 0.19691167520419406, 'length_ratio': 0.38095238095238093, 'translation_length': 8, 'reference_length': 21}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.07548800110816956
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Si todo es tal cual lo cuentas, pues que triste. Sin embargo, ni que sean manteros, ni que sean "sin papeles" tiene alguna relevancia aquí.
+
+<pad> Las mensajes de odio más ódidos: "alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran v<unk>a https://t co/ixbly7j37d v<unk> a @user"</s>
+{'precision': [0.788122832775116], 'recall': [0.819874107837677], 'f1': [0.8036850094795227], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.03611418584613024, 'precisions': [0.09722222222222222, 0.04225352112676056, 0.02857142857142857, 0.014492753623188406], 'brevity_penalty': 1.0, 'length_ratio': 2.25, 'translation_length': 72, 'reference_length': 32}
+{'rouge1': 0.12987012987012989, 'rouge2': 0.026666666666666665, 'rougeL': 0.07792207792207792, 'rougeLsum': 0.07792207792207792}
+0.6429226398468018
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Es un prejuicio muy extendido, este según el cual los manteros y feriantes son todos inmigrantes indocumentados. Nada mas lejos de la realidad.
+
+<pad> Las mensajes de odio más ódidos: "alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran v<unk>a https://t co/ixbly7j37d v<unk> a @user"</s>
+{'precision': [0.7807640433311462], 'recall': [0.8148288726806641], 'f1': [0.7974328398704529], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06944444444444445, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.769230769230769, 'translation_length': 72, 'reference_length': 26}
+{'rouge1': 0.13157894736842105, 'rouge2': 0.0, 'rougeL': 0.07894736842105263, 'rougeLsum': 0.07894736842105263}
+0.43218135833740234
+---------------------------------------------------------
+" alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran vía https://t co/ixbly7j37d vía @user"
+Lamentable. De todas formas, ni te consta que la noticia sea real, ni te consta que los manteros sean responsables.
+
+<pad> Las mensajes de odio más ódidos: "alguna de sus co secuencias no siendo las peores que las hay y graves ""sin papeles"" una joven sufre seis fracturas tras ser arrollada por un grupo de manteros en la gran v<unk>a https://t co/ixbly7j37d v<unk> a @user"</s>
+{'precision': [0.7835010290145874], 'recall': [0.8248015642166138], 'f1': [0.8036210536956787], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.041666666666666664, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.0, 'translation_length': 72, 'reference_length': 24}
+{'rouge1': 0.1111111111111111, 'rouge2': 0.0, 'rougeL': 0.08333333333333334, 'rougeLsum': 0.08333333333333334}
+0.42918339371681213
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión?
+No creo que nadie proponga dejar las fronteras "sin control". De lo que se está en contra es de los controles excesivos...
+
+<pad> Construir la fronteras antiguamente: Pregunta de la izquierda: Si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigranta también con la que está en una relación sentimental <unk>cómo se localiza para citarle a juicio después de la agresión?</s>
+{'precision': [0.7905553579330444], 'recall': [0.8465204238891602], 'f1': [0.817581295967102], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.15789473684210525, 0.05357142857142857, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0357142857142856, 'translation_length': 57, 'reference_length': 28}
+{'rouge1': 0.27027027027027023, 'rouge2': 0.08333333333333333, 'rougeL': 0.21621621621621623, 'rougeLsum': 0.21621621621621623}
+0.6138429641723633
+---------------------------------------------------------
+pregunta para la izquierda esta es para nota si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigrante también con la que está en una relación sentimental ¿cómo se le localiza para citarle a juicio después de la agresión?
+¿De donde salió ese prejuicio de que los inmigrantes siempre son malas personas, agresivos, etc.? La mayoría de ellos son excelentes personas, de hecho.
+
+<pad> Construir la fronteras antiguamente: Pregunta de la izquierda: Si abrimos las fronteras indiscriminadamente y sin control y un inmigrante agrede a una mujer inmigranta también con la que está en una relación sentimental <unk>cómo se localiza para citarle a juicio después de la agresión?</s>
+{'precision': [0.786223292350769], 'recall': [0.8310130834579468], 'f1': [0.80799800157547], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07017543859649122, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.9, 'translation_length': 57, 'reference_length': 30}
+{'rouge1': 0.12987012987012989, 'rouge2': 0.0, 'rougeL': 0.1038961038961039, 'rougeLsum': 0.1038961038961039}
+0.5795714855194092
+---------------------------------------------------------
+no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley https://t co/dikqdlsuk5
+No necesitas tener papeles para ser detenido o ir preso. No tiene sentido que alguien "no le tema a la ley" solo por no tener papeles. Eso no te hace inmune
+
+<pad> I don't know how to say that.... Todos unimos, sabemos la propiedad de tus propios hospedados...... es una explicación completamente alguna...... no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos se<unk>ores al no tener papeles se ven totalmente internet de lo que les puede pasar sin miedo total a la ley......</s>
+{'precision': [0.7892215251922607], 'recall': [0.8417114019393921], 'f1': [0.8146218061447144], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09803921568627451, 0.039603960396039604, 0.02, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.914285714285714, 'translation_length': 102, 'reference_length': 35}
+{'rouge1': 0.1509433962264151, 'rouge2': 0.07692307692307693, 'rougeL': 0.1320754716981132, 'rougeLsum': 0.1320754716981132}
+0.5911343097686768
+---------------------------------------------------------
+no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley https://t co/dikqdlsuk5
+Si los criminales estuvieran identificados, el problema seguramente estaría resuelto. Que creas saber quienes son solo deja en evidencia que estas siendo prejuicioso.
+
+<pad> I don't know how to say that.... Todos unimos, sabemos la propiedad de tus propios hospedados...... es una explicación completamente alguna...... no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos se<unk>ores al no tener papeles se ven totalmente internet de lo que les puede pasar sin miedo total a la ley......</s>
+{'precision': [0.7903745770454407], 'recall': [0.820507287979126], 'f1': [0.8051590919494629], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0392156862745098, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.923076923076923, 'translation_length': 102, 'reference_length': 26}
+{'rouge1': 0.06060606060606061, 'rouge2': 0.0, 'rougeL': 0.0404040404040404, 'rougeLsum': 0.0404040404040404}
+0.4180421829223633
+---------------------------------------------------------
+no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos señores al no tener papeles se ven totalmente internet de lo que les pueda pasar sin miedo total a la ley https://t co/dikqdlsuk5
+Que digas haber ido de vacaciones a Madrid no significa nada. Estas hablando de un lugar que no conoces.
+
+<pad> I don't know how to say that.... Todos unimos, sabemos la propiedad de tus propios hospedados...... es una explicación completamente alguna...... no sé dónde vives pero la delincuencia que he visto yo cuando he ido de vacaciones a madrid y a barcelona es absoluta vale y estos se<unk>ores al no tener papeles se ven totalmente internet de lo que les puede pasar sin miedo total a la ley......</s>
+{'precision': [0.7909208536148071], 'recall': [0.852624773979187], 'f1': [0.8206145763397217], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.027694825147907526, 'precisions': [0.09803921568627451, 0.0297029702970297, 0.02, 0.010101010101010102], 'brevity_penalty': 1.0, 'length_ratio': 4.857142857142857, 'translation_length': 102, 'reference_length': 21}
+{'rouge1': 0.2127659574468085, 'rouge2': 0.08695652173913043, 'rougeL': 0.19148936170212763, 'rougeLsum': 0.19148936170212763}
+0.6218037009239197
+---------------------------------------------------------
+yo si fuese @user incluiría en mi programa la construcción de un muro en el estrecho de gibraltar y que lo paguen los propios subsaharianos hashtag donaldcasado hashtag pablotrump https://t co/wddvp9nmuh
+No vamos a cometer semejante error solo porque tú dices que te gustaría... 
+
+<pad> gushers</s>
+{'precision': [0.8324539661407471], 'recall': [0.7470476627349854], 'f1': [0.7874417901039124], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.36787944117144233, 'length_ratio': 0.5, 'translation_length': 8, 'reference_length': 16}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.02385808154940605
+---------------------------------------------------------
+yo si fuese @user incluiría en mi programa la construcción de un muro en el estrecho de gibraltar y que lo paguen los propios subsaharianos hashtag donaldcasado hashtag pablotrump https://t co/wddvp9nmuh
+Por suerte no lo eres, porque realmente, no sería correcto.
+
+<pad> gushers</s>
+{'precision': [0.8460694551467896], 'recall': [0.7658361792564392], 'f1': [0.8039560317993164], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.5352614285189903, 'length_ratio': 0.6153846153846154, 'translation_length': 8, 'reference_length': 13}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.021920159459114075
+---------------------------------------------------------
+la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos
+En ambos casos estas describiendo a una persona por su color, solo que en uno de ellos lo haces de forma peyorativa. Eso es racismo
+
+<pad> la gente que ha entrado en espa<unk>a de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a our citizens son negros e islamistas sin adornos =></s>
+{'precision': [0.8113924264907837], 'recall': [0.8276033401489258], 'f1': [0.8194176554679871], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1206896551724138, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.1481481481481484, 'translation_length': 58, 'reference_length': 27}
+{'rouge1': 0.21621621621621617, 'rouge2': 0.0, 'rougeL': 0.10810810810810809, 'rougeLsum': 0.10810810810810809}
+0.6339064240455627
+---------------------------------------------------------
+la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos
+No tienes razones de peso para decir que los negros e islamitas son delincuentes o personas agresivas, solo es un prejuicio.
+
+<pad> la gente que ha entrado en espa<unk>a de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a our citizens son negros e islamistas sin adornos =></s>
+{'precision': [0.809515118598938], 'recall': [0.8344649076461792], 'f1': [0.821800708770752], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1206896551724138, 0.017543859649122806, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.5217391304347827, 'translation_length': 58, 'reference_length': 23}
+{'rouge1': 0.2, 'rouge2': 0.029411764705882353, 'rougeL': 0.11428571428571428, 'rougeLsum': 0.11428571428571428}
+0.5878814458847046
+---------------------------------------------------------
+la gente inmigrante que ha entrado en españa de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a nuestros ciudadanos son negros e islamistas sin adornos
+Que reconozcas que hay "excepciones" a tu prejuicio, no lo hace menos racista.
+
+<pad> la gente que ha entrado en espa<unk>a de modo legal y se integran en nuestra sociedad se les llama personas de color los ilegales que entran por la valla atacando a nuestros agentes delinquiendo y agrediendo a our citizens son negros e islamistas sin adornos =></s>
+{'precision': [0.7906002998352051], 'recall': [0.815950870513916], 'f1': [0.8030755519866943], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.034482758620689655, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.411764705882353, 'translation_length': 58, 'reference_length': 17}
+{'rouge1': 0.0967741935483871, 'rouge2': 0.0, 'rougeL': 0.0967741935483871, 'rougeLsum': 0.0967741935483871}
+0.5295029878616333
+---------------------------------------------------------
+¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad
+Respecto a lo de regularizar, supongo que esta bien, siempre y cuando eso no implique reprimirlos, lo cual parece ser lo que propones realmente.
+
+<pad> sin odio</s>
+{'precision': [0.8531191349029541], 'recall': [0.7689719796180725], 'f1': [0.8088629841804504], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.12110333239232977, 'length_ratio': 0.32142857142857145, 'translation_length': 9, 'reference_length': 28}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.09713277220726013
+---------------------------------------------------------
+¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad
+No es cierto ni que la mayoría sean "mala leche" ni que sean ilegales. De hecho, muchos ni siquiera son extranjeros. 
+
+<pad> sin odio</s>
+{'precision': [0.8526138067245483], 'recall': [0.7740866541862488], 'f1': [0.8114548921585083], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.15123975969049577, 'length_ratio': 0.34615384615384615, 'translation_length': 9, 'reference_length': 26}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.13327530026435852
+---------------------------------------------------------
+¿a qué están esperando para regularizar a la mafia de manteros ilegales y con muy mala leche ? se creen que tienen todos los derechos del mundo hasta dónde sé en ningún país desarrollado te permiten estar viviendo ilegales y sin papeles y ni pensar lo de la sanidad
+No es cierto que se exija tanto en la mayoría de los paises. Por lo general, suele ser mas fácil inmigrar.
+
+<pad> sin odio</s>
+{'precision': [0.8422821760177612], 'recall': [0.7797789573669434], 'f1': [0.8098263144493103], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.18887560283756186, 'length_ratio': 0.375, 'translation_length': 9, 'reference_length': 24}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.1423616111278534
+---------------------------------------------------------
+¿y de donde sacan para irse de vacaciones? de verdad que esto ya pasa de castaño oscuro ¿refugiados y vuelven al lugar donde les maltrataban? https://t co/7il4vyouqa
+No se entiende que quisiste decir con eso de castaño oscuro... Suena como si te molestara el color de las personas. Que racista.
+
+<pad> me lo mostra la narración desde su camino a los galos de la O’Malley tono opera que enfrenta</s>
+{'precision': [0.8130915760993958], 'recall': [0.8158544898033142], 'f1': [0.8144707083702087], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08, 0.0, 0.0, 0.0], 'brevity_penalty': 0.8869204367171576, 'length_ratio': 0.8928571428571429, 'translation_length': 25, 'reference_length': 28}
+{'rouge1': 0.13043478260869565, 'rouge2': 0.0, 'rougeL': 0.13043478260869565, 'rougeLsum': 0.13043478260869565}
+0.43620723485946655
+---------------------------------------------------------
+¿y de donde sacan para irse de vacaciones? de verdad que esto ya pasa de castaño oscuro ¿refugiados y vuelven al lugar donde les maltrataban? https://t co/7il4vyouqa
+Pueden tener sus motivos. No deberías juzgar tan apresuradamente.
+
+<pad> me lo mostra la narración desde su camino a los galos de la O’Malley tono opera que enfrenta</s>
+{'precision': [0.7928065061569214], 'recall': [0.7905116081237793], 'f1': [0.7916573882102966], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.272727272727273, 'translation_length': 25, 'reference_length': 11}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.2654615640640259
+---------------------------------------------------------
+en vez de derrochar el dinero en los inmigrantes indocumentados preocúpese mejor de nuestro ancianos https://t co/giqiwgspep
+Se puede atender a unos sin descuidar a los otros. ¿Sabes?
+
+<pad> Sencilla respuesta a los siguientes mensajes de odio: en vez de derrochar el dinero en los inmigrantes indocumentados preocupese mejor de nuestro ancianos https://t co/giqiwgspep</s>
+{'precision': [0.7677743434906006], 'recall': [0.8295436501502991], 'f1': [0.7974646687507629], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05128205128205128, 0.02631578947368421, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.0, 'translation_length': 39, 'reference_length': 13}
+{'rouge1': 0.1, 'rouge2': 0.05263157894736841, 'rougeL': 0.1, 'rougeLsum': 0.1}
+0.4161420464515686
+---------------------------------------------------------
+en vez de derrochar el dinero en los inmigrantes indocumentados preocúpese mejor de nuestro ancianos https://t co/giqiwgspep
+No creo que brindar atención básica sea derrochar el dinero.
+
+<pad> Sencilla respuesta a los siguientes mensajes de odio: en vez de derrochar el dinero en los inmigrantes indocumentados preocupese mejor de nuestro ancianos https://t co/giqiwgspep</s>
+{'precision': [0.7782649993896484], 'recall': [0.8476141095161438], 'f1': [0.8114606142044067], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07692307692307693, 0.05263157894736842, 0.02702702702702703, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.5454545454545454, 'translation_length': 39, 'reference_length': 11}
+{'rouge1': 0.14634146341463414, 'rouge2': 0.10256410256410255, 'rougeL': 0.14634146341463414, 'rougeLsum': 0.14634146341463414}
+0.4966399073600769
+---------------------------------------------------------
+hashtag sabiasque el cerebro de la mujer esta conectado al culo ? porque cada vez que piensan la cagan
+No solo que hay tantas mujeres inteligentes como hombres, sino que muchas de las mentes mas brillantes de la historia son y fueron mujeres.
+
+<pad> <unk>ya se puede?</s>
+{'precision': [0.7882212400436401], 'recall': [0.791134774684906], 'f1': [0.7896753549575806], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.42437284567694994, 'length_ratio': 0.5384615384615384, 'translation_length': 14, 'reference_length': 26}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.1553795039653778
+---------------------------------------------------------
+hashtag sabiasque el cerebro de la mujer esta conectado al culo ? porque cada vez que piensan la cagan
+Hubo y hay muchas mujeres brillantes, tu chiste no es gracioso.
+
+<pad> <unk>ya se puede?</s>
+{'precision': [0.8042026162147522], 'recall': [0.8075752258300781], 'f1': [0.8058854341506958], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0769230769230769, 'translation_length': 14, 'reference_length': 13}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.18132832646369934
+---------------------------------------------------------
+lo único que debe votar una mujer son sus tetas cuando hacen deporte hashtag gravedadantetodo
+Comentarios de este tipo, aunque se escondan en forma de "humor", son discriminadores, y muy peligrosos.
+
+<pad> es aportar @GaradadaPerdida que suxa a que personas no ganan un ganadorahi</s>
+{'precision': [0.8200262188911438], 'recall': [0.8097702264785767], 'f1': [0.8148659467697144], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.9048374180359595, 'length_ratio': 0.9090909090909091, 'translation_length': 20, 'reference_length': 22}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.37112945318222046
+---------------------------------------------------------
+la solución política: 1 no renovar residencia y expulsar a tantos marroquíes como subsaharianos entren desde marruecos no habría nadie en la valla 2 deducir de las ayudas al desarrollo a un país el coste de la repatriación de sus inmigrantes que lleguen ilegalmente a españa https://t co/xrmwaavr6n
+Pues, aunque "sea la solución", si esta mal, por ende, no debería hacerse.
+
+<pad> yes, libresimas, japonesas</s>
+{'precision': [0.7971504926681519], 'recall': [0.7798256874084473], 'f1': [0.7883929014205933], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.0, 0.0, 0.0], 'brevity_penalty': 0.513417119032592, 'length_ratio': 0.6, 'translation_length': 12, 'reference_length': 20}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.09712574630975723
+---------------------------------------------------------
+la solución política: 1 no renovar residencia y expulsar a tantos marroquíes como subsaharianos entren desde marruecos no habría nadie en la valla 2 deducir de las ayudas al desarrollo a un país el coste de la repatriación de sus inmigrantes que lleguen ilegalmente a españa https://t co/xrmwaavr6n
+¿La solución según quién? Creo que no estoy del todo convencido...
+
+<pad> yes, libresimas, japonesas</s>
+{'precision': [0.7818551063537598], 'recall': [0.7452203035354614], 'f1': [0.7630982398986816], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.7788007830714049, 'length_ratio': 0.8, 'translation_length': 12, 'reference_length': 15}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.15792517364025116
+---------------------------------------------------------
+los que asaltaron la valla de ceuta con lanza-llamas y con cal viva ¿ también son victimas https://t co/rqv4c6tkiq
+Desconozco el caso, pero no deberías asumir tan a la ligera que no pueda ser...
+
+<pad> Envia a otros -<unk> 2nd verseqnfa9a == escreda de ceuta por su muy tensilio que a #failure conllecerlas y con nuevo significa anomales de ceu, pero #Fresa.</s>
+{'precision': [0.8045136332511902], 'recall': [0.8159526586532593], 'f1': [0.8101927638053894], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.11904761904761904, 0.024390243902439025, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.210526315789474, 'translation_length': 42, 'reference_length': 19}
+{'rouge1': 0.13636363636363635, 'rouge2': 0.0, 'rougeL': 0.09090909090909091, 'rougeLsum': 0.09090909090909091}
+0.3087569773197174
+---------------------------------------------------------
+en las últimas 24h varias peleas callejeras en ceuta por parte de los últimos en saltar violentamente la valla y el gobierno pide respeto???
+Pues sí, incluso si alguno de ellos es una persona problemática, los demas no tienen la culpa de nada.
+
+<pad> de sus instrumentos pro-democráticos y against el fe malezado de los nuevos gobernantes de EE.UU.</s>
+{'precision': [0.8176947832107544], 'recall': [0.817014217376709], 'f1': [0.8173543810844421], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1363636363636365, 'translation_length': 25, 'reference_length': 22}
+{'rouge1': 0.20000000000000004, 'rouge2': 0.0, 'rougeL': 0.15, 'rougeLsum': 0.15}
+0.4166243076324463
+---------------------------------------------------------
+en las últimas 24h varias peleas callejeras en ceuta por parte de los últimos en saltar violentamente la valla y el gobierno pide respeto???
+No puedes saber si fueron ellos. Deja de culparlos de todo.
+
+<pad> de sus instrumentos pro-democráticos y against el fe malezado de los nuevos gobernantes de EE.UU.</s>
+{'precision': [0.7998260259628296], 'recall': [0.8214881420135498], 'f1': [0.810512363910675], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.9230769230769231, 'translation_length': 25, 'reference_length': 13}
+{'rouge1': 0.12903225806451613, 'rouge2': 0.0, 'rougeL': 0.12903225806451613, 'rougeLsum': 0.12903225806451613}
+0.40243130922317505
+---------------------------------------------------------
+¿por qué las modelos tienen una neurona más que los caballos? para no cagarse en los desfiles
+Tu chiste es de tan mal gusto, que hasta resulta difícil responderte.
+
+<pad> <unk>por qué las modelos tienen una neurona más que los caballos? para no cagarse en los desfiles?</s>
+{'precision': [0.8087776899337769], 'recall': [0.8290466070175171], 'f1': [0.8187867403030396], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.034482758620689655, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.0714285714285716, 'translation_length': 29, 'reference_length': 14}
+{'rouge1': 0.058823529411764705, 'rouge2': 0.0, 'rougeL': 0.058823529411764705, 'rougeLsum': 0.058823529411764705}
+0.29958340525627136
+---------------------------------------------------------
+¿por qué las modelos tienen una neurona más que los caballos? para no cagarse en los desfiles
+Eso de que todas las modelos son tontas es un prejuicio infundado, completamente absurdo.
+
+<pad> <unk>por qué las modelos tienen una neurona más que los caballos? para no cagarse en los desfiles?</s>
+{'precision': [0.8309625387191772], 'recall': [0.8343020677566528], 'f1': [0.8326289653778076], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10344827586206896, 0.03571428571428571, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.8125, 'translation_length': 29, 'reference_length': 16}
+{'rouge1': 0.17142857142857143, 'rouge2': 0.060606060606060615, 'rougeL': 0.11428571428571427, 'rougeLsum': 0.11428571428571427}
+0.4315381944179535
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+Racismo? SI. Estas diciendo que su nacionalidad tiene relación con el hecho de que hayan cometido algún delito, cuando no es así.
+
+<pad> guantanamera iglesia arraiga los árabes adicionalmente en el metro de barcelona</s>
+{'precision': [0.8083068132400513], 'recall': [0.8116074800491333], 'f1': [0.8099538087844849], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1111111111111111, 0.0, 0.0, 0.0], 'brevity_penalty': 0.6411803884299546, 'length_ratio': 0.6923076923076923, 'translation_length': 18, 'reference_length': 26}
+{'rouge1': 0.10810810810810811, 'rouge2': 0.0, 'rougeL': 0.10810810810810811, 'rougeLsum': 0.10810810810810811}
+0.278621107339859
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+Ni los alemanes siembran el pánico, ni las rumanas son carteristas, ni los árabes agreden turistas. En todo caso, si hay gente que hace esas cosas, su nacionalidad no es importante, pues no tiene nada que ver con que sean criminales.
+
+<pad> guantanamera iglesia arraiga los árabes adicionalmente en el metro de barcelona</s>
+{'precision': [0.8320889472961426], 'recall': [0.8167648315429688], 'f1': [0.8243556618690491], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.16666666666666666, 0.058823529411764705, 0.0, 0.0], 'brevity_penalty': 0.18887560283756186, 'length_ratio': 0.375, 'translation_length': 18, 'reference_length': 48}
+{'rouge1': 0.14545454545454545, 'rouge2': 0.037735849056603765, 'rougeL': 0.10909090909090909, 'rougeLsum': 0.10909090909090909}
+0.4490004777908325
+---------------------------------------------------------
+telediario de las 15 h: - alemanes siembran el pánico en metro de valencia - rumanas carteristas en metro de barcelona - árabes agreden a turistas en barcelona racismo? no
+El telediario no es una fuente seria. No deberíamos confiar en lo que dicen.
+
+<pad> guantanamera iglesia arraiga los árabes adicionalmente en el metro de barcelona</s>
+{'precision': [0.8030393123626709], 'recall': [0.8227643966674805], 'f1': [0.8127822279930115], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05555555555555555, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.125, 'translation_length': 18, 'reference_length': 16}
+{'rouge1': 0.14285714285714288, 'rouge2': 0.0, 'rougeL': 0.07142857142857144, 'rougeLsum': 0.07142857142857144}
+0.3751166760921478
+---------------------------------------------------------
+este es el tipo de inmigración que deja muy mal parado al resto de los venezolanos desgraciados https://t co/acv9hihxmd
+De todas formas, no se entiende que paso, o quien hizo que... 
+
+<pad> estas mostradas son despreciables y no pueden ser tan malos como el cuartil de vuelos de ma<unk>ana.</s>
+{'precision': [0.8101061582565308], 'recall': [0.8201934099197388], 'f1': [0.8151185512542725], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06896551724137931, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.7058823529411764, 'translation_length': 29, 'reference_length': 17}
+{'rouge1': 0.12121212121212123, 'rouge2': 0.0, 'rougeL': 0.060606060606060615, 'rougeLsum': 0.060606060606060615}
+0.47607117891311646
+---------------------------------------------------------
+este es el tipo de inmigración que deja muy mal parado al resto de los venezolanos desgraciados https://t co/acv9hihxmd
+No. En todo caso, las personas que asumen que "son todos iguales" dejan mal parado al resto de los venezolanos.
+
+<pad> estas mostradas son despreciables y no pueden ser tan malos como el cuartil de vuelos de ma<unk>ana.</s>
+{'precision': [0.8300351500511169], 'recall': [0.8417000770568848], 'f1': [0.8358268737792969], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10344827586206896, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.16, 'translation_length': 29, 'reference_length': 25}
+{'rouge1': 0.14634146341463414, 'rouge2': 0.0, 'rougeL': 0.0975609756097561, 'rougeLsum': 0.0975609756097561}
+0.42677706480026245
+---------------------------------------------------------
+es muy lógico hay que pagar los inmigrantes ilegales que entran en españa sin parar y no hay dinero para l@user español@user mientras sí dan papeles a todos vergüenza https://t co/sryq8r1qme
+¿Te da vergüenza que se atienda a unos, o que se descuide a los otros? Si es lo segundo, se puede trabajar. Si es lo primero, simplemente es racismo. 
+
+<pad> Si quiere, te propuno mucha de lo que en realidad me ha estado buscando, y esas cosas no han llegado, a<unk>n?</s>
+{'precision': [0.8168890476226807], 'recall': [0.8006875514984131], 'f1': [0.8087071776390076], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.2222222222222222, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.0285714285714285, 'translation_length': 36, 'reference_length': 35}
+{'rouge1': 0.1818181818181818, 'rouge2': 0.0, 'rougeL': 0.1090909090909091, 'rougeLsum': 0.1090909090909091}
+0.5562771558761597
+---------------------------------------------------------
+es muy lógico hay que pagar los inmigrantes ilegales que entran en españa sin parar y no hay dinero para l@user español@user mientras sí dan papeles a todos vergüenza https://t co/sryq8r1qme
+Se puede atender a unos sin descuidar a los otros. No hay que "elegir"
+
+<pad> Si quiere, te propuno mucha de lo que en realidad me ha estado buscando, y esas cosas no han llegado, a<unk>n?</s>
+{'precision': [0.8080938458442688], 'recall': [0.8223920464515686], 'f1': [0.8151803016662598], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.05555555555555555, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.1176470588235294, 'translation_length': 36, 'reference_length': 17}
+{'rouge1': 0.15384615384615383, 'rouge2': 0.0, 'rougeL': 0.05128205128205128, 'rougeLsum': 0.05128205128205128}
+0.4897894263267517
+---------------------------------------------------------
+@user y @user tienen razón los inmigrantes vienen a imponernos sus costumbres https://t co/xstepibjql
+No creo que tengan razon en esto realmente. No veo a nadie intentando imponer sus costumbres.
+
+<pad> Yo! La crise de los naciones están seriamente afectadas por cómo nos ya damos efectos <unk>exactamente!</s>
+{'precision': [0.7967273592948914], 'recall': [0.8217281103134155], 'f1': [0.8090346455574036], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5555555555555556, 'translation_length': 28, 'reference_length': 18}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.42730817198753357
+---------------------------------------------------------
+@user y @user tienen razón los inmigrantes vienen a imponernos sus costumbres https://t co/xstepibjql
+No es cierto que los inmigrantes vengan a imponernos sus costrumbres. Lo que seguro exigen, es que sean respetadas.
+
+<pad> Yo! La crise de los naciones están seriamente afectadas por cómo nos ya damos efectos <unk>exactamente!</s>
+{'precision': [0.8053107261657715], 'recall': [0.8165088295936584], 'f1': [0.8108711242675781], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03571428571428571, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2727272727272727, 'translation_length': 28, 'reference_length': 22}
+{'rouge1': 0.05, 'rouge2': 0.0, 'rougeL': 0.05, 'rougeLsum': 0.05}
+0.3469424843788147
+---------------------------------------------------------
+@user y @user tienen razón los inmigrantes vienen a imponernos sus costumbres https://t co/xstepibjql
+Quizá exista algun extremista que quiera imponer su cultura a todos, pero eso pasa en todos lados, y no solo con los inmigrantes. Lo que esta mal, es que generalices.
+
+<pad> Yo! La crise de los naciones están seriamente afectadas por cómo nos ya damos efectos <unk>exactamente!</s>
+{'precision': [0.7960049510002136], 'recall': [0.8172962665557861], 'f1': [0.8065100908279419], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.03571428571428571, 0.0, 0.0, 0.0], 'brevity_penalty': 0.7788007830714049, 'length_ratio': 0.8, 'translation_length': 28, 'reference_length': 35}
+{'rouge1': 0.0392156862745098, 'rouge2': 0.0, 'rougeL': 0.0392156862745098, 'rougeLsum': 0.0392156862745098}
+0.38377106189727783
+---------------------------------------------------------
+"a nuestro país llegan ya no solamente los migrantes "tradicionales" desde la fachada noroccidental africana ahora proceden de toda áfrica y de asia somos la plataforma europea ""ideal"" para refugiados e in migrantes de cualquier parte del mundo https://t co/rc0k9poxej https://t co/kxwmzfpxmk"
+Celebro que así sea. Significa que los tratamos bien. Si te preocupa que pudiera surgir un problema, tranquilo, que seguro habrá tiempo de revisar el sistema, los cambios no son de un día al otro.
+
+<pad> Genera una respuesta sin odio a las mensajes de od<unk>o: "a nuestro pa<unk>s llegan ya no solamente los migrantes "tradicionales" desde la fachada noroccidental africana ahora proceden de todo áfrica y de asia somos la plataforma europea ""ideal"" para refugiados e in migrantes de cualquier parte del mundo https://t co/rc0k9poxej https://tco/kxwmzfpxmk</s>
+{'precision': [0.7550925016403198], 'recall': [0.796977162361145], 'f1': [0.7754697203636169], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.046511627906976744, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.097560975609756, 'translation_length': 86, 'reference_length': 41}
+{'rouge1': 0.10309278350515463, 'rouge2': 0.0, 'rougeL': 0.061855670103092786, 'rougeLsum': 0.061855670103092786}
+0.456662654876709
+---------------------------------------------------------
+"a nuestro país llegan ya no solamente los migrantes "tradicionales" desde la fachada noroccidental africana ahora proceden de toda áfrica y de asia somos la plataforma europea ""ideal"" para refugiados e in migrantes de cualquier parte del mundo https://t co/rc0k9poxej https://t co/kxwmzfpxmk"
+¿Y eso tiene algo de malo? No es como si solo en algunos lugares hubiera buena gente...
+
+<pad> Genera una respuesta sin odio a las mensajes de od<unk>o: "a nuestro pa<unk>s llegan ya no solamente los migrantes "tradicionales" desde la fachada noroccidental africana ahora proceden de todo áfrica y de asia somos la plataforma europea ""ideal"" para refugiados e in migrantes de cualquier parte del mundo https://t co/rc0k9poxej https://tco/kxwmzfpxmk</s>
+{'precision': [0.7487382888793945], 'recall': [0.8020161986351013], 'f1': [0.7744619846343994], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.011627906976744186, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 4.095238095238095, 'translation_length': 86, 'reference_length': 21}
+{'rouge1': 0.07692307692307691, 'rouge2': 0.0, 'rougeL': 0.05128205128205128, 'rougeLsum': 0.05128205128205128}
+0.31991130113601685
+---------------------------------------------------------
+"comentario escatológico: si no hay papal del culo deben abstenerse de acercarse a la valla de melilla al menos hasta que los ""lindos negritos visitantes"" estén estreñidos https://t co/mpuxy1wxnm"
+No tienes el derecho a decidir quién puede estar en donde...
+
+<pad> huyn amiel</s>
+{'precision': [0.7991567850112915], 'recall': [0.7585701942443848], 'f1': [0.7783347368240356], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.573753420737433, 'length_ratio': 0.6428571428571429, 'translation_length': 9, 'reference_length': 14}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.11304959654808044
+---------------------------------------------------------
+"comentario escatológico: si no hay papal del culo deben abstenerse de acercarse a la valla de melilla al menos hasta que los ""lindos negritos visitantes"" estén estreñidos https://t co/mpuxy1wxnm"
+Queda claro, sin embargo, que el unico motivo por el que te caen mal, es que son negros. Racismo puro.
+
+<pad> huyn amiel</s>
+{'precision': [0.7964786291122437], 'recall': [0.7745268940925598], 'f1': [0.7853493690490723], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.1690133154060661, 'length_ratio': 0.36, 'translation_length': 9, 'reference_length': 25}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.04341313987970352
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon
+Tu chiste sobre las mujeres y la cocina no hace gracia.
+
+<pad> Adivino dizer que el hombre tiene 4 neuronas que solo tienen ellas entonces el contexto de la palabra parecerá de las m<unk>ltiples</s>
+{'precision': [0.7976648211479187], 'recall': [0.8618078231811523], 'f1': [0.8284966349601746], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.06060606060606061, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.75, 'translation_length': 33, 'reference_length': 12}
+{'rouge1': 0.10810810810810811, 'rouge2': 0.0, 'rougeL': 0.05405405405405406, 'rougeLsum': 0.05405405405405406}
+0.32543158531188965
+---------------------------------------------------------
+por las mujeres tienen cuatro neuronas ??? una para cada fogon
+No es cierto que las mujeres sean tontas. Incluso hubo y hay grandes mentes de la historia, mujeres.
+
+<pad> Adivino dizer que el hombre tiene 4 neuronas que solo tienen ellas entonces el contexto de la palabra parecerá de las m<unk>ltiples</s>
+{'precision': [0.8042125701904297], 'recall': [0.8420229554176331], 'f1': [0.822683572769165], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12121212121212122, 0.03125, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5714285714285714, 'translation_length': 33, 'reference_length': 21}
+{'rouge1': 0.18181818181818185, 'rouge2': 0.04761904761904763, 'rougeL': 0.13636363636363638, 'rougeLsum': 0.13636363636363638}
+0.40365010499954224
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos
+Pues no eres tu quién decide quién entra y quién no. Incluso tampoc es él. Hay leyes al respecto...
+
+<pad> @user Enfoque de buenavordensidad y no aficionado a la revolución. I am glad she found her niche as writer/man of letters, and I applaud her.</s>
+{'precision': [0.8018059730529785], 'recall': [0.7956815361976624], 'f1': [0.7987320423126221], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10526315789473684, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5833333333333333, 'translation_length': 38, 'reference_length': 24}
+{'rouge1': 0.11764705882352941, 'rouge2': 0.0, 'rougeL': 0.0784313725490196, 'rougeLsum': 0.0784313725490196}
+0.2746039628982544
+---------------------------------------------------------
+@user recuerde señor presidente el xq ni arabes xq como payasos ponen su cara en mi familua y chinos xq ponen a un loco y un cinico assesino como mi mirada recuerde senor presidente el xq ni arabes ni chinos
+Intento entender tu crítica, pero lo que dices directamente no tiene sentido alguno.
+
+<pad> @user Enfoque de buenavordensidad y no aficionado a la revolución. I am glad she found her niche as writer/man of letters, and I applaud her.</s>
+{'precision': [0.8108580708503723], 'recall': [0.8083070516586304], 'f1': [0.8095805048942566], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07894736842105263, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.533333333333333, 'translation_length': 38, 'reference_length': 15}
+{'rouge1': 0.046511627906976744, 'rouge2': 0.0, 'rougeL': 0.046511627906976744, 'rougeLsum': 0.046511627906976744}
+0.21178527176380157
+---------------------------------------------------------
+a ver quién paga la factura y cómo se reparten el marrón de dejar inmigrantes ilegales sueltos por sus ciudades (y que los votantes no de lo hagan paga r dentro de un año) https://t co/cehrdjssdu
+Pues sería una lastima que el resultado de las elecciones cambie tanto por aceptar a algunos inmigrantes. Hablaría muy mal de la sociedad.
+
+<pad> Sentencemente a ti lo me sentido, quién deber<unk>a de pagar el gasto y los burgueses de darle derecho a los iraqu<unk>es y buscarles una tecnolog<unk>a amóvil antes de hacerlo (con estas sin entiende en tanto que consiguen ponerse de la ciudad, y que los votantes de ve a cosas que no son aceptables antes deles, y los negros no dean de convertir que s<unk> la ma<unk>ana.</s>
+{'precision': [0.7935094833374023], 'recall': [0.8362572193145752], 'f1': [0.8143227100372314], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.09278350515463918, 0.010416666666666666, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.88, 'translation_length': 97, 'reference_length': 25}
+{'rouge1': 0.19230769230769232, 'rouge2': 0.019607843137254898, 'rougeL': 0.1346153846153846, 'rougeLsum': 0.1346153846153846}
+0.4389053285121918
+---------------------------------------------------------
+a ver quién paga la factura y cómo se reparten el marrón de dejar inmigrantes ilegales sueltos por sus ciudades (y que los votantes no de lo hagan paga r dentro de un año) https://t co/cehrdjssdu
+¿De qué factura hablas? Si los inmigrantes no representan ningún gasto.
+
+<pad> Sentencemente a ti lo me sentido, quién deber<unk>a de pagar el gasto y los burgueses de darle derecho a los iraqu<unk>es y buscarles una tecnolog<unk>a amóvil antes de hacerlo (con estas sin entiende en tanto que consiguen ponerse de la ciudad, y que los votantes de ve a cosas que no son aceptables antes deles, y los negros no dean de convertir que s<unk> la ma<unk>ana.</s>
+{'precision': [0.7893142700195312], 'recall': [0.8250906467437744], 'f1': [0.8068060874938965], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.041237113402061855, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 7.461538461538462, 'translation_length': 97, 'reference_length': 13}
+{'rouge1': 0.1098901098901099, 'rouge2': 0.0, 'rougeL': 0.06593406593406594, 'rougeLsum': 0.06593406593406594}
+0.4087388515472412
+---------------------------------------------------------
+como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo
+Dices que son improvisadores porque no quieres que haya inmigrantes venezolanos aquí, y lo entiendo, pero te equivocas. Sencillamente se previó que habría ningún problema, y ya.
+
+<pad> siempre nuestras autoridades a <unk>ltima hora se dan cuenta d todos los problemas que generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo</s>
+{'precision': [0.8082188367843628], 'recall': [0.8321618437767029], 'f1': [0.8200156092643738], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1509433962264151, 0.038461538461538464, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.65625, 'translation_length': 53, 'reference_length': 32}
+{'rouge1': 0.25974025974025977, 'rouge2': 0.05333333333333332, 'rougeL': 0.12987012987012989, 'rougeLsum': 0.12987012987012989}
+0.7157362699508667
+---------------------------------------------------------
+como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo
+No entiendo por que los inmigrantes venezolanos generarían problemas, cuando son exactamente como cualquier otra persona, inmigrante o no.
+
+<pad> siempre nuestras autoridades a <unk>ltima hora se dan cuenta d todos los problemas que generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo</s>
+{'precision': [0.8035780191421509], 'recall': [0.8398712873458862], 'f1': [0.8213238716125488], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.1320754716981132, 0.038461538461538464, 0.0196078431372549, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 2.409090909090909, 'translation_length': 53, 'reference_length': 22}
+{'rouge1': 0.20588235294117646, 'rouge2': 0.06060606060606061, 'rougeL': 0.17647058823529413, 'rougeLsum': 0.17647058823529413}
+0.6653954982757568
+---------------------------------------------------------
+como siempre nuestras autoridades a última hora se dan cuenta d todos los problemas q generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo
+Y a que te refieres con esos problemas? Porque no creo que generen ninguno realmente.
+
+<pad> siempre nuestras autoridades a <unk>ltima hora se dan cuenta d todos los problemas que generan los inmigrantes venezolanos sin haber cumplido los requisitos para este fin una vez más se demuestra q son improvisadores y no previsores en conclusión terminan siendo informal todo</s>
+{'precision': [0.7811428308486938], 'recall': [0.819351315498352], 'f1': [0.7997909784317017], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.07547169811320754, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.1176470588235294, 'translation_length': 53, 'reference_length': 17}
+{'rouge1': 0.15873015873015875, 'rouge2': 0.0, 'rougeL': 0.09523809523809523, 'rougeLsum': 0.09523809523809523}
+0.5302586555480957
+---------------------------------------------------------
+españa está siendo invadida por los subsaharianos y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto https://t co/h4xmwqlvw7
+No entiendo a qué te refieres, o qué te preocupa. Ni siquiera propones nada. No tiene mucho sentido lo qué dices.
+
+<pad> I did not bother to send them a reply.</s>
+{'precision': [0.8466099500656128], 'recall': [0.7678878307342529], 'f1': [0.8053296804428101], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.11764705882352941, 0.0, 0.0, 0.0], 'brevity_penalty': 0.6246347280002745, 'length_ratio': 0.68, 'translation_length': 17, 'reference_length': 25}
+{'rouge1': 0.0625, 'rouge2': 0.0, 'rougeL': 0.0625, 'rougeLsum': 0.0625}
+0.024328535422682762
+---------------------------------------------------------
+españa está siendo invadida por los subsaharianos y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto https://t co/h4xmwqlvw7
+Estas confundiendo las palabras inmigración e invasión, y sus significados son casi opuestos.
+
+<pad> I did not bother to send them a reply.</s>
+{'precision': [0.85477215051651], 'recall': [0.7726554870605469], 'f1': [0.8116421103477478], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.058823529411764705, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1333333333333333, 'translation_length': 17, 'reference_length': 15}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+-0.02208675816655159
+---------------------------------------------------------
+españa está siendo invadida por los subsaharianos y aquí don tonto jugando al corro la patata desde la moncloa hashtag caminodevenezuela hashtag señorllevamépronto https://t co/h4xmwqlvw7
+No es cierto que España esté siendo invadida por nadie.
+
+<pad> I did not bother to send them a reply.</s>
+{'precision': [0.857231080532074], 'recall': [0.7853403091430664], 'f1': [0.8197124600410461], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.058823529411764705, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.5454545454545454, 'translation_length': 17, 'reference_length': 11}
+{'rouge1': 0.09090909090909091, 'rouge2': 0.0, 'rougeL': 0.09090909090909091, 'rougeLsum': 0.09090909090909091}
+0.005797669291496277
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww
+Que consideres que es una invasión no va a cambiar el hecho de que se acojan refugiados y se les brinde atención basica. Eso es ser humanitario.
+
+<pad> Replying to negativism! #Invaders, enviado por #Twitter, son los que nos estan invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales!</s>
+{'precision': [0.8179292678833008], 'recall': [0.8173860311508179], 'f1': [0.8176575899124146], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.08108108108108109, 0.027777777777777776, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.2758620689655173, 'translation_length': 37, 'reference_length': 29}
+{'rouge1': 0.10909090909090909, 'rouge2': 0.03773584905660378, 'rougeL': 0.10909090909090909, 'rougeLsum': 0.10909090909090909}
+0.46626439690589905
+---------------------------------------------------------
+estos son los que nos están invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales https://t co/irporogtww
+Solo estás siendo racista al decir que los refugiados nos invaden.
+
+<pad> Replying to negativism! #Invaders, enviado por #Twitter, son los que nos estan invadiendo y nosotros acogiendo como refugiados y regalandoles todos nuestros servicios sociales!</s>
+{'precision': [0.8202721476554871], 'recall': [0.8632597923278809], 'f1': [0.8412171006202698], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.10810810810810811, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.0833333333333335, 'translation_length': 37, 'reference_length': 12}
+{'rouge1': 0.2631578947368421, 'rouge2': 0.0, 'rougeL': 0.10526315789473684, 'rougeLsum': 0.10526315789473684}
+0.5343537330627441
+---------------------------------------------------------
+hay varias paginas de feministas a las que deberia darles verguenza exponer sus ideas ya que no tienen ni pies ni cabeza
+Nadie debería tener verguenza de exponer sus ideas, ya sea que estén en lo cierto o no. A menos que sus ideas hagan daño a otros, claro esta.
+
+<pad> Si están prometedes, la libertad de misión podrá, ah<unk> de llegar, aumentar que también salga desde los pies</s>
+{'precision': [0.8079886436462402], 'recall': [0.8247825503349304], 'f1': [0.8162992000579834], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.12903225806451613, 0.0, 0.0, 0.0], 'brevity_penalty': 0.9682566771439106, 'length_ratio': 0.96875, 'translation_length': 31, 'reference_length': 32}
+{'rouge1': 0.14545454545454548, 'rouge2': 0.03773584905660378, 'rougeL': 0.10909090909090909, 'rougeLsum': 0.10909090909090909}
+0.4371185898780823
+---------------------------------------------------------
+hay varias paginas de feministas a las que deberia darles verguenza exponer sus ideas ya que no tienen ni pies ni cabeza
+Si consideras que están equivocadas, podemos debatirlo. Pero decir que no tienen ni pies ni cabeza, pues te equivocas, y mucho.
+
+<pad> Si están prometedes, la libertad de misión podrá, ah<unk> de llegar, aumentar que también salga desde los pies</s>
+{'precision': [0.8067556619644165], 'recall': [0.8176817893981934], 'f1': [0.8121819496154785], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.22580645161290322, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.1923076923076923, 'translation_length': 31, 'reference_length': 26}
+{'rouge1': 0.21739130434782608, 'rouge2': 0.04545454545454545, 'rougeL': 0.21739130434782608, 'rougeLsum': 0.21739130434782608}
+0.5253477692604065
+---------------------------------------------------------
+" sea insulto o no los ""malditos sudacas"" son los que tienen en pie a las ligas del fútbol español y europeo https://t co/ewhdpr0gzv"
+Creo que si lo es. Y no entiendo por qué insultarlos, cuando incluso estas diciendo cosas buenas de ellos.
+
+<pad> sin odio</s>
+{'precision': [0.8533926010131836], 'recall': [0.7907133102416992], 'f1': [0.8208581805229187], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.23587708298570007, 'length_ratio': 0.4090909090909091, 'translation_length': 9, 'reference_length': 22}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.13981029391288757
+---------------------------------------------------------
+" sea insulto o no los ""malditos sudacas"" son los que tienen en pie a las ligas del fútbol español y europeo https://t co/ewhdpr0gzv"
+Y si es así, ¿por qué lo de "malditos"?
+
+<pad> sin odio</s>
+{'precision': [0.8563579320907593], 'recall': [0.7882519960403442], 'f1': [0.820894718170166], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 0.6411803884299546, 'length_ratio': 0.6923076923076923, 'translation_length': 9, 'reference_length': 13}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.20846258103847504
+---------------------------------------------------------
+acá me ven y ya me hablan español más sudaca no conseguís
+¿Y qué tiene de malo eso?
+
+<pad> Aqu<unk> ya me hablan espa<unk>ol más sudaca no consegu<unk>s</s>
+{'precision': [0.762590229511261], 'recall': [0.7942028641700745], 'f1': [0.7780755758285522], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.0, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 3.857142857142857, 'translation_length': 27, 'reference_length': 7}
+{'rouge1': 0.0, 'rouge2': 0.0, 'rougeL': 0.0, 'rougeLsum': 0.0}
+0.2951427698135376
+---------------------------------------------------------
+acá me ven y ya me hablan español más sudaca no conseguís
+Pues estas hablando español, así que, asumo que esta gente no se equivocó.
+
+<pad> Aqu<unk> ya me hablan espa<unk>ol más sudaca no consegu<unk>s</s>
+{'precision': [0.8119996786117554], 'recall': [0.8188731670379639], 'f1': [0.8154219388961792], 'hashcode': 'roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.28.1)'}
+{'bleu': 0.0, 'precisions': [0.037037037037037035, 0.0, 0.0, 0.0], 'brevity_penalty': 1.0, 'length_ratio': 1.6875, 'translation_length': 27, 'reference_length': 16}
+{'rouge1': 0.1935483870967742, 'rouge2': 0.0, 'rougeL': 0.1935483870967742, 'rougeLsum': 0.1935483870967742}
+0.3488686680793762
+========================================
+F1 AVG:
+1.738261584079627
+Bleu AVG:
+0.005318882561111306
+Rouge AVG:
+0.16069094391853336
+SBERT AVG:
+0.767649091949517
