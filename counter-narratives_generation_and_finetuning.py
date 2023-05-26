@@ -127,7 +127,7 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
                     property.append(" - ")
                 property.append(splitted_line[0])
                 consecutive_property = True
-            if splitted_line[2].startswith("Premise2Justification") and need_premises or need_justification:
+            if splitted_line[2].startswith("Premise2Justification") and (need_premises or need_justification):
                 if not prev_line[2].startswith("Premise2Justification") and consecutive_just:
                     justification.append(" - ")
                 justification.append(splitted_line[0])
