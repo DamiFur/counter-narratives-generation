@@ -458,7 +458,7 @@ metric2 = evaluate.load("bleu")
 metric3 = evaluate.load("rouge")
 
 
-def evaluate_generation(testing_datasets, top_sampling=False, beam_search=False, temperature=False):
+def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, temperature=False):
 
     f1_avg = 0.0
     bleu_avg = 0.0
