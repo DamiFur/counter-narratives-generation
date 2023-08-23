@@ -410,7 +410,8 @@ def generate_prompt(text, strategy, language):
             #     Gli immigrati sono pigri e costano un sacco di soldi ai contribuenti. => Gli immigrati di solito hanno i lavori peggiori e pagano le tasse come tutti gli altri.
             # """
             
-        # print("==============================================")
+        print("==============================================")
+        print(initial_prompt + examples + '\n' + text + " => ")
         return initial_prompt + examples + '\n' + text + " => "
     elif strategy == "finetuned" or strategy == "pretraining":
         return initial_prompt + "<SHS>" + text + "<EHS> => "
