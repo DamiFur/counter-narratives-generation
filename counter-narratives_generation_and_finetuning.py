@@ -30,7 +30,7 @@ model_name = args.model_name
 language = args.language
 pretraining = args.generation_strategy == "pretraining" or args.generation_strategy == "adapt_to_strategy"
 
-FEWSHOT_EXAMPLES_AMOUNT = 2
+FEWSHOT_EXAMPLES_AMOUNT = 10
 fewshot_examples = {}
 
 def load_conan(language):
@@ -274,10 +274,10 @@ def load_asohmo(language, use_extra_info=""):
             if args.generation_strategy == "fewshot" and (language_code not in current_fewshot_examples or current_fewshot_examples[language_code] < FEWSHOT_EXAMPLES_AMOUNT):
                 if language_code not in current_fewshot_examples:
                     current_fewshot_examples[language_code] = 1
-                    fewshot_examples[language_code] = [{"hateSpeech": key, "counterSpeech": cns_by_tweet[key]["cns"][0]}]
+                    fewshot_examples[language_code] = [{"hateSpeech": key + cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"][0]}]
                 else:
                     current_fewshot_examples[language_code] += 1
-                    fewshot_examples[language_code].append({"hateSpeech": key, "counterSpeech": cns_by_tweet[key]["cns"][0]})
+                    fewshot_examples[language_code].append({"hateSpeech": key + cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"][0]})
             else:
                 test_dataset.append(to_append)
         
