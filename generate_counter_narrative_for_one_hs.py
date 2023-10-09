@@ -36,7 +36,7 @@ class StoppingCriteriaSub(StoppingCriteria):
 if model_name == "tiiuae/falcon-7b-instruct":
     stop_words = ["]", "']", "']\n", "\n", "]\n", "\n\n", "']\n\n", "<|endoftext|>"]
 else:
-    stop_words = ["]", "']", "']\n", "\n", "]\n", "\n\n", "']\n\n", "</s>"]
+    stop_words = [".", "]", "']", "']\n", "\n", "]\n", "\n\n", "']\n\n", "</s>"]
 stop_words_ids = [tokenizer(stop_word, return_tensors='pt', add_special_tokens=False)['input_ids'].squeeze() for stop_word in stop_words]
 stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=stop_words_ids)])
 
