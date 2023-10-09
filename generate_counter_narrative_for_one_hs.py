@@ -71,10 +71,7 @@ else:
 def generate_answers(prompt, num_samples=10):
   # define some source text and tokenize it
   source_text = prompt
-  if model_name == "tiiuae/falcon-7b-instruct":
-    source_ids = tokenizer(source_text, return_tensors="pt").input_ids.to("cuda")
-  else:
-      source_ids = tokenizer.apply_chat_template(prompt, return_tensors="pt").to("cuda")
+  source_ids = tokenizer.apply_chat_template(prompt, return_tensors="pt").to("cuda")
 
   gen_outputs = []
   for _ in range(num_samples):
@@ -83,7 +80,7 @@ def generate_answers(prompt, num_samples=10):
         inputs=source_ids,
         # temperature=temperature,
         do_sample=True,
-        max_new_tokens=40,
+        max_new_tokens=120,
         num_beams=4,
         no_repeat_ngram_size=2,
         num_return_sequences=1, # only show top beams
