@@ -65,7 +65,7 @@ def compute_metrics_f1(p: EvalPrediction):
 for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-05_fewshot_*_False_True_False"):
     filename_splitted = f.split("_")
     dataset = filename_splitted[0]
-    model = filename_splitted[1]
+    model_generation = filename_splitted[1]
     language = filename_splitted[2]
     lr = filename_splitted[3]
     strategy = filename_splitted[4]
@@ -107,7 +107,7 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
     results = trainer.predict(test_set)
 
     model_name_adapted = model_name.replace("/", "-")
-    filename = "./results_test_{}_{}_{}_{}".format(lr, model_name_adapted, category, language)
+    filename = "./results_test_{}_{}_{}_{}_{}".format(lr, model_generation, model_name_adapted, category, language)
 
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
     for tw, cn in zip(tweets, cns):
