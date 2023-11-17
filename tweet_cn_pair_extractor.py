@@ -111,5 +111,5 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
 
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
     for tw, cn in zip(tweets, cns):
-        w.write("{}\t{}\t{}\t{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," ")), results.metrics["test_accuracy"], results.metrics["test_f1"], results.metrics["test_precision"], results.metrics["test_recall"])
+        w.write("{}\t{}\t{}\t{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," "), results.metrics["test_accuracy"], results.metrics["test_f1"], results.metrics["test_precision"], results.metrics["test_recall"]))
     w.close()
