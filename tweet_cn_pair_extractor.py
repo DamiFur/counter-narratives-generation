@@ -22,7 +22,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, add_prefix_space=True)
 model = AutoModelForSequenceClassification.from_pretrained(f"{model_name}-{category}-{language}-{lr}", num_labels=3)
 
 def tokenize_example(example):
-    input_text = example["tweet"] + " [SEP] " + example["cn"]
+    input_text = example["hs"] + " [SEP] " + example["cn"]
     tokenized_input = tokenizer(input_text, truncation=True)
     return tokenized_input
 
