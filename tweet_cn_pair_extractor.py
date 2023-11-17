@@ -95,7 +95,7 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
                     cns.append(line)
             dont_add = False
     assert(len(tweets) == len(cns))
-    data = pd.DataFrame(list(zip(tweets, cns), columns=["hs", "cn"]))
+    data = pd.DataFrame(list(zip(tweets, cns)), columns=["hs", "cn"])
     test_set = Dataset.from_pandas(data).map(tokenize_example)
     trainer = Trainer(
         model=model,
