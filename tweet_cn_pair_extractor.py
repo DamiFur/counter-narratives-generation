@@ -95,21 +95,22 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
                     cns.append(line)
             dont_add = False
     assert(len(tweets) == len(cns))
-    data = pd.DataFrame(list(zip(tweets, cns)), columns=["hs", "cn"])
-    test_set = Dataset.from_pandas(data).map(tokenize_example)
-    trainer = Trainer(
-        model=model,
-        eval_dataset=test_set,
-        tokenizer=tokenizer,
-        compute_metrics= compute_metrics_f1,
-    )
+    # data = pd.DataFrame(list(zip(tweets, cns)), columns=["hs", "cn"])
+    # test_set = Dataset.from_pandas(data).map(tokenize_example)
+    # trainer = Trainer(
+    #     model=model,
+    #     eval_dataset=test_set,
+    #     tokenizer=tokenizer,
+    #     compute_metrics= compute_metrics_f1,
+    # )
 
-    results = trainer.predict(test_set)
+    # results = trainer.predict(test_set)
 
     model_name_adapted = model_name.replace("/", "-")
     filename = "./results_test_{}_{}_{}_{}_{}".format(lr, model_generation, model_name_adapted, category, language)
 
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
     for tw, cn in zip(tweets, cns):
-        w.write("{}\t{}\t{}\t{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," "), results.metrics["test_accuracy"], results.metrics["test_f1"], results.metrics["test_precision"], results.metrics["test_recall"]))
+        print(model.forward(tw + " [SEP] " + cn))
+        w.write("{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," ")))
     w.close()
