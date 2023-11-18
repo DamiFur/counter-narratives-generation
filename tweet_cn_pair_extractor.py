@@ -111,6 +111,8 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
 
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
     for tw, cn in zip(tweets, cns):
-        print(model.forward(tw + " [SEP] " + cn))
+        exmpl = tw + " [SEP] " + cn
+        tokenized_input = tokenizer(exmpl, truncation=True)
+        print(model.forward(tokenized_input))
         w.write("{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," ")))
     w.close()
