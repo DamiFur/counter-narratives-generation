@@ -7,6 +7,7 @@ from datasets import Dataset
 from transformers import Trainer
 from transformers import EvalPrediction
 from sklearn import metrics
+import torch
 
 parser = argparse.ArgumentParser(description="Extracts counter-narratives from folder of output files and evaluates them using an automatic model. Exports results in a tsv")
 parser.add_argument("model_name", type=str, choices=["roberta-base", "roberta-large"])
@@ -113,6 +114,8 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
     for tw, cn in zip(tweets, cns):
         exmpl = tw + " [SEP] " + cn
         tokenized_input = tokenizer(exmpl, truncation=True, return_tensors="pt")
-        print(model.forward(**tokenized_input))
+        output = model.forward(**tokenized_input).logits
+        print(exmpl)
+        print(torch.argmax(output, dim=1))
         w.write("{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," ")))
     w.close()
