@@ -126,9 +126,13 @@ for f in tw_cn_pairs:
         only_tw_text = tw.split("|")[0]
         preds = predictions[f][only_tw_text]
         w.write("{}\t{}\t{}\n".format(only_tw_text.replace("\t"," "), cn.replace("\t"," "), preds))
-    w.write("===========================================")
+    w.write("===========================================\n")
     w.write("\t".join(predictions[f]['categories']))
-    total_avg = 0
-    for cat in predictions[f]['categories']:
-        total_avg += int(cat)
+    total_avg = 0.0
+    for idx, cat in enumerate(predictions[f]['categories']):
+        if idx == 1:
+            stancee = cat
+        if idx == 2 and float(stancee) < 2.0:
+            continue
+        total_avg += float(cat)
     w.write(str(total_avg - 2))
