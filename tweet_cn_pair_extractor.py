@@ -131,8 +131,3 @@ for f in tw_cn_pairs:
     for cat in predictions[f]['categories']:
         total_avg += int(cat)
     w.write(str(total_avg - 2))
-
-    
-        w.write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-        w.write(str(avg_score / l))
-        w.close()
