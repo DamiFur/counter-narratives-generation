@@ -64,7 +64,7 @@ def compute_metrics_f1(p: EvalPrediction):
     return ans
 
 tw_cn_pairs = {}
-for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-*_english_*"):
+for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-base_multi_2e-05_finetuned___False_True_False"):
     filename_splitted = f.split("_")
     tweets = []
     cns = []
@@ -117,7 +117,7 @@ for category in categories:
             predictions[f][only_tw_text].append(prediction)
             avg_score += prediction
             l += 1
-        predictions[f]['categories'].append(str(avg_score / l))
+        predictions[f]['categories'].append(avg_score / l)
             
 for f in tw_cn_pairs:
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
