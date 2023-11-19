@@ -110,12 +110,16 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
     model_name_adapted = model_name.replace("/", "-")
     filename = "./results_test_{}_{}_{}_{}_{}".format(lr, model_generation, model_name_adapted, category, language)
 
+    avg_score = 0
+    l = 0
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
     for tw, cn in zip(tweets, cns):
         exmpl = tw + " [SEP] " + cn
         tokenized_input = tokenizer(exmpl, truncation=True, return_tensors="pt")
         output = model.forward(**tokenized_input).logits
-        print(exmpl)
-        print(torch.argmax(output, dim=1))
-        w.write("{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," ")))
+        prediction = torch.argmax(output, dim=1)[0]
+        w.write("{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," "), prediction))
+        avg_score += prediction
+        l += 1
+    w.write(avg_score / l)
     w.close()
