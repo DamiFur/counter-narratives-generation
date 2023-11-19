@@ -127,7 +127,7 @@ for f in tw_cn_pairs:
         preds = predictions[f][only_tw_text]
         w.write("{}\t{}\t{}\n".format(only_tw_text.replace("\t"," "), cn.replace("\t"," "), preds))
     w.write("===========================================")
-    w.write(predictions[f]['categories'])
+    w.write("\t".join(predictions[f]['categories']))
     total_avg = 0
     for cat in predictions[f]['categories']:
         total_avg += int(cat)
