@@ -20,7 +20,7 @@ model_name = args.model_name
 language = args.language
 lr = 2e-05
 # This is the order in which they are printed on the output file
-categories = ["stance", "offensive", "felicity"]
+categories = ["stance", "offensive", "informativeness", "felicity"]
 tokenizer = AutoTokenizer.from_pretrained(model_name, add_prefix_space=True)
 
 def tokenize_example(example):
@@ -64,7 +64,7 @@ def compute_metrics_f1(p: EvalPrediction):
     return ans
 
 tw_cn_pairs = {}
-for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-05_fewshot_*_False_True_False"):
+for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-*_english_*"):
     filename_splitted = f.split("_")
     tweets = []
     cns = []
