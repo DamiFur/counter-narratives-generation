@@ -123,8 +123,9 @@ for f in tw_cn_pairs:
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
     twts, cns = tw_cn_pairs[f]
     for tw, cn in zip(twts, cns):
-        predictions = predictions[f][tw]
-        w.write("{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," "), predictions))
+        only_tw_text = tw.split("|")[0]
+        predictions = predictions[f][only_tw_text]
+        w.write("{}\t{}\t{}\n".format(only_tw_text.replace("\t"," "), cn.replace("\t"," "), predictions))
     w.write("===========================================")
     w.write(predictions[f]['categories'])
     total_avg = 0
