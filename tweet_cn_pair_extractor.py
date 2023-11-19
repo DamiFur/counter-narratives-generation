@@ -11,16 +11,17 @@ import torch
 
 parser = argparse.ArgumentParser(description="Extracts counter-narratives from folder of output files and evaluates them using an automatic model. Exports results in a tsv")
 parser.add_argument("model_name", type=str, choices=["roberta-base", "roberta-large"])
-parser.add_argument("category", type=str, choices=["stance", "offensive", "felicity", "informativeness"])
+# parser.add_argument("category", type=str, choices=["stance", "offensive", "felicity", "informativeness"])
 parser.add_argument("language", type=str, choices=["english", "spanish"])
 args = parser.parse_args()
 
 model_name = args.model_name
-category = args.category
+# category = args.category
 language = args.language
 lr = 2e-05
+# This is the order in which they are printed on the output file
+categories = ["stance", "offensive", "felicity"]
 tokenizer = AutoTokenizer.from_pretrained(model_name, add_prefix_space=True)
-model = AutoModelForSequenceClassification.from_pretrained(f"{model_name}-{category}-{language}-{lr}", num_labels=3)
 
 def tokenize_example(example):
     input_text = example["hs"] + " [SEP] " + example["cn"]
@@ -62,23 +63,11 @@ def compute_metrics_f1(p: EvalPrediction):
 
     return ans
 
-
+tw_cn_pairs = {}
 for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-05_fewshot_*_False_True_False"):
     filename_splitted = f.split("_")
-    dataset = filename_splitted[0]
-    model_generation = filename_splitted[1]
-    language = filename_splitted[2]
-    lr = filename_splitted[3]
-    strategy = filename_splitted[4]
-    extra_info = filename_splitted[5]
-    cn_strategy = filename_splitted[6]
-    top_sampling = filename_splitted[7]
-    beam_search = filename_splitted[8]
-    temperature = filename_splitted[9]
-
     tweets = []
     cns = []
-
     dont_add = False
     for idx, line in enumerate(open(f, "r")):
         line = line.replace("\n","").replace("\t"," ")
@@ -96,30 +85,54 @@ for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-xl_english_2e-0
                     cns.append(line)
             dont_add = False
     assert(len(tweets) == len(cns))
-    # data = pd.DataFrame(list(zip(tweets, cns)), columns=["hs", "cn"])
-    # test_set = Dataset.from_pandas(data).map(tokenize_example)
-    # trainer = Trainer(
-    #     model=model,
-    #     eval_dataset=test_set,
-    #     tokenizer=tokenizer,
-    #     compute_metrics= compute_metrics_f1,
-    # )
+    tw_cn_pairs[f] = [tweets, cns]
 
-    # results = trainer.predict(test_set)
 
-    model_name_adapted = model_name.replace("/", "-")
-    filename = "./results_test_{}_{}_{}_{}_{}".format(lr, model_generation, model_name_adapted, category, language)
 
+predictions = {}
+for category in categories:
+    model = AutoModelForSequenceClassification.from_pretrained(f"{model_name}-{category}-{language}-{lr}", num_labels=3)
     avg_score = 0
     l = 0
+
+    for f in tw_cn_pairs:
+
+        if f not in predictions:
+            predictions[f] = {"categories": []}
+
+        model_name_adapted = model_name.replace("/", "-")
+        filename = "./results_test_{}".format(f)
+
+        tweets, cns = tw_cn_pairs[f]
+        for tw, cn in zip(tweets, cns):
+            only_tw_text = tw.split("|")[0]
+            exmpl = only_tw_text + " [SEP] " + cn
+            tokenized_input = tokenizer(exmpl, truncation=True, return_tensors="pt")
+            output = model.forward(**tokenized_input).logits
+            prediction = torch.argmax(output, dim=1)[0]
+
+            if only_tw_text not in predictions[f]:
+                predictions[f][only_tw_text] = []
+
+            predictions[f][only_tw_text].append(prediction)
+            avg_score += prediction
+            l += 1
+        predictions[f]['categories'].append(str(avg_score / l))
+            
+for f in tw_cn_pairs:
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
-    for tw, cn in zip(tweets, cns):
-        exmpl = tw + " [SEP] " + cn
-        tokenized_input = tokenizer(exmpl, truncation=True, return_tensors="pt")
-        output = model.forward(**tokenized_input).logits
-        prediction = torch.argmax(output, dim=1)[0]
-        w.write("{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," "), prediction))
-        avg_score += prediction
-        l += 1
-    w.write(avg_score / l)
-    w.close()
+    twts, cns = tw_cn_pairs[f]
+    for tw, cn in zip(twts, cns):
+        predictions = predictions[f][tw]
+        w.write("{}\t{}\t{}\n".format(tw.replace("\t"," "), cn.replace("\t"," "), predictions))
+    w.write("===========================================")
+    w.write(predictions[f]['categories'])
+    total_avg = 0
+    for cat in predictions[f]['categories']:
+        total_avg += int(cat)
+    w.write(str(total_avg - 2))
+
+    
+        w.write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        w.write(str(avg_score / l))
+        w.close()
