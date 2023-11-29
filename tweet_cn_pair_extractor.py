@@ -64,7 +64,7 @@ def compute_metrics_f1(p: EvalPrediction):
     return ans
 
 tw_cn_pairs = {}
-for f in glob("./test_results_generated_cn/asohmo_google-flan-t5-base_english_2e-05_finetuned___False_True_False"):
+for f in glob(f"./test_results_kr/*_{language}_*"):
     filename_splitted = f.split("_")
     tweets = []
     cns = []
