@@ -352,10 +352,11 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 if 'flan-t5' in model_name or "Mistral" in model_name:
     new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
     num_new_tokens = tokenizer.add_tokens(new_tokens)
+    tokenizer.pad_token = tokenizer.eos_token
     tkn = tokenizer("<ECN>")
     eos_token_id = tkn["input_ids"][0]
 
-print("We added ", num_new_tokens, " new tokens")
+    print("We added ", num_new_tokens, " new tokens")
 
 if args.generation_strategy == "finetuned":
     # if args.cn_strategy != "":
