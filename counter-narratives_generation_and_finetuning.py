@@ -3,7 +3,6 @@ import random
 from datasets import Dataset
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM
-from datasets import load_dataset
 from datasets import Dataset
 import evaluate
 from sentence_transformers import SentenceTransformer, util
@@ -590,10 +589,10 @@ if pretraining:
         load_best_model_at_end=True,
         # metric_for_best_model="overall_f1",
         # push to hub parameters
-        report_to="tensorboard",
-        push_to_hub=True,
+        # report_to="tensorboard",
+        # push_to_hub=True,
         # hub_strategy="every_save",
-        hub_model_id=repository_id,
+        # hub_model_id=repository_id,
     )
 
     # Create Trainer instance
