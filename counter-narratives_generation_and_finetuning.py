@@ -12,6 +12,8 @@ import torch
 import numpy as np
 from transformers import DataCollatorForSeq2Seq
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments
+from transformers import StoppingCriteria, StoppingCriteriaList
+
 
 import argparse
 
@@ -32,6 +34,9 @@ pretraining = args.generation_strategy == "pretraining" or args.generation_strat
 
 FEWSHOT_EXAMPLES_AMOUNT = 10
 fewshot_examples = {}
+
+################################## LOAD DATASETS
+#TODO: Move to a diferent file
 
 def load_conan(language):
 
@@ -297,6 +302,10 @@ def load_asohmo(language, use_extra_info=""):
         return [test_dataset, train_dataset, val_dataset]
     return [test_dataset]
 
+
+########################################################################################################################################
+
+
 if args.dataset == "conan":
     print("loading conan")  
     datasetss = load_conan(args.language)
@@ -326,32 +335,22 @@ else:
     datasetss = [dtst1 + dtst2 for dtst1, dtst2 in zip(datasetss1, datasetss2)]
 
 test_dataset = datasetss[0]
+test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
+
 if pretraining:
     train_dataset = datasetss[1]
     val_dataset = datasetss[2]
-
-test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
-if pretraining:
     train_data = Dataset.from_pandas(pd.DataFrame(train_dataset))
     val_data = Dataset.from_pandas(pd.DataFrame(val_dataset))
 
 
-
-
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-# tokenizer.pad_token = tokenizer.eos_token
 
-# print("llllllllllllllllllllllllllllllllllllllllllll")
-# print(tokenizer.pad_token)
-# print(tokenizer.eos_token)
-
-new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
-num_new_tokens = tokenizer.add_tokens(new_tokens)
-print("ECN token: ")
-tkn = tokenizer("<ECN>")
-print(tkn)
-eos_token_id = tkn["input_ids"][0]
+if 'flan-t5' in model_name:
+    new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
+    num_new_tokens = tokenizer.add_tokens(new_tokens)
+    tkn = tokenizer("<ECN>")
+    eos_token_id = tkn["input_ids"][0]
 
 print("We added ", num_new_tokens, " new tokens")
 
@@ -361,7 +360,7 @@ if args.generation_strategy == "finetuned":
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
-if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b"):
+if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b") or model_name.startswith("tiiuae/falcon-7b") or model_name.startswith("mistralai/Mistral-7B"):
     model = AutoModelForCausalLM.from_pretrained(model_name)
     model.to(device)
 else:
@@ -372,19 +371,21 @@ model.resize_token_embeddings(len(tokenizer))
 
 def generate_prompt(text, strategy, language):
     initial_prompt = "Generate a non-hateful response for the following hate messages:\n"
+    middle_prompt = " Response -> "
     if language == "ES":
         initial_prompt = "Genera una respuesta sin odio a los siguientes mensajes de odio:\n"
-    elif language == "FR":
-        initial_prompt = "Générez une réponse pour les messages haineux suivants:\n"
-    elif language == "IT":
-        initial_prompt = "Genera una risposta per i seguenti messaggi di odio:\n"
+        middle_prompt = " Respuesta -> "
 
     if strategy == "zeroshot":
         return  initial_prompt + text + " => "
     elif strategy == "fewshot":
         example_list = []
         for examp in fewshot_examples[language]:
-            example_list.append("<SHS>" + examp["hateSpeech"] + "<EHS> => <SCN>" + examp["counterSpeech"] + "<ECN>")
+            if model_name.startswith("google/flan-t5"):
+                example_list.append("<SHS>" + examp["hateSpeech"] + "<EHS>" + middle_prompt + "<SCN>" + examp["counterSpeech"] + "<ECN>")
+            elif model_name == "tiiuae/falcon-7b-instruct":
+                example_list.append("'" + examp["hateSpeech"] + "'" + middle_prompt + "'" + examp["counterSpeech"] + "'")
+
         examples = '\n'.join(example_list)
         # examples = """
         #     I hate Muslims. They should not exist. => Muslims are human too. People can choose their own religion.
@@ -450,20 +451,31 @@ def preprocess(sample, padding="max_length"):
         model_inputs["labels"] = sample["counterSpeech"]
     return model_inputs
 
-sbert = SentenceTransformer('all-MiniLM-L6-v2')
+class StoppingCriteriaSub(StoppingCriteria):
+    def __init__(self, stops = [], encounters=1):
+        super().__init__()
+        self.stops = [stop.to("cuda") for stop in stops]
 
-# Metric
-metric1 = evaluate.load("bertscore")
-metric2 = evaluate.load("bleu")
-metric3 = evaluate.load("rouge")
+    def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor):
+        last_token = input_ids[0][-1]
+        for stop in self.stops:
+            if tokenizer.decode(stop) == tokenizer.decode(last_token):
+                return True
+        return False
+
+if model_name == "tiiuae/falcon-7b-instruct":
+    stop_words = [".", "]", "']", "']\n", "\n", "]\n", "\n\n", "']\n\n", "<|endoftext|>"]
+else:
+    stop_words = [".", "]", "']", "']\n", "\n", "]\n", "\n\n", "']\n\n", "</s>"]
+stop_words_ids = [tokenizer(stop_word, return_tensors='pt', add_special_tokens=False)['input_ids'].squeeze() for stop_word in stop_words]
+stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=stop_words_ids)])
 
 
 def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, temperature=False):
 
-    f1_avg = 0.0
-    bleu_avg = 0.0
-    rouge_avg = 0.0
     sbert_avg = 0.0
+
+    sbert = SentenceTransformer('all-MiniLM-L6-v2')
 
     filename = f"{args.dataset}_{args.model_name}_{args.language}_2e-05_{args.generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
     w = open(filename, 'w')
@@ -487,18 +499,11 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         print("\n")
         for labels in inputt["labels"]:
 
-            result1 = metric1.compute(predictions=[preds], references=[labels], lang="en")
-            result2 = metric2.compute(predictions=[preds], references=[labels])
-            result3 = metric3.compute(predictions=[preds], references=[labels])
-
             cosine_scores_preds = sbert.encode([preds], convert_to_tensor=True)
             cosine_scores_labels = sbert.encode([labels], convert_to_tensor=True)
 
             sbert_score = util.cos_sim(cosine_scores_preds, cosine_scores_labels)
 
-            f1_avg += result1["f1"][0]
-            bleu_avg += result2["bleu"]
-            rouge_avg += result3["rougeL"]
             sbert_avg += sbert_score[0][0].item()
 
             w.write("---------------------------------------------------------\n")
@@ -508,32 +513,18 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
             w.write("\n")
             w.write(preds)
             w.write("\n")
-            w.write(str(result1))
-            w.write("\n")
-            w.write(str(result2))
-            w.write("\n")
-            w.write(str(result3))
-            w.write("\n")
             w.write(str(sbert_score[0][0].item()))
             w.write("\n")
 
     w.write("========================================\n")
-    w.write("F1 AVG:\n")
-    w.write(str(f1_avg / len(testing_datasets)))
-    w.write("\n")
-    w.write("Bleu AVG:\n")
-    w.write(str(bleu_avg / len(testing_datasets)))
-    w.write("\n")
-    w.write("Rouge AVG:\n")
-    w.write(str(rouge_avg / len(testing_datasets)))
-    w.write("\n")
     w.write("SBERT AVG:\n")
     w.write(str(sbert_avg / len(testing_datasets)))
     w.close()
 
 
-if pretraining:
 
+
+if pretraining:
     train_data = train_data.map(preprocess)
     val_data = val_data.map(preprocess)
     test_data = test_data.map(preprocess)
@@ -542,9 +533,6 @@ if pretraining:
         preds, labels = eval_preds
         if isinstance(preds, tuple):
             preds = preds[0]
-        print(labels)
-        print("=============================")
-        print(preds)
         decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
         # Replace -100 in the labels as we can't decode them.
         labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
@@ -553,9 +541,9 @@ if pretraining:
 
         # Some simple post-processing
         # decoded_preds, decoded_labels, decoded_inputs = postprocess_text(decoded_preds, decoded_labels, decoded_inputs)
-
+        metric = evaluate.load("bertscore")
         # Using rouge score
-        result = metric3.compute(predictions=decoded_preds, references=decoded_labels)
+        result = metric.compute(predictions=decoded_preds, references=decoded_labels)
 
 
         # result = {k: round(v * 100, 4) for k, v in result.items()}
@@ -573,13 +561,10 @@ if pretraining:
         tokenizer,
         model=model,
         label_pad_token_id=label_pad_token_id,
-        # pad_to_multiple_of=8
     )
 
-    # print(train_data[0])
-
     # Hugging Face repository id
-    repository_id = f"{model_name.split('/')[1]}-english"
+    repository_id = f"CounterNarratives/{model_name.split('/')[1]}-{args.language}-{args.use_extra_info}-{args.cn_strategy}"
 
     # Define training args
     training_args = Seq2SeqTrainingArguments(
@@ -601,15 +586,14 @@ if pretraining:
         logging_steps=5,
         # evaluation_strategy="epoch",
         # save_strategy="epoch",
-        # save_total_limit=10,
-        # load_best_model_at_end=True,
+        save_total_limit=10,
+        load_best_model_at_end=True,
         # metric_for_best_model="overall_f1",
         # push to hub parameters
-        # report_to="tensorboard",
-        # push_to_hub=False,
+        report_to="tensorboard",
+        push_to_hub=True,
         # hub_strategy="every_save",
-        # hub_model_id=repository_id,
-        # hub_token=HfFolder.get_token(),
+        hub_model_id=repository_id,
     )
 
     # Create Trainer instance
@@ -625,7 +609,7 @@ if pretraining:
 
     trainer.train()
 
-    trainer.save_model(f"{args.dataset}_{args.model_name}_{args.language}_{args.use_extra_info}_{args.cn_strategy}_2e-05_8Epochs".replace("/", "-"))
+    trainer.push_to_hub(repository_id)
 else:
     preprocessed_dataset = []
     for example in test_data:
