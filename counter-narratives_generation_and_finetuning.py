@@ -563,7 +563,9 @@ if pretraining:
     )
 
     # Hugging Face repository id
-    repository_id = f"CounterNarratives/{model_name.split('/')[1]}-{args.language}-{args.use_extra_info}-{args.cn_strategy}"
+    extra_info = args.use_extra_info if args.use_extra_info != "" else "no_info"
+    cn_strategy = args.cn_strategy if args.cn_strategy != "" else "no_strategy"
+    repository_id = f"CounterNarratives/{model_name.split('/')[1]}-{args.language}-{extra_info}-{cn_strategy}"
 
     # Define training args
     training_args = Seq2SeqTrainingArguments(
