@@ -563,9 +563,9 @@ if pretraining:
     )
 
     # Hugging Face repository id
-    extra_info = args.use_extra_info if args.use_extra_info != "" else "no_info"
-    cn_strategy = args.cn_strategy if args.cn_strategy != "" else "no_strategy"
-    repository_id = f"CounterNarratives/{model_name.split('/')[1]}-{args.language}-{extra_info}-{cn_strategy}"
+    extra_info = args.use_extra_info if args.use_extra_info != "" else "no-info"
+    cn_strategy = args.cn_strategy if args.cn_strategy != "" else "no-strategy"
+    repository_id = f"{model_name.split('/')[1]}_{args.language}_{extra_info}_{cn_strategy}"
 
     # Define training args
     training_args = Seq2SeqTrainingArguments(
@@ -610,7 +610,7 @@ if pretraining:
 
     trainer.train()
 
-    model.push_to_hub(repository_id)
+    model.push_to_hub("CounterNarratives/" + repository_id)
 else:
     preprocessed_dataset = []
     for example in test_data:
