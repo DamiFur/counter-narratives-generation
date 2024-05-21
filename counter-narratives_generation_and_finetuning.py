@@ -339,8 +339,8 @@ test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
 if pretraining:
     train_dataset = datasetss[1]
     val_dataset = datasetss[2]
-    train_data = Dataset.from_pandas(pd.DataFrame(train_dataset))
-    val_data = Dataset.from_pandas(pd.DataFrame(val_dataset))
+    train_data = Dataset.from_pandas(pd.DataFrame(train_dataset + val_dataset))
+    # val_data = Dataset.from_pandas(pd.DataFrame(val_dataset))
 
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -525,7 +525,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 
 if pretraining:
     train_data = train_data.map(preprocess)
-    val_data = val_data.map(preprocess)
+    # val_data = val_data.map(preprocess)
     test_data = test_data.map(preprocess)
 
     def compute_metrics(eval_preds):
@@ -583,10 +583,10 @@ if pretraining:
         # logging_dir=f"{repository_id}/logs",
         # logging_strategy="steps",
         logging_steps=5,
-        evaluation_strategy="epoch",
-        save_strategy="epoch",
-        save_total_limit=10,
-        load_best_model_at_end=True,
+        # evaluation_strategy="epoch",
+        # save_strategy="epoch",
+        # save_total_limit=10,
+        # load_best_model_at_end=True,
         # metric_for_best_model="overall_f1",
         # push to hub parameters
         # report_to="tensorboard",
@@ -601,8 +601,8 @@ if pretraining:
         args=training_args,
         data_collator=data_collator,
         train_dataset=train_data,
-        eval_dataset=val_data,
-        compute_metrics=compute_metrics,
+        # eval_dataset=val_data,
+        # compute_metrics=compute_metrics,
     )
 
 
