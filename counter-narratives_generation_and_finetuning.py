@@ -610,7 +610,7 @@ if pretraining:
 
     trainer.train()
 
-    trainer.push_to_hub(repository_id)
+    model.push_to_hub(repository_id)
 else:
     preprocessed_dataset = []
     for example in test_data:
