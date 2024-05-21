@@ -1,13 +1,12 @@
 from transformers import AutoModelForCausalLM
 from transformers import AutoTokenizer
 import torch
-import string
 import argparse
 
 
 parser = argparse.ArgumentParser(description="Train models for identifying argumentative components inside the ASFOCONG dataset")
 
-parser.add_argument("model_name", type=str, choices=["google/flan-t5-base", "mistralai/Mistral-7B-Instruct-v0.1", "tiiuae/falcon-7b-instruct"])
+parser.add_argument("model_name", type=str, choices=["google/flan-t5-base", "mistralai/Mixtral-8x7B-Instruct-v0.1", "mistralai/Mistral-7B-Instruct-v0.1", "tiiuae/falcon-7b-instruct"])
 parser.add_argument("--hs", type=str, default="despertó la alcaldesa de la ciudad en la que un inmigrante con papeles casi fue muerto por inmigrantes sin papeles al defender a una mujer hostigada por éstos ¿no tendrá nada que decir? ¿le parecerá bien que los manteros hostiguen a señoras y peguen a turistas?")
 parser.add_argument("--collective", type=str, default="manteros")
 parser.add_argument("--property", type=str, default="hostiguen a señoras y peguen a turistas")
@@ -16,7 +15,7 @@ parser.add_argument("--conclusion", type=str, default="¿le parecerá bien que l
 args = parser.parse_args()
 
 model_name = args.model_name
-model = AutoModelForCausalLM.from_pretrained(model_name, load_in_4bit=True, device_map="auto")
+model = AutoModelForCausalLM.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 from transformers import StoppingCriteria, StoppingCriteriaList

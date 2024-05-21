@@ -2,7 +2,7 @@ import json
 import random
 from datasets import Dataset
 import pandas as pd
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM, QuantoConfig
 from datasets import Dataset
 import evaluate
 from sentence_transformers import SentenceTransformer, util
@@ -24,12 +24,16 @@ parser.add_argument("language", type=str, choices=["english", "multi"])
 parser.add_argument("--use_extra_info", type=str, choices=["collective", "premises", "all", ""], default="")
 parser.add_argument("--cn_strategy", type=str, default="", choices=["a", "b", "c", ""])
 parser.add_argument("--model_name", type=str, default="google/flan-t5-base")
+parser.add_argument("--quantized", type=bool, default=False)
 
 args = parser.parse_args()
 
 model_name = args.model_name
 language = args.language
-pretraining = args.generation_strategy == "pretraining" or args.generation_strategy == "adapt_to_strategy"
+pretraining = args.generation_strategy == "pretraining"
+
+if args.quantized:
+    quantization_config = QuantoConfig(weights="int8")
 
 FEWSHOT_EXAMPLES_AMOUNT = 10
 fewshot_examples = {}
@@ -345,7 +349,7 @@ if pretraining:
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-if 'flan-t5' in model_name:
+if 'flan-t5' in model_name or "Mistral" in model_name:
     new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
     num_new_tokens = tokenizer.add_tokens(new_tokens)
     tkn = tokenizer("<ECN>")
@@ -360,7 +364,11 @@ if args.generation_strategy == "finetuned":
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
 if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b") or model_name.startswith("tiiuae/falcon-7b") or model_name.startswith("mistralai/Mistral-7B"):
-    model = AutoModelForCausalLM.from_pretrained(model_name)
+    if args.quantized:
+        model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=quantization_config)
+    else:
+        model = AutoModelForCausalLM.from_pretrained(model_name)
+
     model.to(device)
 else:
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
