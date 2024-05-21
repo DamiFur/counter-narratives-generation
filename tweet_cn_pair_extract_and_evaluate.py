@@ -8,10 +8,9 @@ from transformers import Trainer
 from transformers import EvalPrediction
 from sklearn import metrics
 import torch
-from statistics import mean
 
 parser = argparse.ArgumentParser(description="Extracts counter-narratives from folder of output files and evaluates them using an automatic model. Exports results in a tsv")
-parser.add_argument("model_name", type=str)
+parser.add_argument("model_name", type=str, choices=["roberta-base", "roberta-large"])
 # parser.add_argument("category", type=str, choices=["stance", "offensive", "felicity", "informativeness"])
 parser.add_argument("language", type=str, choices=["english", "spanish"])
 args = parser.parse_args()
@@ -65,10 +64,6 @@ def compute_metrics_f1(p: EvalPrediction):
     return ans
 
 tw_cn_pairs = {}
-<<<<<<< HEAD
-lang = language if language == "english" else "multi"
-# ./test_results_kr/asohmo_google-flan-t5-*_{lang}_*
-
 for f in glob(f"./test_results_kr/*_{language}_*"):
     filename_splitted = f.split("_")
     tweets = []
@@ -96,8 +91,7 @@ for f in glob(f"./test_results_kr/*_{language}_*"):
 
 predictions = {}
 for category in categories:
-    model_name_short = model_name.split("/")[-1].lower()
-    model = AutoModelForSequenceClassification.from_pretrained(f"{model_name_short}-{category}-{language}-{lr}", num_labels=3)
+    model = AutoModelForSequenceClassification.from_pretrained(f"{model_name}-{category}-{language}-{lr}", num_labels=3)
     avg_score = 0
     l = 0
 
@@ -106,6 +100,7 @@ for category in categories:
         if f not in predictions:
             predictions[f] = {"categories": []}
 
+        model_name_adapted = model_name.replace("/", "-")
         filename = "./results_test_{}".format(f)
 
         tweets, cns = tw_cn_pairs[f]
@@ -127,18 +122,17 @@ for category in categories:
 for f in tw_cn_pairs:
     w = open("results_{}.tsv".format(f.split("/")[-1]), 'w')
     twts, cns = tw_cn_pairs[f]
-    scores = []
     for tw, cn in zip(twts, cns):
         only_tw_text = tw.split("|")[0]
         preds = predictions[f][only_tw_text]
-        score = int(preds[0]) + int(preds[1]) + int(preds[3]) + 3
-        if int(preds[1]) == 3:
-            score += int(preds[2]) + 1
-        score = score -2
-        scores.append(score)
-        w.write("{}\t{}\t{}\t{}\n".format(only_tw_text.replace("\t"," "), cn.replace("\t"," "), preds, score))
-
+        w.write("{}\t{}\t{}\n".format(only_tw_text.replace("\t"," "), cn.replace("\t"," "), preds))
     w.write("===========================================\n")
     w.write("\t".join([str(float(prd)) for prd in predictions[f]['categories']]))
-    w.write("\n\n")
-    w.write(str(mean(scores)))
+    total_avg = 0.0
+    for idx, cat in enumerate(predictions[f]['categories']):
+        if idx == 1:
+            stancee = cat
+        if idx == 2 and float(stancee) < 2.0:
+            continue
+        total_avg += float(cat)
+    w.write(str(total_avg - 2))
