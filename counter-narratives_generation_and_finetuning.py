@@ -453,10 +453,6 @@ def preprocess(sample, padding="max_length"):
     inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"])
     if pretraining:
         model_inputs = tokenizer(inputs, padding=padding, max_length=max_source_length, truncation=True)
-    else:
-        model_inputs = tokenizer(inputs, padding=padding, max_length=max_source_length, truncation=True, return_tensors="pt")
-        model_inputs = model_inputs.to(device)
-    if pretraining:
         # model_inputs["input_ids"] = torch.flatten(model_inputs["input_ids"])
         # model_inputs["attention_mask"] = torch.flatten(model_inputs["attention_mask"])
         labels = tokenizer("<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=max_target_length, truncation=True)
@@ -466,6 +462,8 @@ def preprocess(sample, padding="max_length"):
             ]
         model_inputs["labels"] = labels["input_ids"]
     else:
+        model_inputs = tokenizer(inputs, padding=padding, max_length=max_source_length, truncation=True, return_tensors="pt")
+        model_inputs = model_inputs.to(device)
         model_inputs["labels"] = sample["counterSpeech"]
     return model_inputs
 
