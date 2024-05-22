@@ -367,13 +367,18 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
     if args.quantized:
 
         lora_config = LoraConfig(
-            target_modules=["q_proj", "k_proj"],
-            init_lora_weights=False
+            # target_modules=["q_proj", "k_proj"],
+            # init_lora_weights=False
+            lora_alpha=16,
+            lora_dropout=0.1,
+            r=64,
+            bias="none",
+            task_type="CAUSAL_LM",
         )
 
         model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=quantization_config)
 
-        adapter_name = f"counter-narratives_{args.model_name.replace('/', '-')}_{args.language}_{args.use_extra_info}_{args.cn_strategy}".replace(".","")
+        adapter_name = f"counter-narratives_{args.model_name.replace('/', '-')}_{args.language}_{args.use_extra_info}_{args.cn_strategy}".replace(".",)
         model.add_adapter(lora_config, adapter_name=adapter_name)
 
     else:
