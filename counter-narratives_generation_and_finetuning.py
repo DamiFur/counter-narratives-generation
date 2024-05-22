@@ -10,7 +10,7 @@ from glob import glob
 import torch
 import numpy as np
 from transformers import DataCollatorForSeq2Seq
-from transformers import Trainer, TrainingArguments
+from transformers import Trainer, TrainingArguments, BitsAndBytesConfig
 from transformers import StoppingCriteria, StoppingCriteriaList
 from peft import LoraConfig, get_peft_model, TaskType
 import argparse
@@ -364,8 +364,8 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
     if args.quantized:
 
         lora_config = LoraConfig(
-            # target_modules=["q_proj", "k_proj"],
             # init_lora_weights=False
+            target_modules=["q_prok", "k_proj", "o_proj"],
             lora_alpha=16,
             lora_dropout=0.1,
             r=64,
@@ -373,8 +373,7 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
             task_type=TaskType.CAUSAL_LM,
         )
 
-        quantization_config = QuantoConfig(weights="int4")
-        model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=quantization_config)
+        model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype="auto", low_cpu_mem_usage=True)
 
         model = get_peft_model(model, lora_config)
 
@@ -605,7 +604,8 @@ if pretraining:
         # logging & evaluation strategies
         # logging_dir=f"{repository_id}/logs",
         # logging_strategy="steps",
-        logging_steps=5,
+        # logging_steps=5,
+        optim="adamw_bnb_8bit",
         # evaluation_strategy="epoch",
         # save_strategy="epoch",
         # save_total_limit=10,
@@ -628,7 +628,7 @@ if pretraining:
         # compute_metrics=compute_metrics,
     )
 
-
+    model.config.use_cache = False  # silence the warnings. Please re-enable for inference!
     trainer.train()
 
     model.push_to_hub("CounterNarratives/" + repository_id)
