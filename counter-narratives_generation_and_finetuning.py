@@ -14,6 +14,7 @@ from transformers import Trainer, TrainingArguments, BitsAndBytesConfig
 from transformers import StoppingCriteria, StoppingCriteriaList
 from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
 import argparse
+import os
 
 device = torch.device("cuda")
 parser = argparse.ArgumentParser(description="Train models for identifying argumentative components inside the ASFOCONG dataset")
@@ -637,7 +638,7 @@ if pretraining:
         # TODO: turn this on and check if it works
         fp16=False, # Overflows with fp16
         learning_rate=2e-04,
-        num_train_epochs=8,
+        num_train_epochs=4,
         lr_scheduler_type="cosine",
         # include_inputs_for_metrics=True,
         # logging & evaluation strategies
@@ -671,6 +672,9 @@ if pretraining:
     trainer.train()
 
     model.push_to_hub("CounterNarratives/" + repository_id)
+    if not os.path.exists("pretrained_models"):
+        os.makedirs("pretrained_models")
+    model.save_pretrained("pretrained_models/" + repository_id)
 else:
     preprocessed_dataset = []
     for example in test_data:
