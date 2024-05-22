@@ -486,7 +486,7 @@ print(len(test_dataset))
     # target_tokenized = list(map(lambda sample: tokenizer("<SCN>" + sample["counterSpeech"] + "<ECN>", truncation=True)["input_ids"], datasett))
     # max_target_length = max([len(x) for x in target_tokenized])
 
-MAX_LENGTH = 512
+MAX_LENGTH = 1024
 def preprocess(sample, padding="max_length"):
     inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"])
     if pretraining:
@@ -498,7 +498,7 @@ def preprocess(sample, padding="max_length"):
             # labels["input_ids"] = [
             #     (l if l != tokenizer.pad_token_id else -100) for l in labels["input_ids"]
             # ]
-        model_inputs["labels"] = model_inputs["input_ids"].copy()
+        # model_inputs["labels"] = model_inputs["input_ids"].copy()
     else:
         model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
         model_inputs = model_inputs.to(device)
