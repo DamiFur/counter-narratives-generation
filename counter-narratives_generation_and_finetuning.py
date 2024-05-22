@@ -12,7 +12,7 @@ import numpy as np
 from transformers import DataCollatorForSeq2Seq
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments
 from transformers import StoppingCriteria, StoppingCriteriaList
-from peft import LoraConfig
+from peft import LoraConfig, get_peft_model, TaskType
 import argparse
 
 device = torch.device("cuda")
@@ -373,13 +373,12 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
             lora_dropout=0.1,
             r=64,
             bias="none",
-            task_type="CAUSAL_LM",
+            task_type=TaskType.CAUSAL_LM,
         )
 
         model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=quantization_config)
 
-        adapter_name = f"counter-narratives_{args.model_name.replace('/', '-')}_{args.language}_{args.use_extra_info}_{args.cn_strategy}".replace(".","")
-        model.add_adapter(lora_config, adapter_name=adapter_name)
+        model = get_peft_model(model, lora_config)
 
     else:
         model = AutoModelForCausalLM.from_pretrained(model_name)
