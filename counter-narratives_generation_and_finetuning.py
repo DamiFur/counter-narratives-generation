@@ -490,7 +490,7 @@ MAX_LENGTH = 512
 def preprocess(sample, padding="max_length"):
     inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"])
     if pretraining:
-        model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
+        model_inputs = tokenizer(inputs + "<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
         # model_inputs["input_ids"] = torch.flatten(model_inputs["input_ids"])
         # model_inputs["attention_mask"] = torch.flatten(model_inputs["attention_mask"])
         labels = tokenizer("<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
@@ -498,7 +498,7 @@ def preprocess(sample, padding="max_length"):
             # labels["input_ids"] = [
             #     (l if l != tokenizer.pad_token_id else -100) for l in labels["input_ids"]
             # ]
-        model_inputs["labels"] = labels["input_ids"]
+        model_inputs["labels"] = model_inputs["input_ids"].copy()
     else:
         model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
         model_inputs = model_inputs.to(device)
