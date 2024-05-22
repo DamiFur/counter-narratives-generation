@@ -595,13 +595,14 @@ if pretraining:
         per_device_train_batch_size=8,
         per_device_eval_batch_size=8,
         gradient_accumulation_steps=8,
-        predict_with_generate=True,
-        generation_max_length=200,
-        generation_num_beams=4,
+        # predict_with_generate=True,
+        # generation_max_length=200,
+        # generation_num_beams=4,
         # TODO: turn this on and check if it works
         fp16=False, # Overflows with fp16
         learning_rate=2e-04,
         num_train_epochs=8,
+        lr_scheduler_type="cosine",
         # include_inputs_for_metrics=True,
         # logging & evaluation strategies
         # logging_dir=f"{repository_id}/logs",
