@@ -10,7 +10,7 @@ from glob import glob
 import torch
 import numpy as np
 from transformers import DataCollatorForSeq2Seq
-from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments
+from transformers import Trainer, TrainingArguments
 from transformers import StoppingCriteria, StoppingCriteriaList
 from peft import LoraConfig, get_peft_model, TaskType
 import argparse
@@ -590,7 +590,7 @@ if pretraining:
     repository_id = f"{model_name.split('/')[1]}_{args.language}_{extra_info}_{cn_strategy}"
 
     # Define training args
-    training_args = Seq2SeqTrainingArguments(
+    training_args = TrainingArguments(
         output_dir=repository_id,
         per_device_train_batch_size=8,
         per_device_eval_batch_size=8,
@@ -620,7 +620,7 @@ if pretraining:
     )
 
     # Create Trainer instance
-    trainer = Seq2SeqTrainer(
+    trainer = Trainer(
         model=model,
         args=training_args,
         data_collator=data_collator,
