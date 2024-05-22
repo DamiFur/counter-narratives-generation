@@ -351,10 +351,10 @@ if "Mistral" in model_name or "Mixtral" in model_name:
         add_eos_token=True,
         add_bos_token=True,
 )
-# if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name:
+if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name:
     # new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
     # num_new_tokens = tokenizer.add_tokens(new_tokens)
-    # tokenizer.pad_token = tokenizer.eos_token
+    tokenizer.pad_token = tokenizer.eos_token
     # tkn = tokenizer("<ECN>")
     # eos_token_id = tkn["input_ids"][0]
 
