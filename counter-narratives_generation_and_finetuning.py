@@ -482,9 +482,9 @@ print(len(test_dataset))
 dataset_tokenized = list(map(lambda sample: tokenizer(generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"]), truncation=True)["input_ids"], datasett))
 max_source_length = max([len(x) for x in dataset_tokenized])
 
-if pretraining:
-    target_tokenized = list(map(lambda sample: tokenizer("<SCN>" + sample["counterSpeech"] + "<ECN>", truncation=True)["input_ids"], datasett))
-    max_target_length = max([len(x) for x in target_tokenized])
+# if pretraining:
+    # target_tokenized = list(map(lambda sample: tokenizer("<SCN>" + sample["counterSpeech"] + "<ECN>", truncation=True)["input_ids"], datasett))
+    # max_target_length = max([len(x) for x in target_tokenized])
 
 
 def preprocess(sample, padding="max_length"):
@@ -493,7 +493,7 @@ def preprocess(sample, padding="max_length"):
         model_inputs = tokenizer(inputs, padding=padding, max_length=512, truncation=True)
         # model_inputs["input_ids"] = torch.flatten(model_inputs["input_ids"])
         # model_inputs["attention_mask"] = torch.flatten(model_inputs["attention_mask"])
-        labels = tokenizer("<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=max_target_length, truncation=True)
+        labels = tokenizer("<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=512, truncation=True)
         if padding == "max_length":
             labels["input_ids"] = [
                 (l if l != tokenizer.pad_token_id else -100) for l in labels["input_ids"]
