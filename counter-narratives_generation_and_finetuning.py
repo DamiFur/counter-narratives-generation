@@ -360,7 +360,7 @@ if args.generation_strategy == "finetuned":
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
-if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b") or model_name.startswith("tiiuae/falcon-7b") or model_name.startswith("mistralai/Mistral-7B") or "Mixtral" in model_name:
+if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b") or model_name.startswith("tiiuae/falcon-7b") or model_name.startswith("mistralai/Mistral-7B") or "Mixtral" in model_name or "Mistral" in model_name:
     if args.quantized:
 
         lora_config = LoraConfig(
