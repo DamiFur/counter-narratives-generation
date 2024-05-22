@@ -2,7 +2,7 @@ import json
 import random
 from datasets import Dataset
 import pandas as pd
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM, QuantoConfig
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM, QuantoConfig, OPTForCausalLM
 from datasets import Dataset
 import evaluate
 from sentence_transformers import SentenceTransformer, util
@@ -12,8 +12,7 @@ import numpy as np
 from transformers import DataCollatorForSeq2Seq
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments
 from transformers import StoppingCriteria, StoppingCriteriaList
-
-
+from peft import LoraConfig
 import argparse
 
 device = torch.device("cuda")
@@ -366,7 +365,17 @@ if args.generation_strategy == "finetuned":
 
 if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b") or model_name.startswith("tiiuae/falcon-7b") or model_name.startswith("mistralai/Mistral-7B"):
     if args.quantized:
+
+        lora_config = LoraConfig(
+            target_modules=["q_proj", "k_proj"],
+            init_lora_weights=False
+        )
+
         model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=quantization_config)
+
+        adapter_name = f"counter-narratives_{args.model_name.replace('/', '-')}_{args.language}_{args.use_extra_info}_{args.cn_strategy}"
+        model.add_adapter(lora_config, adapter_name=adapter_name)
+
     else:
         model = AutoModelForCausalLM.from_pretrained(model_name)
 
