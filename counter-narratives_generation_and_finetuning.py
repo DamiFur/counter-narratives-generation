@@ -351,14 +351,14 @@ if "Mistral" in model_name or "Mixtral" in model_name:
         add_eos_token=True,
         add_bos_token=True,
 )
-if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name:
-    new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
-    num_new_tokens = tokenizer.add_tokens(new_tokens)
-    tokenizer.pad_token = tokenizer.eos_token
-    tkn = tokenizer("<ECN>")
-    eos_token_id = tkn["input_ids"][0]
+# if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name:
+    # new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
+    # num_new_tokens = tokenizer.add_tokens(new_tokens)
+    # tokenizer.pad_token = tokenizer.eos_token
+    # tkn = tokenizer("<ECN>")
+    # eos_token_id = tkn["input_ids"][0]
 
-    print("We added ", num_new_tokens, " new tokens")
+    # print("We added ", num_new_tokens, " new tokens")
 
 if args.generation_strategy == "finetuned":
     # if args.cn_strategy != "":
@@ -498,7 +498,7 @@ def preprocess(sample, padding="max_length"):
             # labels["input_ids"] = [
             #     (l if l != tokenizer.pad_token_id else -100) for l in labels["input_ids"]
             # ]
-        # model_inputs["labels"] = model_inputs["input_ids"].copy()
+        model_inputs["labels"] = model_inputs["input_ids"].copy()
     else:
         model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
         model_inputs = model_inputs.to(device)
