@@ -369,15 +369,20 @@ if args.generation_strategy == "finetuned":
 if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b") or model_name.startswith("tiiuae/falcon-7b") or model_name.startswith("mistralai/Mistral-7B") or "Mixtral" in model_name or "Mistral" in model_name:
     if args.quantized:
 
-        lora_config = LoraConfig(
-            # init_lora_weights=False
-            # target_modules=["q_prok", "k_proj", "o_proj"],
-            lora_alpha=16,
-            lora_dropout=0.1,
-            r=64,
-            bias="none",
-            task_type=TaskType.CAUSAL_LM,
-        )
+        def print_trainable_parameters(model):
+            """
+            Prints the number of trainable parameters in the model.
+            """
+            trainable_params = 0
+            all_param = 0
+            for _, param in model.named_parameters():
+                all_param += param.numel()
+                if param.requires_grad:
+                    trainable_params += param.numel()
+            print(
+                f"trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param}"
+            )
+
 
         bnb_config = BitsAndBytesConfig(
             load_in_4bit=True,
@@ -389,6 +394,27 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
 
         model.gradient_checkpointing_enable()
         model = prepare_model_for_kbit_training(model)
+
+        config = LoraConfig(
+            r=32,
+            lora_alpha=64,
+            target_modules=[
+                "q_proj",
+                "k_proj",
+                "v_proj",
+                "o_proj",
+                "gate_proj",
+                "up_proj",
+                "down_proj",
+                "lm_head",
+            ],
+            bias="none",
+            lora_dropout=0.05,  # Conventional
+            task_type=TaskType.CAUSAL_LM,
+        )
+
+        model = get_peft_model(model, config)
+        print_trainable_parameters(model)
 
     else:
         model = AutoModelForCausalLM.from_pretrained(model_name)
