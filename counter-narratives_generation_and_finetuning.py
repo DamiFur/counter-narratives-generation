@@ -392,8 +392,7 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
 
     else:
         model = AutoModelForCausalLM.from_pretrained(model_name)
-
-    model.to(device)
+        model.to(device)
 else:
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
     model.to(device)
