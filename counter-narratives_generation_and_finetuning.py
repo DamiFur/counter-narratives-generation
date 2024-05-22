@@ -2,7 +2,7 @@ import json
 import random
 from datasets import Dataset
 import pandas as pd
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM, QuantoConfig, OPTForCausalLM
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, AutoModelForCausalLM
 from datasets import Dataset
 import evaluate
 from sentence_transformers import SentenceTransformer, util
@@ -344,7 +344,13 @@ if pretraining:
 
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-
+if "Mistral" in model_name or "Mixtral" in model_name:
+    tokenizer = AutoTokenizer.from_pretrained(
+    model_name,
+    padding_side="left",
+    add_eos_token=True,
+    add_bos_token=True,
+)
 if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name:
     new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
     num_new_tokens = tokenizer.add_tokens(new_tokens)
@@ -373,7 +379,13 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
             task_type=TaskType.CAUSAL_LM,
         )
 
-        model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", torch_dtype="auto", low_cpu_mem_usage=True)
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_compute_dtype=torch.bfloat16
+        )
+        model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, resume_download=True)
 
         model = get_peft_model(model, lora_config)
 
