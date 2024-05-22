@@ -31,9 +31,6 @@ model_name = args.model_name
 language = args.language
 pretraining = args.generation_strategy == "pretraining"
 
-if args.quantized:
-    quantization_config = QuantoConfig(weights="int8")
-
 FEWSHOT_EXAMPLES_AMOUNT = 10
 fewshot_examples = {}
 
@@ -376,7 +373,8 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
             task_type=TaskType.CAUSAL_LM,
         )
 
-        model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=quantization_config)
+        # quantization_config = QuantoConfig(weights="int16")
+        model = AutoModelForCausalLM.from_pretrained(model_name)#, quantization_config=quantization_config)
 
         model = get_peft_model(model, lora_config)
 
