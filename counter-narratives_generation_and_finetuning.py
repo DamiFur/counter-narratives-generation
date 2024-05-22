@@ -423,7 +423,7 @@ else:
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
     model.to(device)
 
-model.resize_token_embeddings(len(tokenizer))
+    model.resize_token_embeddings(len(tokenizer))
 
 def generate_prompt(text, strategy, language):
     initial_prompt = "Generate a non-hateful response for the following hate messages:\n"
