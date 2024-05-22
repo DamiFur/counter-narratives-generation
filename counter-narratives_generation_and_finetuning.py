@@ -373,7 +373,7 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
             task_type=TaskType.CAUSAL_LM,
         )
 
-        quantization_config = QuantoConfig(weights="int16")
+        quantization_config = QuantoConfig(weights="int4")
         model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=quantization_config)
 
         model = get_peft_model(model, lora_config)
