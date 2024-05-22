@@ -12,7 +12,7 @@ import numpy as np
 from transformers import DataCollatorForSeq2Seq
 from transformers import Trainer, TrainingArguments, BitsAndBytesConfig
 from transformers import StoppingCriteria, StoppingCriteriaList
-from peft import LoraConfig, get_peft_model, TaskType
+from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
 import argparse
 
 device = torch.device("cuda")
@@ -371,7 +371,7 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
 
         lora_config = LoraConfig(
             # init_lora_weights=False
-            target_modules=["q_prok", "k_proj", "o_proj"],
+            # target_modules=["q_prok", "k_proj", "o_proj"],
             lora_alpha=16,
             lora_dropout=0.1,
             r=64,
@@ -387,7 +387,8 @@ if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama
         )
         model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, resume_download=True)
 
-        model = get_peft_model(model, lora_config)
+        model.gradient_checkpointing_enable()
+        model = prepare_model_for_kbit_training(model)
 
     else:
         model = AutoModelForCausalLM.from_pretrained(model_name)
