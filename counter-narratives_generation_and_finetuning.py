@@ -345,7 +345,7 @@ if pretraining:
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-if 'flan-t5' in model_name or "Mistral" in model_name:
+if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name:
     new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
     num_new_tokens = tokenizer.add_tokens(new_tokens)
     tokenizer.pad_token = tokenizer.eos_token
@@ -360,7 +360,7 @@ if args.generation_strategy == "finetuned":
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
-if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b") or model_name.startswith("tiiuae/falcon-7b") or model_name.startswith("mistralai/Mistral-7B"):
+if model_name.startswith("bigscience") or model_name.startswith("aleksickx/llama-7b-hf") or model_name.startswith("EleutherAI/gpt-j-6b") or model_name.startswith("tiiuae/falcon-7b") or model_name.startswith("mistralai/Mistral-7B") or "Mixtral" in modl_name:
     if args.quantized:
 
         lora_config = LoraConfig(
