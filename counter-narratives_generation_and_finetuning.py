@@ -638,7 +638,7 @@ if pretraining:
         # TODO: turn this on and check if it works
         fp16=False, # Overflows with fp16
         learning_rate=2e-04,
-        num_train_epochs=4,
+        num_train_epochs=3,
         lr_scheduler_type="cosine",
         # include_inputs_for_metrics=True,
         # logging & evaluation strategies
