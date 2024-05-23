@@ -671,10 +671,22 @@ if pretraining:
     model.config.use_cache = False  # silence the warnings. Please re-enable for inference!
     trainer.train()
 
-    model.push_to_hub("CounterNarratives/" + repository_id)
     if not os.path.exists("pretrained_models"):
         os.makedirs("pretrained_models")
     model.save_pretrained("pretrained_models/" + repository_id)
+
+    preprocessed_dataset = []
+    for example in test_data:
+        preprocessed_dataset.append([preprocess(example), example["hateSpeech"]])
+
+    print("generating")
+    # evaluate_generation(preprocessed_dataset)
+    # evaluate_generation(preprocessed_dataset, top_sampling=True)
+    # evaluate_generation(preprocessed_dataset, temperature=True)
+    evaluate_generation(preprocessed_dataset, beam_search=True)
+    
+    model.push_to_hub("CounterNarratives/" + repository_id)
+
 else:
     preprocessed_dataset = []
     for example in test_data:
