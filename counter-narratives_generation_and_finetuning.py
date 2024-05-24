@@ -538,7 +538,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 
     sbert_avg = 0.0
 
-    sbert = SentenceTransformer('all-MiniLM-L6-v2')
+    # sbert = SentenceTransformer('all-MiniLM-L6-v2')
 
     filename = f"{args.dataset}_{args.model_name}_{args.language}_2e-05_{args.generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
     w = open(filename, 'w')
@@ -562,12 +562,12 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         print("\n")
         for labels in inputt["labels"]:
 
-            cosine_scores_preds = sbert.encode([preds], convert_to_tensor=True)
-            cosine_scores_labels = sbert.encode([labels], convert_to_tensor=True)
+            # cosine_scores_preds = sbert.encode([preds], convert_to_tensor=True)
+            # cosine_scores_labels = sbert.encode([labels], convert_to_tensor=True)
 
-            sbert_score = util.cos_sim(cosine_scores_preds, cosine_scores_labels)
+            # sbert_score = util.cos_sim(cosine_scores_preds, cosine_scores_labels)
 
-            sbert_avg += sbert_score[0][0].item()
+            # sbert_avg += sbert_score[0][0].item()
 
             w.write("---------------------------------------------------------\n")
             w.write(tweet)
@@ -576,12 +576,12 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
             w.write("\n")
             w.write(preds)
             w.write("\n")
-            w.write(str(sbert_score[0][0].item()))
-            w.write("\n")
+            # w.write(str(sbert_score[0][0].item()))
+            # w.write("\n")
 
     w.write("========================================\n")
-    w.write("SBERT AVG:\n")
-    w.write(str(sbert_avg / len(testing_datasets)))
+    # w.write("SBERT AVG:\n")
+    # w.write(str(sbert_avg / len(testing_datasets)))
     w.close()
 
 
