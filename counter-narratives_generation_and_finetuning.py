@@ -364,7 +364,7 @@ if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name
 
 if args.generation_strategy == "finetuned":
     # if args.cn_strategy != "":
-    model_name = f"pretrained_models/{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_{args.cn_strategy}"
+    model_name = f"pretrained_models/{args.model_name.split("/")[-1]}_multi_{args.use_extra_info}_{args.cn_strategy}"
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
@@ -544,11 +544,11 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         if beam_search:
             result = model.generate(**inputt, max_new_tokens=150, no_repeat_ngram_size=4, num_beams=4, early_stopping=True)#, eos_token_id = eos_token_id)
         elif top_sampling:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92, eos_token_id = eos_token_id)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92)#, eos_token_id = eos_token_id)
         elif temperature:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, temperature=0.7, eos_token_id = eos_token_id)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, temperature=0.7)#, eos_token_id = eos_token_id)
         else:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, eos_token_id = eos_token_id)
+            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4)#, eos_token_id = eos_token_id)
         preds = str(tokenizer.batch_decode(result)[0])
         print("----------------------------------tweet-----------------------------")
         print(tweet)
