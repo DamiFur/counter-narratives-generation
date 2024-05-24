@@ -39,6 +39,11 @@ fewshot_examples = {}
 ################################## LOAD DATASETS
 #TODO: Move to a diferent file
 
+    # Hugging Face repository id
+extra_info = args.use_extra_info if args.use_extra_info != "" else "no-info"
+cn_strategy = args.cn_strategy if args.cn_strategy != "" else "no-strategy"
+repository_id = f"{model_name.split('/')[1]}_{args.language}_{extra_info}_{cn_strategy}"
+
 def load_conan(language):
 
     j = open("dataset/CONAN/CONAN.json", "r")
@@ -364,7 +369,7 @@ if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name
 
 if args.generation_strategy == "finetuned":
     # if args.cn_strategy != "":
-    model_name = f"pretrained_models/{args.model_name.split("/")[-1]}_multi_{args.use_extra_info}_{args.cn_strategy}"
+    model_name = f"pretrained_models/{args.model_name.split("/")[-1]}_multi_{extra_info}_{cn_strategy}"
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
@@ -620,11 +625,6 @@ if pretraining:
         model=model,
         label_pad_token_id=label_pad_token_id,
     )
-
-    # Hugging Face repository id
-    extra_info = args.use_extra_info if args.use_extra_info != "" else "no-info"
-    cn_strategy = args.cn_strategy if args.cn_strategy != "" else "no-strategy"
-    repository_id = f"{model_name.split('/')[1]}_{args.language}_{extra_info}_{cn_strategy}"
 
     # Define training args
     training_args = TrainingArguments(
