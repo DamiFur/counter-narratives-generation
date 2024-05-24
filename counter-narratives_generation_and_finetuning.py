@@ -509,7 +509,7 @@ def preprocess(sample, padding="max_length"):
                 ]
             model_inputs["labels"] = labels["input_ids"]
     else:
-        model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
+        model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
         model_inputs = model_inputs.to(device)
         model_inputs["labels"] = sample["counterSpeech"]
     return model_inputs
