@@ -370,6 +370,7 @@ if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name
 if args.generation_strategy == "finetuned":
     # if args.cn_strategy != "":
     model_name = f"pretrained_models/{args.model_name.split("/")[-1]}_multi_{extra_info}_{cn_strategy}"
+    print("LOADING MODEL: ", model_name)
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
@@ -433,10 +434,10 @@ else:
     model.resize_token_embeddings(len(tokenizer))
 
 def generate_prompt(text, strategy, language):
-    initial_prompt = "Generate a non-hateful response for the following hate messages:\n"
+    initial_prompt = "Generate a non-hateful response that counters the following hate messages:\n"
     middle_prompt = " Response -> "
     if language == "ES":
-        initial_prompt = "Genera una respuesta sin odio a los siguientes mensajes de odio:\n"
+        initial_prompt = "Genera una respuesta sin odio en Español contraria a los siguientes mensajes de odio:\n"
         middle_prompt = " Respuesta -> "
 
     if strategy == "zeroshot":
@@ -496,6 +497,7 @@ print(len(test_dataset))
 MAX_LENGTH = 1024
 def preprocess(sample, padding="max_length"):
     inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"])
+    print(inputs)
     if pretraining:
         if is_causallm:
             model_inputs = tokenizer(inputs + "<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
