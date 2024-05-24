@@ -369,7 +369,7 @@ if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name
 
 if args.generation_strategy == "finetuned":
     # if args.cn_strategy != "":
-    model_name = f"pretrained_models/{args.model_name.split("/")[-1]}_multi_{extra_info}_{cn_strategy}"
+    model_name = f"pretrained_models/{args.model_name.split('/')[-1]}_multi_{extra_info}_{cn_strategy}"
     print("LOADING MODEL: ", model_name)
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
