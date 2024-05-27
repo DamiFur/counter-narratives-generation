@@ -35,6 +35,7 @@ is_causallm = "Mistral" in model_name or "Mixtral" in model_name
 
 model_without_user_interface = "tiiuae/falcon" in model_name
 
+lang_setting = language.replace("multi", "spanish")
 FEWSHOT_EXAMPLES_AMOUNT = 10
 fewshot_examples = {}
 
@@ -165,7 +166,8 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
             nonargs += 1
             continue
         tweet = " ".join(tweet_list)
-        extra_info = {}
+        number = filename.split("_")[-1].replace(".conll", "")
+        extra_info = {"number": number}
         if need_collective:
             extra_info["collective"] = " ".join(collective)
             extra_info["property"] = " ".join(property)
@@ -218,7 +220,6 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
 
 def load_asohmo(language, use_extra_info=""):
 
-    lang_setting = language.replace("multi", "spanish")
     # if language == "english":
     cns_by_tweet, nonargs, cn_length, cn_type_not_present = parse_dataset(f"dataset/ASOHMO/{lang_setting}/test/*.conll", use_extra_info=use_extra_info, language=language)
     if pretraining:
@@ -540,7 +541,7 @@ def preprocess(sample, padding="max_length", is_testing = False):
             model_inputs = model_inputs.to(device)
     
     if is_testing:
-        model_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"]}
+        model_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["number"]}
     return model_inputs
 
 class StoppingCriteriaSub(StoppingCriteria):
@@ -569,11 +570,14 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 
     # sbert = SentenceTransformer('all-MiniLM-L6-v2')
 
-    filename = f"{args.dataset}_{args.model_name}_{args.language}_2e-05_{args.generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
-    w = open(filename, 'w')
+    foldername = f"{args.dataset}_{args.model_name}_{args.language}_{args.generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
+    if not os.path.exists(f"test_results/{foldername}"):
+        os.makedirs(f"test_results/{foldername}")
     for example in testing_datasets:
         inputt = example[0]["example"]
         tweet = example[1]
+        number = example[0]["number"]
+        w = open(f"{foldername}/hate_tweet_{lang_setting}_{number}", 'w')
         # inputt.to(device)
         if beam_search:
             result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, num_beams=4, no_repeat_ngram_size=4, num_return_sequences=1, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
@@ -584,12 +588,13 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         else:
             result = model.generate(inputs=inputt, max_new_tokens=280, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         preds = str(tokenizer.batch_decode(result)[0])
+        response = preds.replace("\n", "").replace("\t", "").split("[/INST]")[-1].replace("<s>", "").replace("</s>", "").replace("<pad>", "")
         print("----------------------------------tweet-----------------------------")
         print(tweet)
         print("----------------------------------preds-----------------------------")
-        print(preds)
+        print(response)
         print("\n")
-        for labels in example[0]["counterSpeech"]:
+        # for labels in example[0]["counterSpeech"]:
 
             # cosine_scores_preds = sbert.encode([preds], convert_to_tensor=True)
             # cosine_scores_labels = sbert.encode([labels], convert_to_tensor=True)
@@ -597,21 +602,11 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
             # sbert_score = util.cos_sim(cosine_scores_preds, cosine_scores_labels)
 
             # sbert_avg += sbert_score[0][0].item()
-
-            w.write("---------------------------------------------------------\n")
-            w.write(tweet)
-            w.write('\n')
-            w.write(labels)
-            w.write("\n")
-            w.write(preds)
-            w.write("\n")
-            # w.write(str(sbert_score[0][0].item()))
-            # w.write("\n")
-
-    w.write("========================================\n")
-    # w.write("SBERT AVG:\n")
-    # w.write(str(sbert_avg / len(testing_datasets)))
-    w.close()
+        w.write(tweet.replace("\n", "").replace("\t", ""))
+        w.write('\n')
+        w.write(response)
+        w.write("\n")
+        w.close()
 
 
 
