@@ -503,76 +503,6 @@ def generate_prompt(text, strategy, language, extra_info):
         return prompt
 
 
-
-
-        # prompt_noinfo = [
-        #     {"role": "user", "content": "Genera una respuesta contraria a los siguientes mensajes de odio:\n'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings"},
-        #     {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
-        #     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde"},
-        #     {"role": "assistant", "content": "Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin"},
-        #     {"role": "user", "content": f"{text}"}
-        # ]
-        # prompt_collective = [
-        #     {"role": "user", "content": "Genera una respuesta contraria a los siguientes mensajes de odio:\n'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo'"},
-        #     {"role": "assistant", "content": "No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio."},
-        #     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion'"},
-        #     {"role": "assistant", "content": "Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?"},
-        #     {"role": "user", "content": f"{args.hs} | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}'"}
-        # ]
-        # prompt_premises = [
-        #     {"role": "user", "content": "Genera una respuesta contraria a los siguientes mensajes de odio:\n'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?"},
-        #     {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
-        #     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde'"},
-        #     {"role": "assistant", "content": "Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin"},
-        #     {"role": "user", "content": f"{args.hs} | Justificación del argumento: {justification} | Conclusión: {conclusion}"}
-
-    # initial_prompt = "Generate a non-hateful response that counters the following hate messages:\n"
-    # middle_prompt = " Response -> "
-    # if language == "ES":
-    #     initial_prompt = "Genera una respuesta sin odio en Español contraria a los siguientes mensajes de odio:\n"
-    #     middle_prompt = " Respuesta -> "
-
-    # if strategy == "zeroshot":
-    #     return  initial_prompt + text + " => "
-    # elif strategy == "fewshot":
-    #     example_list = []
-    #     for examp in fewshot_examples[language]:
-    #         if model_name.startswith("google/flan-t5"):
-    #             example_list.append("<SHS>" + examp["hateSpeech"] + "<EHS>" + middle_prompt + "<SCN>" + examp["counterSpeech"] + "<ECN>")
-    #         elif model_name == "tiiuae/falcon-7b-instruct":
-    #             example_list.append("'" + examp["hateSpeech"] + "'" + middle_prompt + "'" + examp["counterSpeech"] + "'")
-
-    #     examples = '\n'.join(example_list)
-        # examples = """
-        #     I hate Muslims. They should not exist. => Muslims are human too. People can choose their own religion.
-        #     All immigrants are criminals and should be deported. => Most immigrants are hard-working people trying to have a better life for them and their families.
-        #     Immigrants are lazy and cost a lot of money to the taxpayers. => Immigrants usually have the worst jobs and pay taxes as everyone else.
-        # """
-        # if language == "ES":
-            # examples = """
-            #     Odio a los musulmanes. No deberían existir. => Los musulmanes también son seres humanos. Las personas pueden elegir su propia religión.
-            #     Todos los inmigrantes son criminales y deberían ser deportados. => La mayoría de los inmigrantes son gente trabajadora tratando de tener una vida mejor para ellos y sus familias.
-            #     Los inmigrantes son vagos y cuestan mucho dinero a los contribuyentes. => Los inmigrantes usualmente tienen los peores trabajos y pagan impuestos como cualquier otro.
-            # """
-        # if language == "FR":
-            # examples = """
-            #     Je déteste les musulmans. Ils ne devraient pas exister. => Les musulmans sont humains aussi. Les gens peuvent choisir leur propre religion.
-            #     Tous les immigrés sont des criminels et doivent être expulsés. => La plupart des immigrants sont des travailleurs qui essaient d'améliorer leur vie et celle de leur famille.
-            #     Les immigrants sont paresseux et coûtent très cher aux contribuables. => Les immigrés ont généralement les pires emplois et paient des impôts comme tout le monde.
-            # """
-        # if language == "IT":
-            # examples = """
-            #     Odio i musulmani. Non dovrebbero esistere. => Anche i musulmani sono umani. Le persone possono scegliere la propria religione.
-            #     Tutti gli immigrati sono criminali e dovrebbero essere espulsi. => La maggior parte degli immigrati sono persone laboriose che cercano di avere una vita migliore per loro e per le loro famiglie.
-            #     Gli immigrati sono pigri e costano un sacco di soldi ai contribuenti. => Gli immigrati di solito hanno i lavori peggiori e pagano le tasse come tutti gli altri.
-            # """
-            
-        # print("==============================================")
-        # print(initial_prompt + examples + '\n' + text + " => ")
-        # return initial_prompt + examples + '\n' + text + " => "
-    # elif strategy == "finetuned" or strategy == "pretraining":
-    #     return initial_prompt + "<SHS>" + text + "<EHS> => "
-
 datasett = test_dataset
 if pretraining:
     datasett += train_dataset
@@ -588,7 +518,7 @@ print(len(test_dataset))
 
 MAX_LENGTH = 1024
 def preprocess(sample, padding="max_length"):
-    inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"])
+    inputs = generate_prompt(sample["hateSpeech"], sample["extra_info"], args.generation_strategy, sample["language"])
     print(inputs)
     if pretraining:
         if is_causallm:
