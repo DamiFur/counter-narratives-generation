@@ -537,7 +537,7 @@ def preprocess(sample, padding="max_length"):
         else:
             model_inputs = tokenizer.apply_chat_template(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
             model_inputs = model_inputs.to(device)
-        model_inputs["labels"] = tokenizer(sample["counterSpeech"])["input_ids"]
+        model_inputs["labels"] = tokenizer(sample["counterSpeech"], return_tensors="pt")["input_ids"]
     return model_inputs
 
 class StoppingCriteriaSub(StoppingCriteria):
