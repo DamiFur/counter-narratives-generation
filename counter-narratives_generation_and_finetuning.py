@@ -519,7 +519,7 @@ def preprocess(sample, padding="max_length", is_testing = False):
                 model_inputs = tokenizer(inputs + "<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
             else:
                 inputs.append({"role": "assistant", "content": sample["counterSpeech"]})
-                model_inputs = tokenizer.apply_chat_template(inputs, truncation=True)
+                model_inputs = tokenizer.apply_chat_template(inputs)
             model_inputs["labels"] = model_inputs["input_ids"].copy()
 
         else:
@@ -535,7 +535,7 @@ def preprocess(sample, padding="max_length", is_testing = False):
             model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
             model_inputs = model_inputs.to(device)
         else:
-            model_inputs = tokenizer.apply_chat_template(inputs, truncation=True, return_tensors="pt")
+            model_inputs = tokenizer.apply_chat_template(inputs, return_tensors="pt")
             model_inputs = model_inputs.to(device)
     
     if is_testing:
@@ -575,13 +575,13 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         tweet = example[1]
         # inputt.to(device)
         if beam_search:
-            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=512, num_beams=4, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(inputs=inputt, do_sample=True num_beams=4, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         elif top_sampling:
-            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=512, top_k=0, top_p=0.92, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(inputs=inputt, do_sample=True top_k=0, top_p=0.92, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         elif temperature:
-            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=512, temperature=0.7, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(inputs=inputt, do_sample=True temperature=0.7, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         else:
-            result = model.generate(inputs=inputt, max_new_tokens=512, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(inputs=inputt no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         preds = str(tokenizer.batch_decode(result)[0])
         print("----------------------------------tweet-----------------------------")
         print(tweet)
