@@ -427,7 +427,7 @@ def generate_prompt(text, strategy, language, extra_info):
     conclusion = "" if "conclusion" not in extra_info else extra_info["conclusion"]
 
     # TODO: Change Spanish for the language taken as arg
-    initial_prompt = "You are a NGO operator who only speaks Spanish. You are an expert on generation of counter-speech and counter-narratives against hate messages. You are tasked with generating a response to a hate speech tweet in Spanish. The hate speech tweet is the following:\n\n"
+    initial_prompt = "You are a NGO operator who only speaks Spanish. You are an expert on generation of counter-speech and counter-narratives against hate messages. You are tasked with generating a response to a hate speech tweet in Spanish. You should only reply the hate tweet directly without adding anything else. Do not include any test that is not in Spanish and do not include an analysis about the tweet, only the reply. The hate speech tweet is the following:\n\n"
 
     if model_without_user_interface:
         prompt = f"{initial_prompt}"
@@ -575,13 +575,13 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         tweet = example[1]
         # inputt.to(device)
         if beam_search:
-            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=512, num_beams=4, no_repeat_ngram_size=4, num_return_sequences=1, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, num_beams=4, no_repeat_ngram_size=4, num_return_sequences=1, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         elif top_sampling:
-            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=512, top_k=0, top_p=0.92, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, top_k=0, top_p=0.92, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         elif temperature:
-            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=512, temperature=0.7, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, temperature=0.7, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         else:
-            result = model.generate(inputs=inputt, max_new_tokens=512, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(inputs=inputt, max_new_tokens=280, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         preds = str(tokenizer.batch_decode(result)[0])
         print("----------------------------------tweet-----------------------------")
         print(tweet)
