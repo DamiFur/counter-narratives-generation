@@ -575,13 +575,13 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         tweet = example[1]
         # inputt.to(device)
         if beam_search:
-            result = model.generate(**inputt, max_new_tokens=150, no_repeat_ngram_size=4, num_beams=4, early_stopping=True)#, eos_token_id = eos_token_id)
+            result = model.generate(inputt, max_new_tokens=280, no_repeat_ngram_size=4, num_beams=4, early_stopping=True)#, eos_token_id = eos_token_id)
         elif top_sampling:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92)#, eos_token_id = eos_token_id)
+            result = model.generate(inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, top_k=0, top_p=0.92)#, eos_token_id = eos_token_id)
         elif temperature:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, temperature=0.7)#, eos_token_id = eos_token_id)
+            result = model.generate(inputt, max_new_tokens=512, no_repeat_ngram_size=4, do_sample=True, temperature=0.7)#, eos_token_id = eos_token_id)
         else:
-            result = model.generate(**inputt, max_new_tokens=512, no_repeat_ngram_size=4)#, eos_token_id = eos_token_id)
+            result = model.generate(inputt, max_new_tokens=512, no_repeat_ngram_size=4)#, eos_token_id = eos_token_id)
         preds = str(tokenizer.batch_decode(result)[0])
         print("----------------------------------tweet-----------------------------")
         print(tweet)
