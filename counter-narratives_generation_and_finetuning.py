@@ -33,6 +33,8 @@ language = args.language
 pretraining = args.generation_strategy == "pretraining"
 is_causallm = "Mistral" in model_name or "Mixtral" in model_name
 
+model_without_user_interface = "tiiuae/falcon" in model_name
+
 FEWSHOT_EXAMPLES_AMOUNT = 10
 fewshot_examples = {}
 
@@ -101,20 +103,18 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
     nonargs = 0
     cn_length = 0
     cn_type_not_present = 0
-    print(filenames)
     for filename in glob(filenames):
         f = open(filename, "r")
         tweet_list = []
         is_arg = True
-        need_collective = use_extra_info == "collective" or use_extra_info == "all" or use_extra_info == "cn_b"
-        need_premises = use_extra_info == "premises" or use_extra_info == "all" or use_extra_info == "cn_a"
-        need_justification = use_extra_info == "cn_c"
+        need_collective = use_extra_info == "collective" or use_extra_info == "all"
+        need_premises = use_extra_info == "premises" or use_extra_info == "all"
         if need_collective:
             collective = []
             consecutive_collective = False
             property = []
             consecutive_property = False
-        if need_premises or need_justification:
+        if need_premises:
             justification = []
             consecutive_just = False
             if need_premises:
@@ -138,7 +138,7 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
                     property.append(" - ")
                 property.append(splitted_line[0])
                 consecutive_property = True
-            if splitted_line[2].startswith("Premise2Justification") and (need_premises or need_justification):
+            if splitted_line[2].startswith("Premise2Justification") and need_premises:
                 if not prev_line[2].startswith("Premise2Justification") and consecutive_just:
                     justification.append(" - ")
                 justification.append(splitted_line[0])
@@ -153,7 +153,7 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
                     pivot.append(" - ")
                 pivot.append(splitted_line[0])
                 consecutive_pivot = True
-            if (not splitted_line[7].startswith("O")) and need_premises or need_justification:
+            if (not splitted_line[7].startswith("O")) and need_premises:
                 type_just = splitted_line[7].strip()
             if (not splitted_line[8].startswith("O")) and need_premises:
                 type_conc = splitted_line[8].strip()
@@ -165,22 +165,14 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
             nonargs += 1
             continue
         tweet = " ".join(tweet_list)
-        extra_info = ""
+        extra_info = {}
         if need_collective:
-            if language == "english":
-                extra_info += " | Collective: " + " ".join(collective) + " | Property: " + " ".join(property)
-            else:
-                extra_info += " | Colectivo: " + " ".join(collective) + " | Propiedad: " + " ".join(property)
+            extra_info["collective"] = " ".join(collective)
+            extra_info["property"] = " ".join(property)
         if need_premises:
-            if language == "english":
-                extra_info += " | Justification: " + " ".join(justification) + " (" + type_just + ") " + " | Conclusion: " + " ".join(conclusion) + " (" + type_conc + ") " + " | Pivot: " + " ".join(pivot)
-            else:
-                extra_info += " | Justificación: " + " ".join(justification) + " (" + type_just + ") " + " | Conclusión: " + " ".join(conclusion) +  " (" + type_conc + ") " + " | Pivot: " + " ".join(pivot)
-        elif need_justification:
-            if language == "english":
-                extra_info = " | Justification: " + " ".join(justification) + " (" + type_just + ") "
-            else:
-                extra_info = " | Justificación: " + " ".join(justification) + " (" + type_just + ") "
+            extra_info["justification"] = " ".join(justification) + " (" + type_just + ") "
+            extra_info["conclusion"] = " ".join(conclusion) + " (" + type_conc + ") "
+            extra_info["pivot"] = " ".join(pivot)
 
         # print(tweet)
         counternarratives = []
@@ -217,6 +209,7 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
             else:
                 cns_by_tweet[tweet] = {"cns": counternarratives, "lang": "EN" if language == "english" else "ES", "extra_info": extra_info}
         cn_length += len(counternarratives)
+        # TODO: Change for an assert
         if use_extra_info.startswith("cn_") and len(counternarratives) > 1:
             print("ERRRRRRORRRR")
             print(len(counternarratives))
@@ -277,18 +270,18 @@ def load_asohmo(language, use_extra_info=""):
     for key in keys:
         if pretraining:
             for cn in cns_by_tweet[key]["cns"]:
-                to_append = {"hateSpeech": key + cns_by_tweet[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet[key]["lang"]}
+                to_append = {"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet[key]["lang"]}
                 test_dataset.append(to_append)
         else:
-            to_append = {"hateSpeech": key + cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"], "language": cns_by_tweet[key]["lang"]}
+            to_append = {"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"], "language": cns_by_tweet[key]["lang"]}
             language_code = "ES" if language == "multi" else "EN"
             if args.generation_strategy == "fewshot" and (language_code not in current_fewshot_examples or current_fewshot_examples[language_code] < FEWSHOT_EXAMPLES_AMOUNT):
                 if language_code not in current_fewshot_examples:
                     current_fewshot_examples[language_code] = 1
-                    fewshot_examples[language_code] = [{"hateSpeech": key + cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"][0]}]
+                    fewshot_examples[language_code] = [{"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"][0]}]
                 else:
                     current_fewshot_examples[language_code] += 1
-                    fewshot_examples[language_code].append({"hateSpeech": key + cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"][0]})
+                    fewshot_examples[language_code].append({"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"][0]})
             else:
                 test_dataset.append(to_append)
         
@@ -296,11 +289,11 @@ def load_asohmo(language, use_extra_info=""):
     if pretraining:
         for key in cns_by_tweet_train:
             for cn in cns_by_tweet_train[key]["cns"]:
-                to_append = {"hateSpeech": key + cns_by_tweet_train[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_train[key]["lang"]}
+                to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_train[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_train[key]["lang"]}
                 train_dataset.append(to_append)
         for key in cns_by_tweet_dev:
             for cn in cns_by_tweet_dev[key]["cns"]:
-                to_append = {"hateSpeech": key + cns_by_tweet_dev[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_dev[key]["lang"]}
+                to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_dev[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_dev[key]["lang"]}
                 val_dataset.append(to_append)
 
     # test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
@@ -433,24 +426,123 @@ else:
 
     model.resize_token_embeddings(len(tokenizer))
 
-def generate_prompt(text, strategy, language):
-    initial_prompt = "Generate a non-hateful response that counters the following hate messages:\n"
-    middle_prompt = " Response -> "
-    if language == "ES":
-        initial_prompt = "Genera una respuesta sin odio en Español contraria a los siguientes mensajes de odio:\n"
-        middle_prompt = " Respuesta -> "
+def generate_prompt(text, strategy, language, extra_info):
 
-    if strategy == "zeroshot":
-        return  initial_prompt + text + " => "
-    elif strategy == "fewshot":
-        example_list = []
-        for examp in fewshot_examples[language]:
-            if model_name.startswith("google/flan-t5"):
-                example_list.append("<SHS>" + examp["hateSpeech"] + "<EHS>" + middle_prompt + "<SCN>" + examp["counterSpeech"] + "<ECN>")
-            elif model_name == "tiiuae/falcon-7b-instruct":
-                example_list.append("'" + examp["hateSpeech"] + "'" + middle_prompt + "'" + examp["counterSpeech"] + "'")
+    collective = "" if "colective" not in extra_info else extra_info["colective"]
+    prop = "" if "property" not in extra_info else extra_info["property"]
+    justification = "" if "justification" not in extra_info else extra_info["justification"]
+    conclusion = "" if "conclusion" not in extra_info else extra_info["conclusion"]
 
-        examples = '\n'.join(example_list)
+    # TODO: Change Spanish for the language taken as arg
+    initial_prompt = "You are a NGO operator who only speaks Spanish. You are an expert on generation of counter-speech and counter-narratives against hate messages. You are tasked with generating a response to a hate speech tweet in Spanish. The hate speech tweet is the following:\n\n"
+
+    if model_without_user_interface:
+        prompt = f"{initial_prompt}"
+        if strategy == "fewshot":
+            if args.use_extra_info == "":
+                prompt += "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' -> Respuesta: 'Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado...'\n 'llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' -> Respuesta: 'Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin'\n"
+            if args.use_extra_info == "collective":
+                prompt += "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo' -> Respuesta: 'No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio.'\n 'llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion' -> Respuesta: 'Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?'\n"
+            if args.use_extra_info == "premises":
+                prompt += "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?' -> Respuesta: 'Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado...'\n 'llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde'  -> Respuesta: 'Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin'\n"
+            if args.use_extra_info == "all":
+                prompt += "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?' -> Respuesta: 'No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio.'\n 'llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion'  | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde' -> Respuesta: 'Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?'\n"
+        if args.use_extra_info == "":
+            prompt += f"{text} -> Respuesta: "
+        elif args.use_extra_info == "collective":
+            prompt += f"'{text}' | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}' -> Respuesta:"
+        elif args.use_extra_info == "premises":
+            prompt += f"'{text}' | Justificación del argumento: '{justification}' | Conclusión: '{conclusion}' -> Respuesta:"
+        elif args.use_extra_info == "all":
+            prompt += f"'{text}' | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}' | Justificación del argumento: '{justification}' | Conclusión: '{conclusion}' -> Respuesta:"
+    else:
+        if strategy == "fewshot":
+            if args.use_extra_info == "":
+                #TODO: Put examples into a cont variable
+                prompt = [
+                    {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings'"},
+                    {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
+                    {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde"},
+                    {"role": "assistant", "content": "Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin"},
+                    {"role": "user", "content": f"{text}"}
+                ]
+            elif args.use_extra_info == "collective":
+                prompt = [
+                    {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo'"},
+                    {"role": "assistant", "content": "No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio."},
+                    {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion'"},
+                    {"role": "assistant", "content": "Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?"},
+                    {"role": "user", "content": f"{text} | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}'"}
+                ]
+            elif args.use_extra_info == "premises":
+                prompt = [
+                    {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?"},
+                    {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
+                    {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde'"},
+                    {"role": "assistant", "content": "Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin"},
+                    {"role": "user", "content": f"{text} | Justificación del argumento: {justification} | Conclusión: {conclusion}"}
+                ]
+            elif args.use_extra_info == "all":
+                prompt = [
+                    {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?"},
+                    {"role": "assistant", "content": "No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio."},
+                    {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion' | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde'"},
+                    {"role": "assistant", "content": "Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?"},
+                    {"role": "user", "content": f"{text} | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}' | Justificación del argumento: '{justification}' | Conclusión: '{conclusion}'"}
+                ]
+        else:
+            user_prompt = f"{initial_prompt}{text}"
+            if args.use_extra_info == "collective":
+                user_prompt += f" | Collective: {collective} | Property: {prop}"
+            elif args.use_extra_info == "premises":
+                user_prompt += f" | Justification: {justification} | Conclusion: {conclusion}"
+            elif args.use_extra_info == "all":
+                user_prompt += f" | Collective: {collective} | Property: {prop} | Justification: {justification} | Conclusion: {conclusion}"
+            prompt = [{"role": "user", "content": user_prompt}]
+
+        return prompt
+
+
+
+
+        # prompt_noinfo = [
+        #     {"role": "user", "content": "Genera una respuesta contraria a los siguientes mensajes de odio:\n'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings"},
+        #     {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
+        #     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde"},
+        #     {"role": "assistant", "content": "Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin"},
+        #     {"role": "user", "content": f"{text}"}
+        # ]
+        # prompt_collective = [
+        #     {"role": "user", "content": "Genera una respuesta contraria a los siguientes mensajes de odio:\n'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo'"},
+        #     {"role": "assistant", "content": "No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio."},
+        #     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion'"},
+        #     {"role": "assistant", "content": "Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?"},
+        #     {"role": "user", "content": f"{args.hs} | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}'"}
+        # ]
+        # prompt_premises = [
+        #     {"role": "user", "content": "Genera una respuesta contraria a los siguientes mensajes de odio:\n'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?"},
+        #     {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
+        #     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde'"},
+        #     {"role": "assistant", "content": "Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin"},
+        #     {"role": "user", "content": f"{args.hs} | Justificación del argumento: {justification} | Conclusión: {conclusion}"}
+
+    # initial_prompt = "Generate a non-hateful response that counters the following hate messages:\n"
+    # middle_prompt = " Response -> "
+    # if language == "ES":
+    #     initial_prompt = "Genera una respuesta sin odio en Español contraria a los siguientes mensajes de odio:\n"
+    #     middle_prompt = " Respuesta -> "
+
+    # if strategy == "zeroshot":
+    #     return  initial_prompt + text + " => "
+    # elif strategy == "fewshot":
+    #     example_list = []
+    #     for examp in fewshot_examples[language]:
+    #         if model_name.startswith("google/flan-t5"):
+    #             example_list.append("<SHS>" + examp["hateSpeech"] + "<EHS>" + middle_prompt + "<SCN>" + examp["counterSpeech"] + "<ECN>")
+    #         elif model_name == "tiiuae/falcon-7b-instruct":
+    #             example_list.append("'" + examp["hateSpeech"] + "'" + middle_prompt + "'" + examp["counterSpeech"] + "'")
+
+    #     examples = '\n'.join(example_list)
         # examples = """
         #     I hate Muslims. They should not exist. => Muslims are human too. People can choose their own religion.
         #     All immigrants are criminals and should be deported. => Most immigrants are hard-working people trying to have a better life for them and their families.
@@ -475,11 +567,11 @@ def generate_prompt(text, strategy, language):
             #     Gli immigrati sono pigri e costano un sacco di soldi ai contribuenti. => Gli immigrati di solito hanno i lavori peggiori e pagano le tasse come tutti gli altri.
             # """
             
-        print("==============================================")
-        print(initial_prompt + examples + '\n' + text + " => ")
-        return initial_prompt + examples + '\n' + text + " => "
-    elif strategy == "finetuned" or strategy == "pretraining":
-        return initial_prompt + "<SHS>" + text + "<EHS> => "
+        # print("==============================================")
+        # print(initial_prompt + examples + '\n' + text + " => ")
+        # return initial_prompt + examples + '\n' + text + " => "
+    # elif strategy == "finetuned" or strategy == "pretraining":
+    #     return initial_prompt + "<SHS>" + text + "<EHS> => "
 
 datasett = test_dataset
 if pretraining:
@@ -500,8 +592,13 @@ def preprocess(sample, padding="max_length"):
     print(inputs)
     if pretraining:
         if is_causallm:
-            model_inputs = tokenizer(inputs + "<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
+            if model_without_user_interface:
+                model_inputs = tokenizer(inputs + "<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
+            else:
+                inputs.append({"role": "assistant", "content": sample["counterSpeech"]})
+                model_inputs = tokenizer.apply_chat_template(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
             model_inputs["labels"] = model_inputs["input_ids"].copy()
+
         else:
             model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
             labels = tokenizer("<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
@@ -511,8 +608,12 @@ def preprocess(sample, padding="max_length"):
                 ]
             model_inputs["labels"] = labels["input_ids"]
     else:
-        model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
-        model_inputs = model_inputs.to(device)
+        if model_without_user_interface:
+            model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
+            model_inputs = model_inputs.to(device)
+        else:
+            model_inputs = tokenizer.apply_chat_template(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
+            model_inputs = model_inputs.to(device)
         model_inputs["labels"] = sample["counterSpeech"]
     return model_inputs
 
