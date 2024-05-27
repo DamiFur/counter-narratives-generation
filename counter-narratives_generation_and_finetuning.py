@@ -429,7 +429,7 @@ def generate_prompt(text, strategy, language, extra_info):
 
     # TODO: Change Spanish for the language taken as arg
     # initial_prompt = "You are a NGO operator expert on generation of counter-speech and counter-narratives against hate messages. You only speak English and are unable to generate text in other languages. You are tasked with generating a response to a hate speech tweet. You should only reply the hate tweet directly without adding anything else. The hate speech tweet is the following:\n\n"
-    initial_prompt = "Sos un operario de una ONG experto en generación de contra-narrativas y contra-discurso contra el discurso de odio. Solo hablas Español y sos incapáz de generar texto en otro idioma. Tu tarea es generar una respuesta en Español a un tweet de odio. Responde el tweet directamente sin agregar ninguna otra información que no sea la respuesta. El tweet con el mensaje de odio es el siguiente:\n\n"
+    initial_prompt = "Sos un operario de una ONG experto en generación de contra-narrativas y contra-discurso contra el discurso de odio. Solo hablas Español y sos incapáz de generar texto en otro idioma. Tu tarea es generar una respuesta en Español a un tweet de odio. Responde el tweet directamente sin agregar ninguna otra información que no sea la respuesta.\n"
 
     if model_without_user_interface:
         prompt = f"{initial_prompt}"
@@ -455,7 +455,8 @@ def generate_prompt(text, strategy, language, extra_info):
             if args.use_extra_info == "":
                 #TODO: Put examples into a cont variable
                 prompt = [
-                    {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings'"},
+                    {"role": "system", "content": initial_prompt},
+                    {"role": "user", "content": "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings'"},
                     {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
                     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde"},
                     {"role": "assistant", "content": "Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin"},
@@ -463,7 +464,8 @@ def generate_prompt(text, strategy, language, extra_info):
                 ]
             elif args.use_extra_info == "collective":
                 prompt = [
-                    {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo'"},
+                    {"role": "system", "content": initial_prompt},
+                    {"role": "user", "content": "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo'"},
                     {"role": "assistant", "content": "No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio."},
                     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion'"},
                     {"role": "assistant", "content": "Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?"},
@@ -471,7 +473,8 @@ def generate_prompt(text, strategy, language, extra_info):
                 ]
             elif args.use_extra_info == "premises":
                 prompt = [
-                    {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?"},
+                    {"role": "system", "content": initial_prompt},
+                    {"role": "user", "content": "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?"},
                     {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
                     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde'"},
                     {"role": "assistant", "content": "Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin"},
@@ -479,21 +482,25 @@ def generate_prompt(text, strategy, language, extra_info):
                 ]
             elif args.use_extra_info == "all":
                 prompt = [
-                    {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?"},
+                    {"role": "system", "content": initial_prompt},
+                    {"role": "user", "content": "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?"},
                     {"role": "assistant", "content": "No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio."},
                     {"role": "user", "content": "llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion' | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde'"},
                     {"role": "assistant", "content": "Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?"},
                     {"role": "user", "content": f"{text} | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}' | Justificación del argumento: '{justification}' | Conclusión: '{conclusion}'"}
                 ]
         else:
-            user_prompt = f"{initial_prompt}{text}"
+            user_prompt = text
             if args.use_extra_info == "collective":
                 user_prompt += f" | Collective: {collective} | Property: {prop}"
             elif args.use_extra_info == "premises":
                 user_prompt += f" | Justification: {justification} | Conclusion: {conclusion}"
             elif args.use_extra_info == "all":
                 user_prompt += f" | Collective: {collective} | Property: {prop} | Justification: {justification} | Conclusion: {conclusion}"
-            prompt = [{"role": "user", "content": user_prompt}]
+            prompt = [
+                {"role": "system", "content": initial_prompt},
+                {"role": "user", "content": user_prompt}
+                ]
 
         return prompt
 
