@@ -521,7 +521,8 @@ def preprocess(sample, padding="max_length", is_testing = False):
                 model_inputs = tokenizer(inputs + "<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
             else:
                 inputs.append({"role": "assistant", "content": sample["counterSpeech"]})
-                model_inputs = tokenizer.apply_chat_template(inputs, return_tensors="pt")
+                input_with_chat_template = tokenizer.apply_chat_template(inputs, return_tensors="pt", tokenize=False, add_generation_prompt=False)
+                model_inputs = tokenizer(input_with_chat_template, padding=padding, max_length=MAX_LENGTH, truncation=True)
             model_inputs["labels"] = model_inputs["input_ids"].copy()
 
         else:
