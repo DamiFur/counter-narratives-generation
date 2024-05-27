@@ -544,7 +544,7 @@ def preprocess(sample, padding="max_length"):
         else:
             model_inputs = tokenizer.apply_chat_template(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
             model_inputs = model_inputs.to(device)
-        model_inputs["labels"] = sample["counterSpeech"]
+        model_inputs["counterSpeech"] = sample["counterSpeech"]
     return model_inputs
 
 class StoppingCriteriaSub(StoppingCriteria):
@@ -593,7 +593,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         print("----------------------------------preds-----------------------------")
         print(preds)
         print("\n")
-        for labels in inputt["labels"]:
+        for labels in inputt["counterSpeech"]:
 
             # cosine_scores_preds = sbert.encode([preds], convert_to_tensor=True)
             # cosine_scores_labels = sbert.encode([labels], convert_to_tensor=True)
@@ -616,7 +616,6 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
     # w.write("SBERT AVG:\n")
     # w.write(str(sbert_avg / len(testing_datasets)))
     w.close()
-
 
 
 
