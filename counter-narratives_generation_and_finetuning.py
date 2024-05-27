@@ -510,7 +510,7 @@ print(len(test_dataset))
     # max_target_length = max([len(x) for x in target_tokenized])
 
 MAX_LENGTH = 1024
-def preprocess(sample, padding="max_length"):
+def preprocess(sample, padding="max_length", is_testing = False):
     inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"], sample["extra_info"])
     print(inputs)
     if pretraining:
@@ -537,7 +537,9 @@ def preprocess(sample, padding="max_length"):
         else:
             model_inputs = tokenizer.apply_chat_template(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
             model_inputs = model_inputs.to(device)
-        model_inputs["labels"] = tokenizer(sample["counterSpeech"], return_tensors="pt")
+    
+    if is_testing:
+        model_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"]}
     return model_inputs
 
 class StoppingCriteriaSub(StoppingCriteria):
@@ -562,14 +564,14 @@ stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=stop_words_i
 
 def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, temperature=False):
 
-    sbert_avg = 0.0
+    # sbert_avg = 0.0
 
     # sbert = SentenceTransformer('all-MiniLM-L6-v2')
 
     filename = f"{args.dataset}_{args.model_name}_{args.language}_2e-05_{args.generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
     w = open(filename, 'w')
-    for example in example:
-        inputt = example[0]
+    for example in testing_datasets:
+        inputt = example[0]["example"]
         tweet = example[1]
         # inputt.to(device)
         if beam_search:
@@ -586,7 +588,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         print("----------------------------------preds-----------------------------")
         print(preds)
         print("\n")
-        for labels in inputt["counterSpeech"]:
+        for labels in example[0]["counterSpeech"]:
 
             # cosine_scores_preds = sbert.encode([preds], convert_to_tensor=True)
             # cosine_scores_labels = sbert.encode([labels], convert_to_tensor=True)
@@ -701,7 +703,7 @@ if pretraining:
 
     preprocessed_dataset = []
     for example in test_data:
-        preprocessed_dataset.append([preprocess(example), example["hateSpeech"]])
+        preprocessed_dataset.append([preprocess(example, is_testing = True), example["hateSpeech"]])
 
     print("generating")
     # evaluate_generation(preprocessed_dataset)
@@ -714,7 +716,7 @@ if pretraining:
 else:
     preprocessed_dataset = []
     for example in test_data:
-        preprocessed_dataset.append([preprocess(example), example["hateSpeech"]])
+        preprocessed_dataset.append([preprocess(example, is_testing = True), example["hateSpeech"]])
 
     print("generating")
     # evaluate_generation(preprocessed_dataset)
