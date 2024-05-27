@@ -577,7 +577,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         inputt = example[0]["example"]
         tweet = example[1]
         number = example[0]["number"]
-        w = open(f"{foldername}/hate_tweet_{lang_setting}_{number}", 'w')
+        w = open(f"test_results/{foldername}/hate_tweet_{lang_setting}_{number}", 'w')
         # inputt.to(device)
         if beam_search:
             result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, num_beams=4, no_repeat_ngram_size=4, num_return_sequences=1, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
