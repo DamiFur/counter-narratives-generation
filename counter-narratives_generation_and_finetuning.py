@@ -427,7 +427,7 @@ def generate_prompt(text, strategy, language, extra_info):
     conclusion = "" if "conclusion" not in extra_info else extra_info["conclusion"]
 
     # TODO: Change Spanish for the language taken as arg
-    initial_prompt = "You are a NGO operator who only speaks Spanish. You are an expert on generation of counter-speech and counter-narratives against hate messages. You are tasked with generating a response to a hate speech tweet in Spanish. You should only reply the hate tweet directly without adding anything else. Do not include any test that is not in Spanish and do not include an analysis about the tweet, only the reply. The hate speech tweet is the following:\n\n"
+    initial_prompt = "You are a NGO operator who only speaks Spanish. You are an expert on generation of counter-speech and counter-narratives against hate messages. You are tasked with generating a response to a hate speech tweet in Spanish. You should only reply the hate tweet directly without adding anything else. Don't include any text that is not in Spanish and don't translate your reply. Don't include an analysis of the tweet, only the reply. The hate speech tweet is the following:\n\n"
 
     if model_without_user_interface:
         prompt = f"{initial_prompt}"
