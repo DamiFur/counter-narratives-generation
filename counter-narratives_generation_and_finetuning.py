@@ -107,8 +107,8 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
         f = open(filename, "r")
         tweet_list = []
         is_arg = True
-        need_collective = use_extra_info == "collective" or use_extra_info == "all"
-        need_premises = use_extra_info == "premises" or use_extra_info == "all"
+        need_collective = use_extra_info == "collective" or use_extra_info == "all" or use_extra_info == "cn_a" or use_extra_info == "cn_b"
+        need_premises = use_extra_info == "premises" or use_extra_info == "all" or use_extra_info == "cn_c" or use_extra_info == "cn_a"
         if need_collective:
             collective = []
             consecutive_collective = False
@@ -250,15 +250,9 @@ def load_asohmo(language, use_extra_info=""):
     #         cn_type_not_present += cn_type_not_present2
     print(f"Counter narratives without the required type of counter-narrative: {cn_type_not_present}")
     print(f"Non arg examples discarted for not having CN: {nonargs}")
-    if pretraining:
-        print(f"{len(cns_by_tweet.keys())} - {len(cns_by_tweet_train.keys())} - {len(cns_by_tweet_dev.keys())}")
-    # if pretraining:
-        # train_threshold = cn_length * 0.7
-        # train_dataset = []
-        # val_dataset = []
-    # val_threshold = cn_length * 0.8
     test_dataset = []
     if pretraining:
+        print(f"{len(cns_by_tweet.keys())} - {len(cns_by_tweet_train.keys())} - {len(cns_by_tweet_dev.keys())}")
         train_dataset = []
         val_dataset = []
     # acum = 0
@@ -340,7 +334,6 @@ if pretraining:
     train_dataset = datasetss[1]
     val_dataset = datasetss[2]
     train_data = Dataset.from_pandas(pd.DataFrame(train_dataset + val_dataset))
-    # val_data = Dataset.from_pandas(pd.DataFrame(val_dataset))
 
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -428,7 +421,7 @@ else:
 
 def generate_prompt(text, strategy, language, extra_info):
 
-    collective = "" if "colective" not in extra_info else extra_info["colective"]
+    collective = "" if "collective" not in extra_info else extra_info["collective"]
     prop = "" if "property" not in extra_info else extra_info["property"]
     justification = "" if "justification" not in extra_info else extra_info["justification"]
     conclusion = "" if "conclusion" not in extra_info else extra_info["conclusion"]
@@ -518,7 +511,7 @@ print(len(test_dataset))
 
 MAX_LENGTH = 1024
 def preprocess(sample, padding="max_length"):
-    inputs = generate_prompt(sample["hateSpeech"], sample["extra_info"], args.generation_strategy, sample["language"])
+    inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"], sample["extra_info"])
     print(inputs)
     if pretraining:
         if is_causallm:
@@ -621,7 +614,6 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 
 if pretraining:
     train_data = train_data.map(preprocess)
-    # val_data = val_data.map(preprocess)
     test_data = test_data.map(preprocess)
 
     def compute_metrics(eval_preds):
