@@ -230,9 +230,9 @@ def load_asohmo(language, use_extra_info=""):
         cn_length += cn_length2 + cn_length3
         cn_type_not_present += cn_type_not_present2 + cn_type_not_present3
         if language == "multi":
-            cns_by_tweet_en, nonargs_en, cn_length_en, cn_type_not_present_en = parse_dataset(f"dataset/ASOHMO/english/test/*.conll", use_extra_info=use_extra_info, language=lang_setting)
-            cns_by_tweet_train2_en, nonargs2_en, cn_length2_en, cn_type_not_present2_en = parse_dataset(f"dataset/ASOHMO/english/train/*.conll", use_extra_info=use_extra_info, language=lang_setting)
-            cns_by_tweet_dev3_en, nonargs3_en, cn_length3_en, cn_type_not_present3_en = parse_dataset(f"dataset/ASOHMO/english/dev/*.conll", use_extra_info=use_extra_info, language=lang_setting)
+            cns_by_tweet_en, nonargs_en, cn_length_en, cn_type_not_present_en = parse_dataset(f"dataset/ASOHMO/english/test/*.conll", use_extra_info=use_extra_info, language="english")
+            cns_by_tweet_train2_en, nonargs2_en, cn_length2_en, cn_type_not_present2_en = parse_dataset(f"dataset/ASOHMO/english/train/*.conll", use_extra_info=use_extra_info, language="english")
+            cns_by_tweet_dev3_en, nonargs3_en, cn_length3_en, cn_type_not_present3_en = parse_dataset(f"dataset/ASOHMO/english/dev/*.conll", use_extra_info=use_extra_info, language="english")
 
             cns_by_tweet = {**cns_by_tweet, **cns_by_tweet_en}
             cns_by_tweet_train = {**cns_by_tweet_train, **cns_by_tweet_train2_en}
