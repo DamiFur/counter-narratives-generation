@@ -537,7 +537,7 @@ def preprocess(sample, padding="max_length"):
         else:
             model_inputs = tokenizer.apply_chat_template(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
             model_inputs = model_inputs.to(device)
-        model_inputs["labels"] = tokenizer(sample["counterSpeech"], return_tensors="pt")["input_ids"]
+        model_inputs["labels"] = tokenizer(sample["counterSpeech"], return_tensors="pt")
     return model_inputs
 
 class StoppingCriteriaSub(StoppingCriteria):
@@ -568,7 +568,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 
     filename = f"{args.dataset}_{args.model_name}_{args.language}_2e-05_{args.generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
     w = open(filename, 'w')
-    for example in testing_datasets:
+    for example in example:
         inputt = example[0]
         tweet = example[1]
         # inputt.to(device)
