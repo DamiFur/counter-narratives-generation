@@ -521,7 +521,7 @@ def preprocess(sample, padding="max_length", is_testing = False):
                 model_inputs = tokenizer(inputs + "<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
             else:
                 inputs.append({"role": "assistant", "content": sample["counterSpeech"]})
-                model_inputs = tokenizer.apply_chat_template(inputs)
+                model_inputs = tokenizer.apply_chat_template(inputs, return_tensors="pt")
             model_inputs["labels"] = model_inputs["input_ids"].copy()
 
         else:
@@ -609,7 +609,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         w.close()
 
 
-
+# TODO: change name pretraining for "finetuning"
 if pretraining:
     train_data = train_data.map(preprocess)
     # test_data = test_data.map(preprocess)
