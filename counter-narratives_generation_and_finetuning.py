@@ -209,7 +209,7 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
             if use_extra_info.startswith("cn_") and cn_not_present:
                 cn_type_not_present += 1
             else:
-                cns_by_tweet[tweet] = {"cns": counternarratives, "lang": "EN" if language == "english" else "ES", "extra_info": extra_info}
+                cns_by_tweet[tweet] = {"cns": counternarratives, "lang": language, "extra_info": extra_info}
         cn_length += len(counternarratives)
         # TODO: Change for an assert
         if use_extra_info.startswith("cn_") and len(counternarratives) > 1:
@@ -221,18 +221,18 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
 def load_asohmo(language, use_extra_info=""):
 
     # if language == "english":
-    cns_by_tweet, nonargs, cn_length, cn_type_not_present = parse_dataset(f"dataset/ASOHMO/{lang_setting}/test/*.conll", use_extra_info=use_extra_info, language=language)
+    cns_by_tweet, nonargs, cn_length, cn_type_not_present = parse_dataset(f"dataset/ASOHMO/{lang_setting}/test/*.conll", use_extra_info=use_extra_info, language=lang_setting)
     if pretraining:
-        cns_by_tweet_train, nonargs2, cn_length2, cn_type_not_present2 = parse_dataset(f"dataset/ASOHMO/{lang_setting}/train/*.conll", use_extra_info=use_extra_info, language=language)
-        cns_by_tweet_dev, nonargs3, cn_length3, cn_type_not_present3 = parse_dataset(f"dataset/ASOHMO/{lang_setting}/dev/*.conll", use_extra_info=use_extra_info, language=language)
+        cns_by_tweet_train, nonargs2, cn_length2, cn_type_not_present2 = parse_dataset(f"dataset/ASOHMO/{lang_setting}/train/*.conll", use_extra_info=use_extra_info, language=lang_setting)
+        cns_by_tweet_dev, nonargs3, cn_length3, cn_type_not_present3 = parse_dataset(f"dataset/ASOHMO/{lang_setting}/dev/*.conll", use_extra_info=use_extra_info, language=lang_setting)
         print(f"{nonargs} - {nonargs2} - {nonargs3}")
         nonargs += nonargs2 + nonargs3
         cn_length += cn_length2 + cn_length3
         cn_type_not_present += cn_type_not_present2 + cn_type_not_present3
         if language == "multi":
-            cns_by_tweet_en, nonargs_en, cn_length_en, cn_type_not_present_en = parse_dataset(f"dataset/ASOHMO/english/test/*.conll", use_extra_info=use_extra_info, language=language)
-            cns_by_tweet_train2_en, nonargs2_en, cn_length2_en, cn_type_not_present2_en = parse_dataset(f"dataset/ASOHMO/english/train/*.conll", use_extra_info=use_extra_info, language=language)
-            cns_by_tweet_dev3_en, nonargs3_en, cn_length3_en, cn_type_not_present3_en = parse_dataset(f"dataset/ASOHMO/english/dev/*.conll", use_extra_info=use_extra_info, language=language)
+            cns_by_tweet_en, nonargs_en, cn_length_en, cn_type_not_present_en = parse_dataset(f"dataset/ASOHMO/english/test/*.conll", use_extra_info=use_extra_info, language=lang_setting)
+            cns_by_tweet_train2_en, nonargs2_en, cn_length2_en, cn_type_not_present2_en = parse_dataset(f"dataset/ASOHMO/english/train/*.conll", use_extra_info=use_extra_info, language=lang_setting)
+            cns_by_tweet_dev3_en, nonargs3_en, cn_length3_en, cn_type_not_present3_en = parse_dataset(f"dataset/ASOHMO/english/dev/*.conll", use_extra_info=use_extra_info, language=lang_setting)
 
             cns_by_tweet = {**cns_by_tweet, **cns_by_tweet_en}
             cns_by_tweet_train = {**cns_by_tweet_train, **cns_by_tweet_train2_en}
@@ -269,7 +269,7 @@ def load_asohmo(language, use_extra_info=""):
                 test_dataset.append(to_append)
         else:
             to_append = {"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"], "language": cns_by_tweet[key]["lang"]}
-            language_code = "ES" if language == "multi" else "EN"
+            language_code = "spanish" if language == "multi" else "english"
             if args.generation_strategy == "fewshot" and (language_code not in current_fewshot_examples or current_fewshot_examples[language_code] < FEWSHOT_EXAMPLES_AMOUNT):
                 if language_code not in current_fewshot_examples:
                     current_fewshot_examples[language_code] = 1
@@ -428,8 +428,12 @@ def generate_prompt(text, strategy, language, extra_info):
     conclusion = "" if "conclusion" not in extra_info else extra_info["conclusion"]
 
     # TODO: Change Spanish for the language taken as arg
-    # initial_prompt = "You are a NGO operator expert on generation of counter-speech and counter-narratives against hate messages. You only speak English and are unable to generate text in other languages. You are tasked with generating a response to a hate speech tweet. You should only reply the hate tweet directly without adding anything else. The hate speech tweet is the following:\n\n"
-    initial_prompt = "Sos un operario de una ONG experto en generación de contra-narrativas y contra-discurso contra el discurso de odio. Solo hablas Español y sos incapáz de generar texto en otro idioma. Tu tarea es generar una respuesta en Español a un tweet de odio. Responde el tweet directamente sin agregar ninguna otra información que no sea la respuesta. El tweet con el mensaje de odio es el siguiente:\n\n"
+    if language == "english":
+        initial_prompt = "You are a NGO operator expert on generation of counter-speech and counter-narratives against hate messages. You only speak English and are unable to generate text in other languages. You are tasked with generating a response to a hate speech tweet. You should only reply the hate tweet directly without adding anything else. The hate speech tweet is the following:\n\n"
+    elif language == "spanish":
+        initial_prompt = "Sos un operario de una ONG experto en generación de contra-narrativas y contra-discurso contra el discurso de odio. Solo hablas Español y sos incapáz de generar texto en otro idioma. Tu tarea es generar una respuesta en Español a un tweet de odio. Responde el tweet directamente sin agregar ninguna otra información que no sea la respuesta. El tweet con el mensaje de odio es el siguiente:\n\n"
+    else:
+        assert False, "Language not supported"
 
     if model_without_user_interface:
         prompt = f"{initial_prompt}"
@@ -613,7 +617,6 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 # TODO: change name pretraining for "finetuning"
 if pretraining:
     train_data = train_data.map(preprocess)
-    # test_data = test_data.map(preprocess)
 
     def compute_metrics(eval_preds):
         preds, labels = eval_preds
