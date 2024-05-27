@@ -541,7 +541,7 @@ def preprocess(sample, padding="max_length", is_testing = False):
             model_inputs = model_inputs.to(device)
     
     if is_testing:
-        model_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["number"]}
+        model_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["extra_info"]["number"]}
     return model_inputs
 
 class StoppingCriteriaSub(StoppingCriteria):
@@ -612,7 +612,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 
 if pretraining:
     train_data = train_data.map(preprocess)
-    test_data = test_data.map(preprocess)
+    # test_data = test_data.map(preprocess)
 
     def compute_metrics(eval_preds):
         preds, labels = eval_preds
