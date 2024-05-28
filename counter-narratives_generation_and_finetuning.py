@@ -383,7 +383,7 @@ if is_causallm:
         )
         model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, resume_download=True)
 
-        if args.strategy == "pretraining":
+        if args.generation_strategy == "pretraining":
             model.gradient_checkpointing_enable()
             model = prepare_model_for_kbit_training(model)
 
