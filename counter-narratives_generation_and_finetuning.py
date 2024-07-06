@@ -25,7 +25,7 @@ parser.add_argument("--use_extra_info", type=str, choices=["collective", "premis
 parser.add_argument("--cn_strategy", type=str, default="", choices=["a", "b", "c", ""])
 parser.add_argument("--model_name", type=str, default="google/flan-t5-base")
 parser.add_argument("--quantized", type=bool, default=False)
-perser.add_argument("--load_from_hub", type=bool, default=False)
+parser.add_argument("--load_from_hub", type=bool, default=False)
 
 args = parser.parse_args()
 
