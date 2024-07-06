@@ -25,6 +25,7 @@ parser.add_argument("--use_extra_info", type=str, choices=["collective", "premis
 parser.add_argument("--cn_strategy", type=str, default="", choices=["a", "b", "c", ""])
 parser.add_argument("--model_name", type=str, default="google/flan-t5-base")
 parser.add_argument("--quantized", type=bool, default=False)
+perser.add_argument("--load_from_hub", type=bool, default=False)
 
 args = parser.parse_args()
 
@@ -367,7 +368,10 @@ if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name
 
 if args.generation_strategy == "finetuned":
     # if args.cn_strategy != "":
-    model_name = f"pretrained_models/{args.model_name.split('/')[-1]}_multi_{extra_info}_{cn_strategy}"
+    finetuned_name = f"{args.model_name.split('/')[-1]}_{args.language}_{extra_info}_{cn_strategy}"
+    if args.load_from_hub:
+        model_name = f"CounterNarratives/{finetuned_name}"
+    model_name = f"pretrained_models/{finetuned_name}"
     print("LOADING MODEL: ", model_name)
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
