@@ -371,7 +371,8 @@ if args.generation_strategy == "finetuned":
     finetuned_name = f"{args.model_name.split('/')[-1]}_{args.language}_{extra_info}_{cn_strategy}"
     if args.load_from_hub:
         model_name = f"CounterNarratives/{finetuned_name}"
-    model_name = f"pretrained_models/{finetuned_name}"
+    else:
+        model_name = f"pretrained_models/{finetuned_name}"
     print("LOADING MODEL: ", model_name)
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
