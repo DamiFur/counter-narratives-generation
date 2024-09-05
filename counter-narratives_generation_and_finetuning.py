@@ -500,8 +500,7 @@ def generate_prompt(text, strategy, language, extra_info):
             elif args.use_extra_info == "all":
                 user_prompt += f" | Collective: {collective} | Property: {prop} | Justification: {justification} | Conclusion: {conclusion}"
             prompt = [{"role": "user", "content": user_prompt}]
-
-        return prompt
+    return prompt
 
 
 datasett = test_dataset
