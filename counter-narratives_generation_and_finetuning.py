@@ -17,7 +17,7 @@ import argparse
 import os
 
 device = torch.device("cuda")
-parser = argparse.ArgumentParser(description="Train models for identifying argumentative components inside the ASFOCONG dataset")
+parser = argparse.ArgumentParser(description="Train models and generate counter-narratives against hate speech")
 parser.add_argument("dataset", type=str, choices=["conan", "asohmo", "both"])
 parser.add_argument("generation_strategy", type=str, choices=["zeroshot", "fewshot", "finetuned", "pretraining"])
 parser.add_argument("language", type=str, choices=["english", "multi"])
@@ -437,7 +437,7 @@ def generate_prompt(text, strategy, language, extra_info):
     else:
         assert False, "Language not supported"
 
-    if model_without_user_interface:
+    if model_without_user_interface or not is_causallm:
         prompt = f"{initial_prompt}"
         if strategy == "fewshot":
             if args.use_extra_info == "":
@@ -459,7 +459,7 @@ def generate_prompt(text, strategy, language, extra_info):
     else:
         if strategy == "fewshot":
             if args.use_extra_info == "":
-                #TODO: Put examples into a cont variable
+                #TODO: Put examples into a const variable
                 prompt = [
                     {"role": "user", "content": f"{initial_prompt}'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings'"},
                     {"role": "assistant", "content": "Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado..."},
@@ -520,7 +520,6 @@ print(len(test_dataset))
 MAX_LENGTH = 1024
 def preprocess(sample, padding="max_length", is_testing = False):
     inputs = generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"], sample["extra_info"])
-    print(inputs)
     if pretraining:
         if is_causallm:
             if model_without_user_interface:
@@ -540,7 +539,7 @@ def preprocess(sample, padding="max_length", is_testing = False):
                 ]
             model_inputs["labels"] = labels["input_ids"]
     else:
-        if model_without_user_interface:
+        if model_without_user_interface or not is_causallm:
             model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
             model_inputs = model_inputs.to(device)
         else:
