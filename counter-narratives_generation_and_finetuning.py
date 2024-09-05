@@ -423,6 +423,12 @@ def generate_prompt(text, strategy, language, extra_info):
     justification = "" if "justification" not in extra_info else extra_info["justification"]
     conclusion = "" if "conclusion" not in extra_info else extra_info["conclusion"]
 
+    RESPONSE_TXT = {"english": " -> Response: ", "spanish": " -> Respuesta: "}
+    COLLECTIVE_TXT = {"english": "Collective against whom the hate is directed: ", "spanish": "Colectivo contra quien se dirige el odio: "}
+    PROPERTY_TXT = {"english": "Property associated with the collective: ", "spanish": "Propiedad asociada al colectivo: "}
+    JUSTIFICATION_TXT = {"english": "Justification of the argument: ", "spanish": "Justificación del argumento: "}
+    CONCLUSION_TXT = {"english": "Conclusion: ", "spanish": "Conclusión: "}
+
     # TODO: Change Spanish for the language taken as arg
     if language == "english":
         initial_prompt = "You are a NGO operator expert on generation of counter-speech and counter-narratives against hate messages. You only speak English and are unable to generate text in other languages. You are tasked with generating a response to a hate speech tweet. You should only reply the hate tweet directly without adding anything else. The hate speech tweet is the following:\n\n"
@@ -443,13 +449,14 @@ def generate_prompt(text, strategy, language, extra_info):
             if args.use_extra_info == "all":
                 prompt += "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' | Collectivo contra quien se dirige el odio: 'caribeño y subsahariano' | Propiedad asociada al colectivo: 'brutismo' | Justificación del argumento: extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings  | Conclusión: ¿esto podría explicar el brutismo caribeño y el subsahariano ? ¿habrá correlación?' -> Respuesta: 'No es cierto que los caribeños o subsaharianos sean brutos. Es solo un prejuicio.'\n 'llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' | Collectivo contra quien se dirige el odio: 'venezolanos' | Propiedad asociada al colectivo: 'invasion'  | Justificación del argumento: 'llegan 900 venezolanos por día al perú' y 'qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema' | Conclusión: 'cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ?' y 'solo reaccionarán cuando esto se desborde' -> Respuesta: 'Lo llamas invasión pero solo te refieres a los venezolanos, y no a los demás inmigrantes. ¿No estás siendo un poco racista?'\n"
         if args.use_extra_info == "":
-            prompt += f"{text} -> Respuesta: "
+            prompt += text + RESPONSE_TXT[language]
+            COLLECTIVE_TXT = {""}
         elif args.use_extra_info == "collective":
-            prompt += f"'{text}' | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}' -> Respuesta:"
+            prompt += f"'{text}' | " + COLLECTIVE_TXT[language] + f" '{collective}' | " + PROPERTY_TXT[language] + f" '{prop}'" + RESPONSE_TXT[language]
         elif args.use_extra_info == "premises":
-            prompt += f"'{text}' | Justificación del argumento: '{justification}' | Conclusión: '{conclusion}' -> Respuesta:"
+            prompt += f"'{text}' | " + JUSTIFICATION_TXT[language] + f"'{justification}' | " + CONCLUSION_TXT[language] + f" '{conclusion}'" + RESPONSE_TXT[language]
         elif args.use_extra_info == "all":
-            prompt += f"'{text}' | Collectivo contra quien se dirige el odio: '{collective}' | Propiedad asociada al colectivo: '{prop}' | Justificación del argumento: '{justification}' | Conclusión: '{conclusion}' -> Respuesta:"
+            prompt += f"'{text}' | " + COLLECTIVE_TXT[language] + f"'{collective}' | " + PROPERTY_TXT[language] + f"'{prop}' | " + JUSTIFICATION_TXT[language] + f"'{justification}' | " + CONCLUSION_TXT[language] + f"'{conclusion}'" + RESPONSE_TXT[language]
     else:
         if strategy == "fewshot":
             if args.use_extra_info == "":
@@ -488,11 +495,11 @@ def generate_prompt(text, strategy, language, extra_info):
         else:
             user_prompt = f"{initial_prompt}{text}"
             if args.use_extra_info == "collective":
-                user_prompt += f" | Collective: {collective} | Property: {prop}"
+                user_prompt += f" | " + COLLECTIVE_TXT[language] + f"{collective} | " + PROPERTY_TXT[language] + f"{prop}"
             elif args.use_extra_info == "premises":
-                user_prompt += f" | Justification: {justification} | Conclusion: {conclusion}"
+                user_prompt += f" | " + JUSTIFICATION_TXT[language] + f"{justification} | " + CONCLUSION_TXT[language] + f"{conclusion}"
             elif args.use_extra_info == "all":
-                user_prompt += f" | Collective: {collective} | Property: {prop} | Justification: {justification} | Conclusion: {conclusion}"
+                user_prompt += f" | " + COLLECTIVE_TXT[language] + f"{collective} | " + PROPERTY_TXT[language] + f"{prop} | " + JUSTIFICATION_TXT[language] + f"{justification} | " + CONCLUSION_TXT[language] + f"{conclusion}"
             prompt = [{"role": "user", "content": user_prompt}]
     return prompt
 
