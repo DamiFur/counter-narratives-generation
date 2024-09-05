@@ -32,7 +32,7 @@ args = parser.parse_args()
 model_name = args.model_name
 language = args.language
 pretraining = args.generation_strategy == "pretraining"
-is_causallm = "Mistral" in model_name or "Mixtral" in model_name or "bigscience" in model_name or "gpt" in model_name or "llama" in model_name or "falcon" in model_name
+is_causallm = "flan-t5" not in model_name
 model_without_user_interface = "tiiuae/falcon" in model_name
 lang_setting = language.replace("multi", "spanish")
 FEWSHOT_EXAMPLES_AMOUNT = 10
@@ -357,15 +357,9 @@ if "Mistral" in model_name or "Mixtral" in model_name:
         add_eos_token=True,
         add_bos_token=True,
 )
-if 'flan-t5' in model_name or "Mistral" in model_name or "Mixtral" in model_name:
-    # new_tokens = ["<SHS>", "<EHS>", "<SCN>", "<ECN>"]
-    # num_new_tokens = tokenizer.add_tokens(new_tokens)
+if not tokenizer.pad_token:
     tokenizer.pad_token = tokenizer.eos_token
-    # tkn = tokenizer("<ECN>")
-    # eos_token_id = tkn["input_ids"][0]
-
-    # print("We added ", num_new_tokens, " new tokens")
-
+    
 if args.generation_strategy == "finetuned":
     # if args.cn_strategy != "":
     finetuned_name = f"{args.model_name.split('/')[-1]}_{args.language}_{extra_info}_{cn_strategy}"
@@ -542,7 +536,7 @@ def preprocess(sample, padding="max_length", is_testing = False):
             model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
             model_inputs = model_inputs.to(device)
         else:
-            model_inputs = tokenizer.apply_chat_template(inputs, return_tensors="pt")
+            model_inputs = tokenizer.apply_chat_template(inputs, return_tensors="pt", add_generation_prompt=True)
             model_inputs = model_inputs.to(device)
     
     if is_testing:
@@ -652,19 +646,20 @@ if pretraining:
         label_pad_token_id=label_pad_token_id,
     )
 
+    optimizer = "adamw_bnb_8bit" if args.quantized else "adamw_torch"
     # Define training args
     training_args = TrainingArguments(
         output_dir=repository_id,
-        per_device_train_batch_size=8,
-        per_device_eval_batch_size=8,
-        gradient_accumulation_steps=8,
+        per_device_train_batch_size=2,
+        per_device_eval_batch_size=2,
+        gradient_accumulation_steps=4,
         # predict_with_generate=True,
         # generation_max_length=200,
         # generation_num_beams=4,
         # TODO: turn this on and check if it works
         fp16=False, # Overflows with fp16
         learning_rate=2e-04,
-        num_train_epochs=3,
+        num_train_epochs=8,
         lr_scheduler_type="cosine",
         # include_inputs_for_metrics=True,
         # logging & evaluation strategies
