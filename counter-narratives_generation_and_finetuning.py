@@ -440,6 +440,7 @@ def generate_prompt(text, strategy, language, extra_info):
     if model_without_user_interface or not is_causallm:
         prompt = f"{initial_prompt}"
         if strategy == "fewshot":
+            assert False, "Hay que adaptar esto para fewshot con multiples idiomas"
             if args.use_extra_info == "":
                 prompt += "'¿esto podría explicar el brutismo caribeño y el subsahariano? ¿habrá correlación? extreme heat linked with reduced cognitive performance among young adults in non-air-conditioned buildings' -> Respuesta: 'Es difícil que algo tenga relación con algún estudio de internet completamente descontextualizado...'\n 'llegan 900 venezolanos por día al perú cuantos más tendrán que venir para que ya se ponga coto y fin a esta invasión ? qué ya no es una inmigración a las autoridades peruanas no les da ni la tos por este tema solo reaccionarán cuando esto se desborde' -> Respuesta: 'Estás siendo paranoico. No se va a desbordar, y es por eso que no hace falta ponerle coto y fin'\n"
             if args.use_extra_info == "collective":
@@ -459,6 +460,7 @@ def generate_prompt(text, strategy, language, extra_info):
             prompt += f"'{text}' | " + COLLECTIVE_TXT[language] + f"'{collective}' | " + PROPERTY_TXT[language] + f"'{prop}' | " + JUSTIFICATION_TXT[language] + f"'{justification}' | " + CONCLUSION_TXT[language] + f"'{conclusion}'" + RESPONSE_TXT[language]
     else:
         if strategy == "fewshot":
+            assert False, "Hay que adaptar esto para fewshot con multiples idiomas"
             if args.use_extra_info == "":
                 #TODO: Put examples into a const variable
                 prompt = [
@@ -673,7 +675,7 @@ if pretraining:
         # logging_dir=f"{repository_id}/logs",
         # logging_strategy="steps",
         # logging_steps=5,
-        optim="adamw_bnb_8bit",
+        optim=optimizer,
         # evaluation_strategy="epoch",
         # save_strategy="epoch",
         # save_total_limit=10,
