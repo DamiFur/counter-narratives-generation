@@ -350,7 +350,7 @@ if pretraining:
 
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
-if "Mistral" in model_name or "Mixtral" in model_name:
+if "Mistral" in model_name or "Mixtral" in model_name or "Qwen" in model_name:
     tokenizer = AutoTokenizer.from_pretrained(
         model_name,
         padding_side="left",
