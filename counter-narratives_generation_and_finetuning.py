@@ -411,23 +411,31 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
                 cn = example["counterSpeech"]
                 extra_info_sample = example["extra_info"]
                 if "collective" in extra_info_sample:
-                    tweet += f" | {COLLECTIVE_TXT[language]}{extra_info_sample["collective"]}" 
+                    collective = extra_info_sample["collective"]
+                    tweet += f" | {COLLECTIVE_TXT[language]}{collective}" 
                 if "property" in extra_info_sample:
-                    tweet += f" | {PROPERTY_TXT[language]}{extra_info_sample["property"]}"
+                    propert = extra_info_sample["property"]
+                    tweet += f" | {PROPERTY_TXT[language]}{propert}"
                 if "justification" in extra_info_sample:
-                    tweet += f" | {JUSTIFICATION_TXT[language]}{extra_info_sample["justification"]}"
+                    justification = extra_info_sample["justification"]
+                    tweet += f" | {JUSTIFICATION_TXT[language]}{justification}"
                 if "conclusion" in extra_info_sample:
-                    tweet += f" | {CONCLUSION_TXT[language]}{extra_info_sample["conclusion"]}"
+                    conclusion = extra_info_sample["conclusion"]
+                    tweet += f" | {CONCLUSION_TXT[language]}{conclusion}"
                 prompt += f"'{tweet}'{RESPONSE_TXT[language]}'{cn}'\n"
         
         if "collective" in extra_info:
-            text += f" | {COLLECTIVE_TXT[language]}{extra_info["collective"]}"
+            collective = extra_info["collective"]
+            text += f" | {COLLECTIVE_TXT[language]}{collective}"
         if "property" in extra_info:
-            text += f" | {PROPERTY_TXT[language]}{extra_info["property"]}"
+            propert = extra_info["property"]
+            text += f" | {PROPERTY_TXT[language]}{propert}"
         if "justification" in extra_info:
-            text += f" | {JUSTIFICATION_TXT[language]}{extra_info["justification"]}"
+            justification = extra_info["justification"]
+            text += f" | {JUSTIFICATION_TXT[language]}{justification}"
         if "conclusion" in extra_info:
-            text += f" | {CONCLUSION_TXT[language]}{extra_info["conclusion"]}"
+            conclusion = extra_info["conclusion"]
+            text += f" | {CONCLUSION_TXT[language]}{conclusion}"
         prompt += f"'{text}'{RESPONSE_TXT[language]}'{cn}'\n"
     else:
         prompt = [{"role": "system", "content": initial_prompt}]
@@ -442,23 +450,31 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
                 cn = example["counterSpeech"]
                 extra_info_sample = example["extra_info"]
                 if "collective" in extra_info_sample:
-                    tweet += f" | {COLLECTIVE_TXT[language]}{extra_info_sample["collective"]}" 
+                    collective = extra_info_sample["collective"]
+                    tweet += f" | {COLLECTIVE_TXT[language]}{collective}" 
                 if "property" in extra_info_sample:
-                    tweet += f" | {PROPERTY_TXT[language]}{extra_info_sample["property"]}"
+                    propert = extra_info_sample["property"]
+                    tweet += f" | {PROPERTY_TXT[language]}{propert}"
                 if "justification" in extra_info_sample:
-                    tweet += f" | {JUSTIFICATION_TXT[language]}{extra_info_sample["justification"]}"
+                    justification = extra_info_sample["justification"]
+                    tweet += f" | {JUSTIFICATION_TXT[language]}{justification}"
                 if "conclusion" in extra_info_sample:
-                    tweet += f" | {CONCLUSION_TXT[language]}{extra_info_sample["conclusion"]}"
+                    conclusion = extra_info_sample["conclusion"]
+                    tweet += f" | {CONCLUSION_TXT[language]}{conclusion}"
                 prompt += {"role": "user", "content": tweet}
                 prompt += {"role": "assistant", "content": cn}
         if "collective" in extra_info:
-            text += f" | {COLLECTIVE_TXT[language]}{extra_info["collective"]}" 
+            collective = extra_info["collective"]
+            text += f" | {COLLECTIVE_TXT[language]}{conclusion}" 
         if "property" in extra_info:
-            text += f" | {PROPERTY_TXT[language]}{extra_info["property"]}"
+            propert = extra_info["property"]
+            text += f" | {PROPERTY_TXT[language]}{propert}"
         if "justification" in extra_info:
-            text += f" | {JUSTIFICATION_TXT[language]}{extra_info["justification"]}"
+            justification = extra_info["justification"]
+            text += f" | {JUSTIFICATION_TXT[language]}{justification}"
         if "conclusion" in extra_info:
-            text += f" | {CONCLUSION_TXT[language]}{extra_info["conclusion"]}"
+            conclusion = extra_info["conclusion"]
+            text += f" | {CONCLUSION_TXT[language]}{conclusion}"
 
         prompt += {"role": "user", "content": text}
     print(prompt)
