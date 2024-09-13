@@ -307,10 +307,10 @@ else:
 test_dataset = datasetss[0]
 test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
 
-if pretraining:
-    train_dataset = datasetss[1]
-    val_dataset = datasetss[2]
-    train_data = Dataset.from_pandas(pd.DataFrame(train_dataset + val_dataset))
+
+train_dataset = datasetss[1]
+val_dataset = datasetss[2]
+train_data = Dataset.from_pandas(pd.DataFrame(train_dataset + val_dataset))
 
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -587,9 +587,10 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         w.close()
 
 
+train_data = train_data.map(preprocess)
+
 # TODO: change name pretraining for "finetuning"
 if pretraining:
-    train_data = train_data.map(preprocess)
 
     def compute_metrics(eval_preds):
         preds, labels = eval_preds
