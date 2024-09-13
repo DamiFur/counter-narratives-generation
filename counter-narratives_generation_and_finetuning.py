@@ -10,7 +10,7 @@ from glob import glob
 import torch
 import numpy as np
 from transformers import DataCollatorForSeq2Seq
-from transformers import Trainer, TrainingArguments, BitsAndBytesConfig
+from transformers import Trainer, TrainingArguments
 from transformers import StoppingCriteria, StoppingCriteriaList
 from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
 import argparse
@@ -341,44 +341,44 @@ if args.generation_strategy == "finetuned":
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
 if is_causallm:
-    if args.quantized:
+    # if args.quantized:
 
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_compute_dtype=torch.bfloat16
-        )
-        model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, resume_download=True)
+    #     bnb_config = BitsAndBytesConfig(
+    #         load_in_4bit=True,
+    #         bnb_4bit_use_double_quant=True,
+    #         bnb_4bit_quant_type="nf4",
+    #         bnb_4bit_compute_dtype=torch.bfloat16
+    #     )
+    #     model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, resume_download=True)
 
-        if args.generation_strategy == "pretraining":
-            model.gradient_checkpointing_enable()
-            model = prepare_model_for_kbit_training(model)
+    #     if args.generation_strategy == "pretraining":
+    #         model.gradient_checkpointing_enable()
+    #         model = prepare_model_for_kbit_training(model)
 
-            config = LoraConfig(
-                r=32,
-                lora_alpha=64,
-                target_modules=[
-                    "q_proj",
-                    "k_proj",
-                    "v_proj",
-                    "o_proj",
-                    "gate_proj",
-                    "up_proj",
-                    "down_proj",
-                    "lm_head",
-                ],
-                bias="none",
-                lora_dropout=0.05,  # Conventional
-                task_type=TaskType.CAUSAL_LM,
-            )
+    #         config = LoraConfig(
+    #             r=32,
+    #             lora_alpha=64,
+    #             target_modules=[
+    #                 "q_proj",
+    #                 "k_proj",
+    #                 "v_proj",
+    #                 "o_proj",
+    #                 "gate_proj",
+    #                 "up_proj",
+    #                 "down_proj",
+    #                 "lm_head",
+    #             ],
+    #             bias="none",
+    #             lora_dropout=0.05,  # Conventional
+    #             task_type=TaskType.CAUSAL_LM,
+    #         )
 
-            model = get_peft_model(model, config)
-            print_trainable_parameters(model)
+    #         model = get_peft_model(model, config)
+    #         print_trainable_parameters(model)
 
-    else:
-        model = AutoModelForCausalLM.from_pretrained(model_name)
-        model.to(device)
+    # else:
+    model = AutoModelForCausalLM.from_pretrained(model_name)
+    model.to(device)
 else:
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
     model.to(device)
@@ -461,8 +461,8 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
                 if "conclusion" in extra_info_sample:
                     conclusion = extra_info_sample["conclusion"]
                     tweet += f" | {CONCLUSION_TXT[language]}{conclusion}"
-                prompt += {"role": "user", "content": tweet}
-                prompt += {"role": "assistant", "content": cn}
+                prompt.append({"role": "user", "content": tweet})
+                prompt.append({"role": "assistant", "content": cn})
         if "collective" in extra_info:
             collective = extra_info["collective"]
             text += f" | {COLLECTIVE_TXT[language]}{conclusion}" 
@@ -476,7 +476,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
             conclusion = extra_info["conclusion"]
             text += f" | {CONCLUSION_TXT[language]}{conclusion}"
 
-        prompt += {"role": "user", "content": text}
+        prompt.append({"role": "user", "content": text})
     print(prompt)
     return prompt
 
