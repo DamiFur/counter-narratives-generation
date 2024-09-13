@@ -223,25 +223,22 @@ def parse_dataset(filenames, use_extra_info="", language="english"):
 def load_asohmo(language, use_extra_info=""):
 
     cns_by_tweet, nonargs, cn_length, cn_type_not_present = parse_dataset(f"dataset/ASOHMO/{lang_setting}/test/*.conll", use_extra_info=use_extra_info, language=lang_setting)
-    if pretraining:
-        cns_by_tweet_train, nonargs2, cn_length2, cn_type_not_present2 = parse_dataset(f"dataset/ASOHMO/{lang_setting}/train/*.conll", use_extra_info=use_extra_info, language=lang_setting)
-        cns_by_tweet_dev, nonargs3, cn_length3, cn_type_not_present3 = parse_dataset(f"dataset/ASOHMO/{lang_setting}/dev/*.conll", use_extra_info=use_extra_info, language=lang_setting)
-        print(f"{nonargs} - {nonargs2} - {nonargs3}")
-        nonargs += nonargs2 + nonargs3
-        cn_length += cn_length2 + cn_length3
-        cn_type_not_present += cn_type_not_present2 + cn_type_not_present3
-        if language == "multi":
-            cns_by_tweet_en, nonargs_en, cn_length_en, cn_type_not_present_en = parse_dataset(f"dataset/ASOHMO/english/test/*.conll", use_extra_info=use_extra_info, language="english")
-            cns_by_tweet_train2_en, nonargs2_en, cn_length2_en, cn_type_not_present2_en = parse_dataset(f"dataset/ASOHMO/english/train/*.conll", use_extra_info=use_extra_info, language="english")
-            cns_by_tweet_dev3_en, nonargs3_en, cn_length3_en, cn_type_not_present3_en = parse_dataset(f"dataset/ASOHMO/english/dev/*.conll", use_extra_info=use_extra_info, language="english")
-
-            cns_by_tweet = {**cns_by_tweet, **cns_by_tweet_en}
-            cns_by_tweet_train = {**cns_by_tweet_train, **cns_by_tweet_train2_en}
-            cns_by_tweet_dev = {**cns_by_tweet_dev, **cns_by_tweet_dev3_en}
-
-            nonargs += nonargs_en + nonargs2_en + nonargs3_en
-            cn_length += cn_length_en + cn_length2_en + cn_length3_en
-            cn_type_not_present += cn_type_not_present_en + cn_type_not_present2_en + cn_type_not_present3_en
+    cns_by_tweet_train, nonargs2, cn_length2, cn_type_not_present2 = parse_dataset(f"dataset/ASOHMO/{lang_setting}/train/*.conll", use_extra_info=use_extra_info, language=lang_setting)
+    cns_by_tweet_dev, nonargs3, cn_length3, cn_type_not_present3 = parse_dataset(f"dataset/ASOHMO/{lang_setting}/dev/*.conll", use_extra_info=use_extra_info, language=lang_setting)
+    print(f"{nonargs} - {nonargs2} - {nonargs3}")
+    nonargs += nonargs2 + nonargs3
+    cn_length += cn_length2 + cn_length3
+    cn_type_not_present += cn_type_not_present2 + cn_type_not_present3
+    if language == "multi":
+        cns_by_tweet_en, nonargs_en, cn_length_en, cn_type_not_present_en = parse_dataset(f"dataset/ASOHMO/english/test/*.conll", use_extra_info=use_extra_info, language="english")
+        cns_by_tweet_train2_en, nonargs2_en, cn_length2_en, cn_type_not_present2_en = parse_dataset(f"dataset/ASOHMO/english/train/*.conll", use_extra_info=use_extra_info, language="english")
+        cns_by_tweet_dev3_en, nonargs3_en, cn_length3_en, cn_type_not_present3_en = parse_dataset(f"dataset/ASOHMO/english/dev/*.conll", use_extra_info=use_extra_info, language="english")
+        cns_by_tweet = {**cns_by_tweet, **cns_by_tweet_en}
+        cns_by_tweet_train = {**cns_by_tweet_train, **cns_by_tweet_train2_en}
+        cns_by_tweet_dev = {**cns_by_tweet_dev, **cns_by_tweet_dev3_en}
+        nonargs += nonargs_en + nonargs2_en + nonargs3_en
+        cn_length += cn_length_en + cn_length2_en + cn_length3_en
+        cn_type_not_present += cn_type_not_present_en + cn_type_not_present2_en + cn_type_not_present3_en
 
     print(f"Counter narratives without the required type of counter-narrative: {cn_type_not_present}")
     print(f"Non arg examples discarted for not having CN: {nonargs}")
