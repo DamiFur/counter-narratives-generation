@@ -243,10 +243,9 @@ def load_asohmo(language, use_extra_info=""):
     print(f"Counter narratives without the required type of counter-narrative: {cn_type_not_present}")
     print(f"Non arg examples discarted for not having CN: {nonargs}")
     test_dataset = []
-    if pretraining:
-        print(f"{len(cns_by_tweet.keys())} - {len(cns_by_tweet_train.keys())} - {len(cns_by_tweet_dev.keys())}")
-        train_dataset = []
-        val_dataset = []
+    print(f"{len(cns_by_tweet.keys())} - {len(cns_by_tweet_train.keys())} - {len(cns_by_tweet_dev.keys())}")
+    train_dataset = []
+    val_dataset = []
     # acum = 0
     keys = list(cns_by_tweet.keys())
     keys.sort()
