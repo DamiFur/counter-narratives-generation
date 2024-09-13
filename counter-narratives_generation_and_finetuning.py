@@ -36,8 +36,6 @@ pretraining = args.generation_strategy == "pretraining"
 is_causallm = "flan-t5" not in model_name
 model_without_user_interface = "tiiuae/falcon" in model_name
 lang_setting = language.replace("multi", "spanish")
-FEWSHOT_EXAMPLES_AMOUNT = 10
-fewshot_examples = {}
 extra_info = args.use_extra_info if args.use_extra_info != "" else "no-info"
 cn_strategy = args.cn_strategy if args.cn_strategy != "" else "no-strategy"
 repository_id = f"{model_name.split('/')[1]}_{args.language}_{extra_info}_{cn_strategy}"
@@ -96,14 +94,6 @@ def load_conan(language):
                 train_dataset.append({"hateSpeech": key, "counterSpeech": group_by_tweet[key][0], "language": group_by_tweet[key][1]})
             elif acum < val_threshold:
                 val_dataset.append({"hateSpeech": key, "counterSpeech": group_by_tweet[key][0], "language": group_by_tweet[key][1]})
-        elif args.generation_strategy == "fewshot":
-            language = group_by_tweet[key][1]
-            if language not in current_fewshot_examples:
-                current_fewshot_examples[language] = 1
-                fewshot_examples[language] = [{"hateSpeech": key, "counterSpeech": group_by_tweet[key][0][0]}]
-            elif current_fewshot_examples[language] < FEWSHOT_EXAMPLES_AMOUNT:
-                current_fewshot_examples[language] += 1
-                fewshot_examples[language].append({"hateSpeech": key, "counterSpeech": group_by_tweet[key][0][0]})
         if acum >= val_threshold:
             test_dataset.append({"hateSpeech": key, "counterSpeech": group_by_tweet[key][0], "language": group_by_tweet[key][1]})
 
@@ -265,7 +255,6 @@ def load_asohmo(language, use_extra_info=""):
     keys.sort()
     random.seed(42)
     random.shuffle(keys)
-    current_fewshot_examples = {}
     for key in keys:
         if pretraining:
             for cn in cns_by_tweet[key]["cns"]:
@@ -273,19 +262,10 @@ def load_asohmo(language, use_extra_info=""):
                 test_dataset.append(to_append)
         else:
             to_append = {"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"], "language": cns_by_tweet[key]["lang"]}
-            language_code = "spanish" if language == "multi" else "english"
-            if args.generation_strategy == "fewshot" and (language_code not in current_fewshot_examples or current_fewshot_examples[language_code] < FEWSHOT_EXAMPLES_AMOUNT):
-                if language_code not in current_fewshot_examples:
-                    current_fewshot_examples[language_code] = 1
-                    fewshot_examples[language_code] = [{"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"][0]}]
-                else:
-                    current_fewshot_examples[language_code] += 1
-                    fewshot_examples[language_code].append({"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"][0]})
-            else:
-                test_dataset.append(to_append)
+            test_dataset.append(to_append)
         
-        # print(to_append)
     if pretraining:
+        # If we'll be training a model we add the train and dev datasets
         for key in cns_by_tweet_train:
             for cn in cns_by_tweet_train[key]["cns"]:
                 to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_train[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_train[key]["lang"]}
@@ -294,9 +274,6 @@ def load_asohmo(language, use_extra_info=""):
             for cn in cns_by_tweet_dev[key]["cns"]:
                 to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_dev[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_dev[key]["lang"]}
                 val_dataset.append(to_append)
-
-    # test_data = Dataset.from_pandas(pd.DataFrame(test_dataset))
-    if pretraining:
         return [test_dataset, train_dataset, val_dataset]
     return [test_dataset]
 
@@ -408,18 +385,6 @@ else:
 
     model.resize_token_embeddings(len(tokenizer))
 
-def add_fewshot_examples(dataset, with_chat_template = True):
-    # Read conll files and retrieve the tweet from first column
-    fewshot_examples = []
-    fewshot_examples = dataset.sample(FEWSHOT_EXAMPLES_AMOUNT)
-
-    # Iterate through the dataset and add the fewshot examples
-    for idx, example in fewshot_examples.iterrows():
-        tweet = example["tweet"]
-        cn = example["cn"]
-        dataset.append({"hateSpeech": tweet, "counterSpeech": cn})
-    
-
 
 def generate_prompt(text, language, extra_info, fewshot_examples):
 
@@ -467,7 +432,12 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
     else:
         prompt = [{"role": "system", "content": initial_prompt}]
         if fewshot_examples:
+            counter = 0
             for example in fewshot_examples:
+                if counter == args.fewshot_examples:
+                    break
+                else:
+                    counter += 1
                 tweet = example["hateSpeech"]
                 cn = example["counterSpeech"]
                 extra_info_sample = example["extra_info"]
@@ -491,6 +461,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
             text += f" | {CONCLUSION_TXT[language]}{extra_info["conclusion"]}"
 
         prompt += {"role": "user", "content": text}
+    print(prompt)
     return prompt
 
 
