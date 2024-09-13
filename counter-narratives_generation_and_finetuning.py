@@ -441,7 +441,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
     if model_without_user_interface or not is_causallm:
         prompt = f"{initial_prompt}\n"
         if fewshot_examples:
-            for example in fewshot_examples.iterrows():
+            for example in fewshot_examples.sample(frac=1).iterrows():
                 tweet = example["hateSpeech"]
                 cn = example["counterSpeech"]
                 extra_info_sample = example["extra_info"]
