@@ -26,7 +26,7 @@ parser.add_argument("--cn_strategy", type=str, default="", choices=["a", "b", "c
 parser.add_argument("--model_name", type=str, default="google/flan-t5-base")
 parser.add_argument("--quantized", type=bool, default=False)
 parser.add_argument("--load_from_hub", type=bool, default=False)
-parser.add_argument("--fewshot_examples", type=int, default=10, description="Number of fewshot examples to use. Only used when generation_strategy is fewshot")
+parser.add_argument("--fewshot_examples", type=int, default=10)
 
 args = parser.parse_args()
 
