@@ -256,6 +256,7 @@ def load_asohmo(language, use_extra_info=""):
     random.seed(42)
     random.shuffle(keys)
     for key in keys:
+        # If we are finetuning a model we generate one example by each cn. Otherwise, all cns are within an example as a list
         if pretraining:
             for cn in cns_by_tweet[key]["cns"]:
                 to_append = {"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet[key]["lang"]}
@@ -264,17 +265,15 @@ def load_asohmo(language, use_extra_info=""):
             to_append = {"hateSpeech": key, "extra_info": cns_by_tweet[key]["extra_info"], "counterSpeech": cns_by_tweet[key]["cns"], "language": cns_by_tweet[key]["lang"]}
             test_dataset.append(to_append)
         
-    if pretraining:
-        # If we'll be training a model we add the train and dev datasets
-        for key in cns_by_tweet_train:
-            for cn in cns_by_tweet_train[key]["cns"]:
-                to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_train[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_train[key]["lang"]}
-                train_dataset.append(to_append)
-        for key in cns_by_tweet_dev:
-            for cn in cns_by_tweet_dev[key]["cns"]:
-                to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_dev[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_dev[key]["lang"]}
-                val_dataset.append(to_append)
-        return [test_dataset, train_dataset, val_dataset]
+    for key in cns_by_tweet_train:
+        for cn in cns_by_tweet_train[key]["cns"]:
+            to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_train[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_train[key]["lang"]}
+            train_dataset.append(to_append)
+    for key in cns_by_tweet_dev:
+        for cn in cns_by_tweet_dev[key]["cns"]:
+            to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_dev[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_dev[key]["lang"]}
+            val_dataset.append(to_append)
+    return [test_dataset, train_dataset, val_dataset]
     return [test_dataset]
 
 
