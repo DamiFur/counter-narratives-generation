@@ -518,7 +518,7 @@ def preprocess(sample, padding="max_length", is_testing = False, fewshot_example
             model_inputs = tokenizer(input_with_chat_template, padding=padding, max_length=MAX_LENGTH, truncation=True)
     
     if is_testing:
-        model_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["extra_info"]["number"]}
+        model_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["extra_info"]["number"], "tweet": sample["hateSpeech"]}
     print(model_inputs)
     return model_inputs
 
@@ -552,9 +552,9 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
     if not os.path.exists(f"test_results/{foldername}"):
         os.makedirs(f"test_results/{foldername}")
     for example in testing_datasets:
-        inputt = example[0]["example"]
-        tweet = example[1]
-        number = example[0]["number"]
+        inputt = example["example"]
+        tweet = example["tweet"]
+        number = example["number"]
         w = open(f"test_results/{foldername}/hate_tweet_{lang_setting}_{number}", 'w')
         # inputt.to(device)
         if beam_search:
@@ -681,7 +681,7 @@ if pretraining:
 else:
     preprocessed_dataset = []
     for example in test_data:
-        preprocessed_dataset.append([preprocess(example, is_testing = True), example["hateSpeech"]], fewshot_examples = train_data)
+        preprocessed_dataset.append(preprocess(example, is_testing = True, fewshot_examples = train_data))
 
     print("generating")
     # evaluate_generation(preprocessed_dataset)
