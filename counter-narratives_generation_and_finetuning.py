@@ -512,10 +512,10 @@ def preprocess(sample, padding="max_length", is_testing = False, fewshot_example
             model_inputs["labels"] = labels["input_ids"]
     else:
         if model_without_user_interface or not is_causallm:
-            model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
+            model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
             model_inputs = model_inputs.to(device)
         else:
-            model_inputs = tokenizer.apply_chat_template(inputs, return_tensors="pt", add_generation_prompt=True)
+            model_inputs = tokenizer.apply_chat_template(inputs, add_generation_prompt=True)
             model_inputs = model_inputs.to(device)
     
     if is_testing:
