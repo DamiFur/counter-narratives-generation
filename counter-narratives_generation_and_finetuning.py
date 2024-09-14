@@ -518,8 +518,9 @@ def preprocess(sample, padding="max_length", is_testing = False, fewshot_example
             model_inputs = tokenizer(input_with_chat_template, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
     
     if is_testing:
-        model_inputs = {**model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["extra_info"]["number"], "tweet": sample["hateSpeech"]}
-    print(model_inputs)
+        test_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["extra_info"]["number"], "tweet": sample["hateSpeech"]}
+        print(test_inputs)
+        return test_inputs
     return model_inputs
 
 class StoppingCriteriaSub(StoppingCriteria):
