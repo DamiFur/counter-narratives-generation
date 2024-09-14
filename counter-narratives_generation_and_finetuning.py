@@ -519,7 +519,6 @@ def preprocess(sample, padding="max_length", is_testing = False, fewshot_example
     
     if is_testing:
         test_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["extra_info"]["number"], "tweet": sample["hateSpeech"]}
-        print(test_inputs)
         return test_inputs
     return model_inputs
 
@@ -558,7 +557,6 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         number = example["number"]
         w = open(f"test_results/{foldername}/hate_tweet_{lang_setting}_{number}", 'w')
         inputt.to(device)
-        print(inputt)
         if beam_search:
             result = model.generate(**inputt, do_sample=True, max_new_tokens=280, num_beams=4, no_repeat_ngram_size=4, num_return_sequences=1, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         elif top_sampling:
@@ -568,7 +566,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         else:
             result = model.generate(inputs=inputt, max_new_tokens=280, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         preds = str(tokenizer.decode(result[0][len(inputt["input_ids"][0]):]))
-        response = preds.replace("\n", "").replace("\t", "").split("[/INST]")[-1].replace("<s>", "").replace("</s>", "").replace("<pad>", "")
+        response = preds.replace("\n", "").replace("\t", "").split("[/INST]")[-1].replace("<s>", "").replace("</s>", "").replace("<pad>", "").replace(" <|eot_id|>", "").replace("<|start_header_id|>", "").replace("<|im_end|>", "")
         print("----------------------------------tweet-----------------------------")
         print(tweet)
         print("----------------------------------preds-----------------------------")
