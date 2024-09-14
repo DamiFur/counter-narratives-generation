@@ -520,6 +520,7 @@ def preprocess(sample, padding="max_length", is_testing = False, fewshot_example
     
     if is_testing:
         model_inputs = {"example": model_inputs, "counterSpeech": sample["counterSpeech"], "number": sample["extra_info"]["number"]}
+    print(model_inputs)
     return model_inputs
 
 class StoppingCriteriaSub(StoppingCriteria):
