@@ -560,7 +560,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         inputt.to(device)
         print(inputt)
         if beam_search:
-            result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, num_beams=4, no_repeat_ngram_size=4, num_return_sequences=1, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
+            result = model.generate(**inputt, do_sample=True, max_new_tokens=280, num_beams=4, no_repeat_ngram_size=4, num_return_sequences=1, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         elif top_sampling:
             result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, top_k=0, top_p=0.92, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         elif temperature:
