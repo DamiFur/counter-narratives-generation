@@ -87,7 +87,6 @@ def load_conan(language):
     keys.sort()
     random.seed(42)
     random.shuffle(keys)
-    current_fewshot_examples = {}
     for key in keys:
         if pretraining:
             if acum < train_threshold:
@@ -566,7 +565,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
         else:
             result = model.generate(inputs=inputt, max_new_tokens=280, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         preds = str(tokenizer.decode(result[0][len(inputt["input_ids"][0]):]))
-        response = preds.replace("\n", "").replace("\t", "").split("[/INST]")[-1].replace("<s>", "").replace("</s>", "").replace("<pad>", "").replace(" <|eot_id|>", "").replace("<|start_header_id|>", "").replace("<|im_end|>", "")
+        response = preds.replace("\n", "").replace("\t", "").split("[/INST]")[-1].replace("<s>", "").replace("</s>", "").replace("<pad>", "").replace("<|eot_id|>", "").replace("<|start_header_id|>", "").replace("<|im_end|>", "")
         print("----------------------------------tweet-----------------------------")
         print(tweet)
         print("----------------------------------preds-----------------------------")
@@ -679,6 +678,7 @@ if pretraining:
     model.push_to_hub("CounterNarratives/" + repository_id)
 
 else:
+    fewshot_examples = train_data if args.generation_strategy == "fewshot" else None
     preprocessed_dataset = []
     for example in test_data:
         preprocessed_dataset.append(preprocess(example, is_testing = True, fewshot_examples = train_data))
