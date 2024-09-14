@@ -567,7 +567,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
             result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, temperature=0.7, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         else:
             result = model.generate(inputs=inputt, max_new_tokens=280, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
-        preds = str(tokenizer.batch_decode(result)[0][len(inputt["input_ids"][0]):])
+        preds = str(tokenizer.decode(result)[0][len(inputt["input_ids"][0]):])
         response = preds.replace("\n", "").replace("\t", "").split("[/INST]")[-1].replace("<s>", "").replace("</s>", "").replace("<pad>", "")
         print("----------------------------------tweet-----------------------------")
         print(tweet)
