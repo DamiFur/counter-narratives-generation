@@ -450,30 +450,30 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
                 tweet = example["hateSpeech"]
                 cn = example["counterSpeech"]
                 extra_info_sample = example["extra_info"]
-                if "collective" in extra_info_sample and extra_info_sample["collective"].trim() != "":
+                if "collective" in extra_info_sample and extra_info_sample["collective"].strip() != "":
                     collective = extra_info_sample["collective"]
                     tweet += f" | {COLLECTIVE_TXT[language]}{collective}" 
-                if "property" in extra_info_sample and extra_info_sample["property"].trim() != "":
+                if "property" in extra_info_sample and extra_info_sample["property"].strip() != "":
                     propert = extra_info_sample["property"]
                     tweet += f" | {PROPERTY_TXT[language]}{propert}"
-                if "justification" in extra_info_sample and extra_info_sample["justification"].trim() != "":
+                if "justification" in extra_info_sample and extra_info_sample["justification"].strip() != "":
                     justification = extra_info_sample["justification"]
                     tweet += f" | {JUSTIFICATION_TXT[language]}{justification}"
-                if "conclusion" in extra_info_sample and extra_info_sample["conclusion"].trim() != "":
+                if "conclusion" in extra_info_sample and extra_info_sample["conclusion"].strip() != "":
                     conclusion = extra_info_sample["conclusion"]
                     tweet += f" | {CONCLUSION_TXT[language]}{conclusion}"
                 prompt.append({"role": "user", "content": tweet})
                 prompt.append({"role": "assistant", "content": cn})
-        if "collective" in extra_info and extra_info["collective"].trim() != "":
+        if "collective" in extra_info and extra_info["collective"].strip() != "":
             collective = extra_info["collective"]
             text += f" | {COLLECTIVE_TXT[language]}{collective}"
-        if "property" in extra_info and extra_info["property"].trim() != "":
+        if "property" in extra_info and extra_info["property"].strip() != "":
             propert = extra_info["property"]
             text += f" | {PROPERTY_TXT[language]}{propert}"
-        if "justification" in extra_info and extra_info["justification"].trim() != "":
+        if "justification" in extra_info and extra_info["justification"].strip() != "":
             justification = extra_info["justification"]
             text += f" | {JUSTIFICATION_TXT[language]}{justification}"
-        if "conclusion" in extra_info and extra_info["conclusion"].trim() != "":
+        if "conclusion" in extra_info and extra_info["conclusion"].strip() != "":
             conclusion = extra_info["conclusion"]
             text += f" | {CONCLUSION_TXT[language]}{conclusion}"
 
