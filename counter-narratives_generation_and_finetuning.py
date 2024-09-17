@@ -413,7 +413,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
         initial_prompt = "You are a NGO operator expert on generation of counter-speech and counter-narratives against hate messages. You only speak English and are unable to generate text in other languages. You are tasked with generating a response to a hate speech tweet."
 
 
-        final_prompt = " You should only reply the hate tweet directly without adding anything else. The hate speech tweet is the following:\n\n"
+        final_prompt = " You should only elaborate a counter-speech without adding anything else that is not that counter-speech. The hate speech tweet is the following:\n\n"
     elif language == "spanish":
         initial_prompt = "Sos un operario de una ONG experto en generación de contra-narrativas y contra-discurso contra el discurso de odio. Solo hablas Español y eres incapáz de generar texto en otro idioma. Tu tarea es generar una respuesta en Español a un tweet de odio."
         final_prompt = " Responde el tweet directamente sin agregar ninguna otra información que no sea la respuesta. El tweet con el mensaje de odio es el siguiente:\n\n"
