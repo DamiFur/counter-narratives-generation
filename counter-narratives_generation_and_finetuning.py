@@ -391,14 +391,21 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
 
     # TODO: Change Spanish for the language taken as arg
     if language == "english":
-        initial_prompt = "You are a NGO operator expert on generation of counter-speech and counter-narratives against hate messages. You only speak English and are unable to generate text in other languages. You are tasked with generating a response to a hate speech tweet. You should only reply the hate tweet directly without adding anything else. The hate speech tweet is the following:\n\n"
+        initial_prompt = "You are a NGO operator expert on generation of counter-speech and counter-narratives against hate messages. You only speak English and are unable to generate text in other languages. You are tasked with generating a response to a hate speech tweet."
+        argumentative_prompt = " You will also be provided with argumentative information about the tweet separated by '|'. Use this information to elaborate a response. Do not include this information in the response."
+        final_prompt = " You should only reply the hate tweet directly without adding anything else. The hate speech tweet is the following:\n\n"
     elif language == "spanish":
-        initial_prompt = "Sos un operario de una ONG experto en generación de contra-narrativas y contra-discurso contra el discurso de odio. Solo hablas Español y eres incapáz de generar texto en otro idioma. Tu tarea es generar una respuesta en Español a un tweet de odio. Responde el tweet directamente sin agregar ninguna otra información que no sea la respuesta. El tweet con el mensaje de odio es el siguiente:\n\n"
+        initial_prompt = "Sos un operario de una ONG experto en generación de contra-narrativas y contra-discurso contra el discurso de odio. Solo hablas Español y eres incapáz de generar texto en otro idioma. Tu tarea es generar una respuesta en Español a un tweet de odio."
+        argumentative_prompt = " También se te proporcionará información argumentativa sobre el tweet separada por '|'. Utiliza esta información para elaborar una respuesta. No incluyas esta información en la respuesta."
+        final_prompt = " Responde el tweet directamente sin agregar ninguna otra información que no sea la respuesta. El tweet con el mensaje de odio es el siguiente:\n\n"
     else:
         assert False, "Language not supported"
-
+    has_arg_info = "collective" in extra_info or "property" in extra_info or "justification" in extra_info or "conclusion" in extra_info
     if model_without_user_interface or not is_causallm:
-        prompt = f"{initial_prompt}\n"
+        prompt = initial_prompt
+        if has_arg_info:
+            prompt += argumentative_prompt
+        prompt += final_prompt
         if fewshot_examples:
             for example in fewshot_examples.sample(frac=1).iterrows():
                 tweet = example["hateSpeech"]
@@ -443,30 +450,30 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
                 tweet = example["hateSpeech"]
                 cn = example["counterSpeech"]
                 extra_info_sample = example["extra_info"]
-                if "collective" in extra_info_sample:
+                if "collective" in extra_info_sample and extra_info_sample["collective"].trim() != "":
                     collective = extra_info_sample["collective"]
                     tweet += f" | {COLLECTIVE_TXT[language]}{collective}" 
-                if "property" in extra_info_sample:
+                if "property" in extra_info_sample and extra_info_sample["property"].trim() != "":
                     propert = extra_info_sample["property"]
                     tweet += f" | {PROPERTY_TXT[language]}{propert}"
-                if "justification" in extra_info_sample:
+                if "justification" in extra_info_sample and extra_info_sample["justification"].trim() != "":
                     justification = extra_info_sample["justification"]
                     tweet += f" | {JUSTIFICATION_TXT[language]}{justification}"
-                if "conclusion" in extra_info_sample:
+                if "conclusion" in extra_info_sample and extra_info_sample["conclusion"].trim() != "":
                     conclusion = extra_info_sample["conclusion"]
                     tweet += f" | {CONCLUSION_TXT[language]}{conclusion}"
                 prompt.append({"role": "user", "content": tweet})
                 prompt.append({"role": "assistant", "content": cn})
-        if "collective" in extra_info:
+        if "collective" in extra_info and extra_info["collective"].trim() != "":
             collective = extra_info["collective"]
             text += f" | {COLLECTIVE_TXT[language]}{collective}"
-        if "property" in extra_info:
+        if "property" in extra_info and extra_info["property"].trim() != "":
             propert = extra_info["property"]
             text += f" | {PROPERTY_TXT[language]}{propert}"
-        if "justification" in extra_info:
+        if "justification" in extra_info and extra_info["justification"].trim() != "":
             justification = extra_info["justification"]
             text += f" | {JUSTIFICATION_TXT[language]}{justification}"
-        if "conclusion" in extra_info:
+        if "conclusion" in extra_info and extra_info["conclusion"].trim() != "":
             conclusion = extra_info["conclusion"]
             text += f" | {CONCLUSION_TXT[language]}{conclusion}"
 
