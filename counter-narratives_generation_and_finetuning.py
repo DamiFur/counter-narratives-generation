@@ -379,6 +379,25 @@ else:
 
     model.resize_token_embeddings(len(tokenizer))
 
+def generate_argumentative_prompt(language, extra_info):
+    if language == "english":
+        collective = " Deny that the attacked Collective has or is responsible for the negative Property that is being associated with them."
+        premises = " Deny the Justification that is being used to justify the hate message or negate the relation between the Justification and the Conclusion."
+        argumentative_prompt_init = " You will also be provided with argumentative information about the tweet separated by '|'. Use this information to elaborate a response."
+        argumentative_prompt_end = " Do not include this information in the response."
+    if language == "spanish":
+        collective = " Negar que el Colectivo atacado tenga o sea responsable de la Propiedad negativa que se le está asociando."
+        premises = " Negar la Justificación que se está utilizando para justificar el ataque de odio o negar la relación entre la Justificación y la Conclusión."
+        argumentative_prompt_init = " También se te proporcionará información argumentativa sobre el tweet separada por '|'. Utiliza esta información para elaborar una respuesta."
+        argumentative_prompt_end = " No incluyas esta información en la respuesta."
+
+    arg_info = ""
+    if "collective" in extra_info:
+        arg_info += collective
+    if "justification" in extra_info:
+        arg_info += premises
+    return argumentative_prompt_init + arg_info + argumentative_prompt_end
+
 
 def generate_prompt(text, language, extra_info, fewshot_examples):
 
@@ -386,17 +405,17 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
     RESPONSE_TXT = {"english": " -> Response: ", "spanish": " -> Respuesta: "}
     COLLECTIVE_TXT = {"english": "Collective against whom the hate is directed: ", "spanish": "Colectivo contra quien se dirige el odio: "}
     PROPERTY_TXT = {"english": "Property associated with the collective: ", "spanish": "Propiedad asociada al colectivo: "}
-    JUSTIFICATION_TXT = {"english": "Justification of the argument: ", "spanish": "Justificación del argumento: "}
+    JUSTIFICATION_TXT = {"english": "Justification: ", "spanish": "Justificación: "}
     CONCLUSION_TXT = {"english": "Conclusion: ", "spanish": "Conclusión: "}
 
     # TODO: Change Spanish for the language taken as arg
     if language == "english":
         initial_prompt = "You are a NGO operator expert on generation of counter-speech and counter-narratives against hate messages. You only speak English and are unable to generate text in other languages. You are tasked with generating a response to a hate speech tweet."
-        argumentative_prompt = " You will also be provided with argumentative information about the tweet separated by '|'. Use this information to elaborate a response. Do not include this information in the response."
+
+
         final_prompt = " You should only reply the hate tweet directly without adding anything else. The hate speech tweet is the following:\n\n"
     elif language == "spanish":
         initial_prompt = "Sos un operario de una ONG experto en generación de contra-narrativas y contra-discurso contra el discurso de odio. Solo hablas Español y eres incapáz de generar texto en otro idioma. Tu tarea es generar una respuesta en Español a un tweet de odio."
-        argumentative_prompt = " También se te proporcionará información argumentativa sobre el tweet separada por '|'. Utiliza esta información para elaborar una respuesta. No incluyas esta información en la respuesta."
         final_prompt = " Responde el tweet directamente sin agregar ninguna otra información que no sea la respuesta. El tweet con el mensaje de odio es el siguiente:\n\n"
     else:
         assert False, "Language not supported"
@@ -404,7 +423,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
     if model_without_user_interface or not is_causallm:
         prompt = initial_prompt
         if has_arg_info:
-            prompt += argumentative_prompt
+            prompt += generate_argumentative_prompt(language, extra_info)
         prompt += final_prompt
         if fewshot_examples:
             for example in fewshot_examples.sample(frac=1).iterrows():
