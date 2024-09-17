@@ -459,7 +459,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
                 prompt.append({"role": "assistant", "content": cn})
         if "collective" in extra_info:
             collective = extra_info["collective"]
-            text += f" | {COLLECTIVE_TXT[language]}{conclusion}" 
+            text += f" | {COLLECTIVE_TXT[language]}{collective}"
         if "property" in extra_info:
             propert = extra_info["property"]
             text += f" | {PROPERTY_TXT[language]}{propert}"
