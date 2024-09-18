@@ -554,7 +554,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 
     # sbert = SentenceTransformer('all-MiniLM-L6-v2')
 
-    generation_strategy = args.generation_strategy + "-" + args.fewshot_examples if args.generation_strategy == "fewshot" else args.generation_strategy
+    generation_strategy = args.generation_strategy + "-" + str(args.fewshot_examples) if args.generation_strategy == "fewshot" else args.generation_strategy
     foldername = f"{args.dataset}_{args.model_name}_{args.language}_{generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
     if not os.path.exists(f"test_results/{foldername}"):
         os.makedirs(f"test_results/{foldername}")
