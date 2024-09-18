@@ -386,7 +386,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
     RESPONSE_TXT = {"english": " -> Response: ", "spanish": " -> Respuesta: "}
     COLLECTIVE_TXT = {"english": "Collective against whom the hate is directed: ", "spanish": "Colectivo contra quien se dirige el odio: "}
     PROPERTY_TXT = {"english": "Property associated with the collective: ", "spanish": "Propiedad asociada al colectivo: "}
-    JUSTIFICATION_TXT = {"english": "Premise: ", "spanish": "Premisa: "}
+    JUSTIFICATION_TXT = {"english": "Justificación: ", "spanish": "Conclusión: "}
     CONCLUSION_TXT = {"english": "Conclusion: ", "spanish": "Conclusión: "}
 
     # TODO: Change Spanish for the language taken as arg
@@ -554,7 +554,8 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
 
     # sbert = SentenceTransformer('all-MiniLM-L6-v2')
 
-    foldername = f"{args.dataset}_{args.model_name}_{args.language}_{args.generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
+    generation_strategy = args.generation_strategy + "-" + args.fewshot_examples if args.generation_strategy == "fewshot" else args.generation_strategy
+    foldername = f"{args.dataset}_{args.model_name}_{args.language}_{generation_strategy}_{args.use_extra_info}_{args.cn_strategy}_{top_sampling}_{beam_search}_{temperature}".replace("/", "-")
     if not os.path.exists(f"test_results/{foldername}"):
         os.makedirs(f"test_results/{foldername}")
     for example in testing_datasets:
