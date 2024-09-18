@@ -26,7 +26,7 @@ parser.add_argument("--cn_strategy", type=str, default="", choices=["a", "b", "c
 parser.add_argument("--model_name", type=str, default="google/flan-t5-base")
 parser.add_argument("--quantized", type=bool, default=False)
 parser.add_argument("--load_from_hub", type=bool, default=False)
-parser.add_argument("--fewshot_examples", type=int, default=10)
+parser.add_argument("--fewshot_examples", type=int, default=5)
 
 args = parser.parse_args()
 
@@ -689,7 +689,7 @@ else:
     fewshot_examples = train_data if args.generation_strategy == "fewshot" else None
     preprocessed_dataset = []
     for example in test_data:
-        preprocessed_dataset.append(preprocess(example, is_testing = True, fewshot_examples = train_data))
+        preprocessed_dataset.append(preprocess(example, is_testing = True, fewshot_examples = fewshot_examples))
 
     print("generating")
     # evaluate_generation(preprocessed_dataset)
