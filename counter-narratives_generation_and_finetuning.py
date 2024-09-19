@@ -229,10 +229,9 @@ def load_asohmo(language, use_extra_info=""):
     cn_length += cn_length2 + cn_length3
     cn_type_not_present += cn_type_not_present2 + cn_type_not_present3
     if language == "multi":
-        cns_by_tweet_en, nonargs_en, cn_length_en, cn_type_not_present_en = parse_dataset(f"dataset/ASOHMO/english/test/*.conll", use_extra_info=use_extra_info, language="english")
+        _, nonargs_en, cn_length_en, cn_type_not_present_en = parse_dataset(f"dataset/ASOHMO/english/test/*.conll", use_extra_info=use_extra_info, language="english")
         cns_by_tweet_train2_en, nonargs2_en, cn_length2_en, cn_type_not_present2_en = parse_dataset(f"dataset/ASOHMO/english/train/*.conll", use_extra_info=use_extra_info, language="english")
         cns_by_tweet_dev3_en, nonargs3_en, cn_length3_en, cn_type_not_present3_en = parse_dataset(f"dataset/ASOHMO/english/dev/*.conll", use_extra_info=use_extra_info, language="english")
-        cns_by_tweet = {**cns_by_tweet, **cns_by_tweet_en}
         cns_by_tweet_train = {**cns_by_tweet_train, **cns_by_tweet_train2_en}
         cns_by_tweet_dev = {**cns_by_tweet_dev, **cns_by_tweet_dev3_en}
         nonargs += nonargs_en + nonargs2_en + nonargs3_en
@@ -245,7 +244,6 @@ def load_asohmo(language, use_extra_info=""):
     print(f"{len(cns_by_tweet.keys())} - {len(cns_by_tweet_train.keys())} - {len(cns_by_tweet_dev.keys())}")
     train_dataset = []
     val_dataset = []
-    # acum = 0
     keys = list(cns_by_tweet.keys())
     keys.sort()
     random.seed(42)
@@ -269,7 +267,6 @@ def load_asohmo(language, use_extra_info=""):
             to_append = {"hateSpeech": key, "extra_info": cns_by_tweet_dev[key]["extra_info"], "counterSpeech": cn, "language": cns_by_tweet_dev[key]["lang"]}
             val_dataset.append(to_append)
     return [test_dataset, train_dataset, val_dataset]
-    return [test_dataset]
 
 
 ########################################################################################################################################
