@@ -434,7 +434,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
         if "conclusion" in extra_info:
             conclusion = extra_info["conclusion"]
             text += f" | {CONCLUSION_TXT[language]}{conclusion}"
-        prompt += f"'{text}'{RESPONSE_TXT[language]}'{cn}'\n"
+        prompt += text
     else:
         prompt = [{"role": "system", "content": initial_prompt}]
         if fewshot_examples:
