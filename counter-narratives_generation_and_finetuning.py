@@ -550,7 +550,7 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
             preds = str(tokenizer.decode(result[0][len(inputt["input_ids"][0]):]))
         else:
             preds = str(tokenizer.decode(result[0]))
-            preds = re.sub(r'<extra_id_.*>', '', preds)
+            preds = re.sub(r'<extra_id_\d*>', '', preds)
         response = preds.replace("\n", "").replace("\t", "").split("[/INST]")[-1].replace("<s>", "").replace("</s>", "").replace("<pad>", "").replace("<|eot_id|>", "").replace("<|start_header_id|>", "").replace("<|im_end|>", "")
         print("----------------------------------tweet-----------------------------")
         print(tweet)
