@@ -15,6 +15,7 @@ from transformers import StoppingCriteria, StoppingCriteriaList
 from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_training
 import argparse
 import os
+import re
 
 device = torch.device("cuda")
 parser = argparse.ArgumentParser(description="Train models and generate counter-narratives against hate speech")
@@ -491,7 +492,7 @@ def preprocess(sample, padding="max_length", is_testing = False, fewshot_example
             model_inputs["labels"] = labels["input_ids"]
     else:
         if model_without_user_interface or not is_causallm:
-            model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
+            model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
         else:
             input_with_chat_template = tokenizer.apply_chat_template(inputs, return_tensors="pt", add_generation_prompt=True, tokenize = False)
             model_inputs = tokenizer(input_with_chat_template, padding=padding, max_length=MAX_LENGTH, truncation=True, return_tensors="pt")
@@ -521,7 +522,7 @@ stop_words_ids = [tokenizer(stop_word, return_tensors='pt', add_special_tokens=F
 stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=stop_words_ids)])
 
 
-def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, temperature=False):
+def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, temperature=False, is_causallm = True):
 
     # sbert_avg = 0.0
 
@@ -545,7 +546,11 @@ def evaluate_generation(testing_datasets, top_sampling=False, beam_search=True, 
             result = model.generate(inputs=inputt, do_sample=True, max_new_tokens=280, temperature=0.7, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
         else:
             result = model.generate(inputs=inputt, max_new_tokens=280, no_repeat_ngram_size=2, num_return_sequences=1, stopping_criteria=stopping_criteria, eos_token_id=tokenizer.eos_token_id, pad_token_id=tokenizer.eos_token_id)
-        preds = str(tokenizer.decode(result[0][len(inputt["input_ids"][0]):]))
+        if is_causallm:
+            preds = str(tokenizer.decode(result[0][len(inputt["input_ids"][0]):]))
+        else:
+            preds = str(tokenizer.decode(result[0]))
+            preds = re.sub(r'<extra_id_\d*>', '', preds)
         response = preds.replace("\n", "").replace("\t", "").split("[/INST]")[-1].replace("<s>", "").replace("</s>", "").replace("<pad>", "").replace("<|eot_id|>", "").replace("<|start_header_id|>", "").replace("<|im_end|>", "")
         print("----------------------------------tweet-----------------------------")
         print(tweet)
@@ -668,4 +673,4 @@ else:
     # evaluate_generation(preprocessed_dataset)
     # evaluate_generation(preprocessed_dataset, top_sampling=True)
     # evaluate_generation(preprocessed_dataset, temperature=True)
-    evaluate_generation(preprocessed_dataset, beam_search=True)
+    evaluate_generation(preprocessed_dataset, beam_search=True, is_causallm=is_causallm)
