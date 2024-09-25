@@ -332,50 +332,48 @@ if args.generation_strategy == "finetuned":
     # else:
     #     model_name = f"pretrained_models/{args.dataset}_{args.model_name.replace('/', '-')}_multi_{args.use_extra_info}_2e-05_8Epochs"
 
-if is_causallm:
-    if args.quantized:
 
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_compute_dtype=torch.bfloat16
-        )
+if args.quantized:
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16
+    )
+    if is_causallm:
         model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, resume_download=True)
-
-        if args.generation_strategy == "pretraining":
-            model.gradient_checkpointing_enable()
-            model = prepare_model_for_kbit_training(model)
-
-            config = LoraConfig(
-                r=32,
-                lora_alpha=64,
-                target_modules=[
-                    "q_proj",
-                    "k_proj",
-                    "v_proj",
-                    "o_proj",
-                    "gate_proj",
-                    "up_proj",
-                    "down_proj",
-                    "lm_head",
-                ],
-                bias="none",
-                lora_dropout=0.05,  # Conventional
-                task_type=TaskType.CAUSAL_LM,
-            )
-
-            model = get_peft_model(model, config)
-            print_trainable_parameters(model)
-
     else:
-        model = AutoModelForCausalLM.from_pretrained(model_name)
-        model.to(device)
+        model = AutoModelForSeq2SeqLM.from_pretrained(model_name, quantization_config=bnb_config)
+    if args.generation_strategy == "pretraining":
+        model.gradient_checkpointing_enable()
+        model = prepare_model_for_kbit_training(model)
+        config = LoraConfig(
+            r=32,
+            lora_alpha=64,
+            target_modules=[
+                "q_proj",
+                "k_proj",
+                "v_proj",
+                "o_proj",
+                "gate_proj",
+                "up_proj",
+                "down_proj",
+                "lm_head",
+            ],
+            bias="none",
+            lora_dropout=0.05,  # Conventional
+            task_type=TaskType.CAUSAL_LM,
+        )
+        model = get_peft_model(model, config)
+        print_trainable_parameters(model)
 else:
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+    if is_causallm:
+        model = AutoModelForCausalLM.from_pretrained(model_name)
+    else:
+        model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+        model.resize_token_embeddings(len(tokenizer))
     model.to(device)
 
-    model.resize_token_embeddings(len(tokenizer))
 
 def add_arg_info(extra_info_sample, tweet, language):
     COLLECTIVE_TXT = {"english": "Collective against whom the hate is directed: ", "spanish": "Colectivo contra quien se dirige el odio: "}
@@ -513,10 +511,8 @@ class StoppingCriteriaSub(StoppingCriteria):
                 return True
         return False
 
-if model_name == "tiiuae/falcon-7b-instruct":
-    stop_words = [".", "]", "']", "']\n", "\n", "]\n", "\n\n", "']\n\n", "<|endoftext|>"]
-else:
-    stop_words = [".", "]", "']", "']\n", "\n", "]\n", "\n\n", "']\n\n", "</s>"]
+
+stop_words = [".", "]", "']", "']\n", "\n", "]\n", "\n\n", "']\n\n", "</s>"]
 stop_words_ids = [tokenizer(stop_word, return_tensors='pt', add_special_tokens=False)['input_ids'].squeeze() for stop_word in stop_words]
 stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=stop_words_ids)])
 
