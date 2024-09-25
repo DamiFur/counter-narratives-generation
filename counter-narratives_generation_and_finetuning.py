@@ -452,7 +452,6 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
                 prompt.append({"role": "assistant", "content": cn})
         text = add_arg_info(extra_info, text, language)
         prompt.append({"role": "user", "content": text})
-    print(prompt)
     return prompt
 
 
