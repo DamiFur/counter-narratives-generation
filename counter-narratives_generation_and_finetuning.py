@@ -432,7 +432,7 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
                 tweet = add_arg_info(extra_info_sample, tweet, language)
                 prompt += f"'{tweet}'{RESPONSE_TXT[language]}'{cn}'\n"
         text = add_arg_info(extra_info, text, language)
-        prompt += text
+        prompt += f"'{text}'{RESPONSE_TXT[language]} "
     else:
         prompt = [{"role": "system", "content": initial_prompt}]
         if fewshot_examples:
@@ -459,12 +459,6 @@ if pretraining:
     datasett += val_dataset
 
 print(len(test_dataset))
-# dataset_tokenized = list(map(lambda sample: tokenizer(generate_prompt(sample["hateSpeech"], args.generation_strategy, sample["language"]), truncation=True)["input_ids"], datasett))
-# max_source_length = max([len(x) for x in dataset_tokenized])
-
-# if pretraining:
-    # target_tokenized = list(map(lambda sample: tokenizer("<SCN>" + sample["counterSpeech"] + "<ECN>", truncation=True)["input_ids"], datasett))
-    # max_target_length = max([len(x) for x in target_tokenized])
 
 MAX_LENGTH = 1024
 def preprocess(sample, padding="max_length", is_testing = False, fewshot_examples = None):
@@ -472,7 +466,7 @@ def preprocess(sample, padding="max_length", is_testing = False, fewshot_example
     if pretraining:
         if is_causallm:
             if model_without_user_interface:
-                model_inputs = tokenizer(inputs + "<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
+                model_inputs = tokenizer(inputs + sample["counterSpeech"], padding=padding, max_length=MAX_LENGTH, truncation=True)
             else:
                 inputs.append({"role": "assistant", "content": sample["counterSpeech"]})
                 input_with_chat_template = tokenizer.apply_chat_template(inputs, return_tensors="pt", tokenize=False, add_generation_prompt=False)
@@ -481,7 +475,7 @@ def preprocess(sample, padding="max_length", is_testing = False, fewshot_example
 
         else:
             model_inputs = tokenizer(inputs, padding=padding, max_length=MAX_LENGTH, truncation=True)
-            labels = tokenizer("<SCN> " + sample["counterSpeech"] + " <ECN>", padding=padding, max_length=MAX_LENGTH, truncation=True)
+            labels = tokenizer(sample["counterSpeech"], padding=padding, max_length=MAX_LENGTH, truncation=True)
             if padding == "max_length":
                 labels["input_ids"] = [
                     (l if l != tokenizer.pad_token_id else -100) for l in labels["input_ids"]
