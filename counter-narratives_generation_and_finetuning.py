@@ -418,7 +418,10 @@ def generate_prompt(text, language, extra_info, fewshot_examples, short=False):
     has_arg_info = "collective" in extra_info or "property" in extra_info or "justification" in extra_info or "conclusion" in extra_info
     if model_without_user_interface or not is_causallm:
         if short:
-            prompt = "Write a non-hateful response for the following hate speech tweet: "
+            if language == "english":
+                prompt = "Write a non-hateful response for the following hate speech tweet: "
+            else:
+                prompt = "Escribe una respuesta en contra del odio para el siguiente tweet de odio: "
         else:
             prompt = initial_prompt
             if has_arg_info:
