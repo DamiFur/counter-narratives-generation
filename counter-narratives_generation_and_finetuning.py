@@ -28,6 +28,7 @@ parser.add_argument("--model_name", type=str, default="google/flan-t5-base")
 parser.add_argument("--quantized", type=bool, default=False)
 parser.add_argument("--load_from_hub", type=bool, default=False)
 parser.add_argument("--fewshot_examples", type=int, default=5)
+parser.add_argument("--short", type=bool, default=False)
 
 args = parser.parse_args()
 
@@ -40,6 +41,8 @@ lang_setting = language.replace("multi", "spanish")
 extra_info = args.use_extra_info if args.use_extra_info != "" else "no-info"
 cn_strategy = args.cn_strategy if args.cn_strategy != "" else "no-strategy"
 repository_id = f"{model_name.split('/')[1]}_{args.language}_{extra_info}_{cn_strategy}"
+SHORT = args.short
+MAX_LENGTH = 1024
 
 def print_trainable_parameters(model):
     """
@@ -396,7 +399,7 @@ def add_arg_info(extra_info_sample, tweet, language):
     
     return tweet
 
-def generate_prompt(text, language, extra_info, fewshot_examples):
+def generate_prompt(text, language, extra_info, fewshot_examples, short=False):
 
     # TODO: Mover esto a un utils
     RESPONSE_TXT = {"english": " -> Response: ", "spanish": " -> Respuesta: "}
@@ -414,10 +417,13 @@ def generate_prompt(text, language, extra_info, fewshot_examples):
         assert False, "Language not supported"
     has_arg_info = "collective" in extra_info or "property" in extra_info or "justification" in extra_info or "conclusion" in extra_info
     if model_without_user_interface or not is_causallm:
-        prompt = initial_prompt
-        if has_arg_info:
-            prompt += argumentative_prompt
-        prompt += final_prompt
+        if short:
+            prompt = "Write a non-hateful response for the following hate speech tweet: "
+        else:
+            prompt = initial_prompt
+            if has_arg_info:
+                prompt += argumentative_prompt
+            prompt += final_prompt
         if fewshot_examples:
             #TODO: Move this to a separate function because its repeated in the other case
             counter = 0
@@ -460,9 +466,9 @@ if pretraining:
 
 print(len(test_dataset))
 
-MAX_LENGTH = 1024
+
 def preprocess(sample, padding="max_length", is_testing = False, fewshot_examples = None):
-    inputs = generate_prompt(sample["hateSpeech"], sample["language"], sample["extra_info"], fewshot_examples)
+    inputs = generate_prompt(sample["hateSpeech"], sample["language"], sample["extra_info"], fewshot_examples, short=SHORT)
     if pretraining:
         if is_causallm:
             if model_without_user_interface:
